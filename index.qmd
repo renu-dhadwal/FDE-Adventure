@@ -1,0 +1,12 @@
+---
+title: "Fractional Calculus Adventure"
+format: html
+---
+
+# Fractional Calculus Adventure
+
+**A dialogue-driven course and interactive resource on fractional differential equations.**
+
+Start here:
+
+- [Level 1 – Temple of Smriti (Memory)](chapters/level1_temple_of_smriti.qmd)

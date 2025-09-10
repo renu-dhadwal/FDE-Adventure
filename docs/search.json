@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Fractional Calculus Adventure",
+    "section": "",
+    "text": "1 Fractional Calculus Adventure\nA dialogue-driven course and interactive resource on fractional differential equations.\nStart here:\n\nLevel 1 – Temple of Smriti (Memory)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Fractional Calculus Adventure</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level1_temple_of_smriti.html",
+    "href": "chapters/level1_temple_of_smriti.html",
+    "title": "2  Level 1 – The Temple of Smriti (Memory)",
+    "section": "",
+    "text": "2.1 Part I – First Steps: Repeated Integration\nCharacters:\n- Acharya Anvaya (Guide/Teacher, continuity of knowledge)\n- Ananya (Learner, seeker of truth)\nScene: Ananya and Acharya Anvaya stand before the Temple of Smriti (Memory). Its walls glow faintly with carved verses. Above the arch is inscribed:\n“कालः स्मृतिर्नित्यं — Kālaḥ Smṛtir Nityaṁ (Time is eternal memory).”\nAcharya Anvaya: Ananya, before the temple reveals its secret, let us recall what happens when we integrate repeatedly.\nQuestion: What is the integral of \\(1\\)?\nAnanya:\n\\[\nI^1 (1)(t) = \\int_0^t 1\\, d\\tau = t.\n\\]\nAcharya Anvaya: Good. And integrating once more?\nAnanya:\n\\[\nI^2 (1)(t) = \\int_0^t I^1(1)(\\tau)\\, d\\tau = \\int_0^t \\tau\\, d\\tau = \\frac{t^2}{2!}.\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level1_temple_of_smriti.html#part-ii-the-cauchy-formula",
+    "href": "chapters/level1_temple_of_smriti.html#part-ii-the-cauchy-formula",
+    "title": "2  Level 1 – The Temple of Smriti (Memory)",
+    "section": "2.2 Part II – The Cauchy Formula",
+    "text": "2.2 Part II – The Cauchy Formula\nAcharya Anvaya: This can be written using the Cauchy formula for repeated integration:\n\\[\nI^n f(t) = \\frac{1}{(n-1)!} \\int_0^t (t-\\tau)^{\\,n-1} f(\\tau)\\, d\\tau.\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level1_temple_of_smriti.html#part-iii-the-bridge-of-gamma",
+    "href": "chapters/level1_temple_of_smriti.html#part-iii-the-bridge-of-gamma",
+    "title": "2  Level 1 – The Temple of Smriti (Memory)",
+    "section": "2.3 Part III – The Bridge of Gamma",
+    "text": "2.3 Part III – The Bridge of Gamma\nAcharya Anvaya: Replace factorials by the Gamma function to continue to fractional orders:\n\\[\n(I^\\alpha f)(t) = \\frac{1}{\\Gamma(\\alpha)}\\int_0^t (t-\\tau)^{\\alpha-1} f(\\tau)\\, d\\tau.\n\\]\n\n2.3.1 Mini-Quest: The Half-Memory\nEvaluate \\((I^{1/2} 1)(t)\\). The answer is\n\\[\n(I^{1/2} 1)(t) = \\frac{2}{\\sqrt{\\pi}} t^{1/2}.\n\\]\nYou have earned the Key of Smriti (Memory).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
+    ]
+  }
+]

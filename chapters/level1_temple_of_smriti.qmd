@@ -1,0 +1,61 @@
+---
+title: "Level 1 – The Temple of Smriti (Memory)"
+format: html
+jupyter: python3
+---
+
+**Characters**:  
+- **Acharya Anvaya (Guide/Teacher, continuity of knowledge)**  
+- **Ananya (Learner, seeker of truth)**  
+
+---
+
+**Scene**: Ananya and Acharya Anvaya stand before the **Temple of Smriti (Memory)**. Its walls glow faintly with carved verses. Above the arch is inscribed:  
+
+*"कालः स्मृतिर्नित्यं — Kālaḥ Smṛtir Nityaṁ (Time is eternal memory)."*
+
+## Part I – First Steps: Repeated Integration
+
+**Acharya Anvaya**: Ananya, before the temple reveals its secret, let us recall what happens when we integrate repeatedly.
+
+**Question**: What is the integral of $1$?
+
+**Ananya**:
+
+$$
+I^1 (1)(t) = \int_0^t 1\, d\tau = t.
+$$
+
+**Acharya Anvaya**: Good. And integrating once more?
+
+**Ananya**:
+
+$$
+I^2 (1)(t) = \int_0^t I^1(1)(\tau)\, d\tau = \int_0^t \tau\, d\tau = \frac{t^2}{2!}.
+$$
+
+## Part II – The Cauchy Formula
+
+**Acharya Anvaya**: This can be written using the *Cauchy formula for repeated integration*:
+
+$$
+I^n f(t) = \frac{1}{(n-1)!} \int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
+$$
+
+## Part III – The Bridge of Gamma
+
+**Acharya Anvaya**: Replace factorials by the Gamma function to continue to fractional orders:
+
+$$
+(I^\alpha f)(t) = \frac{1}{\Gamma(\alpha)}\int_0^t (t-\tau)^{\alpha-1} f(\tau)\, d\tau.
+$$
+
+### Mini-Quest: The Half-Memory
+
+Evaluate $(I^{1/2} 1)(t)$. The answer is
+
+$$
+(I^{1/2} 1)(t) = \frac{2}{\sqrt{\pi}} t^{1/2}.
+$$
+
+You have earned the **Key of Smriti (Memory)**.

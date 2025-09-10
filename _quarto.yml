@@ -1,0 +1,17 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Fractional Calculus Adventure"
+  author: "Acharya Anvaya"
+  chapters:
+    - index.qmd
+    - chapters/level1_temple_of_smriti.qmd
+
+format:
+  html:
+    css: styles/course.css
+
+execute:
+  enabled: false
