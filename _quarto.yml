@@ -11,6 +11,7 @@ book:
 
 format:
   html:
+    theme: cosmo
     css: styles/course.css
 
 execute:
