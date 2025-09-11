@@ -1,6 +1,6 @@
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 2rem auto;
   padding: 0 1rem;
   color: #222;
@@ -9,3 +9,13 @@ body {
 
 h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 a { color: #0b63d6; }
+/* Narrator styling */
+.narrator {
+  font-style: italic;
+  color: #555;
+  display: block;
+  margin: 1rem 0;
+  padding: 0.6rem 1rem;
+  border-left: 3px solid #ddd;
+  background: #f9f9f9;
+}

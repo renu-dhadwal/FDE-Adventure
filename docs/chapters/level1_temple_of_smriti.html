@@ -161,11 +161,16 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#part-i-first-steps-repeated-integration" id="toc-part-i-first-steps-repeated-integration" class="nav-link active" data-scroll-target="#part-i-first-steps-repeated-integration"><span class="header-section-number">2.1</span> Part I – First Steps: Repeated Integration</a></li>
-  <li><a href="#part-ii-the-cauchy-formula" id="toc-part-ii-the-cauchy-formula" class="nav-link" data-scroll-target="#part-ii-the-cauchy-formula"><span class="header-section-number">2.2</span> Part II – The Cauchy Formula</a></li>
-  <li><a href="#part-iii-the-bridge-of-gamma" id="toc-part-iii-the-bridge-of-gamma" class="nav-link" data-scroll-target="#part-iii-the-bridge-of-gamma"><span class="header-section-number">2.3</span> Part III – The Bridge of Gamma</a>
+  <li><a href="#scene-arrival-at-the-temple" id="toc-scene-arrival-at-the-temple" class="nav-link active" data-scroll-target="#scene-arrival-at-the-temple"><span class="header-section-number">2.0.1</span> Scene: Arrival at the Temple</a></li>
+  <li><a href="#part-i-first-steps-repeated-integration-and-the-cauchy-formula" id="toc-part-i-first-steps-repeated-integration-and-the-cauchy-formula" class="nav-link" data-scroll-target="#part-i-first-steps-repeated-integration-and-the-cauchy-formula"><span class="header-section-number">2.1</span> Part I – First Steps: Repeated Integration and the Cauchy Formula</a></li>
+  <li><a href="#part-ii-memory-in-the-fractional-integral" id="toc-part-ii-memory-in-the-fractional-integral" class="nav-link" data-scroll-target="#part-ii-memory-in-the-fractional-integral"><span class="header-section-number">2.2</span> Part II – Memory in the Fractional Integral</a>
   <ul class="collapse">
-  <li><a href="#mini-quest-the-half-memory" id="toc-mini-quest-the-half-memory" class="nav-link" data-scroll-target="#mini-quest-the-half-memory"><span class="header-section-number">2.3.1</span> Mini-Quest: The Half-Memory</a></li>
+  <li><a href="#scene-definition-on-the-temple-wall" id="toc-scene-definition-on-the-temple-wall" class="nav-link" data-scroll-target="#scene-definition-on-the-temple-wall"><span class="header-section-number">2.2.1</span> Scene: Definition on the Temple Wall</a></li>
+  </ul></li>
+  <li><a href="#mini-quest-1-the-half-memory" id="toc-mini-quest-1-the-half-memory" class="nav-link" data-scroll-target="#mini-quest-1-the-half-memory"><span class="header-section-number">2.3</span> Mini-Quest 1: The Half-Memory</a></li>
+  <li><a href="#mini-quest-2-comparing-memories" id="toc-mini-quest-2-comparing-memories" class="nav-link" data-scroll-target="#mini-quest-2-comparing-memories"><span class="header-section-number">2.4</span> Mini-Quest 2: Comparing Memories</a>
+  <ul class="collapse">
+  <li><a href="#narrator" id="toc-narrator" class="nav-link" data-scroll-target="#narrator"><span class="header-section-number">2.4.1</span> Narrator</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -193,45 +198,83 @@ window.Quarto = {
 
 
 <p><strong>Characters</strong>:<br>
-- <strong>Acharya Anvaya (Guide/Teacher, continuity of knowledge)</strong><br>
-- <strong>Ananya (Learner, seeker of truth)</strong></p>
+- <strong>Acharya Anvaya (Guide/Teacher, continuity of knowledge)</strong> {.teacher}<br>
+- <strong>Ananya (Learner, seeker of truth)</strong> {.student}</p>
 <hr>
-<p><strong>Scene</strong>: Ananya and Acharya Anvaya stand before the <strong>Temple of Smriti (Memory)</strong>. Its walls glow faintly with carved verses. Above the arch is inscribed:</p>
+<section id="scene-arrival-at-the-temple" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="scene-arrival-at-the-temple"><span class="header-section-number">2.0.1</span> Scene: Arrival at the Temple</h3>
+<p>Ananya and Acharya Anvaya stand before the <strong>Temple of Smriti (Memory)</strong>. Its walls glow faintly with carved verses. Above the arch is inscribed:</p>
 <p><em>“कालः स्मृतिर्नित्यं — Kālaḥ Smṛtir Nityaṁ (Time is eternal memory).”</em></p>
-<section id="part-i-first-steps-repeated-integration" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="part-i-first-steps-repeated-integration"><span class="header-section-number">2.1</span> Part I – First Steps: Repeated Integration</h2>
-<p><strong>Acharya Anvaya</strong>:{.teacher} Ananya, before the temple reveals its secret, let us recall what happens when we integrate repeatedly.</p>
-<p><strong>Question</strong>: What is the integral of <span class="math inline">\(1\)</span>?</p>
-<p><strong>Ananya</strong>:{.student}</p>
+<hr>
+</section>
+<section id="part-i-first-steps-repeated-integration-and-the-cauchy-formula" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="part-i-first-steps-repeated-integration-and-the-cauchy-formula"><span class="header-section-number">2.1</span> Part I – First Steps: Repeated Integration and the Cauchy Formula</h2>
+<p><strong>Ananya</strong>: {.student} Acharya, this place feels mysterious. What lies in this temple?</p>
+<p><strong>Acharya Anvaya</strong>: {.teacher} This is the Temple of Smriti, or memory. It contains the secrets of memory, the key to which lies in the idea of the <em>fractional integral</em>.</p>
+<p><strong>Ananya</strong>: {.student} Hmm… the integral is by itself a sort of memory, isn’t it? When we integrate a function from (0) to (t):</p>
+<p><span class="math display">\[
+I^1 f(t) = \int_{0}^{t} f(\tau)\, d\tau
+\]</span></p>
+<p>we are collecting its entire past. This is a kind of memory, isn’t it?</p>
+<p><strong>Acharya Anvaya</strong>: {.teacher} You are absolutely right, Ananya! But before the temple reveals its secret, let us recall what happens when we integrate repeatedly.</p>
+<p><strong>Question</strong>: What is the integral of (1)?</p>
+<p><strong>Ananya</strong>: {.student}</p>
 <p><span class="math display">\[
 I^1 (1)(t) = \int_0^t 1\, d\tau = t.
 \]</span></p>
-<p><strong>Acharya Anvaya</strong>:{.teacher} Good. And integrating once more?</p>
-<p><strong>Ananya</strong>:{.student}</p>
+<p><strong>Acharya Anvaya</strong>: {.teacher} Good. And integrating once more?</p>
+<p><strong>Ananya</strong>: {.student}</p>
 <p><span class="math display">\[
 I^2 (1)(t) = \int_0^t I^1(1)(\tau)\, d\tau = \int_0^t \tau\, d\tau = \frac{t^2}{2!}.
 \]</span></p>
-</section>
-<section id="part-ii-the-cauchy-formula" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="part-ii-the-cauchy-formula"><span class="header-section-number">2.2</span> Part II – The Cauchy Formula</h2>
-<p><strong>Acharya Anvaya</strong>: {.teacher} This can be written using the <em>Cauchy formula for repeated integration</em>:</p>
+<p><strong>Acharya Anvaya</strong>: {.teacher} And once more?</p>
+<p><strong>Ananya</strong>: {.student}</p>
+<p><span class="math display">\[
+I^3 (1)(t) = \int_0^t I^2(1)(\tau)\, d\tau = \int_0^t \frac{\tau^2}{2}\, d\tau = \frac{t^3}{3!}.
+\]</span></p>
+<p><strong>Acharya Anvaya</strong>: {.teacher} Yes! We can continue like this, and the (n^{th}) integral can be written using the <em>Cauchy formula for repeated integration</em>:</p>
 <p><span class="math display">\[
 I^n f(t) = \frac{1}{(n-1)!} \int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
 \]</span></p>
+<hr>
 </section>
-<section id="part-iii-the-bridge-of-gamma" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="part-iii-the-bridge-of-gamma"><span class="header-section-number">2.3</span> Part III – The Bridge of Gamma</h2>
-<p><strong>Acharya Anvaya</strong>:{.teacher} Replace factorials by the Gamma function to continue to fractional orders:</p>
+<section id="part-ii-memory-in-the-fractional-integral" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="part-ii-memory-in-the-fractional-integral"><span class="header-section-number">2.2</span> Part II – Memory in the Fractional Integral</h2>
+<p><strong>Acharya Anvaya</strong>: {.teacher} Just as the <em>smriti</em> texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time.</p>
+<section id="scene-definition-on-the-temple-wall" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="scene-definition-on-the-temple-wall"><span class="header-section-number">2.2.1</span> Scene: Definition on the Temple Wall</h3>
+<p>The wall glows and reveals:</p>
 <p><span class="math display">\[
 (I^\alpha f)(t) = \frac{1}{\Gamma(\alpha)}\int_0^t (t-\tau)^{\alpha-1} f(\tau)\, d\tau.
 \]</span></p>
-<section id="mini-quest-the-half-memory" class="level3" data-number="2.3.1">
-<h3 data-number="2.3.1" class="anchored" data-anchor-id="mini-quest-the-half-memory"><span class="header-section-number">2.3.1</span> Mini-Quest: The Half-Memory</h3>
-<p>Evaluate <span class="math inline">\((I^{1/2} 1)(t)\)</span>. The answer is</p>
+<p><strong>Acharya Anvaya</strong>: {.teacher} We just replace factorials by the Gamma function to continue to fractional orders.</p>
+<p><strong>Ananya</strong>: {.student} So the past influences the present, but the farther back in time we go, the weaker its pull?</p>
+<p><strong>Acharya Anvaya</strong>: {.teacher} Precisely. Like the echo of a conch in the Himalayas — recent notes ring loud, but the first strike still whispers faintly.</p>
+<hr>
+</section>
+</section>
+<section id="mini-quest-1-the-half-memory" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="mini-quest-1-the-half-memory"><span class="header-section-number">2.3</span> Mini-Quest 1: The Half-Memory</h2>
+<p>Evaluate ((I^{1/2} 1)(t)).</p>
+<p><strong>Answer</strong>:</p>
 <p><span class="math display">\[
-(I^{1/2} 1)(t) = \frac{2}{\sqrt{\pi}} t^{1/2}.
+(I^{1/2} 1)(t) = \frac{2}{\sqrt{\pi}}\, t^{1/2}.
 \]</span></p>
-<p>You have earned the <strong>Key of Smriti (Memory)</strong>.</p>
+<p><strong>Acharya Anvaya</strong>: {.teacher} Well done, Ananya. You have grasped the essence of fractional memory. You now hold the <strong>Key of Smriti (Memory)</strong>. With it, the temple doors open to the next journey.</p>
+<p>The fractional integral is like oral tradition: newer retellings weigh more, but the first telling is never fully erased.</p>
+<p>A smaller () preserves distant past more strongly — like stories handed down for centuries.<br>
+A larger () emphasizes the near past — like yesterday’s lived experiences.</p>
+<hr>
+</section>
+<section id="mini-quest-2-comparing-memories" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="mini-quest-2-comparing-memories"><span class="header-section-number">2.4</span> Mini-Quest 2: Comparing Memories</h2>
+<p>Which value of () remembers the distant past most strongly?</p>
+<p><strong>Ananya</strong>: {.student} Since the kernel is ((t-)^{- 1}), smaller () means slower decay. So the answer is A.</p>
+<p><strong>Acharya Anvaya</strong>: {.teacher} Correct. You understand how the depth of memory depends on (). The temple blesses you with wisdom for the journey ahead.</p>
+<hr>
+<section id="narrator" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="narrator"><span class="header-section-number">2.4.1</span> Narrator</h3>
+<p><strong>Narrator</strong>: {.narrator} With the Key of Smriti in hand, Ananya steps through the temple gates. The path ahead leads to the <strong>River of Derivatives</strong>…</p>
 
 
 </section>
