@@ -16,19 +16,19 @@ jupyter: python3
 
 ## Part I – First Steps: Repeated Integration
 
-**Acharya Anvaya**: Ananya, before the temple reveals its secret, let us recall what happens when we integrate repeatedly.
+**Acharya Anvaya**:{.teacher} Ananya, before the temple reveals its secret, let us recall what happens when we integrate repeatedly.
 
 **Question**: What is the integral of $1$?
 
-**Ananya**:
+**Ananya**:{.student}
 
 $$
 I^1 (1)(t) = \int_0^t 1\, d\tau = t.
 $$
 
-**Acharya Anvaya**: Good. And integrating once more?
+**Acharya Anvaya**:{.teacher} Good. And integrating once more?
 
-**Ananya**:
+**Ananya**:{.student}
 
 $$
 I^2 (1)(t) = \int_0^t I^1(1)(\tau)\, d\tau = \int_0^t \tau\, d\tau = \frac{t^2}{2!}.
@@ -36,7 +36,7 @@ $$
 
 ## Part II – The Cauchy Formula
 
-**Acharya Anvaya**: This can be written using the *Cauchy formula for repeated integration*:
+**Acharya Anvaya**: {.teacher} This can be written using the *Cauchy formula for repeated integration*:
 
 $$
 I^n f(t) = \frac{1}{(n-1)!} \int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
@@ -44,7 +44,7 @@ $$
 
 ## Part III – The Bridge of Gamma
 
-**Acharya Anvaya**: Replace factorials by the Gamma function to continue to fractional orders:
+**Acharya Anvaya**:{.teacher} Replace factorials by the Gamma function to continue to fractional orders:
 
 $$
 (I^\alpha f)(t) = \frac{1}{\Gamma(\alpha)}\int_0^t (t-\tau)^{\alpha-1} f(\tau)\, d\tau.
