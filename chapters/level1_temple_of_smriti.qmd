@@ -34,7 +34,7 @@ we are collecting its entire past. This is a kind of memory, isn’t it?
 
 **Acharya Anvaya**: You are absolutely right, Ananya! But before the temple reveals its secret, let us recall what happens when we integrate repeatedly.
 
-**Question**: What is the integral of \(1\)?  
+**Question**: What is the integral of 1?  
 
 **Ananya**:  
 
@@ -163,4 +163,3 @@ where $D_t^\alpha$ is a **fractional derivative** of the strain.
 ### Narrator
 
 **Narrator**: With the Key of Smriti in hand, Ananya steps through the temple gates. The path ahead leads to the **River of Derivatives**
----

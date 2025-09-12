@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles/course.css">
 </head>
@@ -127,8 +156,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#scene-arrival-at-the-temple" id="toc-scene-arrival-at-the-temple" class="nav-link active" data-scroll-target="#scene-arrival-at-the-temple"><span class="header-section-number">2.0.1</span> Scene: Arrival at the Temple</a></li>
+  <li><a href="#first-steps-repeated-integration-and-the-cauchy-formula" id="toc-first-steps-repeated-integration-and-the-cauchy-formula" class="nav-link" data-scroll-target="#first-steps-repeated-integration-and-the-cauchy-formula"><span class="header-section-number">2.1</span> First Steps: Repeated Integration and the Cauchy Formula</a></li>
+  <li><a href="#memory-in-the-fractional-integral" id="toc-memory-in-the-fractional-integral" class="nav-link" data-scroll-target="#memory-in-the-fractional-integral"><span class="header-section-number">2.2</span> Memory in the Fractional Integral</a></li>
+  <li><a href="#mini-quest-1-the-half-memory" id="toc-mini-quest-1-the-half-memory" class="nav-link" data-scroll-target="#mini-quest-1-the-half-memory"><span class="header-section-number">2.3</span> Mini-Quest 1: The Half-Memory</a></li>
+  <li><a href="#mini-quest-2-comparing-memories" id="toc-mini-quest-2-comparing-memories" class="nav-link" data-scroll-target="#mini-quest-2-comparing-memories"><span class="header-section-number">2.4</span> Mini-Quest 2: Comparing Memories</a>
+  <ul class="collapse">
+  <li><a href="#narrator" id="toc-narrator" class="nav-link" data-scroll-target="#narrator"><span class="header-section-number">2.4.1</span> Narrator</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -152,8 +194,108 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><strong>Characters</strong>:<br>
+- <strong>Acharya Anvaya (Guide/Teacher, continuity of knowledge)</strong><br>
+- <strong>Ananya (Learner, seeker of truth)</strong></p>
+<hr>
+<section id="scene-arrival-at-the-temple" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="scene-arrival-at-the-temple"><span class="header-section-number">2.0.1</span> Scene: Arrival at the Temple</h3>
+<p>Ananya and Acharya Anvaya stand before the <strong>Temple of Smriti (Memory)</strong>. Its walls glow faintly with fading carved Sanskrit verses. Above the arch is inscribed:</p>
+<p><em>“कालः स्मृतिर्नित्यं — Kālaḥ Smṛtir Nityaṁ (Time is eternal memory).”</em></p>
+<hr>
+</section>
+<section id="first-steps-repeated-integration-and-the-cauchy-formula" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="first-steps-repeated-integration-and-the-cauchy-formula"><span class="header-section-number">2.1</span> First Steps: Repeated Integration and the Cauchy Formula</h2>
+<p><strong>Ananya</strong>: Acharya, this place feels mysterious. What lies in this temple?</p>
+<p><strong>Acharya Anvaya</strong>: This is the Temple of Smriti, or memory. It contains the secrets of memory, the key to which lies in the idea of the <em>fractional integral</em>.</p>
+<p><strong>Ananya</strong>: Hmm… the integral is by itself a sort of memory, isn’t it? When we integrate a function from 0 to t:</p>
+<p><span class="math display">\[
+I^1 f(t) = \int_{0}^{t} f(\tau)\, d\tau
+\]</span></p>
+<p>we are collecting its entire past. This is a kind of memory, isn’t it?</p>
+<p><strong>Acharya Anvaya</strong>: You are absolutely right, Ananya! But before the temple reveals its secret, let us recall what happens when we integrate repeatedly.</p>
+<p><strong>Question</strong>: What is the integral of 1?</p>
+<p><strong>Ananya</strong>:</p>
+<p><span class="math display">\[
+I^1 (1)(t) = \int_0^t 1\, d\tau = t.
+\]</span></p>
+<p><strong>Acharya Anvaya</strong>: Good. And integrating once more?</p>
+<p><strong>Ananya</strong>:</p>
+<p><span class="math display">\[
+I^2 (1)(t) = \int_0^t I^1(1)(\tau)\, d\tau = \int_0^t \tau\, d\tau = \frac{t^2}{2!}.
+\]</span></p>
+<p><strong>Acharya Anvaya</strong>: And once more?</p>
+<p><strong>Ananya</strong>:</p>
+<p><span class="math display">\[
+I^3 (1)(t) = \int_0^t I^2(1)(\tau)\, d\tau = \int_0^t \frac{\tau^2}{2}\, d\tau = \frac{t^3}{3!}.
+\]</span></p>
+<p><strong>Acharya Anvaya</strong>: Yes! The <span class="math inline">\(n^{th}\)</span> integral of a function <span class="math inline">\(f(x)\)</span> can be written using the <em>Cauchy formula for repeated integration</em>:<br>
+<span class="math display">\[
+I^n f(t) = \frac{1}{(n-1)!} \int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
+\]</span></p>
+<hr>
+</section>
+<section id="memory-in-the-fractional-integral" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="memory-in-the-fractional-integral"><span class="header-section-number">2.2</span> Memory in the Fractional Integral</h2>
+<p><strong>Acharya Anvaya</strong>: Just as the <em>smriti</em> texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time.</p>
+<p>The wall glows and reveals:</p>
+<p><span class="math display">\[
+(I^\alpha f)(t) = \frac{1}{\Gamma(\alpha)}\int_0^t (t-\tau)^{\alpha-1} f(\tau)\, d\tau.
+\]</span></p>
+<p><strong>Acharya Anvaya</strong>: We just replace factorials by the Gamma function to continue to fractional orders.</p>
+<p><strong>Ananya</strong>: So the past influences the present, but the farther back in time we go, the weaker its pull? <strong>Acharya Anvaya</strong>: Precisely. Like the echo of a conch in the Himalayas — recent notes ring loud, but the first strike still whispers faintly.</p>
+<hr>
+</section>
+<section id="mini-quest-1-the-half-memory" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="mini-quest-1-the-half-memory"><span class="header-section-number">2.3</span> Mini-Quest 1: The Half-Memory</h2>
+<p>Evaluate <span class="math display">\[I^{1/2} (1)\]</span>.</p>
+<p><strong>Answer</strong>:</p>
+<p><span class="math display">\[
+(I^{1/2} 1)(t) = \frac{2}{\sqrt{\pi}}\, t^{1/2}.
+\]</span></p>
+<p><strong>Acharya Anvaya</strong>: Well done, Ananya. You have grasped the essence of fractional memory. You now hold the <strong>Key of Smriti (Memory)</strong>. With it, the temple doors open to the next journey. The fractional integral is like oral tradition: newer retellings weigh more, but the first telling is never fully erased. A smaller <span class="math inline">\(\alpha\)</span> preserves distant past more strongly — like stories handed down for centuries. A larger <span class="math inline">\(\alpha\)</span> emphasizes the near past — like yesterday’s lived experiences.</p>
+<hr>
+</section>
+<section id="mini-quest-2-comparing-memories" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="mini-quest-2-comparing-memories"><span class="header-section-number">2.4</span> Mini-Quest 2: Comparing Memories</h2>
+<p>Which value of () remembers the distant past most strongly?</p>
+<p><strong>Ananya</strong>: Since the kernel is ((t-)^{- 1}), smaller () means slower decay. So the answer is A.</p>
+<p><strong>Acharya Anvaya</strong>: Correct. You understand how the depth of memory depends on (). The temple blesses you with wisdom for the journey ahead. <strong>Ananya</strong>: I am curious to know more about where such memory comes up. ## Dialogue: Stress–Strain in Viscoelastic Fluids</p>
+<p><strong>Acharya Anvaya</strong>:Have you heard of the <em>Hooke’s law</em> in solids? ** Ananya** : Yes! It says:<br>
+<span class="math display">\[
+\sigma(t) = E \, \varepsilon(t).
+\]</span><br>
+The stress responds instantly to strain.</p>
+<p><strong>Acharya Anyaya</strong>: But how does this change for flowing materials?</p>
+<p><strong>Ananya</strong>: from what I know, for purely viscous fluids, <em>Newton’s law</em> governs:<br>
+<span class="math display">\[
+\sigma(t) = \eta \, \frac{d\varepsilon}{dt}(t).
+\]</span></p>
+<p><strong>Acharya Anvaya</strong>: Here stress depends only on the <em>rate</em> of strain at the present moment.</p>
+<p><strong>Ananya</strong>: So both Hooke’s law and Newton’s law speak only of the <em>present</em>. They have no memory of what came before?</p>
+<p><strong>Acharya Anvaya</strong>: Exactly. But the world of polymers is different. These are viscoelastic materials. Their stress at time <span class="math inline">\(t\)</span> remembers the <em>entire history of strain</em>. It is written as:<br>
+<span class="math display">\[
+\sigma(t) = \int_0^t G(t-\tau)\,\frac{d\varepsilon}{d\tau}(\tau)\,d\tau,
+\]</span> where <span class="math inline">\(G\)</span> is the <strong>relaxation kernel</strong> — the weight of memory.</p>
+<p><strong>Ananya</strong>: So the kernel is like the echoing chamber of the temple — weighing the voices of the past according to distance in time?</p>
+<p><strong>Acharya Anvaya</strong>: Precisely. If the kernel is exponential, we hear short-lived echoes: the classical Maxwell-type models. But experiments with polymers show something subtler: a <strong>power-law decay</strong> of memory,<br>
+<span class="math display">\[
+G(t-\tau) \sim (t-\tau)^{-\alpha}, \quad 0&lt;\alpha&lt;1.
+\]</span></p>
+<p><strong>Ananya</strong>: A power law! Then stress never completely forgets — the ancient echoes fade slowly, but they never vanish.</p>
+<p><strong>Acharya Anvaya</strong>: Well said. Substituting this kernel transforms the constitutive relation into:<br>
+<span class="math display">\[
+\sigma(t) = \eta_\alpha \, D_t^\alpha \varepsilon(t),
+\]</span> where <span class="math inline">\(D_t^\alpha\)</span> is a <strong>fractional derivative</strong> of the strain.</p>
+<p><strong>Ananya</strong>: Then when <span class="math inline">\(\alpha=0\)</span>, the memory is eternal — purely elastic. When <span class="math inline">\(\alpha=1\)</span>, memory vanishes quickly — purely viscous. And for <span class="math inline">\(0&lt;\alpha&lt;1\)</span>, we have viscoelasticity, with fading memory that bridges the two.</p>
+<p><strong>Acharya Anvaya</strong>: Exactly! Thus, the language of <em>fractional calculus</em> is the scripture that describes memory in matter — echoing from the temple walls into the world of flowing polymers.</p>
+<section id="narrator" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="narrator"><span class="header-section-number">2.4.1</span> Narrator</h3>
+<p><strong>Narrator</strong>: With the Key of Smriti in hand, Ananya steps through the temple gates. The path ahead leads to the <strong>River of Derivatives</strong></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
