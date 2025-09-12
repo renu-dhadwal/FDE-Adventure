@@ -70,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles/course.css">
 </head>
@@ -156,14 +127,8 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#narrator" id="toc-narrator" class="nav-link active" data-scroll-target="#narrator"><span class="header-section-number">2.0.1</span> Narrator</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -187,31 +152,8 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Ananya</strong>: I am curious to know more about where such memory comes up. ## Dialogue: Stress–Strain in Viscoelastic Fluids</p>
-<p><strong>Acharya Anvaya</strong>:Have you heard of the <em>Hooke’s law</em> in solids? ** Ananya** : Yes! It says:<br>
-[ (t) = E , (t). ]<br>
-The stress responds instantly to strain.</p>
-<p><strong>Acharya Anyaya</strong>: But how does this change for flowing materials?</p>
-<p><strong>Ananya</strong>: from what I know, for purely viscous fluids, <em>Newton’s law</em> governs:<br>
-[ (t) = , (t). ]</p>
-<p><strong>Acharya Anvaya</strong>: Here stress depends only on the <em>rate</em> of strain at the present moment.</p>
-<p><strong>Ananya</strong>: So both Hooke’s law and Newton’s law speak only of the <em>present</em>. They have no memory of what came before?</p>
-<p><strong>Acharya Anvaya</strong>: Exactly. But the world of polymers is different. These are viscoelastic materials. Their stress at time <span class="math inline">\(t\)</span> remembers the <em>entire history of strain</em>. It is written as:<br>
-[ (t) = _0^t G(t-),(),d, ] where (G) is the <strong>relaxation kernel</strong> — the weight of memory.</p>
-<p><strong>Ananya</strong>: So the kernel is like the echoing chamber of the temple — weighing the voices of the past according to distance in time?</p>
-<p><strong>Acharya Anvaya</strong>: Precisely. If the kernel is exponential, we hear short-lived echoes: the classical Maxwell-type models. But experiments with polymers show something subtler: a <strong>power-law decay</strong> of memory,<br>
-[ G(t-) (t-)^{-}, &lt;&lt;1. ]</p>
-<p><strong>Ananya</strong>: A power law! Then stress never completely forgets — the ancient echoes fade slowly, but they never vanish.</p>
-<p><strong>Acharya Anvaya</strong>: Well said. Substituting this kernel transforms the constitutive relation into:<br>
-[ (t) = _, D_t^(t), ] where (D_t^) is a <strong>fractional derivative</strong> of the strain.</p>
-<p><strong>Ananya</strong>: Then when (), the memory is eternal — purely elastic. When (), memory vanishes quickly — purely viscous. And for (0&lt;&lt;1), we have viscoelasticity, with fading memory that bridges the two.</p>
-<p><strong>Acharya Anvaya</strong>: Exactly! Thus, the language of <em>fractional calculus</em> is the scripture that describes memory in matter — echoing from the temple walls into the world of flowing polymers.</p>
-<section id="narrator" class="level3" data-number="2.0.1">
-<h3 data-number="2.0.1" class="anchored" data-anchor-id="narrator"><span class="header-section-number">2.0.1</span> Narrator</h3>
-<p><strong>Narrator</strong>: With the Key of Smriti in hand, Ananya steps through the temple gates. The path ahead leads to the <strong>River of Derivatives</strong></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

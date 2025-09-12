@@ -8,15 +8,5 @@
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Fractional Calculus Adventure</span>"
     ]
-  },
-  {
-    "objectID": "chapters/level1_temple_of_smriti.html",
-    "href": "chapters/level1_temple_of_smriti.html",
-    "title": "2  Level 1 – The Temple of Smriti (Memory)",
-    "section": "",
-    "text": "Ananya: I am curious to know more about where such memory comes up. ## Dialogue: Stress–Strain in Viscoelastic Fluids\nAcharya Anvaya:Have you heard of the Hooke’s law in solids? ** Ananya** : Yes! It says:\n[ (t) = E , (t). ]\nThe stress responds instantly to strain.\nAcharya Anyaya: But how does this change for flowing materials?\nAnanya: from what I know, for purely viscous fluids, Newton’s law governs:\n[ (t) = , (t). ]\nAcharya Anvaya: Here stress depends only on the rate of strain at the present moment.\nAnanya: So both Hooke’s law and Newton’s law speak only of the present. They have no memory of what came before?\nAcharya Anvaya: Exactly. But the world of polymers is different. These are viscoelastic materials. Their stress at time \\(t\\) remembers the entire history of strain. It is written as:\n[ (t) = _0^t G(t-),(),d, ] where (G) is the relaxation kernel — the weight of memory.\nAnanya: So the kernel is like the echoing chamber of the temple — weighing the voices of the past according to distance in time?\nAcharya Anvaya: Precisely. If the kernel is exponential, we hear short-lived echoes: the classical Maxwell-type models. But experiments with polymers show something subtler: a power-law decay of memory,\n[ G(t-) (t-)^{-}, &lt;&lt;1. ]\nAnanya: A power law! Then stress never completely forgets — the ancient echoes fade slowly, but they never vanish.\nAcharya Anvaya: Well said. Substituting this kernel transforms the constitutive relation into:\n[ (t) = _, D_t^(t), ] where (D_t^) is a fractional derivative of the strain.\nAnanya: Then when (), the memory is eternal — purely elastic. When (), memory vanishes quickly — purely viscous. And for (0&lt;&lt;1), we have viscoelasticity, with fading memory that bridges the two.\nAcharya Anvaya: Exactly! Thus, the language of fractional calculus is the scripture that describes memory in matter — echoing from the temple walls into the world of flowing polymers.\n\n2.0.1 Narrator\nNarrator: With the Key of Smriti in hand, Ananya steps through the temple gates. The path ahead leads to the River of Derivatives",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
-    ]
   }
 ]
