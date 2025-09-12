@@ -160,11 +160,28 @@ $$
 $$
 where $D_t^\alpha$ is a **fractional derivative** of the strain.
 
-**Ananya**: Then when $\alpha=0$, the memory is eternal — purely elastic. When $\alpha=1$, memory vanishes quickly — purely viscous. And for $0<\alpha<1$, we have viscoelasticity, with fading memory that bridges the two.
+**Ananya**: But, wait a minute! What in Rama's name is a *fractional derivative*? I don't recognize this symbol!
+
+**Acharya Anvaya**: - For $\alpha = 1$:  
+  $$
+  D_t^1 \varepsilon(t) = \frac{d\varepsilon}{dt}(t),
+  $$  
+  the ordinary derivative, as in Newton’s law of viscosity.
+
+- For $\alpha = 0$:  
+  $$
+  D_t^0 \varepsilon(t) = \varepsilon(t),
+  $$  
+  i.e. the function itself, as in Hooke’s law of elasticity.
+
+- For $0<\alpha<1$:  
+  $D_t^\alpha$ interpolates smoothly between these two extremes,  
+  capturing behavior that is **partly elastic and partly viscous**, also known as **viscoelastic** behaviour.
+
+**Ananya**: So when $\alpha=0$, the memory is eternal — purely elastic. When $\alpha=1$, memory vanishes quickly — purely viscous. And for $0<\alpha<1$, we have viscoelasticity, with fading memory that bridges the two.
 
 **Acharya Anvaya**: Exactly! Thus, the language of *fractional calculus* is the scripture that describes memory in matter — echoing from the temple walls into the world of flowing polymers.
 
-**Ananya**: But, wait a minute! What in Rama's name is a *fractional derivative*? I don't recognize this symbol!
 
 **Acharya Anvaya**: We will learn about fractional derivatives as we go further to the Ganges- The river of derivatives.
 
