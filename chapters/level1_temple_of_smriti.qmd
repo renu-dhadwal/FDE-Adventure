@@ -121,7 +121,7 @@ Which value of $\alpha$ remembers the distant past most strongly?
 
 **Acharya Anvaya**: Have you heard of the *Hooke’s law* in solids?
 
-** Ananya**: Yes! It says:  
+**Ananya**: Yes! It says:  
 $$
 \sigma(t) = E \, \varepsilon(t).
 $$  
@@ -129,7 +129,7 @@ The stress responds instantly to strain.
 
 **Acharya Anyaya**:  But how does this change for flowing materials?
 
-**Ananya**: from what I know, for purely viscous fluids, *Newton’s law* governs:  
+**Ananya**: From what I know, for purely viscous fluids, *Newton’s law* governs:  
 $$
 \sigma(t) = \eta \, \frac{d\varepsilon}{dt}(t).
 $$  
