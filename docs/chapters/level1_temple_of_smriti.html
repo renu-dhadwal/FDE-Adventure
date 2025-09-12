@@ -163,10 +163,7 @@ window.Quarto = {
   <ul>
   <li><a href="#scene-arrival-at-the-temple" id="toc-scene-arrival-at-the-temple" class="nav-link active" data-scroll-target="#scene-arrival-at-the-temple"><span class="header-section-number">2.0.1</span> Scene: Arrival at the Temple</a></li>
   <li><a href="#first-steps-repeated-integration-and-the-cauchy-formula" id="toc-first-steps-repeated-integration-and-the-cauchy-formula" class="nav-link" data-scroll-target="#first-steps-repeated-integration-and-the-cauchy-formula"><span class="header-section-number">2.1</span> First Steps: Repeated Integration and the Cauchy Formula</a></li>
-  <li><a href="#memory-in-the-fractional-integral" id="toc-memory-in-the-fractional-integral" class="nav-link" data-scroll-target="#memory-in-the-fractional-integral"><span class="header-section-number">2.2</span> Memory in the Fractional Integral</a>
-  <ul class="collapse">
-  <li><a href="#scene-definition-on-the-temple-wall" id="toc-scene-definition-on-the-temple-wall" class="nav-link" data-scroll-target="#scene-definition-on-the-temple-wall"><span class="header-section-number">2.2.1</span> Scene: Definition on the Temple Wall</a></li>
-  </ul></li>
+  <li><a href="#memory-in-the-fractional-integral" id="toc-memory-in-the-fractional-integral" class="nav-link" data-scroll-target="#memory-in-the-fractional-integral"><span class="header-section-number">2.2</span> Memory in the Fractional Integral</a></li>
   <li><a href="#mini-quest-1-the-half-memory" id="toc-mini-quest-1-the-half-memory" class="nav-link" data-scroll-target="#mini-quest-1-the-half-memory"><span class="header-section-number">2.3</span> Mini-Quest 1: The Half-Memory</a></li>
   <li><a href="#mini-quest-2-comparing-memories" id="toc-mini-quest-2-comparing-memories" class="nav-link" data-scroll-target="#mini-quest-2-comparing-memories"><span class="header-section-number">2.4</span> Mini-Quest 2: Comparing Memories</a>
   <ul class="collapse">
@@ -203,7 +200,7 @@ window.Quarto = {
 <hr>
 <section id="scene-arrival-at-the-temple" class="level3" data-number="2.0.1">
 <h3 data-number="2.0.1" class="anchored" data-anchor-id="scene-arrival-at-the-temple"><span class="header-section-number">2.0.1</span> Scene: Arrival at the Temple</h3>
-<p>Ananya and Acharya Anvaya stand before the <strong>Temple of Smriti (Memory)</strong>. Its walls glow faintly with carved verses. Above the arch is inscribed:</p>
+<p>Ananya and Acharya Anvaya stand before the <strong>Temple of Smriti (Memory)</strong>. Its walls glow faintly with fading carved Sanskrit verses. Above the arch is inscribed:</p>
 <p><em>“कालः स्मृतिर्नित्यं — Kālaḥ Smṛtir Nityaṁ (Time is eternal memory).”</em></p>
 <hr>
 </section>
@@ -211,7 +208,7 @@ window.Quarto = {
 <h2 data-number="2.1" class="anchored" data-anchor-id="first-steps-repeated-integration-and-the-cauchy-formula"><span class="header-section-number">2.1</span> First Steps: Repeated Integration and the Cauchy Formula</h2>
 <p><strong>Ananya</strong>: Acharya, this place feels mysterious. What lies in this temple? {.student}</p>
 <p><strong>Acharya Anvaya</strong>: This is the Temple of Smriti, or memory. It contains the secrets of memory, the key to which lies in the idea of the <em>fractional integral</em>. {.teacher}</p>
-<p><strong>Ananya</strong>: Hmm… the integral is by itself a sort of memory, isn’t it? When we integrate a function from (0) to (t):</p>
+<p><strong>Ananya</strong>: Hmm… the integral is by itself a sort of memory, isn’t it? When we integrate a function from 0 to t:</p>
 <p><span class="math display">\[
 I^1 f(t) = \int_{0}^{t} f(\tau)\, d\tau
 \]</span></p>
@@ -232,7 +229,7 @@ I^2 (1)(t) = \int_0^t I^1(1)(\tau)\, d\tau = \int_0^t \tau\, d\tau = \frac{t^2}{
 <p><span class="math display">\[
 I^3 (1)(t) = \int_0^t I^2(1)(\tau)\, d\tau = \int_0^t \frac{\tau^2}{2}\, d\tau = \frac{t^3}{3!}.
 \]</span> {.student}</p>
-<p><strong>Acharya Anvaya</strong>: Yes! The (n^{th}) integral of a function (f(t)) can be written using the <em>Cauchy formula for repeated integration</em>:</p>
+<p><strong>Acharya Anvaya</strong>: Yes! The <span class="math inline">\(n^{th}\)</span> integral of a function <span class="math inline">\(f(x)\)</span> can be written using the <em>Cauchy formula for repeated integration</em>:</p>
 <p><span class="math display">\[
 I^n f(t) = \frac{1}{(n-1)!} \int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
 \]</span> {.teacher}</p>
@@ -241,8 +238,6 @@ I^n f(t) = \frac{1}{(n-1)!} \int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
 <section id="memory-in-the-fractional-integral" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="memory-in-the-fractional-integral"><span class="header-section-number">2.2</span> Memory in the Fractional Integral</h2>
 <p><strong>Acharya Anvaya</strong>: Just as the <em>smriti</em> texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time. {.teacher}</p>
-<section id="scene-definition-on-the-temple-wall" class="level3" data-number="2.2.1">
-<h3 data-number="2.2.1" class="anchored" data-anchor-id="scene-definition-on-the-temple-wall"><span class="header-section-number">2.2.1</span> Scene: Definition on the Temple Wall</h3>
 <p>The wall glows and reveals:</p>
 <p><span class="math display">\[
 (I^\alpha f)(t) = \frac{1}{\Gamma(\alpha)}\int_0^t (t-\tau)^{\alpha-1} f(\tau)\, d\tau.
@@ -251,7 +246,6 @@ I^n f(t) = \frac{1}{(n-1)!} \int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
 <p><strong>Ananya</strong>: So the past influences the present, but the farther back in time we go, the weaker its pull? {.student}</p>
 <p><strong>Acharya Anvaya</strong>: Precisely. Like the echo of a conch in the Himalayas — recent notes ring loud, but the first strike still whispers faintly. {.teacher}</p>
 <hr>
-</section>
 </section>
 <section id="mini-quest-1-the-half-memory" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="mini-quest-1-the-half-memory"><span class="header-section-number">2.3</span> Mini-Quest 1: The Half-Memory</h2>

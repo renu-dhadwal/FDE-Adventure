@@ -12,7 +12,7 @@ jupyter: python3
 
 ### Scene: Arrival at the Temple
 
-Ananya and Acharya Anvaya stand before the **Temple of Smriti (Memory)**. Its walls glow faintly with carved verses. Above the arch is inscribed:  
+Ananya and Acharya Anvaya stand before the **Temple of Smriti (Memory)**. Its walls glow faintly with fading carved Sanskrit verses. Above the arch is inscribed:  
 
 *"कालः स्मृतिर्नित्यं — Kālaḥ Smṛtir Nityaṁ (Time is eternal memory)."*
 
@@ -24,7 +24,7 @@ Ananya and Acharya Anvaya stand before the **Temple of Smriti (Memory)**. Its wa
 
 **Acharya Anvaya**: This is the Temple of Smriti, or memory. It contains the secrets of memory, the key to which lies in the idea of the *fractional integral*. {.teacher}
 
-**Ananya**: Hmm… the integral is by itself a sort of memory, isn’t it? When we integrate a function from \(0\) to \(t\):  
+**Ananya**: Hmm… the integral is by itself a sort of memory, isn’t it? When we integrate a function from 0 to t:  
 
 $$
 I^1 f(t) = \int_{0}^{t} f(\tau)\, d\tau
@@ -58,7 +58,7 @@ $$
 I^3 (1)(t) = \int_0^t I^2(1)(\tau)\, d\tau = \int_0^t \frac{\tau^2}{2}\, d\tau = \frac{t^3}{3!}.
 $$ {.student}
 
-**Acharya Anvaya**: Yes! The \(n^{th}\) integral of a function \(f(t)\) can be written using the *Cauchy formula for repeated integration*:  
+**Acharya Anvaya**: Yes! The $n^{th}$ integral of a function $f(x)$ can be written using the *Cauchy formula for repeated integration*:  
 
 $$
 I^n f(t) = \frac{1}{(n-1)!} \int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
@@ -70,7 +70,6 @@ $$ {.teacher}
 
 **Acharya Anvaya**: Just as the *smriti* texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time. {.teacher}
 
-### Scene: Definition on the Temple Wall
 
 The wall glows and reveals:  
 
