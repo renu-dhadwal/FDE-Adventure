@@ -66,13 +66,13 @@ $$
 
 ---
 
-## The Ancient Formula: Riemann–Liouville Integral
+## The Riemann–Liouville Integral
 
 The temple wall shimmers again, and new verses appear, written in flowing Sanskrit:
 
 *"यथा यथा संचितं स्मर्यते, तथा तथैव अनन्तं स्मृतिः — As memory gathers step by step, it stretches into infinity."*
 
-**Acharya Anvaya**: The formula you just derived for integer $n$, Ananya, is not bound to whole numbers alone. The sages extended it further. This is known today as the **Riemann–Liouville fractional integral**:
+**Acharya Anvaya**: The formula you just derived for integer $n$, Ananya, is not bound to whole numbers alone. The Great ones in modern times, **Riemann from Germany** and **Liouville from France** extended it further. This is known today as the **Riemann–Liouville fractional integral**:
 
 $$
 (I^\alpha f)(t) = \frac{1}{\Gamma(\alpha)} \int_0^t (t-\tau)^{\alpha-1} f(\tau)\, d\tau, \qquad \alpha > 0.

@@ -30,11 +30,11 @@
     ]
   },
   {
-    "objectID": "chapters/level1_temple_of_smriti.html#the-ancient-formula-riemannliouville-integral",
-    "href": "chapters/level1_temple_of_smriti.html#the-ancient-formula-riemannliouville-integral",
+    "objectID": "chapters/level1_temple_of_smriti.html#the-riemannliouville-integral",
+    "href": "chapters/level1_temple_of_smriti.html#the-riemannliouville-integral",
     "title": "2  Level 1 – The Temple of Smriti (Memory)",
-    "section": "2.2 The Ancient Formula: Riemann–Liouville Integral",
-    "text": "2.2 The Ancient Formula: Riemann–Liouville Integral\nThe temple wall shimmers again, and new verses appear, written in flowing Sanskrit:\n“यथा यथा संचितं स्मर्यते, तथा तथैव अनन्तं स्मृतिः — As memory gathers step by step, it stretches into infinity.”\nAcharya Anvaya: The formula you just derived for integer \\(n\\), Ananya, is not bound to whole numbers alone. The sages extended it further. This is known today as the Riemann–Liouville fractional integral:\n\\[\n(I^\\alpha f)(t) = \\frac{1}{\\Gamma(\\alpha)} \\int_0^t (t-\\tau)^{\\alpha-1} f(\\tau)\\, d\\tau, \\qquad \\alpha &gt; 0.\n\\]\nAnanya: So it is the same as the Cauchy formula, but with \\((n-1)!\\) replaced by \\(\\Gamma(\\alpha)\\) — allowing \\(\\alpha\\) to be any positive real number?\nAcharya Anvaya: Exactly. This was the leap — from repeated integer steps to a smooth continuum of memory depths. Each value of \\(\\alpha\\) encodes how strongly the past is remembered.",
+    "section": "2.2 The Riemann–Liouville Integral",
+    "text": "2.2 The Riemann–Liouville Integral\nThe temple wall shimmers again, and new verses appear, written in flowing Sanskrit:\n“यथा यथा संचितं स्मर्यते, तथा तथैव अनन्तं स्मृतिः — As memory gathers step by step, it stretches into infinity.”\nAcharya Anvaya: The formula you just derived for integer \\(n\\), Ananya, is not bound to whole numbers alone. The Great ones in modern times, Riemann from Germany and Liouville from France extended it further. This is known today as the Riemann–Liouville fractional integral:\n\\[\n(I^\\alpha f)(t) = \\frac{1}{\\Gamma(\\alpha)} \\int_0^t (t-\\tau)^{\\alpha-1} f(\\tau)\\, d\\tau, \\qquad \\alpha &gt; 0.\n\\]\nAnanya: So it is the same as the Cauchy formula, but with \\((n-1)!\\) replaced by \\(\\Gamma(\\alpha)\\) — allowing \\(\\alpha\\) to be any positive real number?\nAcharya Anvaya: Exactly. This was the leap — from repeated integer steps to a smooth continuum of memory depths. Each value of \\(\\alpha\\) encodes how strongly the past is remembered.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
     ]
