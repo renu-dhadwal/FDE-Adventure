@@ -102,14 +102,15 @@ A larger $\alpha$ emphasizes the near past — like yesterday’s lived experien
 ---
 
 ### Mini-Quest 2: Comparing Memories
+ 
+Which value of $\alpha$ remembers the distant past most strongly?
 
-Which value of $\alpha$ remembers the distant past most strongly?  
-
-\begin{itemize}
-  \item Choice A: $$\alpha = 0.2$$  
-  \item Choice B: $\alpha = 0.5$  
-  \item Choice C: $\alpha = 0.9$  
-\end{itemize}
+- Choice A:  
+  $$\alpha = 0.2$$
+- Choice B:  
+  $$\alpha = 0.5$$
+- Choice C:  
+  $$\alpha = 0.9$$
 
 **Ananya**: Since the kernel is $(t-\tau)^{\alpha - 1}$, smaller $\alpha$ means slower decay. So the answer is A.
 
@@ -163,6 +164,8 @@ where $D_t^\alpha$ is a **fractional derivative** of the strain.
 
 **Acharya Anvaya**: Exactly! Thus, the language of *fractional calculus* is the scripture that describes memory in matter — echoing from the temple walls into the world of flowing polymers.
 
-### Narrator
+**Ananya**: But, wait a minute! What in Rama's name is a *fractional derivative*? I don't recognize this symbol!
+
+**Acharya Anvaya**: We will learn about fractional derivatives as we go further to the Ganges- The river of derivatives.
 
 **Narrator**: With the Key of Smriti in hand, Ananya steps through the temple gates. The path ahead leads to the **River of Derivatives**
