@@ -5,10 +5,8 @@ jupyter: python3
 ---
 
 **Characters**:  
-- **Acharya Anvaya (Guide/Teacher, continuity of knowledge)**
- {.teacher}  
+- **Acharya Anvaya (Guide/Teacher, continuity of knowledge)**  
 - **Ananya (Learner, seeker of truth)**
- {.student}  
 
 ---
 
@@ -23,10 +21,8 @@ Ananya and Acharya Anvaya stand before the **Temple of Smriti (Memory)**. Its wa
 ## First Steps: Repeated Integration and the Cauchy Formula
 
 **Ananya**: Acharya, this place feels mysterious. What lies in this temple?
- {.student}
 
 **Acharya Anvaya**: This is the Temple of Smriti, or memory. It contains the secrets of memory, the key to which lies in the idea of the *fractional integral*.
- {.teacher}
 
 **Ananya**: Hmm… the integral is by itself a sort of memory, isn’t it? When we integrate a function from 0 to t:  
 
@@ -35,10 +31,8 @@ I^1 f(t) = \int_{0}^{t} f(\tau)\, d\tau
 $$
 
 we are collecting its entire past. This is a kind of memory, isn’t it?
- {.student}
 
 **Acharya Anvaya**: You are absolutely right, Ananya! But before the temple reveals its secret, let us recall what happens when we integrate repeatedly.
- {.teacher}
 
 **Question**: What is the integral of \(1\)?  
 
@@ -46,40 +40,35 @@ we are collecting its entire past. This is a kind of memory, isn’t it?
 
 $$
 I^1 (1)(t) = \int_0^t 1\, d\tau = t.
-$$ {.student}
+$$ 
 
 **Acharya Anvaya**: Good. And integrating once more?
- {.teacher}
+ 
 
 **Ananya**:  
 
 $$
 I^2 (1)(t) = \int_0^t I^1(1)(\tau)\, d\tau = \int_0^t \tau\, d\tau = \frac{t^2}{2!}.
 $$
- {.student}
 
 **Acharya Anvaya**: And once more?
- {.teacher}
 
 **Ananya**:  
 
 $$
 I^3 (1)(t) = \int_0^t I^2(1)(\tau)\, d\tau = \int_0^t \frac{\tau^2}{2}\, d\tau = \frac{t^3}{3!}.
 $$
- {.student}
 
 **Acharya Anvaya**: Yes! The $n^{th}$ integral of a function $f(x)$ can be written using the *Cauchy formula for repeated integration*:  
 $$
 I^n f(t) = \frac{1}{(n-1)!} \int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
 $$
- {.teacher}
 
 ---
 
 ## Memory in the Fractional Integral
 
 **Acharya Anvaya**: Just as the *smriti* texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time.
- {.teacher}
 
 
 The wall glows and reveals:  
@@ -89,12 +78,9 @@ $$
 $$
 
 **Acharya Anvaya**: We just replace factorials by the Gamma function to continue to fractional orders.
- {.teacher}
 
 **Ananya**: So the past influences the present, but the farther back in time we go, the weaker its pull?
- {.student}
 **Acharya Anvaya**: Precisely. Like the echo of a conch in the Himalayas — recent notes ring loud, but the first strike still whispers faintly.
- {.teacher}
 
 ---
 
@@ -109,7 +95,6 @@ $$
 $$
 
 **Acharya Anvaya**: Well done, Ananya. You have grasped the essence of fractional memory. You now hold the **Key of Smriti (Memory)**. With it, the temple doors open to the next journey.
- {.teacher}
 The fractional integral is like oral tradition: newer retellings weigh more, but the first telling is never fully erased.
  {.narrator}
 A smaller \(\alpha\) preserves distant past more strongly — like stories handed down for centuries.
@@ -129,9 +114,9 @@ Which value of \(\alpha\) remembers the distant past most strongly?
   \item Choice C: \(\alpha = 0.9\)  
 \end{itemize}
 
-**Ananya**: Since the kernel is \((t-\tau)^{\alpha - 1}\), smaller \(\alpha\) means slower decay. So the answer is A. {.student}
+**Ananya**: Since the kernel is \((t-\tau)^{\alpha - 1}\), smaller \(\alpha\) means slower decay. So the answer is A.
 
-**Acharya Anvaya**: Correct. You understand how the depth of memory depends on \(\alpha\). The temple blesses you with wisdom for the journey ahead. {.teacher}
+**Acharya Anvaya**: Correct. You understand how the depth of memory depends on \(\alpha\). The temple blesses you with wisdom for the journey ahead.
 
 ---
 
