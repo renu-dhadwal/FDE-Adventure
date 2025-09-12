@@ -84,7 +84,7 @@ $$
 
 ---
 
-# Mini-Quest 1: The Half-Memory
+### Mini-Quest 1: The Half-Memory
 
 Evaluate $$I^{1/2} (1)$$.  
 
@@ -101,7 +101,7 @@ A larger $\alpha$ emphasizes the near past — like yesterday’s lived experien
 
 ---
 
-# Mini-Quest 2: Comparing Memories
+### Mini-Quest 2: Comparing Memories
 
 Which value of $\alpha$ remembers the distant past most strongly?  
 
@@ -117,7 +117,7 @@ Which value of $\alpha$ remembers the distant past most strongly?
 
 **Ananya**: I am curious to know more about where such memory comes up.
 
-# Example: Stress–Strain in Viscoelastic Fluids
+### Example: Stress–Strain in Viscoelastic Fluids
 
 **Acharya Anvaya**: Have you heard of the *Hooke’s law* in solids?
 
