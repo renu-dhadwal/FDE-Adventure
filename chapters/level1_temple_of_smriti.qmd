@@ -119,8 +119,9 @@ Which value of $\alpha$ remembers the distant past most strongly?
 
 ## Example: Stress–Strain in Viscoelastic Fluids
 
-**Acharya Anvaya**:Have you heard of the *Hooke’s law* in solids?
-** Ananya** : Yes! It says:  
+**Acharya Anvaya**: Have you heard of the *Hooke’s law* in solids?
+
+** Ananya**: Yes! It says:  
 $$
 \sigma(t) = E \, \varepsilon(t).
 $$  
