@@ -143,6 +143,7 @@ $$
 \sigma(t) = \int_0^t G(t-\tau)\,\frac{d\varepsilon}{d\tau}(\tau)\,d\tau,
 $$
 where $G$ is the **relaxation kernel** — the weight of memory.
+
 **Ananya**: So the kernel is like the echoing chamber of the temple — weighing the voices of the past according to distance in time?
 
 **Acharya Anvaya**: Precisely. If the kernel is exponential, we hear short-lived echoes: the classical Maxwell-type models. But experiments with polymers show something subtler: a **power-law decay** of memory,  
