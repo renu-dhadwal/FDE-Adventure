@@ -163,13 +163,12 @@ window.Quarto = {
   <ul>
   <li><a href="#scene-arrival-at-the-temple" id="toc-scene-arrival-at-the-temple" class="nav-link active" data-scroll-target="#scene-arrival-at-the-temple"><span class="header-section-number">2.0.1</span> Scene: Arrival at the Temple</a></li>
   <li><a href="#first-steps-repeated-integration-and-the-cauchy-formula" id="toc-first-steps-repeated-integration-and-the-cauchy-formula" class="nav-link" data-scroll-target="#first-steps-repeated-integration-and-the-cauchy-formula"><span class="header-section-number">2.1</span> First Steps: Repeated Integration and the Cauchy Formula</a></li>
-  <li><a href="#the-riemannliouville-integral" id="toc-the-riemannliouville-integral" class="nav-link" data-scroll-target="#the-riemannliouville-integral"><span class="header-section-number">2.2</span> The Riemann–Liouville Integral</a></li>
-  <li><a href="#memory-in-the-fractional-integral" id="toc-memory-in-the-fractional-integral" class="nav-link" data-scroll-target="#memory-in-the-fractional-integral"><span class="header-section-number">2.3</span> Memory in the Fractional Integral</a>
+  <li><a href="#the-riemannliouville-integral" id="toc-the-riemannliouville-integral" class="nav-link" data-scroll-target="#the-riemannliouville-integral"><span class="header-section-number">2.2</span> The Riemann–Liouville Integral</a>
   <ul class="collapse">
-  <li><a href="#mini-quest-1-the-half-memory" id="toc-mini-quest-1-the-half-memory" class="nav-link" data-scroll-target="#mini-quest-1-the-half-memory"><span class="header-section-number">2.3.1</span> Mini-Quest 1: The Half-Memory</a></li>
-  <li><a href="#mini-quest-2-comparing-memories" id="toc-mini-quest-2-comparing-memories" class="nav-link" data-scroll-target="#mini-quest-2-comparing-memories"><span class="header-section-number">2.3.2</span> Mini-Quest 2: Comparing Memories</a></li>
+  <li><a href="#mini-quest-1-the-half-memory" id="toc-mini-quest-1-the-half-memory" class="nav-link" data-scroll-target="#mini-quest-1-the-half-memory"><span class="header-section-number">2.2.1</span> Mini-Quest 1: The Half-Memory</a></li>
+  <li><a href="#mini-quest-2-comparing-memories" id="toc-mini-quest-2-comparing-memories" class="nav-link" data-scroll-target="#mini-quest-2-comparing-memories"><span class="header-section-number">2.2.2</span> Mini-Quest 2: Comparing Memories</a></li>
   </ul></li>
-  <li><a href="#example-stressstrain-in-viscoelastic-fluids" id="toc-example-stressstrain-in-viscoelastic-fluids" class="nav-link" data-scroll-target="#example-stressstrain-in-viscoelastic-fluids"><span class="header-section-number">2.4</span> Example: Stress–Strain in Viscoelastic Fluids</a></li>
+  <li><a href="#example-stressstrain-in-viscoelastic-fluids" id="toc-example-stressstrain-in-viscoelastic-fluids" class="nav-link" data-scroll-target="#example-stressstrain-in-viscoelastic-fluids"><span class="header-section-number">2.3</span> Example: Stress–Strain in Viscoelastic Fluids</a></li>
   </ul>
 </nav>
     </div>
@@ -246,21 +245,12 @@ I^n f(t) = \frac{1}{(n-1)!}\int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
 \]</span></p>
 <p><strong>Ananya</strong>: So it is the same as the Cauchy formula, but with <span class="math inline">\((n-1)!\)</span> replaced by <span class="math inline">\(\Gamma(\alpha)\)</span> — allowing <span class="math inline">\(\alpha\)</span> to be any positive real number?</p>
 <p><strong>Acharya Anvaya</strong>: Exactly. This was the leap — from repeated integer steps to a smooth continuum of memory depths. Each value of <span class="math inline">\(\alpha\)</span> encodes how strongly the past is remembered.</p>
-<hr>
-</section>
-<section id="memory-in-the-fractional-integral" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="memory-in-the-fractional-integral"><span class="header-section-number">2.3</span> Memory in the Fractional Integral</h2>
 <p><strong>Acharya Anvaya</strong>: Just as the <em>smriti</em> texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time.</p>
-<p>The wall glows and reveals:</p>
-<p><span class="math display">\[
-(I^\alpha f)(t) = \frac{1}{\Gamma(\alpha)}\int_0^t (t-\tau)^{\alpha-1} f(\tau)\, d\tau.
-\]</span></p>
-<p><strong>Acharya Anvaya</strong>: We just replace factorials by the Gamma function to continue to fractional orders.</p>
 <p><strong>Ananya</strong>: So the past influences the present, but the farther back in time we go, the weaker its pull?</p>
 <p><strong>Acharya Anvaya</strong>: Precisely. Like the echo of a conch in the Himalayas — recent notes ring loud, but the first strike still whispers faintly.</p>
 <hr>
-<section id="mini-quest-1-the-half-memory" class="level3" data-number="2.3.1">
-<h3 data-number="2.3.1" class="anchored" data-anchor-id="mini-quest-1-the-half-memory"><span class="header-section-number">2.3.1</span> Mini-Quest 1: The Half-Memory</h3>
+<section id="mini-quest-1-the-half-memory" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="mini-quest-1-the-half-memory"><span class="header-section-number">2.2.1</span> Mini-Quest 1: The Half-Memory</h3>
 <p>Evaluate <span class="math inline">\(I^{1/2}(1)\)</span>.</p>
 <p><strong>Answer</strong>:</p>
 <p><span class="math display">\[
@@ -272,8 +262,8 @@ I^n f(t) = \frac{1}{(n-1)!}\int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
 A larger <span class="math inline">\(\alpha\)</span> emphasizes the near past — like yesterday’s lived experiences.</p>
 <hr>
 </section>
-<section id="mini-quest-2-comparing-memories" class="level3" data-number="2.3.2">
-<h3 data-number="2.3.2" class="anchored" data-anchor-id="mini-quest-2-comparing-memories"><span class="header-section-number">2.3.2</span> Mini-Quest 2: Comparing Memories</h3>
+<section id="mini-quest-2-comparing-memories" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="mini-quest-2-comparing-memories"><span class="header-section-number">2.2.2</span> Mini-Quest 2: Comparing Memories</h3>
 <p>Which value of <span class="math inline">\(\alpha\)</span> remembers the distant past most strongly?</p>
 <ul>
 <li>Choice A: <span class="math inline">\(\alpha = 0.2\)</span><br>
@@ -288,8 +278,8 @@ A larger <span class="math inline">\(\alpha\)</span> emphasizes the near past �
 <hr>
 </section>
 </section>
-<section id="example-stressstrain-in-viscoelastic-fluids" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="example-stressstrain-in-viscoelastic-fluids"><span class="header-section-number">2.4</span> Example: Stress–Strain in Viscoelastic Fluids</h2>
+<section id="example-stressstrain-in-viscoelastic-fluids" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="example-stressstrain-in-viscoelastic-fluids"><span class="header-section-number">2.3</span> Example: Stress–Strain in Viscoelastic Fluids</h2>
 <p><strong>Acharya Anvaya</strong>: Have you heard of Hooke’s law in solids?</p>
 <p><strong>Ananya</strong>: Yes! It says:<br>
 <span class="math display">\[

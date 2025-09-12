@@ -82,19 +82,9 @@ $$
 
 **Acharya Anvaya**: Exactly. This was the leap — from repeated integer steps to a smooth continuum of memory depths. Each value of $\alpha$ encodes how strongly the past is remembered.
 
----
-
-## Memory in the Fractional Integral
 
 **Acharya Anvaya**: Just as the *smriti* texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time.
 
-The wall glows and reveals:
-
-$$
-(I^\alpha f)(t) = \frac{1}{\Gamma(\alpha)}\int_0^t (t-\tau)^{\alpha-1} f(\tau)\, d\tau.
-$$
-
-**Acharya Anvaya**: We just replace factorials by the Gamma function to continue to fractional orders.
 
 **Ananya**: So the past influences the present, but the farther back in time we go, the weaker its pull?
 
