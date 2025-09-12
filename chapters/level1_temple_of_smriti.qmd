@@ -106,7 +106,7 @@ A larger $\alpha$ emphasizes the near past — like yesterday’s lived experien
 Which value of $\alpha$ remembers the distant past most strongly?  
 
 \begin{itemize}
-  \item Choice A: $\alpha = 0.2$  
+  \item Choice A: $$\alpha = 0.2$$  
   \item Choice B: $\alpha = 0.5$  
   \item Choice C: $\alpha = 0.9$  
 \end{itemize}
@@ -114,8 +114,10 @@ Which value of $\alpha$ remembers the distant past most strongly?
 **Ananya**: Since the kernel is $(t-\tau)^{\alpha - 1}$, smaller $\alpha$ means slower decay. So the answer is A.
 
 **Acharya Anvaya**: Correct. You understand how the depth of memory depends on $\alpha$. The temple blesses you with wisdom for the journey ahead.
+
 **Ananya**: I am curious to know more about where such memory comes up.
-## Dialogue: Stress–Strain in Viscoelastic Fluids
+
+## Example: Stress–Strain in Viscoelastic Fluids
 
 **Acharya Anvaya**:Have you heard of the *Hooke’s law* in solids?
 ** Ananya** : Yes! It says:  
