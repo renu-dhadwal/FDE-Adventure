@@ -14,17 +14,7 @@
     "href": "chapters/level1_temple_of_smriti.html",
     "title": "2  Level 1 – The Temple of Smriti (Memory)",
     "section": "",
-    "text": "2.0.1 Scene: Arrival at the Temple\nCharacters:\n- Acharya Anvaya (Guide/Teacher, continuity of knowledge)\n- Ananya (Learner, seeker of truth)\nAnanya and Acharya Anvaya stand before the Temple of Smriti (Memory). Its walls glow faintly with fading carved Sanskrit verses. Above the arch is inscribed:\n“कालः स्मृतिर्नित्यं — Kālaḥ Smṛtir Nityaṁ (Time is eternal memory).”",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/level1_temple_of_smriti.html#first-steps-repeated-integration-and-the-cauchy-formula",
-    "href": "chapters/level1_temple_of_smriti.html#first-steps-repeated-integration-and-the-cauchy-formula",
-    "title": "2  Level 1 – The Temple of Smriti (Memory)",
-    "section": "2.1 First Steps: Repeated Integration and the Cauchy Formula",
-    "text": "2.1 First Steps: Repeated Integration and the Cauchy Formula\nAnanya: Acharya, this place feels mysterious. What lies in this temple?\nAcharya Anvaya: This is the Temple of Smriti, or memory. It contains the secrets of memory, the key to which lies in the idea of the fractional integral.\nAnanya: Hmm… the integral is by itself a sort of memory, isn’t it? When we integrate a function from 0 to t:\n\\[\nI^1 f(t) = \\int_{0}^{t} f(\\tau)\\, d\\tau\n\\]\nwe are collecting its entire past. This is a kind of memory, isn’t it?\nAcharya Anvaya: You are absolutely right, Ananya! But before the temple reveals its secret, let us recall what happens when we integrate repeatedly.\nQuestion: What is the integral of 1?\nAnanya:\n\\[\nI^1 (1)(t) = \\int_0^t 1\\, d\\tau = t.\n\\]\nAcharya Anvaya: Good. And integrating once more?\nAnanya:\n\\[\nI^2 (1)(t) = \\int_0^t I^1(1)(\\tau)\\, d\\tau = \\int_0^t \\tau\\, d\\tau = \\frac{t^2}{2!}.\n\\]\nAcharya Anvaya: And once more?\nAnanya:\n\\[\nI^3 (1)(t) = \\int_0^t I^2(1)(\\tau)\\, d\\tau = \\int_0^t \\frac{\\tau^2}{2}\\, d\\tau = \\frac{t^3}{3!}.\n\\]\nAcharya Anvaya: Yes! The \\(n^{th}\\) integral of a function \\(f(x)\\) can be written using the Cauchy formula for repeated integration:\n\\[\nI^n f(t) = \\frac{1}{(n-1)!} \\int_0^t (t-\\tau)^{\\,n-1} f(\\tau)\\, d\\tau.\n\\]",
+    "text": "2.1 First Steps: Repeated Integration and the Cauchy Formula\nCharacters:\n- Acharya Anvaya (Guide/Teacher, continuity of knowledge)\n- Ananya (Learner, seeker of truth)\nScene: Arrival at the Temple\nAnanya and Acharya Anvaya stand before the Temple of Smriti (Memory). Its walls glow faintly with fading carved Sanskrit verses. Above the arch is inscribed:\n“कालः स्मृतिर्नित्यं — Kālaḥ Smṛtir Nityaṁ (Time is eternal memory).”\nAnanya: Acharya, this place feels mysterious. What lies in this temple?\nAcharya Anvaya: This is the Temple of Smriti, or memory. It contains the secrets of memory, the key to which lies in the idea of the fractional integral.\nAnanya: Hmm… the integral is by itself a sort of memory, isn’t it? When we integrate a function from 0 to t:\n\\[\nI^1 f(t) = \\int_{0}^{t} f(\\tau)\\, d\\tau\n\\]\nwe are collecting its entire past. This is a kind of memory, isn’t it?\nAcharya Anvaya: You are absolutely right, Ananya! But before the temple reveals its secret, let us recall what happens when we integrate repeatedly.\nQuestion: What is the integral of 1?\nAnanya:\n\\[\nI^1 (1)(t) = \\int_0^t 1\\, d\\tau = t.\n\\]\nAcharya Anvaya: Good. And integrating once more?\nAnanya:\n\\[\nI^2 (1)(t) = \\int_0^t I^1(1)(\\tau)\\, d\\tau = \\int_0^t \\tau\\, d\\tau = \\frac{t^2}{2!}.\n\\]\nAcharya Anvaya: And once more?\nAnanya:\n\\[\nI^3 (1)(t) = \\int_0^t I^2(1)(\\tau)\\, d\\tau = \\int_0^t \\frac{\\tau^2}{2}\\, d\\tau = \\frac{t^3}{3!}.\n\\]\nAcharya Anvaya: Yes! The \\(n^{th}\\) integral of a function \\(f(x)\\) can be written using the Cauchy formula for repeated integration:\n\\[\nI^n f(t) = \\frac{1}{(n-1)!} \\int_0^t (t-\\tau)^{\\,n-1} f(\\tau)\\, d\\tau.\n\\]",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
     ]
@@ -35,36 +25,6 @@
     "title": "2  Level 1 – The Temple of Smriti (Memory)",
     "section": "2.2 Memory in the Fractional Integral",
     "text": "2.2 Memory in the Fractional Integral\nAcharya Anvaya: Just as the smriti texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time.\nThe wall glows and reveals:\n\\[\n(I^\\alpha f)(t) = \\frac{1}{\\Gamma(\\alpha)}\\int_0^t (t-\\tau)^{\\alpha-1} f(\\tau)\\, d\\tau.\n\\]\nAcharya Anvaya: We just replace factorials by the Gamma function to continue to fractional orders.\nAnanya: So the past influences the present, but the farther back in time we go, the weaker its pull? Acharya Anvaya: Precisely. Like the echo of a conch in the Himalayas — recent notes ring loud, but the first strike still whispers faintly.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/level1_temple_of_smriti.html#mini-quest-1-the-half-memory",
-    "href": "chapters/level1_temple_of_smriti.html#mini-quest-1-the-half-memory",
-    "title": "2  Level 1 – The Temple of Smriti (Memory)",
-    "section": "2.3 Mini-Quest 1: The Half-Memory",
-    "text": "2.3 Mini-Quest 1: The Half-Memory\nEvaluate \\[I^{1/2} (1)\\].\nAnswer:\n\\[\n(I^{1/2} 1)(t) = \\frac{2}{\\sqrt{\\pi}}\\, t^{1/2}.\n\\]\nAcharya Anvaya: Well done, Ananya. You have grasped the essence of fractional memory. You now hold the Key of Smriti (Memory). With it, the temple doors open to the next journey. The fractional integral is like oral tradition: newer retellings weigh more, but the first telling is never fully erased. A smaller \\(\\alpha\\) preserves distant past more strongly — like stories handed down for centuries. A larger \\(\\alpha\\) emphasizes the near past — like yesterday’s lived experiences.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/level1_temple_of_smriti.html#mini-quest-2-comparing-memories",
-    "href": "chapters/level1_temple_of_smriti.html#mini-quest-2-comparing-memories",
-    "title": "2  Level 1 – The Temple of Smriti (Memory)",
-    "section": "2.4 Mini-Quest 2: Comparing Memories",
-    "text": "2.4 Mini-Quest 2: Comparing Memories\nWhich value of \\(\\alpha\\) remembers the distant past most strongly?\nAnanya: Since the kernel is \\((t-\\tau)^{\\alpha - 1}\\), smaller \\(\\alpha\\) means slower decay. So the answer is A.\nAcharya Anvaya: Correct. You understand how the depth of memory depends on \\(\\alpha\\). The temple blesses you with wisdom for the journey ahead.\nAnanya: I am curious to know more about where such memory comes up.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/level1_temple_of_smriti.html#example-stressstrain-in-viscoelastic-fluids",
-    "href": "chapters/level1_temple_of_smriti.html#example-stressstrain-in-viscoelastic-fluids",
-    "title": "2  Level 1 – The Temple of Smriti (Memory)",
-    "section": "2.5 Example: Stress–Strain in Viscoelastic Fluids",
-    "text": "2.5 Example: Stress–Strain in Viscoelastic Fluids\nAcharya Anvaya: Have you heard of the Hooke’s law in solids?\n** Ananya**: Yes! It says:\n\\[\n\\sigma(t) = E \\, \\varepsilon(t).\n\\]\nThe stress responds instantly to strain.\nAcharya Anyaya: But how does this change for flowing materials?\nAnanya: from what I know, for purely viscous fluids, Newton’s law governs:\n\\[\n\\sigma(t) = \\eta \\, \\frac{d\\varepsilon}{dt}(t).\n\\]\nAcharya Anvaya: Here stress depends only on the rate of strain at the present moment.\nAnanya: So both Hooke’s law and Newton’s law speak only of the present. They have no memory of what came before?\nAcharya Anvaya: Exactly. But the world of polymers is different. These are viscoelastic materials. Their stress at time \\(t\\) remembers the entire history of strain. It is written as:\n\\[\n\\sigma(t) = \\int_0^t G(t-\\tau)\\,\\frac{d\\varepsilon}{d\\tau}(\\tau)\\,d\\tau,\n\\] where \\(G\\) is the relaxation kernel — the weight of memory.\nAnanya: So the kernel is like the echoing chamber of the temple — weighing the voices of the past according to distance in time?\nAcharya Anvaya: Precisely. If the kernel is exponential, we hear short-lived echoes: the classical Maxwell-type models. But experiments with polymers show something subtler: a power-law decay of memory,\n\\[\nG(t-\\tau) \\sim (t-\\tau)^{-\\alpha}, \\quad 0&lt;\\alpha&lt;1.\n\\]\nAnanya: A power law! Then stress never completely forgets — the ancient echoes fade slowly, but they never vanish.\nAcharya Anvaya: Well said. Substituting this kernel transforms the constitutive relation into:\n\\[\n\\sigma(t) = \\eta_\\alpha \\, D_t^\\alpha \\varepsilon(t),\n\\] where \\(D_t^\\alpha\\) is a fractional derivative of the strain.\nAnanya: Then when \\(\\alpha=0\\), the memory is eternal — purely elastic. When \\(\\alpha=1\\), memory vanishes quickly — purely viscous. And for \\(0&lt;\\alpha&lt;1\\), we have viscoelasticity, with fading memory that bridges the two.\nAcharya Anvaya: Exactly! Thus, the language of fractional calculus is the scripture that describes memory in matter — echoing from the temple walls into the world of flowing polymers.\n\n2.5.1 Narrator\nNarrator: With the Key of Smriti in hand, Ananya steps through the temple gates. The path ahead leads to the River of Derivatives",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
     ]

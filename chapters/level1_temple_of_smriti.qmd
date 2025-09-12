@@ -10,7 +10,7 @@ jupyter: python3
 
 ---
 
-### Scene: Arrival at the Temple
+Scene: Arrival at the Temple
 
 Ananya and Acharya Anvaya stand before the **Temple of Smriti (Memory)**. Its walls glow faintly with fading carved Sanskrit verses. Above the arch is inscribed:  
 
@@ -84,7 +84,7 @@ $$
 
 ---
 
-## Mini-Quest 1: The Half-Memory
+# Mini-Quest 1: The Half-Memory
 
 Evaluate $$I^{1/2} (1)$$.  
 
@@ -101,7 +101,7 @@ A larger $\alpha$ emphasizes the near past — like yesterday’s lived experien
 
 ---
 
-## Mini-Quest 2: Comparing Memories
+# Mini-Quest 2: Comparing Memories
 
 Which value of $\alpha$ remembers the distant past most strongly?  
 
@@ -117,7 +117,7 @@ Which value of $\alpha$ remembers the distant past most strongly?
 
 **Ananya**: I am curious to know more about where such memory comes up.
 
-## Example: Stress–Strain in Viscoelastic Fluids
+# Example: Stress–Strain in Viscoelastic Fluids
 
 **Acharya Anvaya**: Have you heard of the *Hooke’s law* in solids?
 
@@ -143,7 +143,6 @@ $$
 \sigma(t) = \int_0^t G(t-\tau)\,\frac{d\varepsilon}{d\tau}(\tau)\,d\tau,
 $$
 where $G$ is the **relaxation kernel** — the weight of memory.
-
 **Ananya**: So the kernel is like the echoing chamber of the temple — weighing the voices of the past according to distance in time?
 
 **Acharya Anvaya**: Precisely. If the kernel is exponential, we hear short-lived echoes: the classical Maxwell-type models. But experiments with polymers show something subtler: a **power-law decay** of memory,  
