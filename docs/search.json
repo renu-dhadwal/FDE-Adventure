@@ -124,9 +124,49 @@
     "href": "chapters/level2_river_of_derivatives.html#mini-exercises-rules-of-the-river",
     "title": "3  Level 2 – The River of Derivatives",
     "section": "3.7 Mini-Exercises: Rules of the River",
-    "text": "3.7 Mini-Exercises: Rules of the River\n\nExercise 1. Constant function\nCompute \\({}^C D_t^{1/2} (5)\\).\nAnswer: \\(0\\).\n\n\nExercise 2. Power function\nCompute \\({}^C D_t^{1/2} (t^3)\\).\nAnswer: \\(\\dfrac{\\Gamma(4)}{\\Gamma(3.5)} \\, t^{2.5}\\).\n\n\nExercise 3. Exponential\nCompute \\({}^C D_t^{1/2} (e^{2t})\\).\nAnswer: \\(\\sqrt{2}\\, e^{2t}\\).\n\n\nExercise 4. Trigonometric\nCompute \\({}^C D_t^{1/2} (\\sin t)\\).\nAnswer: \\(\\sin\\!\\left(t + \\tfrac{\\pi}{4}\\right)\\).\n\n\nExercise 5. RL vs Caputo\nShow that for \\(f(t)=t\\):\n- \\({}^C D_t^{1/2}(t) = 0\\),\n- \\(D_t^{1/2}(t) = \\dfrac{\\Gamma(2)}{\\Gamma(1.5)}\\, t^{0.5}\\).\n\n\n\nNarrator: With these rules in hand, Ananya feels prepared. The boats glide ashore, and the River of Derivatives is behind them. Ahead lies the Forest of Equations, where memory and change entwine into full differential equations. The next stage of the journey begins.",
+    "text": "3.7 Mini-Exercises: Rules of the River\n\nExercise 1. Constant function\nCompute \\({}^C D_t^{1/2} (5)\\).\nAnswer: \\(0\\).\n\n\nExercise 2. Power function\nCompute \\({}^C D_t^{1/2} (t^3)\\).\nAnswer: \\(\\dfrac{\\Gamma(4)}{\\Gamma(3.5)} \\, t^{2.5}\\).\n\n\nExercise 3. Exponential\nCompute \\({}^C D_t^{1/2} (e^{2t})\\).\nAnswer: \\(\\sqrt{2}\\, e^{2t}\\).\n\n\nExercise 4. Trigonometric\nCompute \\({}^C D_t^{1/2} (\\sin t)\\).\nAnswer: \\(\\sin\\!\\left(t + \\tfrac{\\pi}{4}\\right)\\).\n\n\nExercise 5. RL vs Caputo\nShow that for \\(f(t)=t\\):\n- \\({}^C D_t^{1/2}(t) = 0\\),\n- \\(D_t^{1/2}(t) = \\dfrac{\\Gamma(2)}{\\Gamma(1.5)}\\, t^{0.5}\\).\n\n\n\nNarrator: With these rules in hand, Ananya feels prepared. The boats glide ashore, and the River of Derivatives is behind them. Ahead lies the Grove of expanions. The next stage of the journey begins.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_5_grove_of_expansions.html",
+    "href": "chapters/level2_5_grove_of_expansions.html",
+    "title": "4  Level 2.5 – The Grove of Expansions",
+    "section": "",
+    "text": "4.0.1 Scene: The Grove of Expansions\nCharacters:\n- Acharya Anvaya (Guide/Teacher, continuity of knowledge)\n- Ananya (Learner, seeker of truth)\nAnanya and Acharya leave the boats behind and walk into a quiet grove of trees. The branches seem to stretch infinitely, each sprouting smaller and smaller twigs.\nAnanya: These trees look endless, Acharya. Each branch divides into more branches, and so on forever.\nAcharya Anvaya: Exactly, Ananya. Just as trees expand endlessly, so too can a function expand in terms of its derivatives. You know this in ordinary calculus as the Taylor expansion.\nAnanya: Yes, where a function \\(f(t)\\) is expressed as an infinite sum involving its derivatives at \\(t=0\\).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Level 2.5 – The Grove of Expansions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_5_grove_of_expansions.html#from-classical-to-fractional-taylor-expansion",
+    "href": "chapters/level2_5_grove_of_expansions.html#from-classical-to-fractional-taylor-expansion",
+    "title": "4  Level 2.5 – The Grove of Expansions",
+    "section": "4.1 From Classical to Fractional Taylor Expansion",
+    "text": "4.1 From Classical to Fractional Taylor Expansion\n\nClassical Taylor formula (order \\(m\\)):\n\\[\nf(t) = \\sum_{k=0}^{m-1} \\frac{f^{(k)}(0)}{k!}\\, t^k \\;+\\; R_m(t),\n\\]\nwith remainder\n\\[\nR_m(t) = \\frac{1}{(m-1)!} \\int_0^t (t-\\tau)^{m-1} f^{(m)}(\\tau)\\, d\\tau.\n\\]\n\nAcharya Anvaya: Now, in the language of memory, we can generalize this formula. Instead of the \\(m\\)-th derivative, we allow a fractional order \\(\\alpha\\).\n\nFractional Taylor formula (Caputo)\nFor \\(m-1 &lt; \\alpha \\le m\\),\n\\[\nf(t) = \\sum_{k=0}^{m-1} \\frac{f^{(k)}(0)}{k!}\\, t^k\n\\;+\\; \\frac{1}{\\Gamma(\\alpha)} \\int_0^t (t-\\tau)^{\\alpha-1}\\, {}^C D_t^\\alpha f(\\tau)\\, d\\tau.\n\\]\n\nAnanya: So the beginning looks like the classical expansion, but the remainder now contains a fractional derivative instead of an integer one.\nAcharya Anvaya: Precisely. The forest of expansions stretches into the fractional realm 🌿. The remainder term is a memory integral, showing how past values influence the approximation.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Level 2.5 – The Grove of Expansions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_5_grove_of_expansions.html#example-exponential-function",
+    "href": "chapters/level2_5_grove_of_expansions.html#example-exponential-function",
+    "title": "4  Level 2.5 – The Grove of Expansions",
+    "section": "4.2 Example: Exponential Function",
+    "text": "4.2 Example: Exponential Function\nAnanya: Can we try this with a familiar function, like \\(f(t)=e^t\\)?\nAcharya Anvaya: Of course. Note that \\(f^{(k)}(0)=1\\) for all \\(k\\).\n\nFor \\(m=1\\), \\(\\alpha \\in (0,1]\\), the expansion is:\n\\[\ne^t = 1 \\;+\\; \\frac{1}{\\Gamma(\\alpha)} \\int_0^t (t-\\tau)^{\\alpha-1}\\, {}^C D_t^\\alpha e^\\tau\\, d\\tau.\n\\]\nBut \\({}^C D_t^\\alpha e^\\tau = 1^\\alpha e^\\tau = e^\\tau\\),\nso the remainder is\n\\[\n\\frac{1}{\\Gamma(\\alpha)} \\int_0^t (t-\\tau)^{\\alpha-1} e^\\tau\\, d\\tau.\n\\]\n\nAnanya: That integral looks like a weighted memory of the exponential.\nAcharya Anvaya: Exactly. For \\(\\alpha=1\\), it reduces to the ordinary Taylor remainder.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Level 2.5 – The Grove of Expansions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_5_grove_of_expansions.html#mini-exercises-grove-practice",
+    "href": "chapters/level2_5_grove_of_expansions.html#mini-exercises-grove-practice",
+    "title": "4  Level 2.5 – The Grove of Expansions",
+    "section": "4.3 Mini-Exercises: Grove Practice",
+    "text": "4.3 Mini-Exercises: Grove Practice\n\nExercise 1. Constant function\nShow that the fractional Taylor formula for \\(f(t)=1\\) reduces to \\(f(t)=1\\) with zero remainder.\n\n\nExercise 2. Linear function\nApply the fractional Taylor formula to \\(f(t)=t\\).\nHint: Remember \\({}^C D_t^\\alpha (t)=0\\) for \\(0&lt;\\alpha\\le1\\).\n\n\nExercise 3. Exponential comparison\nCompute the first two classical Taylor terms for \\(e^t\\) and compare with the fractional expansion remainder when \\(\\alpha=1/2\\).\n\n\n\nNarrator: Among the trees of the grove, Ananya learns how expansions can carry memory into infinite branches. With this tool in hand, she steps onward, ready to face the Forest of Equations, where entire systems of fractional order await.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Level 2.5 – The Grove of Expansions</span>"
     ]
   }
 ]

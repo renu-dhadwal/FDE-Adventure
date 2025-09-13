@@ -243,6 +243,6 @@ Show that for $f(t)=t$:
 
 <div class="narrator-box">
 
-**Narrator**: With these rules in hand, Ananya feels prepared. The boats glide ashore, and the River of Derivatives is behind them. Ahead lies the **Forest of Equations**, where memory and change entwine into full differential equations. The next stage of the journey begins.
+**Narrator**: With these rules in hand, Ananya feels prepared. The boats glide ashore, and the River of Derivatives is behind them. Ahead lies the **Grove of expanions**. The next stage of the journey begins.
 
 </div>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Level 2 – The River of Derivatives – Fractional Calculus Adventure</title>
+<title>4&nbsp; Level 2.5 – The Grove of Expansions – Fractional Calculus Adventure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/level2_5_grove_of_expansions.html" rel="next">
-<link href="../chapters/level1_temple_of_smriti.html" rel="prev">
+<link href="../chapters/level2_river_of_derivatives.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -113,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/level2_river_of_derivatives.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Level 2 – The River of Derivatives</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/level2_5_grove_of_expansions.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Level 2.5 – The Grove of Expansions</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -154,13 +153,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/level2_river_of_derivatives.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/level2_river_of_derivatives.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Level 2 – The River of Derivatives</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/level2_5_grove_of_expansions.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/level2_5_grove_of_expansions.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Level 2.5 – The Grove of Expansions</span></span></a>
   </div>
 </li>
@@ -174,17 +173,10 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#scene-arrival-at-the-river" id="toc-scene-arrival-at-the-river" class="nav-link active" data-scroll-target="#scene-arrival-at-the-river"><span class="header-section-number">3.0.1</span> Scene: Arrival at the River</a></li>
-  <li><a href="#rigorous-definitions" id="toc-rigorous-definitions" class="nav-link" data-scroll-target="#rigorous-definitions"><span class="header-section-number">3.1</span> Rigorous Definitions</a></li>
-  <li><a href="#comparison-at-a-glance" id="toc-comparison-at-a-glance" class="nav-link" data-scroll-target="#comparison-at-a-glance"><span class="header-section-number">3.2</span> Comparison at a Glance</a></li>
-  <li><a href="#worked-example-power-functions" id="toc-worked-example-power-functions" class="nav-link" data-scroll-target="#worked-example-power-functions"><span class="header-section-number">3.3</span> Worked Example: Power Functions</a></li>
-  <li><a href="#worked-example-caputo-derivative-of-power-functions" id="toc-worked-example-caputo-derivative-of-power-functions" class="nav-link" data-scroll-target="#worked-example-caputo-derivative-of-power-functions"><span class="header-section-number">3.4</span> Worked Example: Caputo Derivative of Power Functions</a>
-  <ul class="collapse">
-  <li><a href="#mini-quest-compare-rl-and-caputo" id="toc-mini-quest-compare-rl-and-caputo" class="nav-link" data-scroll-target="#mini-quest-compare-rl-and-caputo"><span class="header-section-number">3.4.1</span> Mini-Quest: Compare RL and Caputo</a></li>
-  </ul></li>
-  <li><a href="#worked-example-exponentials" id="toc-worked-example-exponentials" class="nav-link" data-scroll-target="#worked-example-exponentials"><span class="header-section-number">3.5</span> Worked Example: Exponentials</a></li>
-  <li><a href="#rules-of-the-river-caputo-properties" id="toc-rules-of-the-river-caputo-properties" class="nav-link" data-scroll-target="#rules-of-the-river-caputo-properties"><span class="header-section-number">3.6</span> Rules of the River (Caputo Properties)</a></li>
-  <li><a href="#mini-exercises-rules-of-the-river" id="toc-mini-exercises-rules-of-the-river" class="nav-link" data-scroll-target="#mini-exercises-rules-of-the-river"><span class="header-section-number">3.7</span> Mini-Exercises: Rules of the River</a></li>
+  <li><a href="#scene-the-grove-of-expansions" id="toc-scene-the-grove-of-expansions" class="nav-link active" data-scroll-target="#scene-the-grove-of-expansions"><span class="header-section-number">4.0.1</span> Scene: The Grove of Expansions</a></li>
+  <li><a href="#from-classical-to-fractional-taylor-expansion" id="toc-from-classical-to-fractional-taylor-expansion" class="nav-link" data-scroll-target="#from-classical-to-fractional-taylor-expansion"><span class="header-section-number">4.1</span> From Classical to Fractional Taylor Expansion</a></li>
+  <li><a href="#example-exponential-function" id="toc-example-exponential-function" class="nav-link" data-scroll-target="#example-exponential-function"><span class="header-section-number">4.2</span> Example: Exponential Function</a></li>
+  <li><a href="#mini-exercises-grove-practice" id="toc-mini-exercises-grove-practice" class="nav-link" data-scroll-target="#mini-exercises-grove-practice"><span class="header-section-number">4.3</span> Mini-Exercises: Grove Practice</a></li>
   </ul>
 </nav>
     </div>
@@ -193,7 +185,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Level 2 – The River of Derivatives</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Level 2.5 – The Grove of Expansions</span></h1>
 </div>
 
 
@@ -214,205 +206,76 @@ window.Quarto = {
 - <strong>Acharya Anvaya (Guide/Teacher, continuity of knowledge)</strong><br>
 - <strong>Ananya (Learner, seeker of truth)</strong></p>
 <hr>
-<section id="scene-arrival-at-the-river" class="level3" data-number="3.0.1">
-<h3 data-number="3.0.1" class="anchored" data-anchor-id="scene-arrival-at-the-river"><span class="header-section-number">3.0.1</span> Scene: Arrival at the River</h3>
-<p>With the Key of Smriti in hand, Ananya steps beyond the temple gates. A wide river flows before her, restless and shining. On the shore rest <strong>two boats</strong>, each with a carved name: <em>Riemann–Liouville</em> and <em>Caputo</em>.</p>
-<p><strong>Ananya</strong>: Two boats? Which one do we take to cross the River of Derivatives?</p>
-<p><strong>Acharya Anvaya</strong>: Both will carry you across, but their way of remembering the river differs. One boat remembers everything since the river’s source 🌊; the other begins its memory only when you step aboard 🚤 — that is, when you set your initial conditions.</p>
+<section id="scene-the-grove-of-expansions" class="level3" data-number="4.0.1">
+<h3 data-number="4.0.1" class="anchored" data-anchor-id="scene-the-grove-of-expansions"><span class="header-section-number">4.0.1</span> Scene: The Grove of Expansions</h3>
+<p>Ananya and Acharya leave the boats behind and walk into a quiet grove of trees. The branches seem to stretch infinitely, each sprouting smaller and smaller twigs.</p>
+<p><strong>Ananya</strong>: These trees look endless, Acharya. Each branch divides into more branches, and so on forever.</p>
+<p><strong>Acharya Anvaya</strong>: Exactly, Ananya. Just as trees expand endlessly, so too can a function expand in terms of its derivatives. You know this in ordinary calculus as the <strong>Taylor expansion</strong>.</p>
+<p><strong>Ananya</strong>: Yes, where a function <span class="math inline">\(f(t)\)</span> is expressed as an infinite sum involving its derivatives at <span class="math inline">\(t=0\)</span>.</p>
 <hr>
 </section>
-<section id="rigorous-definitions" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="rigorous-definitions"><span class="header-section-number">3.1</span> Rigorous Definitions</h2>
-<p><strong>Acharya Anvaya</strong>: Let us be precise. Suppose <span class="math inline">\(n-1 &lt; \alpha \leq n\)</span> with <span class="math inline">\(n \in \mathbb{N}\)</span>.</p>
+<section id="from-classical-to-fractional-taylor-expansion" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="from-classical-to-fractional-taylor-expansion"><span class="header-section-number">4.1</span> From Classical to Fractional Taylor Expansion</h2>
 <div class="rule-box">
-<p><strong>Riemann–Liouville fractional derivative</strong></p>
+<p><strong>Classical Taylor formula</strong> (order <span class="math inline">\(m\)</span>):</p>
 <p><span class="math display">\[
-D_t^\alpha f(t) = \frac{d^n}{dt^n}\, I^{\,n-\alpha} f(t)
-= \frac{1}{\Gamma(n-\alpha)}\frac{d^n}{dt^n}\int_0^t (t-\tau)^{\,n-\alpha-1} f(\tau)\,d\tau.
+f(t) = \sum_{k=0}^{m-1} \frac{f^{(k)}(0)}{k!}\, t^k \;+\; R_m(t),
+\]</span></p>
+<p>with remainder</p>
+<p><span class="math display">\[
+R_m(t) = \frac{1}{(m-1)!} \int_0^t (t-\tau)^{m-1} f^{(m)}(\tau)\, d\tau.
 \]</span></p>
 </div>
+<p><strong>Acharya Anvaya</strong>: Now, in the language of memory, we can generalize this formula. Instead of the <span class="math inline">\(m\)</span>-th derivative, we allow a fractional order <span class="math inline">\(\alpha\)</span>.</p>
 <div class="rule-box">
-<p><strong>Caputo fractional derivative</strong></p>
+<p><strong>Fractional Taylor formula (Caputo)</strong></p>
+<p>For <span class="math inline">\(m-1 &lt; \alpha \le m\)</span>,</p>
 <p><span class="math display">\[
-{}^C D_t^\alpha f(t) =
-I^{\,n-\alpha} f^{(n)}(t)
-= \frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
+f(t) = \sum_{k=0}^{m-1} \frac{f^{(k)}(0)}{k!}\, t^k
+\;+\; \frac{1}{\Gamma(\alpha)} \int_0^t (t-\tau)^{\alpha-1}\, {}^C D_t^\alpha f(\tau)\, d\tau.
 \]</span></p>
 </div>
-<p><strong>Ananya</strong>: So the difference is: Riemann–Liouville differentiates <em>after</em> integrating, while Caputo differentiates <em>before</em> integrating?</p>
-<p><strong>Acharya Anvaya</strong>: Exactly. Two boats across the same river — same waters, different journeys 😇.</p>
+<p><strong>Ananya</strong>: So the beginning looks like the classical expansion, but the remainder now contains a <strong>fractional derivative</strong> instead of an integer one.</p>
+<p><strong>Acharya Anvaya</strong>: Precisely. The forest of expansions stretches into the fractional realm 🌿. The remainder term is a <em>memory integral</em>, showing how past values influence the approximation.</p>
 <hr>
 </section>
-<section id="comparison-at-a-glance" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="comparison-at-a-glance"><span class="header-section-number">3.2</span> Comparison at a Glance</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 42%">
-<col style="width: 37%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Aspect</th>
-<th>Riemann–Liouville</th>
-<th>Caputo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Formula</td>
-<td><span class="math inline">\(D^\alpha f = \dfrac{d^n}{dt^n} I^{n-\alpha} f\)</span></td>
-<td><span class="math inline">\({}^C D^\alpha f = I^{n-\alpha} f^{(n)}\)</span></td>
-</tr>
-<tr class="even">
-<td>Memory starts</td>
-<td>From <span class="math inline">\(t=0\)</span> (full history)</td>
-<td>From problem start (with <span class="math inline">\(f^{(n)}\)</span>)</td>
-</tr>
-<tr class="odd">
-<td>Initial conditions</td>
-<td>Involve fractional integrals</td>
-<td>Classical: <span class="math inline">\(f(0), f'(0), \dots\)</span></td>
-</tr>
-<tr class="even">
-<td>Common use</td>
-<td>Pure math / theory</td>
-<td>Physics / engineering</td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-<section id="worked-example-power-functions" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="worked-example-power-functions"><span class="header-section-number">3.3</span> Worked Example: Power Functions</h2>
+<section id="example-exponential-function" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="example-exponential-function"><span class="header-section-number">4.2</span> Example: Exponential Function</h2>
+<p><strong>Ananya</strong>: Can we try this with a familiar function, like <span class="math inline">\(f(t)=e^t\)</span>?</p>
+<p><strong>Acharya Anvaya</strong>: Of course. Note that <span class="math inline">\(f^{(k)}(0)=1\)</span> for all <span class="math inline">\(k\)</span>.</p>
 <div class="rule-box">
-<p>For the Riemann–Liouville derivative of <span class="math inline">\(t^\beta\)</span> (<span class="math inline">\(\beta &gt; -1\)</span>):</p>
+<p>For <span class="math inline">\(m=1\)</span>, <span class="math inline">\(\alpha \in (0,1]\)</span>, the expansion is:</p>
 <p><span class="math display">\[
-D_t^\alpha \, t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} \, t^{\beta-\alpha}.
+e^t = 1 \;+\; \frac{1}{\Gamma(\alpha)} \int_0^t (t-\tau)^{\alpha-1}\, {}^C D_t^\alpha e^\tau\, d\tau.
+\]</span></p>
+<p>But <span class="math inline">\({}^C D_t^\alpha e^\tau = 1^\alpha e^\tau = e^\tau\)</span>,<br>
+so the remainder is</p>
+<p><span class="math display">\[
+\frac{1}{\Gamma(\alpha)} \int_0^t (t-\tau)^{\alpha-1} e^\tau\, d\tau.
 \]</span></p>
 </div>
-<p><strong>Example</strong>: with <span class="math inline">\(\alpha = \tfrac{1}{2}\)</span> and <span class="math inline">\(f(t)=t^2\)</span>:</p>
-<p><span class="math display">\[
-D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{3/2}.
-\]</span></p>
+<p><strong>Ananya</strong>: That integral looks like a weighted memory of the exponential.</p>
+<p><strong>Acharya Anvaya</strong>: Exactly. For <span class="math inline">\(\alpha=1\)</span>, it reduces to the ordinary Taylor remainder.</p>
 <hr>
 </section>
-<section id="worked-example-caputo-derivative-of-power-functions" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="worked-example-caputo-derivative-of-power-functions"><span class="header-section-number">3.4</span> Worked Example: Caputo Derivative of Power Functions</h2>
-<div class="rule-box">
-<ul>
-<li>If <span class="math inline">\(f(t) = t^\beta\)</span> with <span class="math inline">\(\beta \leq n-1\)</span>, then <span class="math inline">\({}^C D_t^\alpha f(t) = 0\)</span>.<br>
-</li>
-<li>If <span class="math inline">\(\beta &gt; n-1\)</span>, then</li>
-</ul>
-<p><span class="math display">\[
-{}^C D_t^\alpha t^\beta
-= \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
-\]</span></p>
-</div>
-<p>So for most powers, Riemann–Liouville and Caputo agree, but for low-degree polynomials, Caputo derivatives vanish.</p>
-<hr>
-<section id="mini-quest-compare-rl-and-caputo" class="level3" data-number="3.4.1">
-<h3 data-number="3.4.1" class="anchored" data-anchor-id="mini-quest-compare-rl-and-caputo"><span class="header-section-number">3.4.1</span> Mini-Quest: Compare RL and Caputo</h3>
-<div class="exercise-box">
-<p><strong>Task</strong>: Compute the Riemann–Liouville and Caputo derivatives of <span class="math inline">\(f(t)=t^2\)</span> for <span class="math inline">\(\alpha = \tfrac12\)</span>.</p>
-<ul>
-<li><p><strong>Riemann–Liouville</strong>:<br>
-<span class="math display">\[
-D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
-\]</span></p></li>
-<li><p><strong>Caputo</strong>:<br>
-<span class="math display">\[
-{}^C D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
-\]</span></p></li>
-</ul>
-<p><strong>Observation</strong>: For this function, both definitions give the same result.</p>
-</div>
-<hr>
-</section>
-</section>
-<section id="worked-example-exponentials" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="worked-example-exponentials"><span class="header-section-number">3.5</span> Worked Example: Exponentials</h2>
-<div class="rule-box">
-<p>For exponentials:</p>
-<p><span class="math display">\[
-D_t^\alpha e^{\lambda t} = {}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
-\]</span></p>
-</div>
-<p><strong>Ananya</strong>: Beautiful! The exponential remains its own shape, and <span class="math inline">\(\lambda\)</span> is lifted to a fractional power.</p>
-<p><strong>Acharya Anvaya</strong>: Exactly. Exponentials are the eigenfunctions of fractional derivatives. <strong>Ananya</strong>: 😇</p>
-<hr>
-</section>
-<section id="rules-of-the-river-caputo-properties" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="rules-of-the-river-caputo-properties"><span class="header-section-number">3.6</span> Rules of the River (Caputo Properties)</h2>
-<div class="rule-box">
-<p><strong>Rule 1. Linearity</strong></p>
-<p>For constants <span class="math inline">\(c_1, c_2\)</span> and functions <span class="math inline">\(f, g\)</span>:</p>
-<p><span class="math display">\[
-{}^C D_t^\alpha (c_1 f(t) + c_2 g(t))
-= c_1 \, {}^C D_t^\alpha f(t) + c_2 \, {}^C D_t^\alpha g(t).
-\]</span></p>
-</div>
-<div class="rule-box">
-<p><strong>Rule 2. Constants and Polynomials</strong></p>
-<ul>
-<li>For a constant <span class="math inline">\(C\)</span>, <span class="math inline">\({}^C D_t^\alpha C = 0\)</span>.<br>
-</li>
-<li>For <span class="math inline">\(t^\beta\)</span> with <span class="math inline">\(\beta = 0,1,\dots,n-1\)</span>, <span class="math inline">\({}^C D_t^\alpha t^\beta = 0\)</span>.<br>
-</li>
-<li>For <span class="math inline">\(\beta &gt; n-1\)</span>,<br>
-<span class="math display">\[
-{}^C D_t^\alpha t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
-\]</span></li>
-</ul>
-</div>
-<div class="rule-box">
-<p><strong>Rule 3. Exponentials and Trigonometric Functions</strong></p>
-<ul>
-<li><span class="math inline">\({}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}\)</span>.<br>
-</li>
-<li><span class="math inline">\({}^C D_t^\alpha \sin(\omega t) = \omega^\alpha \sin\!\left(\omega t + \tfrac{\pi\alpha}{2}\right)\)</span>.<br>
-</li>
-<li><span class="math inline">\({}^C D_t^\alpha \cos(\omega t) = \omega^\alpha \cos\!\left(\omega t + \tfrac{\pi\alpha}{2}\right)\)</span>.</li>
-</ul>
-</div>
-<div class="rule-box">
-<p><strong>Rule 4. Product and Chain Rules (Caution!)</strong></p>
-<p>Unlike classical derivatives, Caputo derivatives <strong>do not</strong> have simple product or chain rules. Use linearity safely, but treat products/compositions with care.</p>
-</div>
-<hr>
-</section>
-<section id="mini-exercises-rules-of-the-river" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="mini-exercises-rules-of-the-river"><span class="header-section-number">3.7</span> Mini-Exercises: Rules of the River</h2>
+<section id="mini-exercises-grove-practice" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="mini-exercises-grove-practice"><span class="header-section-number">4.3</span> Mini-Exercises: Grove Practice</h2>
 <div class="exercise-box">
 <p><strong>Exercise 1. Constant function</strong><br>
-Compute <span class="math inline">\({}^C D_t^{1/2} (5)\)</span>.</p>
-<p><strong>Answer</strong>: <span class="math inline">\(0\)</span>.</p>
+Show that the fractional Taylor formula for <span class="math inline">\(f(t)=1\)</span> reduces to <span class="math inline">\(f(t)=1\)</span> with zero remainder.</p>
 </div>
 <div class="exercise-box">
-<p><strong>Exercise 2. Power function</strong><br>
-Compute <span class="math inline">\({}^C D_t^{1/2} (t^3)\)</span>.</p>
-<p><strong>Answer</strong>: <span class="math inline">\(\dfrac{\Gamma(4)}{\Gamma(3.5)} \, t^{2.5}\)</span>.</p>
+<p><strong>Exercise 2. Linear function</strong><br>
+Apply the fractional Taylor formula to <span class="math inline">\(f(t)=t\)</span>.<br>
+Hint: Remember <span class="math inline">\({}^C D_t^\alpha (t)=0\)</span> for <span class="math inline">\(0&lt;\alpha\le1\)</span>.</p>
 </div>
 <div class="exercise-box">
-<p><strong>Exercise 3. Exponential</strong><br>
-Compute <span class="math inline">\({}^C D_t^{1/2} (e^{2t})\)</span>.</p>
-<p><strong>Answer</strong>: <span class="math inline">\(\sqrt{2}\, e^{2t}\)</span>.</p>
-</div>
-<div class="exercise-box">
-<p><strong>Exercise 4. Trigonometric</strong><br>
-Compute <span class="math inline">\({}^C D_t^{1/2} (\sin t)\)</span>.</p>
-<p><strong>Answer</strong>: <span class="math inline">\(\sin\!\left(t + \tfrac{\pi}{4}\right)\)</span>.</p>
-</div>
-<div class="exercise-box">
-<p><strong>Exercise 5. RL vs Caputo</strong><br>
-Show that for <span class="math inline">\(f(t)=t\)</span>:<br>
-- <span class="math inline">\({}^C D_t^{1/2}(t) = 0\)</span>,<br>
-- <span class="math inline">\(D_t^{1/2}(t) = \dfrac{\Gamma(2)}{\Gamma(1.5)}\, t^{0.5}\)</span>.</p>
+<p><strong>Exercise 3. Exponential comparison</strong><br>
+Compute the first two classical Taylor terms for <span class="math inline">\(e^t\)</span> and compare with the fractional expansion remainder when <span class="math inline">\(\alpha=1/2\)</span>.</p>
 </div>
 <hr>
 <div class="narrator-box">
-<p><strong>Narrator</strong>: With these rules in hand, Ananya feels prepared. The boats glide ashore, and the River of Derivatives is behind them. Ahead lies the <strong>Grove of expanions</strong>. The next stage of the journey begins.</p>
+<p><strong>Narrator</strong>: Among the trees of the grove, Ananya learns how expansions can carry memory into infinite branches. With this tool in hand, she steps onward, ready to face the <strong>Forest of Equations</strong>, where entire systems of fractional order await.</p>
 </div>
 
 
@@ -821,14 +684,11 @@ Show that for <span class="math inline">\(f(t)=t\)</span>:<br>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/level1_temple_of_smriti.html" class="pagination-link" aria-label="Level 1 – The Temple of Smriti (Memory)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Level 1 – The Temple of Smriti (Memory)</span></span>
+      <a href="../chapters/level2_river_of_derivatives.html" class="pagination-link" aria-label="Level 2 – The River of Derivatives">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Level 2 – The River of Derivatives</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/level2_5_grove_of_expansions.html" class="pagination-link" aria-label="Level 2.5 – The Grove of Expansions">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Level 2.5 – The Grove of Expansions</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
