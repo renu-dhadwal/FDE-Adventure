@@ -58,9 +58,7 @@ $$
 
 ## Worked Example: Power Functions
 
-**Ananya**: Can we compute something concrete?
-
-**Acharya Anvaya**: Yes. For the Riemann–Liouville derivative of $t^\beta$ ($\beta > -1$):
+**Acharya Anvaya**: For the Riemann–Liouville derivative of $t^\beta$ ($\beta > -1$):
 
 $$
 D_t^\alpha \, t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} \, t^{\beta-\alpha}.
@@ -71,118 +69,65 @@ $$
 **Acharya Anvaya**: Correct. For example, with $\alpha = \tfrac{1}{2}$ and $f(t)=t^2$:
 
 $$
-D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{1.5}.
+D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{3/2}.
 $$
 
 ---
 
-## Worked Example: Exponential Functions
+## Worked Example: Caputo Derivative of Power Functions
 
-**Acharya Anvaya**: For the exponential, something elegant happens:
-
-$$
-D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
-$$
-
-**Ananya**: Just as the ordinary derivative gives $\lambda e^{\lambda t}$, now the order $\alpha$ raises $\lambda$ to a fractional power?
-
-**Acharya Anvaya**: Exactly. This is why exponentials are the “eigenfunctions” of fractional derivatives.
-
----
-## Example: computing the Caputo derivative
-
-Recall the Caputo derivative (for \(n-1<\alpha\le n\)):
+**Acharya Anvaya**: For the Caputo derivative, recall:
 
 $$
-{}^C D_t^\alpha f(t)
-= \frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
+{}^C D_t^\alpha f(t) =
+\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\, d\tau.
 $$
 
-### Caputo derivative of a power \(t^\beta\)
-
-Let \(f(t)=t^\beta\) with \(\beta>-1\). Compute \({}^C D_t^\alpha t^\beta\).
-If \(\beta\) is a nonnegative integer with \(\beta\le n-1\), then \(f^{(n)}\equiv0\) and
-
-$$
-{}^C D_t^\alpha t^\beta = 0 \qquad (\beta =0,1,\dots,n-1).
-$$
-
-If \(\beta > n-1\), differentiate inside the integral and evaluate with the Beta function:
-
-\[
-\begin{aligned}
-{}^C D_t^\alpha t^\beta
-&= \frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} \frac{d^n}{d\tau^n}\tau^\beta\, d\tau \\
-&= \frac{\Gamma(\beta+1)}{\Gamma(\beta-n+1)\,\Gamma(n-\alpha)}
-  \int_0^t (t-\tau)^{\,n-\alpha-1}\tau^{\beta-n}\, d\tau.
-\end{aligned}
-\]
-
-Use the substitution \(\tau = t u\) and the Beta integral
-\(\displaystyle \int_0^1 u^{p-1}(1-u)^{q-1}\,du = B(p,q)=\frac{\Gamma(p)\Gamma(q)}{\Gamma(p+q)}\).
-This yields
+- If $f(t) = t^\beta$ with $\beta \leq n-1$, then ${}^C D_t^\alpha f(t) = 0$.  
+- If $\beta > n-1$, then
 
 $$
 {}^C D_t^\alpha t^\beta
 = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
 $$
 
-So — for \(\beta > n-1\) — the Caputo derivative of a power has the same closed form as the Riemann–Liouville derivative:
-
-$$
-{}^C D_t^\alpha t^\beta
-= \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
-$$
+So for most powers, Riemann–Liouville and Caputo agree, but for low-degree polynomials, Caputo derivatives vanish.
 
 ---
 
-### Concrete example: \(\alpha=\tfrac{1}{2}\), \(f(t)=t^2\)
+### Mini-Quest: Compare RL and Caputo
 
-Here \(n=1\) (because \(0<\tfrac12\le1\)) and \(\beta=2>n-1=0\). Apply the formula:
+**Task**: Compute the Riemann–Liouville and Caputo derivatives of $f(t)=t^2$ for $\alpha = \tfrac12$.
+
+- **Riemann–Liouville**:
 
 $$
-{}^C D_t^{1/2} t^2
-= \frac{\Gamma(3)}{\Gamma(3-\tfrac12)}\, t^{2-\tfrac12}
-= \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
+D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
 $$
 
-(You can rewrite the Gamma values if you like: \(\Gamma(3)=2\), \(\Gamma(2.5)=\tfrac{3}{4}\sqrt{\pi}\), so the constant equals \(2/(\tfrac{3}{4}\sqrt{\pi})=\tfrac{8}{3\sqrt{\pi}}\).)
+- **Caputo**:
+
+$$
+{}^C D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
+$$
+
+**Observation**: For this function, both definitions give the same result.
+
+**Acharya Anvaya**: But remember — for low-degree polynomials or problems with initial data, the two boats may diverge.
 
 ---
 
-### Caputo derivative of the exponential
+## Worked Example: Exponentials
 
-For sufficiently regular (analytic) functions such as \(f(t)=e^{\lambda t}\), one obtains the familiar eigenfunction property:
+**Acharya Anvaya**: For exponentials, both boats sing the same melody:
 
 $$
-{}^C D_t^\alpha e^{\lambda t} \;=\; \lambda^\alpha e^{\lambda t},
+D_t^\alpha e^{\lambda t} \;=\; {}^C D_t^\alpha e^{\lambda t} \;=\; \lambda^\alpha e^{\lambda t}.
 $$
 
-under the usual conventions (this holds when the fractional operator acts on the entire causal exponential; small caveats about branches of \(\lambda^\alpha\) apply if \(\lambda\) is complex).
+**Ananya**: Beautiful! The exponential remains its own shape, and $\lambda$ is lifted to a fractional power.
 
----
-
-### Remarks (practical takeaways)
-
-- **Low-degree polynomials:** Caputo derivatives of polynomials of degree \(<n\) vanish — this is why Caputo is convenient for initial-value problems: classical initial data \(f(0),f'(0),\dots\) enter naturally.  
-- **Matching with RL:** For sufficiently smooth powers (or analytic functions) the Caputo and Riemann–Liouville formulas often coincide (they produce the same closed form); the *difference* is mainly in how initial conditions are represented.  
-- **Interpretation:** The factor \(t^{\beta-\alpha}\) shows the fractional derivative reduces the power by \(\alpha\) and rescales by Gamma factors — a precise interpolation between integer-order calculus results.
-
-
-### Mini-Quest: Elastic, Viscous, Viscoelastic
-
-Match each $\alpha$ to the behavior:
-
-1. $\alpha = 0$  
-2. $\alpha = 1$  
-3. $0<\alpha<1$
-
-Choices: purely elastic / purely viscous / viscoelastic (fading memory)
-
-**Answer**:  
-- $\alpha = 0$: purely elastic  
-- $\alpha = 1$: purely viscous  
-- $0<\alpha<1$: viscoelastic
+**Acharya Anvaya**: Exactly. Exponentials are the eigenfunctions of fractional derivatives.
 
 ---
 
