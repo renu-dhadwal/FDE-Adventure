@@ -1,12 +1,30 @@
 ---
-title: "Real Analysis Dialogues"
+title: "Dialogues in Real Analysis"
 format: html
 ---
 
-# Real Analysis Dialogues
+# Welcome
 
-**A dialogue-driven course and interactive resource on Real Analysis.**
+This book presents Real Analysis concepts through dialogues between **Lila** (the student) and **Acharya Bhaskara** (the teacher).  
+The style is conversational, but the mathematics is rigorous.  
 
-Start here:
+## 📚 Chapters
 
-- [Chapter 2 – Completeness](chapters/Completeness.qmd)
+1. Completeness of the Real Numbers  
+2. Limits of Sequences  
+3. Continuity  
+4. Differentiation  
+5. Integration  
+6. Infinite Series  
+
+*(More dialogues will be added as the course progresses.)*  
+
+---
+
+## How to Use This Book
+
+- Each chapter begins with a **question from Lila** and develops through a dialogue.  
+- Formal **definitions and theorems** appear in boxed statements.  
+- You’ll find **“Try it yourself” checkpoints** where you can pause and work through examples.  
+
+Happy learning! ✨
