@@ -1,0 +1,62 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Real Analysis Dialogues",
+    "section": "",
+    "text": "1 Real Analysis Dialogues\nA dialogue-driven course and interactive resource on Real Analysis.\nStart here:\n\nChapter 2 – Completeness",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Real Analysis Dialogues</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/Completeness.html",
+    "href": "chapters/Completeness.html",
+    "title": "2  Dialogue: Why Real Numbers?",
+    "section": "",
+    "text": "3 📖 Dialogue: Why Real Numbers?\nLila:\n“Acharya, we already have natural numbers, integers, rationals. Why do we need real numbers? Aren’t rationals enough?”\nAcharya Bhaskara:\n“That is a wise question, Lila. Let us test the rationals. Can you think of a number whose square is 2?”\nLila:\n“Well… if I try,\n- \\[1.4^2 = 1.96\\],\n- \\[1.41^2 = 1.9881\\],\n- \\[1.414^2 = 1.999396\\]…\nWe get closer, but never exactly 2.”\nAcharya Bhaskara:\n“So, do you think there is a rational number \\[q\\] with \\[q^2 = 2\\]?”\nLila:\n“No. I’ve seen the proof that \\[\\sqrt{2}\\] is irrational.”\nAcharya Bhaskara:\n“Correct. But notice this: even if \\[\\sqrt{2}\\] is not rational, we can approximate it as closely as we like using rationals — 1.4, 1.41, 1.414… The rationals are dense: between any two rationals, there is another. Yet something is still missing.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Dialogue: Why Real Numbers?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/Completeness.html#bounds",
+    "href": "chapters/Completeness.html#bounds",
+    "title": "2  Dialogue: Why Real Numbers?",
+    "section": "3.1 🔹 Bounds",
+    "text": "3.1 🔹 Bounds\nAcharya Bhaskara:\n“Let us capture this rigorously. Consider the set\n\\[ S = \\{ x \\in \\mathbb{Q} : x^2 &lt; 2 \\}. \\]\nIs there a number that is always greater than every element of this set?”\nLila:\n“Sure, 2 is bigger than all of them. So is 1.5, or 1.42.”\nAcharya Bhaskara:\n“Exactly. We call such numbers upper bounds. But among them, some are tighter than others. Which number feels like the ‘tightest’ upper bound?”\nLila:\n“It should be \\[\\sqrt{2}\\], since that’s where the set stops.”\nAcharya Bhaskara:\n“Indeed. But here is the problem: \\[\\sqrt{2}\\] is not in \\[\\mathbb{Q}\\]. So the rationals cannot capture the least upper bound of this set.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Dialogue: Why Real Numbers?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/Completeness.html#supremum",
+    "href": "chapters/Completeness.html#supremum",
+    "title": "2  Dialogue: Why Real Numbers?",
+    "section": "3.2 🔹 Supremum",
+    "text": "3.2 🔹 Supremum\nAcharya Bhaskara:\n“This brings us to a definition:\n\nAn upper bound of a set \\[A \\subset \\mathbb{R}\\] is a number \\[M\\] such that \\[x \\leq M\\] for all \\[x \\in A\\].\n\nThe least upper bound (also called the supremum) is the smallest such \\[M\\], if it exists.”\n\nLila:\n“So the problem with rationals is that some sets don’t have a supremum inside them?”\nAcharya Bhaskara:\n“Precisely. The rationals are dense but incomplete. The missing piece is the completeness property of the reals.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Dialogue: Why Real Numbers?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/Completeness.html#completeness-axiom",
+    "href": "chapters/Completeness.html#completeness-axiom",
+    "title": "2  Dialogue: Why Real Numbers?",
+    "section": "3.3 🔹 Completeness Axiom",
+    "text": "3.3 🔹 Completeness Axiom\nAcharya Bhaskara:\n“The defining property of the real numbers is this:\n\nCompleteness Axiom: Every nonempty set of real numbers that is bounded above has a least upper bound (supremum) in \\[\\mathbb{R}\\].\n\nThis axiom is what makes the real line whole.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Dialogue: Why Real Numbers?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/Completeness.html#returning-to-s",
+    "href": "chapters/Completeness.html#returning-to-s",
+    "title": "2  Dialogue: Why Real Numbers?",
+    "section": "3.4 🔹 Returning to \\[S\\]",
+    "text": "3.4 🔹 Returning to \\[S\\]\nLila:\n“So for \\[S = \\{ x : x^2 &lt; 2 \\}\\], the supremum is \\[\\sqrt{2}\\], which does exist in \\[\\mathbb{R}\\].”\nAcharya Bhaskara:\n“Exactly. And that, Lila, is the difference between rationals and reals. Completeness fills the gaps and makes the real line continuous. Without it, calculus itself would crumble.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Dialogue: Why Real Numbers?</span>"
+    ]
+  }
+]

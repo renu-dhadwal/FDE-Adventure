@@ -1,0 +1,19 @@
+project:
+  type: book
+  output-dir: docs   # GitHub Pages will serve from docs/
+
+book:
+  title: "Dialogues in Real Analysis"
+  author: "Renu Dhadwal"
+  chapters:
+    - index.qmd
+    - chapters/level1_completeness.qmd
+    - chapters/level2_limits.qmd
+    - chapters/level3_continuity.qmd
+    # add more as you write them
+
+format:
+  html:
+    theme: cosmo    # clean bootstrap theme
+    toc: true
+    number-sections: true
