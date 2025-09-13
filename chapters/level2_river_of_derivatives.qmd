@@ -16,7 +16,7 @@ With the Key of Smriti in hand, Ananya steps beyond the temple gates. A wide riv
 
 **Ananya**: Two boats? Which one do we take to cross the River of Derivatives?
 
-**Acharya Anvaya**: Both will carry you across, but their way of remembering the river differs. One remembers everything since the river’s source; the other begins its memory only when you step aboard.
+**Acharya Anvaya**: Both will carry you across, but their way of remembering the river differs. One boat remembers everything since the river’s source 🌊; the other begins its memory only when you step aboard 🚤 — that is, when you set your initial conditions.
 
 ---
 
@@ -76,12 +76,7 @@ $$
 
 ## Worked Example: Caputo Derivative of Power Functions
 
-**Acharya Anvaya**: For the Caputo derivative, recall:
-
-$$
-{}^C D_t^\alpha f(t) =
-\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\, d\tau.
-$$
+**Acharya Anvaya**: For the Caputo derivative:
 
 - If $f(t) = t^\beta$ with $\beta \leq n-1$, then ${}^C D_t^\alpha f(t) = 0$.  
 - If $\beta > n-1$, then
@@ -127,98 +122,111 @@ $$
 
 **Ananya**: Beautiful! The exponential remains its own shape, and $\lambda$ is lifted to a fractional power.
 
-**Acharya Anvaya**: Exactly. **Exponentials are the eigenfunctions of fractional derivatives**.
-
-**Ananya**: 😇
+**Acharya Anvaya**: Exactly. Exponentials are the eigenfunctions of fractional derivatives.
 
 ---
 
-### Scene: Choosing a Boat
-
-**Ananya**: I think I prefer the Caputo boat for practical problems — the initial data are familiar.
-
-**Acharya Anvaya**: A wise choice for modeling. Yet the Riemann–Liouville boat is elegant in theory. Both are needed, depending on where the river carries us.
-
----
-
----
-
-## Rules of the River (Caputo Theory)
+## Rules of the River (Caputo Properties)
 
 As their boats glide downstream, Acharya Anvaya begins to teach Ananya the rules that govern the River of Derivatives.
-
-**Acharya Anvaya**: Just as the river has currents and eddies, the Caputo derivative has properties that guide us. Let me share some of the most important.
 
 ---
 
 ### 1. Linearity
 
-For constants $c_1, c_2$ and functions $f, g$,
+For constants $c_1, c_2$ and functions $f, g$:
 
 $$
 {}^C D_t^\alpha \big(c_1 f(t) + c_2 g(t)\big)
 = c_1 \, {}^C D_t^\alpha f(t) + c_2 \, {}^C D_t^\alpha g(t).
 $$
 
-**Ananya**: So it behaves linearly, just like ordinary derivatives.
-
 ---
 
-### 2. Derivative of Constants and Polynomials
+### 2. Constants and Polynomials
 
-- If $f(t) = C$ (a constant), then
+- For a constant $C$,
   $$
   {}^C D_t^\alpha C = 0.
   $$
 
-- If $f(t) = t^\beta$ with $\beta=0,1,\dots,n-1$, then
+- For $t^\beta$ with $\beta = 0,1,\dots,n-1$,
   $$
-  {}^C D_t^\alpha t^\beta = 0, \quad (n-1 < \alpha \le n).
+  {}^C D_t^\alpha t^\beta = 0.
   $$
 
-- If $\beta > n-1$, then
+- For $\beta > n-1$,
   $$
   {}^C D_t^\alpha t^\beta
-  = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} \, t^{\beta-\alpha}.
+  = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
   $$
-
-**Ananya**: So low-degree polynomials vanish under Caputo differentiation — another reason it’s convenient for setting initial conditions.
 
 ---
 
-### 3. Eigenfunctions of Fractional Derivatives
+### 3. Exponentials and Trigonometric Functions
 
-For exponentials:
+- Exponentials:
+  $$
+  {}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
+  $$
 
-$$
-{}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
-$$
+- Sine:
+  $$
+  {}^C D_t^\alpha \sin(\omega t) = \omega^\alpha \sin\!\left(\omega t + \tfrac{\pi\alpha}{2}\right).
+  $$
 
-For sines and cosines:
-
-$$
-{}^C D_t^\alpha \sin(\omega t) = \omega^\alpha \sin\!\left(\omega t + \tfrac{\pi\alpha}{2}\right),
-$$
-
-$$
-{}^C D_t^\alpha \cos(\omega t) = \omega^\alpha \cos\!\left(\omega t + \tfrac{\pi\alpha}{2}\right).
-$$
-
-**Ananya**: So exponentials and trigonometric functions remain themselves, only shifted or scaled. They are like songs the river always remembers.
+- Cosine:
+  $$
+  {}^C D_t^\alpha \cos(\omega t) = \omega^\alpha \cos\!\left(\omega t + \tfrac{\pi\alpha}{2}\right).
+  $$
 
 ---
 
 ### 4. Product and Chain Rules (Caution!)
 
-**Acharya Anvaya**: Unlike classical derivatives, Caputo derivatives **do not** have simple product or chain rules. There are formulas, but they are complicated. For now, remember: linearity is safe, but products and compositions require care.
+Unlike classical derivatives, Caputo derivatives **do not** have simple product or chain rules. There are formulas, but they are complicated. For now: linearity is safe, but products/compositions need care.
 
 ---
 
-### Reflection
+## Mini-Exercises: Rules of the River
 
-**Ananya**: These rules are like currents in the river — predictable but also tricky in places.
+**Exercise 1. Constant function**  
+Compute ${}^C D_t^{1/2} (5)$.  
 
-**Acharya Anvaya**: Exactly. Mastering these will help you navigate the **Forest of Equations** ahead.
+**Answer**: $0$.
 
 ---
 
+**Exercise 2. Power function**  
+Compute ${}^C D_t^{1/2} (t^3)$.  
+
+**Answer**: $\dfrac{\Gamma(4)}{\Gamma(3.5)} \, t^{2.5}$.
+
+---
+
+**Exercise 3. Exponential**  
+Compute ${}^C D_t^{1/2} (e^{2t})$.  
+
+**Answer**: $\sqrt{2}\, e^{2t}$.
+
+---
+
+**Exercise 4. Trigonometric**  
+Compute ${}^C D_t^{1/2} (\sin t)$.  
+
+**Answer**: $\sin\!\left(t + \tfrac{\pi}{4}\right)$.
+
+---
+
+**Exercise 5. RL vs Caputo**  
+Show that for $f(t)=t$:  
+- ${}^C D_t^{1/2}(t) = 0$,  
+- $D_t^{1/2}(t) = \dfrac{\Gamma(2)}{\Gamma(1.5)}\, t^{0.5}$.  
+
+**Interpretation**: This highlights why Caputo is often preferred in physics.
+
+---
+
+### Narrator
+
+**Narrator**: With these rules in hand, Ananya feels prepared. The boats glide ashore, and the River of Derivatives is behind them. Ahead lies the **Forest of Equations**, where memory and change entwine into full differential equations. The next stage of the journey begins.

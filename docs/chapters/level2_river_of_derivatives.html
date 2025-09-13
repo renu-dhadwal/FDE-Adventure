@@ -175,17 +175,17 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#mini-quest-compare-rl-and-caputo" id="toc-mini-quest-compare-rl-and-caputo" class="nav-link" data-scroll-target="#mini-quest-compare-rl-and-caputo"><span class="header-section-number">3.4.1</span> Mini-Quest: Compare RL and Caputo</a></li>
   </ul></li>
-  <li><a href="#worked-example-exponentials" id="toc-worked-example-exponentials" class="nav-link" data-scroll-target="#worked-example-exponentials"><span class="header-section-number">3.5</span> Worked Example: Exponentials</a>
-  <ul class="collapse">
-  <li><a href="#scene-choosing-a-boat" id="toc-scene-choosing-a-boat" class="nav-link" data-scroll-target="#scene-choosing-a-boat"><span class="header-section-number">3.5.1</span> Scene: Choosing a Boat</a></li>
-  </ul></li>
-  <li><a href="#rules-of-the-river-caputo-theory" id="toc-rules-of-the-river-caputo-theory" class="nav-link" data-scroll-target="#rules-of-the-river-caputo-theory"><span class="header-section-number">3.6</span> Rules of the River (Caputo Theory)</a>
+  <li><a href="#worked-example-exponentials" id="toc-worked-example-exponentials" class="nav-link" data-scroll-target="#worked-example-exponentials"><span class="header-section-number">3.5</span> Worked Example: Exponentials</a></li>
+  <li><a href="#rules-of-the-river-caputo-properties" id="toc-rules-of-the-river-caputo-properties" class="nav-link" data-scroll-target="#rules-of-the-river-caputo-properties"><span class="header-section-number">3.6</span> Rules of the River (Caputo Properties)</a>
   <ul class="collapse">
   <li><a href="#linearity" id="toc-linearity" class="nav-link" data-scroll-target="#linearity"><span class="header-section-number">3.6.1</span> 1. Linearity</a></li>
-  <li><a href="#derivative-of-constants-and-polynomials" id="toc-derivative-of-constants-and-polynomials" class="nav-link" data-scroll-target="#derivative-of-constants-and-polynomials"><span class="header-section-number">3.6.2</span> 2. Derivative of Constants and Polynomials</a></li>
-  <li><a href="#eigenfunctions-of-fractional-derivatives" id="toc-eigenfunctions-of-fractional-derivatives" class="nav-link" data-scroll-target="#eigenfunctions-of-fractional-derivatives"><span class="header-section-number">3.6.3</span> 3. Eigenfunctions of Fractional Derivatives</a></li>
+  <li><a href="#constants-and-polynomials" id="toc-constants-and-polynomials" class="nav-link" data-scroll-target="#constants-and-polynomials"><span class="header-section-number">3.6.2</span> 2. Constants and Polynomials</a></li>
+  <li><a href="#exponentials-and-trigonometric-functions" id="toc-exponentials-and-trigonometric-functions" class="nav-link" data-scroll-target="#exponentials-and-trigonometric-functions"><span class="header-section-number">3.6.3</span> 3. Exponentials and Trigonometric Functions</a></li>
   <li><a href="#product-and-chain-rules-caution" id="toc-product-and-chain-rules-caution" class="nav-link" data-scroll-target="#product-and-chain-rules-caution"><span class="header-section-number">3.6.4</span> 4. Product and Chain Rules (Caution!)</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.6.5</span> Reflection</a></li>
+  </ul></li>
+  <li><a href="#mini-exercises-rules-of-the-river" id="toc-mini-exercises-rules-of-the-river" class="nav-link" data-scroll-target="#mini-exercises-rules-of-the-river"><span class="header-section-number">3.7</span> Mini-Exercises: Rules of the River</a>
+  <ul class="collapse">
+  <li><a href="#narrator" id="toc-narrator" class="nav-link" data-scroll-target="#narrator"><span class="header-section-number">3.7.1</span> Narrator</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -220,7 +220,7 @@ window.Quarto = {
 <h3 data-number="3.0.1" class="anchored" data-anchor-id="scene-arrival-at-the-river"><span class="header-section-number">3.0.1</span> Scene: Arrival at the River</h3>
 <p>With the Key of Smriti in hand, Ananya steps beyond the temple gates. A wide river flows before her, restless and shining. On the shore rest <strong>two boats</strong>, each with a carved name: <em>Riemann–Liouville</em> and <em>Caputo</em>.</p>
 <p><strong>Ananya</strong>: Two boats? Which one do we take to cross the River of Derivatives?</p>
-<p><strong>Acharya Anvaya</strong>: Both will carry you across, but their way of remembering the river differs. One remembers everything since the river’s source; the other begins its memory only when you step aboard.</p>
+<p><strong>Acharya Anvaya</strong>: Both will carry you across, but their way of remembering the river differs. One boat remembers everything since the river’s source 🌊; the other begins its memory only when you step aboard 🚤 — that is, when you set your initial conditions.</p>
 <hr>
 </section>
 <section id="rigorous-definitions" class="level2" data-number="3.1">
@@ -300,11 +300,7 @@ D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{3/2}.
 </section>
 <section id="worked-example-caputo-derivative-of-power-functions" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="worked-example-caputo-derivative-of-power-functions"><span class="header-section-number">3.4</span> Worked Example: Caputo Derivative of Power Functions</h2>
-<p><strong>Acharya Anvaya</strong>: For the Caputo derivative, recall:</p>
-<p><span class="math display">\[
-{}^C D_t^\alpha f(t) =
-\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\, d\tau.
-\]</span></p>
+<p><strong>Acharya Anvaya</strong>: For the Caputo derivative:</p>
 <ul>
 <li>If <span class="math inline">\(f(t) = t^\beta\)</span> with <span class="math inline">\(\beta \leq n-1\)</span>, then <span class="math inline">\({}^C D_t^\alpha f(t) = 0\)</span>.<br>
 </li>
@@ -343,75 +339,86 @@ D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
 D_t^\alpha e^{\lambda t} \;=\; {}^C D_t^\alpha e^{\lambda t} \;=\; \lambda^\alpha e^{\lambda t}.
 \]</span></p>
 <p><strong>Ananya</strong>: Beautiful! The exponential remains its own shape, and <span class="math inline">\(\lambda\)</span> is lifted to a fractional power.</p>
-<p><strong>Acharya Anvaya</strong>: Exactly. <strong>Exponentials are the eigenfunctions of fractional derivatives</strong>.</p>
-<p><strong>Ananya</strong>: 😇</p>
-<hr>
-<section id="scene-choosing-a-boat" class="level3" data-number="3.5.1">
-<h3 data-number="3.5.1" class="anchored" data-anchor-id="scene-choosing-a-boat"><span class="header-section-number">3.5.1</span> Scene: Choosing a Boat</h3>
-<p><strong>Ananya</strong>: I think I prefer the Caputo boat for practical problems — the initial data are familiar.</p>
-<p><strong>Acharya Anvaya</strong>: A wise choice for modeling. Yet the Riemann–Liouville boat is elegant in theory. Both are needed, depending on where the river carries us.</p>
-<hr>
+<p><strong>Acharya Anvaya</strong>: Exactly. Exponentials are the eigenfunctions of fractional derivatives.</p>
 <hr>
 </section>
-</section>
-<section id="rules-of-the-river-caputo-theory" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="rules-of-the-river-caputo-theory"><span class="header-section-number">3.6</span> Rules of the River (Caputo Theory)</h2>
+<section id="rules-of-the-river-caputo-properties" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="rules-of-the-river-caputo-properties"><span class="header-section-number">3.6</span> Rules of the River (Caputo Properties)</h2>
 <p>As their boats glide downstream, Acharya Anvaya begins to teach Ananya the rules that govern the River of Derivatives.</p>
-<p><strong>Acharya Anvaya</strong>: Just as the river has currents and eddies, the Caputo derivative has properties that guide us. Let me share some of the most important.</p>
 <hr>
 <section id="linearity" class="level3" data-number="3.6.1">
 <h3 data-number="3.6.1" class="anchored" data-anchor-id="linearity"><span class="header-section-number">3.6.1</span> 1. Linearity</h3>
-<p>For constants <span class="math inline">\(c_1, c_2\)</span> and functions <span class="math inline">\(f, g\)</span>,</p>
+<p>For constants <span class="math inline">\(c_1, c_2\)</span> and functions <span class="math inline">\(f, g\)</span>:</p>
 <p><span class="math display">\[
 {}^C D_t^\alpha \big(c_1 f(t) + c_2 g(t)\big)
 = c_1 \, {}^C D_t^\alpha f(t) + c_2 \, {}^C D_t^\alpha g(t).
 \]</span></p>
-<p><strong>Ananya</strong>: So it behaves linearly, just like ordinary derivatives.</p>
 <hr>
 </section>
-<section id="derivative-of-constants-and-polynomials" class="level3" data-number="3.6.2">
-<h3 data-number="3.6.2" class="anchored" data-anchor-id="derivative-of-constants-and-polynomials"><span class="header-section-number">3.6.2</span> 2. Derivative of Constants and Polynomials</h3>
+<section id="constants-and-polynomials" class="level3" data-number="3.6.2">
+<h3 data-number="3.6.2" class="anchored" data-anchor-id="constants-and-polynomials"><span class="header-section-number">3.6.2</span> 2. Constants and Polynomials</h3>
 <ul>
-<li><p>If <span class="math inline">\(f(t) = C\)</span> (a constant), then <span class="math display">\[
+<li><p>For a constant <span class="math inline">\(C\)</span>, <span class="math display">\[
 {}^C D_t^\alpha C = 0.
 \]</span></p></li>
-<li><p>If <span class="math inline">\(f(t) = t^\beta\)</span> with <span class="math inline">\(\beta=0,1,\dots,n-1\)</span>, then <span class="math display">\[
-{}^C D_t^\alpha t^\beta = 0, \quad (n-1 &lt; \alpha \le n).
+<li><p>For <span class="math inline">\(t^\beta\)</span> with <span class="math inline">\(\beta = 0,1,\dots,n-1\)</span>, <span class="math display">\[
+{}^C D_t^\alpha t^\beta = 0.
 \]</span></p></li>
-<li><p>If <span class="math inline">\(\beta &gt; n-1\)</span>, then <span class="math display">\[
+<li><p>For <span class="math inline">\(\beta &gt; n-1\)</span>, <span class="math display">\[
 {}^C D_t^\alpha t^\beta
-= \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} \, t^{\beta-\alpha}.
+= \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
 \]</span></p></li>
 </ul>
-<p><strong>Ananya</strong>: So low-degree polynomials vanish under Caputo differentiation — another reason it’s convenient for setting initial conditions.</p>
 <hr>
 </section>
-<section id="eigenfunctions-of-fractional-derivatives" class="level3" data-number="3.6.3">
-<h3 data-number="3.6.3" class="anchored" data-anchor-id="eigenfunctions-of-fractional-derivatives"><span class="header-section-number">3.6.3</span> 3. Eigenfunctions of Fractional Derivatives</h3>
-<p>For exponentials:</p>
-<p><span class="math display">\[
+<section id="exponentials-and-trigonometric-functions" class="level3" data-number="3.6.3">
+<h3 data-number="3.6.3" class="anchored" data-anchor-id="exponentials-and-trigonometric-functions"><span class="header-section-number">3.6.3</span> 3. Exponentials and Trigonometric Functions</h3>
+<ul>
+<li><p>Exponentials: <span class="math display">\[
 {}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
-\]</span></p>
-<p>For sines and cosines:</p>
-<p><span class="math display">\[
-{}^C D_t^\alpha \sin(\omega t) = \omega^\alpha \sin\!\left(\omega t + \tfrac{\pi\alpha}{2}\right),
-\]</span></p>
-<p><span class="math display">\[
+\]</span></p></li>
+<li><p>Sine: <span class="math display">\[
+{}^C D_t^\alpha \sin(\omega t) = \omega^\alpha \sin\!\left(\omega t + \tfrac{\pi\alpha}{2}\right).
+\]</span></p></li>
+<li><p>Cosine: <span class="math display">\[
 {}^C D_t^\alpha \cos(\omega t) = \omega^\alpha \cos\!\left(\omega t + \tfrac{\pi\alpha}{2}\right).
-\]</span></p>
-<p><strong>Ananya</strong>: So exponentials and trigonometric functions remain themselves, only shifted or scaled. They are like songs the river always remembers.</p>
+\]</span></p></li>
+</ul>
 <hr>
 </section>
 <section id="product-and-chain-rules-caution" class="level3" data-number="3.6.4">
 <h3 data-number="3.6.4" class="anchored" data-anchor-id="product-and-chain-rules-caution"><span class="header-section-number">3.6.4</span> 4. Product and Chain Rules (Caution!)</h3>
-<p><strong>Acharya Anvaya</strong>: Unlike classical derivatives, Caputo derivatives <strong>do not</strong> have simple product or chain rules. There are formulas, but they are complicated. For now, remember: linearity is safe, but products and compositions require care.</p>
+<p>Unlike classical derivatives, Caputo derivatives <strong>do not</strong> have simple product or chain rules. There are formulas, but they are complicated. For now: linearity is safe, but products/compositions need care.</p>
 <hr>
 </section>
-<section id="reflection" class="level3" data-number="3.6.5">
-<h3 data-number="3.6.5" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.6.5</span> Reflection</h3>
-<p><strong>Ananya</strong>: These rules are like currents in the river — predictable but also tricky in places.</p>
-<p><strong>Acharya Anvaya</strong>: Exactly. Mastering these will help you navigate the <strong>Forest of Equations</strong> ahead.</p>
+</section>
+<section id="mini-exercises-rules-of-the-river" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="mini-exercises-rules-of-the-river"><span class="header-section-number">3.7</span> Mini-Exercises: Rules of the River</h2>
+<p><strong>Exercise 1. Constant function</strong><br>
+Compute <span class="math inline">\({}^C D_t^{1/2} (5)\)</span>.</p>
+<p><strong>Answer</strong>: <span class="math inline">\(0\)</span>.</p>
 <hr>
+<p><strong>Exercise 2. Power function</strong><br>
+Compute <span class="math inline">\({}^C D_t^{1/2} (t^3)\)</span>.</p>
+<p><strong>Answer</strong>: <span class="math inline">\(\dfrac{\Gamma(4)}{\Gamma(3.5)} \, t^{2.5}\)</span>.</p>
+<hr>
+<p><strong>Exercise 3. Exponential</strong><br>
+Compute <span class="math inline">\({}^C D_t^{1/2} (e^{2t})\)</span>.</p>
+<p><strong>Answer</strong>: <span class="math inline">\(\sqrt{2}\, e^{2t}\)</span>.</p>
+<hr>
+<p><strong>Exercise 4. Trigonometric</strong><br>
+Compute <span class="math inline">\({}^C D_t^{1/2} (\sin t)\)</span>.</p>
+<p><strong>Answer</strong>: <span class="math inline">\(\sin\!\left(t + \tfrac{\pi}{4}\right)\)</span>.</p>
+<hr>
+<p><strong>Exercise 5. RL vs Caputo</strong><br>
+Show that for <span class="math inline">\(f(t)=t\)</span>:<br>
+- <span class="math inline">\({}^C D_t^{1/2}(t) = 0\)</span>,<br>
+- <span class="math inline">\(D_t^{1/2}(t) = \dfrac{\Gamma(2)}{\Gamma(1.5)}\, t^{0.5}\)</span>.</p>
+<p><strong>Interpretation</strong>: This highlights why Caputo is often preferred in physics.</p>
+<hr>
+<section id="narrator" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="narrator"><span class="header-section-number">3.7.1</span> Narrator</h3>
+<p><strong>Narrator</strong>: With these rules in hand, Ananya feels prepared. The boats glide ashore, and the River of Derivatives is behind them. Ahead lies the <strong>Forest of Equations</strong>, where memory and change entwine into full differential equations. The next stage of the journey begins.</p>
 
 
 </section>
