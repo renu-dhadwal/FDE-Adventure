@@ -58,7 +58,7 @@ $$
 I^3(1)(t) = \int_0^t I^2(1)(\tau)\, d\tau = \int_0^t \frac{\tau^2}{2}\, d\tau = \frac{t^3}{3!}.
 $$
 
----
+**Acharya Anvaya**: Yes! And we can find the $n^{th}$ integral of a function $f(x)$ using the *Cauchy formula for repeated integration*.
 
 <div class="rule-box">
 
@@ -140,6 +140,7 @@ Which value of $\alpha$ remembers the distant past most strongly?
 </div>
 
 ---
+**Ananya**: But where do we see such memory in materials?
 
 ## Example: Stress–Strain in Viscoelastic Fluids
 
@@ -202,7 +203,7 @@ where $D_t^\alpha$ is a **fractional derivative** of the strain.
 
 ---
 
-**Ananya**: But what exactly is a fractional derivative?
+**Ananya**: Oh! But what exactly is a fractional derivative? I have never seen that symbol before!
 
 **Acharya Anvaya**: For guidance:
 
@@ -227,7 +228,7 @@ where $D_t^\alpha$ is a **fractional derivative** of the strain.
 
 **Acharya Anvaya**: Exactly! Thus, the language of fractional calculus is the scripture that describes memory in matter — echoing from the temple walls into the world of flowing polymers.
 
-**Acharya Anvaya**: We will learn about fractional derivatives as we go further to the Ganges — the River of Derivatives.
+**Acharya Anvaya**: We will learn about fractional derivatives as we go further to the The River of Derivatives.
 
 <div class="narrator-box">
 
