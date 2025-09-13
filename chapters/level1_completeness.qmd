@@ -3,10 +3,6 @@ title: "Dialogue: Why Real Numbers?"
 format: html
 ---
 
-# 📖 Dialogue: Why Real Numbers?
-
----
-
 **Lila**:  
 “Acharya, we already have natural numbers, integers, rationals. Why do we need *real* numbers? Aren’t rationals enough?”  
 
@@ -18,17 +14,16 @@ format: html
 - $$1.4^2 = 1.96$$,  
 - $$1.41^2 = 1.9881$$,  
 - $$1.414^2 = 1.999396$$…  
-
 We get closer, but never exactly 2.”  
 
 **Acharya Bhaskara**:  
-“So, do you think there is a rational number $$q$$ with $$q^2 = 2$$?”  
+“So, do you think there is a rational number $q$ with $q^2 = 2$?”  
 
 **Lila**:  
-“No. I’ve seen the proof that $$\sqrt{2}$$ is irrational.”  
+“No. I’ve seen the proof that $\sqrt{2}$ is irrational.”  
 
 **Acharya Bhaskara**:  
-“Correct. But notice this: even if $$\sqrt{2}$$ is not rational, we can approximate it as closely as we like using rationals — 1.4, 1.41, 1.414… The rationals are dense: between any two rationals, there is another. Yet something is still missing.”  
+“Correct. But notice this: even if $\sqrt{2}$ is not rational, we can approximate it as closely as we like using rationals — 1.4, 1.41, 1.414… The rationals are *dense*: between any two rationals, there is another. Yet something is still missing.”  
 
 ---
 
@@ -48,26 +43,29 @@ Is there a number that is always greater than every element of this set?”
 “Exactly. We call such numbers *upper bounds*. But among them, some are tighter than others. Which number feels like the ‘tightest’ upper bound?”  
 
 **Lila**:  
-“It should be $$\sqrt{2}$$, since that’s where the set stops.”  
+“It should be $\sqrt{2}$, since that’s where the set stops.”  
 
 **Acharya Bhaskara**:  
-“Indeed. But here is the problem: $$\sqrt{2}$$ is not in $$\mathbb{Q}$$. So the rationals cannot capture the least upper bound of this set.”  
+“Indeed. But here is the problem: $\sqrt{2}$ is not in $\mathbb{Q}$. So the rationals cannot capture the least upper bound of this set.”  
 
 ---
 
-## 🔹 Supremum
+### 🔹 Supremum or least upper bound, Infinimum or greatest lower bound
 
 **Acharya Bhaskara**:  
 “This brings us to a definition:  
 
-- An **upper bound** of a set $$A \subset \mathbb{R}$$ is a number $$M$$ such that $$x \leq M$$ for all $$x \in A$$.  
-- The **least upper bound** (also called the *supremum*) is the smallest such $$M$$, if it exists.”  
+- An **upper bound** of a set $A \subset \mathbb{R}$ is a number $M$ such that $x \leq M$ for all $x \in A$.  
+- The **least upper bound** (also called the *supremum*) is the smallest such $M$, if it exists.”  
+Similalry,
+- A **lower bound** of a set $A \subset \mathbb{R}$ is a number $m$ such that $x \geq m$ for all $x \in A$.  
+- The **greatest lower bound** (also called the *infinimum*) is the smallest such $m$, if it exists.” 
 
 **Lila**:  
 “So the problem with rationals is that some sets don’t have a supremum inside them?”  
 
 **Acharya Bhaskara**:  
-“Precisely. The rationals are dense but incomplete. The missing piece is the *completeness property* of the reals.”  
+“Precisely. The rationals are *dense* but incomplete. The missing piece is the *completeness property* of the reals.”  
 
 ---
 
