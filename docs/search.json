@@ -48,5 +48,65 @@
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
     ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html",
+    "href": "chapters/level2_river_of_derivatives.html",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "",
+    "text": "3.0.1 Scene: Arrival at the River\nCharacters:\n- Acharya Anvaya (Guide/Teacher, continuity of knowledge)\n- Ananya (Learner, seeker of truth)\nWith the Key of Smriti in hand, Ananya steps beyond the temple gates. Before her flows a wide river, its surface broken by currents and eddies — the River of Derivatives. On the shore rest two boats, each with a carved name: Riemann–Liouville and Caputo.\nAnanya: Two boats? Which one do we take to cross the River of Derivatives?\nAcharya Anvaya: Both will carry you across, but their way of remembering the river differs. One remembers everything since the river’s source; the other begins its memory the moment you step aboard.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#the-two-boats-intuition",
+    "href": "chapters/level2_river_of_derivatives.html#the-two-boats-intuition",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.1 The Two Boats: Intuition",
+    "text": "3.1 The Two Boats: Intuition\nAcharya Anvaya: Think of the river as change itself. A derivative measures how a quantity changes; a fractional derivative measures change while remembering the past. The two boats are two mathematical realizations of that remembering.\n\nThe Riemann–Liouville boat carries memory that reaches back to the origin of time \\(0\\).\n\nThe Caputo boat begins its memory from when you start the problem: it uses ordinary derivatives first, then distributes memory.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#definitions-the-plaques-on-the-boats",
+    "href": "chapters/level2_river_of_derivatives.html#definitions-the-plaques-on-the-boats",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.2 Definitions (the plaques on the boats)",
+    "text": "3.2 Definitions (the plaques on the boats)\n\nRiemann–Liouville derivative (plaque on the first boat)\nFor \\(n-1 &lt; \\alpha \\leq n\\),\n\\[\nD_t^\\alpha f(t) \\;=\\; \\frac{d^n}{dt^n}\\, I^{\\,n-\\alpha} f(t)\n\\;=\\; \\frac{d^n}{dt^n}\\left(\\frac{1}{\\Gamma(n-\\alpha)}\\int_0^t (t-\\tau)^{\\,n-\\alpha-1} f(\\tau)\\,d\\tau\\right).\n\\]\nIt first forms a fractional integral (remembering far into the past) and then differentiates \\(n\\) times.\n\n\nCaputo derivative (plaque on the second boat)\nFor \\(n-1 &lt; \\alpha \\leq n\\),\n\\[\n{}^C D_t^\\alpha f(t) \\;=\\;\n\\frac{1}{\\Gamma(n-\\alpha)}\\int_0^t (t-\\tau)^{\\,n-\\alpha-1} f^{(n)}(\\tau)\\,d\\tau.\n\\]\nIt differentiates first (ordinary derivatives), then applies a memory kernel — which makes initial conditions appear in the usual physical form.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#mini-quest-1-which-boat-for-modelling",
+    "href": "chapters/level2_river_of_derivatives.html#mini-quest-1-which-boat-for-modelling",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.3 Mini-Quest 1: Which boat for modelling?",
+    "text": "3.3 Mini-Quest 1: Which boat for modelling?\nConsider a physical oscillator with standard initial displacement and velocity given at \\(t=0\\). Which derivative definition is usually more convenient for setting initial conditions in the classical way?\n\n\nRiemann–Liouville\n\n\n\nCaputo\n\n\nAnswer: (B) Caputo — because its formulation lets you impose initial conditions expressed in terms of integer-order derivatives (displacement, velocity, …).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#example-exponential-function-a-shared-melody",
+    "href": "chapters/level2_river_of_derivatives.html#example-exponential-function-a-shared-melody",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.4 Example: Exponential function (a shared melody)",
+    "text": "3.4 Example: Exponential function (a shared melody)\nAnanya: If \\(f(t)=e^{\\lambda t}\\), what do the fractional derivatives give?\nAcharya Anvaya: For both definitions (in many standard settings) the operator acts like a fractional power on the eigenvalue:\n\\[\nD_t^\\alpha e^{\\lambda t} = \\lambda^\\alpha e^{\\lambda t}.\n\\]\nThis shows how fractional differentiation generalizes ordinary change: the exponential keeps its form while the “rate” \\(\\lambda\\) is raised to the fractional power.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#mini-quest-2-physical-interpretations",
+    "href": "chapters/level2_river_of_derivatives.html#mini-quest-2-physical-interpretations",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.5 Mini-Quest 2: Physical interpretations",
+    "text": "3.5 Mini-Quest 2: Physical interpretations\nMatch each \\(\\alpha\\) to the behaviour:\n\n\\(\\alpha = 0\\)\n\n\\(\\alpha = 1\\)\n\n\\(0&lt;\\alpha&lt;1\\)\n\nChoices: purely elastic / purely viscous / viscoelastic (fading memory)\nAnswer: 1 → purely elastic, 2 → purely viscous, 3 → viscoelastic.\n\n\n3.5.1 Scene: Choosing a Boat\nAnanya: I think I prefer the Caputo boat for practical problems — the initial data are familiar.\nAcharya Anvaya: A wise choice when modeling experiments. Yet the Riemann–Liouville boat is elegant and powerful for some theoretical developments. Both are paths across the same river.\n\n\n\n3.5.2 Narrator\nNarrator: Ananya climbs into the Caputo boat; Acharya steadies the Riemann–Liouville. Both glide over the River of Derivatives. On the far bank rises the Forest of Equations, where fractional differential equations will test their new knowledge.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
   }
 ]
