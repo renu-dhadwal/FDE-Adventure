@@ -49,7 +49,7 @@ $$
 
 **Ananya**: So the difference is: Riemann–Liouville differentiates *after* integrating, while Caputo differentiates *before* integrating?
 
-**Acharya Anvaya**: Exactly. Two boats across the same river — same waters, different journeys.
+**Acharya Anvaya**: Exactly. Two boats across the same river — same waters, different journeys 😇.
 
 ---
 
@@ -139,12 +139,11 @@ $$
 **Ananya**: Beautiful! The exponential remains its own shape, and $\lambda$ is lifted to a fractional power.
 
 **Acharya Anvaya**: Exactly. Exponentials are the eigenfunctions of fractional derivatives.
+**Ananya**: 😇
 
 ---
 
 ## Rules of the River (Caputo Properties)
-
-As their boats glide downstream, Acharya Anvaya begins to teach Ananya the rules that govern the River of Derivatives.
 
 <div class="rule-box">
 
@@ -247,4 +246,3 @@ Show that for $f(t)=t$:
 **Narrator**: With these rules in hand, Ananya feels prepared. The boats glide ashore, and the River of Derivatives is behind them. Ahead lies the **Forest of Equations**, where memory and change entwine into full differential equations. The next stage of the journey begins.
 
 </div>
-
