@@ -24,20 +24,28 @@ With the Key of Smriti in hand, Ananya steps beyond the temple gates. A wide riv
 
 **Acharya Anvaya**: Let us be precise. Suppose $n-1 < \alpha \leq n$ with $n \in \mathbb{N}$.
 
-- **Riemann–Liouville fractional derivative**:
+<div class="rule-box">
+
+**Riemann–Liouville fractional derivative**  
 
 $$
-D_t^\alpha f(t) \;=\; \frac{d^n}{dt^n}\, I^{\,n-\alpha} f(t)
-\;=\; \frac{1}{\Gamma(n-\alpha)}\frac{d^n}{dt^n}\int_0^t (t-\tau)^{\,n-\alpha-1} f(\tau)\,d\tau.
+D_t^\alpha f(t) = \frac{d^n}{dt^n}\, I^{\,n-\alpha} f(t)
+= \frac{1}{\Gamma(n-\alpha)}\frac{d^n}{dt^n}\int_0^t (t-\tau)^{\,n-\alpha-1} f(\tau)\,d\tau.
 $$
 
-- **Caputo fractional derivative**:
+</div>
+
+<div class="rule-box">
+
+**Caputo fractional derivative**  
 
 $$
-{}^C D_t^\alpha f(t) \;=\;
+{}^C D_t^\alpha f(t) =
 I^{\,n-\alpha} f^{(n)}(t)
-\;=\;\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
+= \frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
 $$
+
+</div>
 
 **Ananya**: So the difference is: Riemann–Liouville differentiates *after* integrating, while Caputo differentiates *before* integrating?
 
@@ -58,15 +66,17 @@ $$
 
 ## Worked Example: Power Functions
 
-**Acharya Anvaya**: For the Riemann–Liouville derivative of $t^\beta$ ($\beta > -1$):
+<div class="rule-box">
+
+For the Riemann–Liouville derivative of $t^\beta$ ($\beta > -1$):
 
 $$
 D_t^\alpha \, t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} \, t^{\beta-\alpha}.
 $$
 
-**Ananya**: So the power drops by $\alpha$, and the Gamma function adjusts the scale.
+</div>
 
-**Acharya Anvaya**: Correct. For example, with $\alpha = \tfrac{1}{2}$ and $f(t)=t^2$:
+**Example**: with $\alpha = \tfrac{1}{2}$ and $f(t)=t^2$:
 
 $$
 D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{3/2}.
@@ -76,7 +86,7 @@ $$
 
 ## Worked Example: Caputo Derivative of Power Functions
 
-**Acharya Anvaya**: For the Caputo derivative:
+<div class="rule-box">
 
 - If $f(t) = t^\beta$ with $\beta \leq n-1$, then ${}^C D_t^\alpha f(t) = 0$.  
 - If $\beta > n-1$, then
@@ -86,39 +96,45 @@ $$
 = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
 $$
 
+</div>
+
 So for most powers, Riemann–Liouville and Caputo agree, but for low-degree polynomials, Caputo derivatives vanish.
 
 ---
 
 ### Mini-Quest: Compare RL and Caputo
 
+<div class="exercise-box">
+
 **Task**: Compute the Riemann–Liouville and Caputo derivatives of $f(t)=t^2$ for $\alpha = \tfrac12$.
 
-- **Riemann–Liouville**:
+- **Riemann–Liouville**:  
+  $$
+  D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
+  $$
 
-$$
-D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
-$$
-
-- **Caputo**:
-
-$$
-{}^C D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
-$$
+- **Caputo**:  
+  $$
+  {}^C D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
+  $$
 
 **Observation**: For this function, both definitions give the same result.
 
-**Acharya Anvaya**: But remember — for low-degree polynomials or problems with initial data, the two boats may diverge.
+</div>
 
 ---
 
 ## Worked Example: Exponentials
 
-**Acharya Anvaya**: For exponentials, both boats sing the same melody:
+<div class="rule-box">
+
+For exponentials:
 
 $$
-D_t^\alpha e^{\lambda t} \;=\; {}^C D_t^\alpha e^{\lambda t} \;=\; \lambda^\alpha e^{\lambda t}.
+D_t^\alpha e^{\lambda t} = {}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
 $$
+
+</div>
 
 **Ananya**: Beautiful! The exponential remains its own shape, and $\lambda$ is lifted to a fractional power.
 
@@ -130,93 +146,91 @@ $$
 
 As their boats glide downstream, Acharya Anvaya begins to teach Ananya the rules that govern the River of Derivatives.
 
----
+<div class="rule-box">
 
-### 1. Linearity
+**Rule 1. Linearity**
 
 For constants $c_1, c_2$ and functions $f, g$:
 
 $$
-{}^C D_t^\alpha \big(c_1 f(t) + c_2 g(t)\big)
+{}^C D_t^\alpha (c_1 f(t) + c_2 g(t)) 
 = c_1 \, {}^C D_t^\alpha f(t) + c_2 \, {}^C D_t^\alpha g(t).
 $$
 
----
+</div>
 
-### 2. Constants and Polynomials
+<div class="rule-box">
 
-- For a constant $C$,
-  $$
-  {}^C D_t^\alpha C = 0.
-  $$
+**Rule 2. Constants and Polynomials**
 
-- For $t^\beta$ with $\beta = 0,1,\dots,n-1$,
+- For a constant $C$, ${}^C D_t^\alpha C = 0$.  
+- For $t^\beta$ with $\beta = 0,1,\dots,n-1$, ${}^C D_t^\alpha t^\beta = 0$.  
+- For $\beta > n-1$,  
   $$
-  {}^C D_t^\alpha t^\beta = 0.
-  $$
-
-- For $\beta > n-1$,
-  $$
-  {}^C D_t^\alpha t^\beta
-  = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
+  {}^C D_t^\alpha t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
   $$
 
----
+</div>
 
-### 3. Exponentials and Trigonometric Functions
+<div class="rule-box">
 
-- Exponentials:
-  $$
-  {}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
-  $$
+**Rule 3. Exponentials and Trigonometric Functions**
 
-- Sine:
-  $$
-  {}^C D_t^\alpha \sin(\omega t) = \omega^\alpha \sin\!\left(\omega t + \tfrac{\pi\alpha}{2}\right).
-  $$
+- ${}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}$.  
+- ${}^C D_t^\alpha \sin(\omega t) = \omega^\alpha \sin\!\left(\omega t + \tfrac{\pi\alpha}{2}\right)$.  
+- ${}^C D_t^\alpha \cos(\omega t) = \omega^\alpha \cos\!\left(\omega t + \tfrac{\pi\alpha}{2}\right)$.
 
-- Cosine:
-  $$
-  {}^C D_t^\alpha \cos(\omega t) = \omega^\alpha \cos\!\left(\omega t + \tfrac{\pi\alpha}{2}\right).
-  $$
+</div>
 
----
+<div class="rule-box">
 
-### 4. Product and Chain Rules (Caution!)
+**Rule 4. Product and Chain Rules (Caution!)**
 
-Unlike classical derivatives, Caputo derivatives **do not** have simple product or chain rules. There are formulas, but they are complicated. For now: linearity is safe, but products/compositions need care.
+Unlike classical derivatives, Caputo derivatives **do not** have simple product or chain rules. Use linearity safely, but treat products/compositions with care.
+
+</div>
 
 ---
 
 ## Mini-Exercises: Rules of the River
+
+<div class="exercise-box">
 
 **Exercise 1. Constant function**  
 Compute ${}^C D_t^{1/2} (5)$.  
 
 **Answer**: $0$.
 
----
+</div>
+
+<div class="exercise-box">
 
 **Exercise 2. Power function**  
 Compute ${}^C D_t^{1/2} (t^3)$.  
 
 **Answer**: $\dfrac{\Gamma(4)}{\Gamma(3.5)} \, t^{2.5}$.
 
----
+</div>
+
+<div class="exercise-box">
 
 **Exercise 3. Exponential**  
 Compute ${}^C D_t^{1/2} (e^{2t})$.  
 
 **Answer**: $\sqrt{2}\, e^{2t}$.
 
----
+</div>
+
+<div class="exercise-box">
 
 **Exercise 4. Trigonometric**  
 Compute ${}^C D_t^{1/2} (\sin t)$.  
 
 **Answer**: $\sin\!\left(t + \tfrac{\pi}{4}\right)$.
 
----
+</div>
+
+<div class="exercise-box">
 
 **Exercise 5. RL vs Caputo**  
 Show that for $f(t)=t$:  
@@ -224,6 +238,8 @@ Show that for $f(t)=t$:
 - $D_t^{1/2}(t) = \dfrac{\Gamma(2)}{\Gamma(1.5)}\, t^{0.5}$.  
 
 **Interpretation**: This highlights why Caputo is often preferred in physics.
+
+</div>
 
 ---
 

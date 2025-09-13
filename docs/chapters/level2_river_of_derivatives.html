@@ -176,13 +176,7 @@ window.Quarto = {
   <li><a href="#mini-quest-compare-rl-and-caputo" id="toc-mini-quest-compare-rl-and-caputo" class="nav-link" data-scroll-target="#mini-quest-compare-rl-and-caputo"><span class="header-section-number">3.4.1</span> Mini-Quest: Compare RL and Caputo</a></li>
   </ul></li>
   <li><a href="#worked-example-exponentials" id="toc-worked-example-exponentials" class="nav-link" data-scroll-target="#worked-example-exponentials"><span class="header-section-number">3.5</span> Worked Example: Exponentials</a></li>
-  <li><a href="#rules-of-the-river-caputo-properties" id="toc-rules-of-the-river-caputo-properties" class="nav-link" data-scroll-target="#rules-of-the-river-caputo-properties"><span class="header-section-number">3.6</span> Rules of the River (Caputo Properties)</a>
-  <ul class="collapse">
-  <li><a href="#linearity" id="toc-linearity" class="nav-link" data-scroll-target="#linearity"><span class="header-section-number">3.6.1</span> 1. Linearity</a></li>
-  <li><a href="#constants-and-polynomials" id="toc-constants-and-polynomials" class="nav-link" data-scroll-target="#constants-and-polynomials"><span class="header-section-number">3.6.2</span> 2. Constants and Polynomials</a></li>
-  <li><a href="#exponentials-and-trigonometric-functions" id="toc-exponentials-and-trigonometric-functions" class="nav-link" data-scroll-target="#exponentials-and-trigonometric-functions"><span class="header-section-number">3.6.3</span> 3. Exponentials and Trigonometric Functions</a></li>
-  <li><a href="#product-and-chain-rules-caution" id="toc-product-and-chain-rules-caution" class="nav-link" data-scroll-target="#product-and-chain-rules-caution"><span class="header-section-number">3.6.4</span> 4. Product and Chain Rules (Caution!)</a></li>
-  </ul></li>
+  <li><a href="#rules-of-the-river-caputo-properties" id="toc-rules-of-the-river-caputo-properties" class="nav-link" data-scroll-target="#rules-of-the-river-caputo-properties"><span class="header-section-number">3.6</span> Rules of the River (Caputo Properties)</a></li>
   <li><a href="#mini-exercises-rules-of-the-river" id="toc-mini-exercises-rules-of-the-river" class="nav-link" data-scroll-target="#mini-exercises-rules-of-the-river"><span class="header-section-number">3.7</span> Mini-Exercises: Rules of the River</a>
   <ul class="collapse">
   <li><a href="#narrator" id="toc-narrator" class="nav-link" data-scroll-target="#narrator"><span class="header-section-number">3.7.1</span> Narrator</a></li>
@@ -226,21 +220,21 @@ window.Quarto = {
 <section id="rigorous-definitions" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="rigorous-definitions"><span class="header-section-number">3.1</span> Rigorous Definitions</h2>
 <p><strong>Acharya Anvaya</strong>: Let us be precise. Suppose <span class="math inline">\(n-1 &lt; \alpha \leq n\)</span> with <span class="math inline">\(n \in \mathbb{N}\)</span>.</p>
-<ul>
-<li><strong>Riemann–Liouville fractional derivative</strong>:</li>
-</ul>
+<div class="rule-box">
+<p><strong>Riemann–Liouville fractional derivative</strong></p>
 <p><span class="math display">\[
-D_t^\alpha f(t) \;=\; \frac{d^n}{dt^n}\, I^{\,n-\alpha} f(t)
-\;=\; \frac{1}{\Gamma(n-\alpha)}\frac{d^n}{dt^n}\int_0^t (t-\tau)^{\,n-\alpha-1} f(\tau)\,d\tau.
+D_t^\alpha f(t) = \frac{d^n}{dt^n}\, I^{\,n-\alpha} f(t)
+= \frac{1}{\Gamma(n-\alpha)}\frac{d^n}{dt^n}\int_0^t (t-\tau)^{\,n-\alpha-1} f(\tau)\,d\tau.
 \]</span></p>
-<ul>
-<li><strong>Caputo fractional derivative</strong>:</li>
-</ul>
+</div>
+<div class="rule-box">
+<p><strong>Caputo fractional derivative</strong></p>
 <p><span class="math display">\[
-{}^C D_t^\alpha f(t) \;=\;
+{}^C D_t^\alpha f(t) =
 I^{\,n-\alpha} f^{(n)}(t)
-\;=\;\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
+= \frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
 \]</span></p>
+</div>
 <p><strong>Ananya</strong>: So the difference is: Riemann–Liouville differentiates <em>after</em> integrating, while Caputo differentiates <em>before</em> integrating?</p>
 <p><strong>Acharya Anvaya</strong>: Exactly. Two boats across the same river — same waters, different journeys.</p>
 <hr>
@@ -287,12 +281,13 @@ I^{\,n-\alpha} f^{(n)}(t)
 </section>
 <section id="worked-example-power-functions" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="worked-example-power-functions"><span class="header-section-number">3.3</span> Worked Example: Power Functions</h2>
-<p><strong>Acharya Anvaya</strong>: For the Riemann–Liouville derivative of <span class="math inline">\(t^\beta\)</span> (<span class="math inline">\(\beta &gt; -1\)</span>):</p>
+<div class="rule-box">
+<p>For the Riemann–Liouville derivative of <span class="math inline">\(t^\beta\)</span> (<span class="math inline">\(\beta &gt; -1\)</span>):</p>
 <p><span class="math display">\[
 D_t^\alpha \, t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} \, t^{\beta-\alpha}.
 \]</span></p>
-<p><strong>Ananya</strong>: So the power drops by <span class="math inline">\(\alpha\)</span>, and the Gamma function adjusts the scale.</p>
-<p><strong>Acharya Anvaya</strong>: Correct. For example, with <span class="math inline">\(\alpha = \tfrac{1}{2}\)</span> and <span class="math inline">\(f(t)=t^2\)</span>:</p>
+</div>
+<p><strong>Example</strong>: with <span class="math inline">\(\alpha = \tfrac{1}{2}\)</span> and <span class="math inline">\(f(t)=t^2\)</span>:</p>
 <p><span class="math display">\[
 D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{3/2}.
 \]</span></p>
@@ -300,7 +295,7 @@ D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{3/2}.
 </section>
 <section id="worked-example-caputo-derivative-of-power-functions" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="worked-example-caputo-derivative-of-power-functions"><span class="header-section-number">3.4</span> Worked Example: Caputo Derivative of Power Functions</h2>
-<p><strong>Acharya Anvaya</strong>: For the Caputo derivative:</p>
+<div class="rule-box">
 <ul>
 <li>If <span class="math inline">\(f(t) = t^\beta\)</span> with <span class="math inline">\(\beta \leq n-1\)</span>, then <span class="math inline">\({}^C D_t^\alpha f(t) = 0\)</span>.<br>
 </li>
@@ -310,34 +305,36 @@ D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{3/2}.
 {}^C D_t^\alpha t^\beta
 = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
 \]</span></p>
+</div>
 <p>So for most powers, Riemann–Liouville and Caputo agree, but for low-degree polynomials, Caputo derivatives vanish.</p>
 <hr>
 <section id="mini-quest-compare-rl-and-caputo" class="level3" data-number="3.4.1">
 <h3 data-number="3.4.1" class="anchored" data-anchor-id="mini-quest-compare-rl-and-caputo"><span class="header-section-number">3.4.1</span> Mini-Quest: Compare RL and Caputo</h3>
+<div class="exercise-box">
 <p><strong>Task</strong>: Compute the Riemann–Liouville and Caputo derivatives of <span class="math inline">\(f(t)=t^2\)</span> for <span class="math inline">\(\alpha = \tfrac12\)</span>.</p>
 <ul>
-<li><strong>Riemann–Liouville</strong>:</li>
-</ul>
-<p><span class="math display">\[
+<li><p><strong>Riemann–Liouville</strong>:<br>
+<span class="math display">\[
 D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
-\]</span></p>
-<ul>
-<li><strong>Caputo</strong>:</li>
-</ul>
-<p><span class="math display">\[
+\]</span></p></li>
+<li><p><strong>Caputo</strong>:<br>
+<span class="math display">\[
 {}^C D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
-\]</span></p>
+\]</span></p></li>
+</ul>
 <p><strong>Observation</strong>: For this function, both definitions give the same result.</p>
-<p><strong>Acharya Anvaya</strong>: But remember — for low-degree polynomials or problems with initial data, the two boats may diverge.</p>
+</div>
 <hr>
 </section>
 </section>
 <section id="worked-example-exponentials" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="worked-example-exponentials"><span class="header-section-number">3.5</span> Worked Example: Exponentials</h2>
-<p><strong>Acharya Anvaya</strong>: For exponentials, both boats sing the same melody:</p>
+<div class="rule-box">
+<p>For exponentials:</p>
 <p><span class="math display">\[
-D_t^\alpha e^{\lambda t} \;=\; {}^C D_t^\alpha e^{\lambda t} \;=\; \lambda^\alpha e^{\lambda t}.
+D_t^\alpha e^{\lambda t} = {}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
 \]</span></p>
+</div>
 <p><strong>Ananya</strong>: Beautiful! The exponential remains its own shape, and <span class="math inline">\(\lambda\)</span> is lifted to a fractional power.</p>
 <p><strong>Acharya Anvaya</strong>: Exactly. Exponentials are the eigenfunctions of fractional derivatives.</p>
 <hr>
@@ -345,76 +342,72 @@ D_t^\alpha e^{\lambda t} \;=\; {}^C D_t^\alpha e^{\lambda t} \;=\; \lambda^\alph
 <section id="rules-of-the-river-caputo-properties" class="level2" data-number="3.6">
 <h2 data-number="3.6" class="anchored" data-anchor-id="rules-of-the-river-caputo-properties"><span class="header-section-number">3.6</span> Rules of the River (Caputo Properties)</h2>
 <p>As their boats glide downstream, Acharya Anvaya begins to teach Ananya the rules that govern the River of Derivatives.</p>
-<hr>
-<section id="linearity" class="level3" data-number="3.6.1">
-<h3 data-number="3.6.1" class="anchored" data-anchor-id="linearity"><span class="header-section-number">3.6.1</span> 1. Linearity</h3>
+<div class="rule-box">
+<p><strong>Rule 1. Linearity</strong></p>
 <p>For constants <span class="math inline">\(c_1, c_2\)</span> and functions <span class="math inline">\(f, g\)</span>:</p>
 <p><span class="math display">\[
-{}^C D_t^\alpha \big(c_1 f(t) + c_2 g(t)\big)
+{}^C D_t^\alpha (c_1 f(t) + c_2 g(t))
 = c_1 \, {}^C D_t^\alpha f(t) + c_2 \, {}^C D_t^\alpha g(t).
 \]</span></p>
-<hr>
-</section>
-<section id="constants-and-polynomials" class="level3" data-number="3.6.2">
-<h3 data-number="3.6.2" class="anchored" data-anchor-id="constants-and-polynomials"><span class="header-section-number">3.6.2</span> 2. Constants and Polynomials</h3>
+</div>
+<div class="rule-box">
+<p><strong>Rule 2. Constants and Polynomials</strong></p>
 <ul>
-<li><p>For a constant <span class="math inline">\(C\)</span>, <span class="math display">\[
-{}^C D_t^\alpha C = 0.
-\]</span></p></li>
-<li><p>For <span class="math inline">\(t^\beta\)</span> with <span class="math inline">\(\beta = 0,1,\dots,n-1\)</span>, <span class="math display">\[
-{}^C D_t^\alpha t^\beta = 0.
-\]</span></p></li>
-<li><p>For <span class="math inline">\(\beta &gt; n-1\)</span>, <span class="math display">\[
-{}^C D_t^\alpha t^\beta
-= \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
-\]</span></p></li>
+<li>For a constant <span class="math inline">\(C\)</span>, <span class="math inline">\({}^C D_t^\alpha C = 0\)</span>.<br>
+</li>
+<li>For <span class="math inline">\(t^\beta\)</span> with <span class="math inline">\(\beta = 0,1,\dots,n-1\)</span>, <span class="math inline">\({}^C D_t^\alpha t^\beta = 0\)</span>.<br>
+</li>
+<li>For <span class="math inline">\(\beta &gt; n-1\)</span>,<br>
+<span class="math display">\[
+{}^C D_t^\alpha t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
+\]</span></li>
 </ul>
-<hr>
-</section>
-<section id="exponentials-and-trigonometric-functions" class="level3" data-number="3.6.3">
-<h3 data-number="3.6.3" class="anchored" data-anchor-id="exponentials-and-trigonometric-functions"><span class="header-section-number">3.6.3</span> 3. Exponentials and Trigonometric Functions</h3>
+</div>
+<div class="rule-box">
+<p><strong>Rule 3. Exponentials and Trigonometric Functions</strong></p>
 <ul>
-<li><p>Exponentials: <span class="math display">\[
-{}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
-\]</span></p></li>
-<li><p>Sine: <span class="math display">\[
-{}^C D_t^\alpha \sin(\omega t) = \omega^\alpha \sin\!\left(\omega t + \tfrac{\pi\alpha}{2}\right).
-\]</span></p></li>
-<li><p>Cosine: <span class="math display">\[
-{}^C D_t^\alpha \cos(\omega t) = \omega^\alpha \cos\!\left(\omega t + \tfrac{\pi\alpha}{2}\right).
-\]</span></p></li>
+<li><span class="math inline">\({}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}\)</span>.<br>
+</li>
+<li><span class="math inline">\({}^C D_t^\alpha \sin(\omega t) = \omega^\alpha \sin\!\left(\omega t + \tfrac{\pi\alpha}{2}\right)\)</span>.<br>
+</li>
+<li><span class="math inline">\({}^C D_t^\alpha \cos(\omega t) = \omega^\alpha \cos\!\left(\omega t + \tfrac{\pi\alpha}{2}\right)\)</span>.</li>
 </ul>
+</div>
+<div class="rule-box">
+<p><strong>Rule 4. Product and Chain Rules (Caution!)</strong></p>
+<p>Unlike classical derivatives, Caputo derivatives <strong>do not</strong> have simple product or chain rules. Use linearity safely, but treat products/compositions with care.</p>
+</div>
 <hr>
-</section>
-<section id="product-and-chain-rules-caution" class="level3" data-number="3.6.4">
-<h3 data-number="3.6.4" class="anchored" data-anchor-id="product-and-chain-rules-caution"><span class="header-section-number">3.6.4</span> 4. Product and Chain Rules (Caution!)</h3>
-<p>Unlike classical derivatives, Caputo derivatives <strong>do not</strong> have simple product or chain rules. There are formulas, but they are complicated. For now: linearity is safe, but products/compositions need care.</p>
-<hr>
-</section>
 </section>
 <section id="mini-exercises-rules-of-the-river" class="level2" data-number="3.7">
 <h2 data-number="3.7" class="anchored" data-anchor-id="mini-exercises-rules-of-the-river"><span class="header-section-number">3.7</span> Mini-Exercises: Rules of the River</h2>
+<div class="exercise-box">
 <p><strong>Exercise 1. Constant function</strong><br>
 Compute <span class="math inline">\({}^C D_t^{1/2} (5)\)</span>.</p>
 <p><strong>Answer</strong>: <span class="math inline">\(0\)</span>.</p>
-<hr>
+</div>
+<div class="exercise-box">
 <p><strong>Exercise 2. Power function</strong><br>
 Compute <span class="math inline">\({}^C D_t^{1/2} (t^3)\)</span>.</p>
 <p><strong>Answer</strong>: <span class="math inline">\(\dfrac{\Gamma(4)}{\Gamma(3.5)} \, t^{2.5}\)</span>.</p>
-<hr>
+</div>
+<div class="exercise-box">
 <p><strong>Exercise 3. Exponential</strong><br>
 Compute <span class="math inline">\({}^C D_t^{1/2} (e^{2t})\)</span>.</p>
 <p><strong>Answer</strong>: <span class="math inline">\(\sqrt{2}\, e^{2t}\)</span>.</p>
-<hr>
+</div>
+<div class="exercise-box">
 <p><strong>Exercise 4. Trigonometric</strong><br>
 Compute <span class="math inline">\({}^C D_t^{1/2} (\sin t)\)</span>.</p>
 <p><strong>Answer</strong>: <span class="math inline">\(\sin\!\left(t + \tfrac{\pi}{4}\right)\)</span>.</p>
-<hr>
+</div>
+<div class="exercise-box">
 <p><strong>Exercise 5. RL vs Caputo</strong><br>
 Show that for <span class="math inline">\(f(t)=t\)</span>:<br>
 - <span class="math inline">\({}^C D_t^{1/2}(t) = 0\)</span>,<br>
 - <span class="math inline">\(D_t^{1/2}(t) = \dfrac{\Gamma(2)}{\Gamma(1.5)}\, t^{0.5}\)</span>.</p>
 <p><strong>Interpretation</strong>: This highlights why Caputo is often preferred in physics.</p>
+</div>
 <hr>
 <section id="narrator" class="level3" data-number="3.7.1">
 <h3 data-number="3.7.1" class="anchored" data-anchor-id="narrator"><span class="header-section-number">3.7.1</span> Narrator</h3>
