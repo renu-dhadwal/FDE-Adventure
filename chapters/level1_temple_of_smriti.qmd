@@ -34,6 +34,30 @@ we are collecting its entire past. This is a kind of memory, isn’t it?
 
 **Acharya Anvaya**: You are absolutely right, Ananya! But before the temple reveals its secret, let us recall what happens when we integrate repeatedly.
 
+**Question**: What is the integral of $1$?
+
+**Ananya**:
+
+$$
+I^1(1)(t) = \int_0^t 1\, d\tau = t.
+$$
+
+**Acharya Anvaya**: Good. And integrating once more?
+
+**Ananya**:
+
+$$
+I^2(1)(t) = \int_0^t I^1(1)(\tau)\, d\tau = \int_0^t \tau\, d\tau = \frac{t^2}{2!}.
+$$
+
+**Acharya Anvaya**: And once more?
+
+**Ananya**:
+
+$$
+I^3(1)(t) = \int_0^t I^2(1)(\tau)\, d\tau = \int_0^t \frac{\tau^2}{2}\, d\tau = \frac{t^3}{3!}.
+$$
+
 ---
 
 <div class="rule-box">
@@ -70,15 +94,21 @@ $$
 
 **Acharya Anvaya**: Exactly. This was the leap — from repeated integer steps to a smooth continuum of memory depths. Each value of $\alpha$ encodes how strongly the past is remembered.
 
+**Acharya Anvaya**: Just as the *smriti* texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time.
+
+**Ananya**: So the past influences the present, but the farther back in time we go, the weaker its pull?
+
+**Acharya Anvaya**: Precisely. Like the echo of a conch in the Himalayas — recent notes ring loud, but the first strike still whispers faintly.
+
 ---
 
 ### Mini-Quest 1: The Half-Memory
 
 <div class="exercise-box">
 
-Evaluate $I^{1/2}(1)$.  
+Evaluate $I^{1/2}(1)$.
 
-**Answer**:  
+**Answer**:
 
 $$
 (I^{1/2}1)(t) = \frac{2}{\sqrt{\pi}}\, t^{1/2}.
