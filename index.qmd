@@ -1,14 +1,12 @@
 ---
-title: "Fractional Calculus Adventure"
+title: "Real Analysis Dialogues"
 format: html
 ---
 
-# Fractional Calculus Adventure
+# Real Analysis Dialogues
 
-**A dialogue-driven course and interactive resource on fractional differential equations.**
+**A dialogue-driven course and interactive resource on Real Analysis.**
 
 Start here:
 
-- [Level 1 – Temple of Smriti (Memory)](chapters/level1_temple_of_smriti.qmd)
-- [Level 2 – The River of Derivatives](chapters/level2_river_of_derivatives.qmd)
-- [Level 2.5 - The Grove of Expansion](chapters/level2_5_grove_of_expansions.qmd)
+- [Chapter 2 – Completeness](chapters/Completeness.qmd)
