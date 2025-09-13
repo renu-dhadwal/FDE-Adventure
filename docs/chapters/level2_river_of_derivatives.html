@@ -168,14 +168,14 @@ window.Quarto = {
    
   <ul>
   <li><a href="#scene-arrival-at-the-river" id="toc-scene-arrival-at-the-river" class="nav-link active" data-scroll-target="#scene-arrival-at-the-river"><span class="header-section-number">3.0.1</span> Scene: Arrival at the River</a></li>
-  <li><a href="#the-two-boats-intuition" id="toc-the-two-boats-intuition" class="nav-link" data-scroll-target="#the-two-boats-intuition"><span class="header-section-number">3.1</span> The Two Boats: Intuition</a></li>
-  <li><a href="#definitions-the-plaques-on-the-boats" id="toc-definitions-the-plaques-on-the-boats" class="nav-link" data-scroll-target="#definitions-the-plaques-on-the-boats"><span class="header-section-number">3.2</span> Definitions (the plaques on the boats)</a></li>
-  <li><a href="#mini-quest-1-which-boat-for-modelling" id="toc-mini-quest-1-which-boat-for-modelling" class="nav-link" data-scroll-target="#mini-quest-1-which-boat-for-modelling"><span class="header-section-number">3.3</span> Mini-Quest 1: Which boat for modelling?</a></li>
-  <li><a href="#example-exponential-function-a-shared-melody" id="toc-example-exponential-function-a-shared-melody" class="nav-link" data-scroll-target="#example-exponential-function-a-shared-melody"><span class="header-section-number">3.4</span> Example: Exponential function (a shared melody)</a></li>
-  <li><a href="#mini-quest-2-physical-interpretations" id="toc-mini-quest-2-physical-interpretations" class="nav-link" data-scroll-target="#mini-quest-2-physical-interpretations"><span class="header-section-number">3.5</span> Mini-Quest 2: Physical interpretations</a>
+  <li><a href="#rigorous-definitions" id="toc-rigorous-definitions" class="nav-link" data-scroll-target="#rigorous-definitions"><span class="header-section-number">3.1</span> Rigorous Definitions</a></li>
+  <li><a href="#comparison-at-a-glance" id="toc-comparison-at-a-glance" class="nav-link" data-scroll-target="#comparison-at-a-glance"><span class="header-section-number">3.2</span> Comparison at a Glance</a></li>
+  <li><a href="#worked-example-power-functions" id="toc-worked-example-power-functions" class="nav-link" data-scroll-target="#worked-example-power-functions"><span class="header-section-number">3.3</span> Worked Example: Power Functions</a></li>
+  <li><a href="#worked-example-exponential-functions" id="toc-worked-example-exponential-functions" class="nav-link" data-scroll-target="#worked-example-exponential-functions"><span class="header-section-number">3.4</span> Worked Example: Exponential Functions</a>
   <ul class="collapse">
-  <li><a href="#scene-choosing-a-boat" id="toc-scene-choosing-a-boat" class="nav-link" data-scroll-target="#scene-choosing-a-boat"><span class="header-section-number">3.5.1</span> Scene: Choosing a Boat</a></li>
-  <li><a href="#narrator" id="toc-narrator" class="nav-link" data-scroll-target="#narrator"><span class="header-section-number">3.5.2</span> Narrator</a></li>
+  <li><a href="#mini-quest-elastic-viscous-viscoelastic" id="toc-mini-quest-elastic-viscous-viscoelastic" class="nav-link" data-scroll-target="#mini-quest-elastic-viscous-viscoelastic"><span class="header-section-number">3.4.1</span> Mini-Quest: Elastic, Viscous, Viscoelastic</a></li>
+  <li><a href="#scene-choosing-a-boat" id="toc-scene-choosing-a-boat" class="nav-link" data-scroll-target="#scene-choosing-a-boat"><span class="header-section-number">3.4.2</span> Scene: Choosing a Boat</a></li>
+  <li><a href="#narrator" id="toc-narrator" class="nav-link" data-scroll-target="#narrator"><span class="header-section-number">3.4.3</span> Narrator</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -208,71 +208,99 @@ window.Quarto = {
 <hr>
 <section id="scene-arrival-at-the-river" class="level3" data-number="3.0.1">
 <h3 data-number="3.0.1" class="anchored" data-anchor-id="scene-arrival-at-the-river"><span class="header-section-number">3.0.1</span> Scene: Arrival at the River</h3>
-<p>With the Key of Smriti in hand, Ananya steps beyond the temple gates. Before her flows a wide river, its surface broken by currents and eddies — the <strong>River of Derivatives</strong>. On the shore rest <strong>two boats</strong>, each with a carved name: <strong>Riemann–Liouville</strong> and <strong>Caputo</strong>.</p>
+<p>With the Key of Smriti in hand, Ananya steps beyond the temple gates. A wide river flows before her, restless and shining. On the shore rest <strong>two boats</strong>, each with a carved name: <em>Riemann–Liouville</em> and <em>Caputo</em>.</p>
 <p><strong>Ananya</strong>: Two boats? Which one do we take to cross the River of Derivatives?</p>
-<p><strong>Acharya Anvaya</strong>: Both will carry you across, but their way of remembering the river differs. One remembers everything since the river’s source; the other begins its memory the moment you step aboard.</p>
+<p><strong>Acharya Anvaya</strong>: Both will carry you across, but their way of remembering the river differs. One remembers everything since the river’s source; the other begins its memory only when you step aboard.</p>
 <hr>
 </section>
-<section id="the-two-boats-intuition" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="the-two-boats-intuition"><span class="header-section-number">3.1</span> The Two Boats: Intuition</h2>
-<p><strong>Acharya Anvaya</strong>: Think of the river as change itself. A derivative measures how a quantity changes; a fractional derivative measures change while remembering the past. The two boats are two mathematical realizations of that remembering.</p>
+<section id="rigorous-definitions" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="rigorous-definitions"><span class="header-section-number">3.1</span> Rigorous Definitions</h2>
+<p><strong>Acharya Anvaya</strong>: Let us be precise. Suppose <span class="math inline">\(n-1 &lt; \alpha \leq n\)</span> with <span class="math inline">\(n \in \mathbb{N}\)</span>.</p>
 <ul>
-<li>The <strong>Riemann–Liouville boat</strong> carries memory that reaches back to the origin of time <span class="math inline">\(0\)</span>.<br>
-</li>
-<li>The <strong>Caputo boat</strong> begins its memory from when you start the problem: it uses ordinary derivatives first, then distributes memory.</li>
+<li><strong>Riemann–Liouville fractional derivative</strong>:</li>
 </ul>
-<hr>
-</section>
-<section id="definitions-the-plaques-on-the-boats" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="definitions-the-plaques-on-the-boats"><span class="header-section-number">3.2</span> Definitions (the plaques on the boats)</h2>
-<div class="boat-box">
-<p><strong>Riemann–Liouville derivative (plaque on the first boat)</strong></p>
-<p>For <span class="math inline">\(n-1 &lt; \alpha \leq n\)</span>,</p>
 <p><span class="math display">\[
 D_t^\alpha f(t) \;=\; \frac{d^n}{dt^n}\, I^{\,n-\alpha} f(t)
-\;=\; \frac{d^n}{dt^n}\left(\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f(\tau)\,d\tau\right).
+\;=\; \frac{1}{\Gamma(n-\alpha)}\frac{d^n}{dt^n}\int_0^t (t-\tau)^{\,n-\alpha-1} f(\tau)\,d\tau.
 \]</span></p>
-<p>It first forms a fractional integral (remembering far into the past) and then differentiates <span class="math inline">\(n\)</span> times.</p>
-</div>
-<div class="boat-box">
-<p><strong>Caputo derivative (plaque on the second boat)</strong></p>
-<p>For <span class="math inline">\(n-1 &lt; \alpha \leq n\)</span>,</p>
+<ul>
+<li><strong>Caputo fractional derivative</strong>:</li>
+</ul>
 <p><span class="math display">\[
 {}^C D_t^\alpha f(t) \;=\;
-\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
+I^{\,n-\alpha} f^{(n)}(t)
+\;=\;\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
 \]</span></p>
-<p>It differentiates first (ordinary derivatives), then applies a memory kernel — which makes initial conditions appear in the usual physical form.</p>
-</div>
+<p><strong>Ananya</strong>: So the difference is: Riemann–Liouville differentiates <em>after</em> integrating, while Caputo differentiates <em>before</em> integrating?</p>
+<p><strong>Acharya Anvaya</strong>: Exactly. Two boats across the same river — same waters, different journeys.</p>
 <hr>
 </section>
-<section id="mini-quest-1-which-boat-for-modelling" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="mini-quest-1-which-boat-for-modelling"><span class="header-section-number">3.3</span> Mini-Quest 1: Which boat for modelling?</h2>
-<p>Consider a physical oscillator with standard initial displacement and velocity given at <span class="math inline">\(t=0\)</span>. Which derivative definition is <strong>usually more convenient</strong> for setting initial conditions in the classical way?</p>
-<ul>
-<li><ol type="A">
-<li>Riemann–Liouville<br>
-</li>
-</ol></li>
-<li><ol start="2" type="A">
-<li>Caputo</li>
-</ol></li>
-</ul>
-<p><strong>Answer</strong>: (B) Caputo — because its formulation lets you impose initial conditions expressed in terms of integer-order derivatives (displacement, velocity, …).</p>
+<section id="comparison-at-a-glance" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="comparison-at-a-glance"><span class="header-section-number">3.2</span> Comparison at a Glance</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 42%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Riemann–Liouville</th>
+<th>Caputo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Formula</td>
+<td><span class="math inline">\(D^\alpha f = \dfrac{d^n}{dt^n} I^{n-\alpha} f\)</span></td>
+<td><span class="math inline">\({}^C D^\alpha f = I^{n-\alpha} f^{(n)}\)</span></td>
+</tr>
+<tr class="even">
+<td>Memory starts</td>
+<td>From <span class="math inline">\(t=0\)</span> (full history)</td>
+<td>From problem start (with <span class="math inline">\(f^{(n)}\)</span>)</td>
+</tr>
+<tr class="odd">
+<td>Initial conditions</td>
+<td>Involve fractional integrals</td>
+<td>Classical: <span class="math inline">\(f(0), f'(0), \dots\)</span></td>
+</tr>
+<tr class="even">
+<td>Common use</td>
+<td>Pure math / theory</td>
+<td>Physics / engineering</td>
+</tr>
+</tbody>
+</table>
 <hr>
 </section>
-<section id="example-exponential-function-a-shared-melody" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="example-exponential-function-a-shared-melody"><span class="header-section-number">3.4</span> Example: Exponential function (a shared melody)</h2>
-<p><strong>Ananya</strong>: If <span class="math inline">\(f(t)=e^{\lambda t}\)</span>, what do the fractional derivatives give?</p>
-<p><strong>Acharya Anvaya</strong>: For both definitions (in many standard settings) the operator acts like a fractional power on the eigenvalue:</p>
+<section id="worked-example-power-functions" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="worked-example-power-functions"><span class="header-section-number">3.3</span> Worked Example: Power Functions</h2>
+<p><strong>Ananya</strong>: Can we compute something concrete?</p>
+<p><strong>Acharya Anvaya</strong>: Yes. For the Riemann–Liouville derivative of <span class="math inline">\(t^\beta\)</span> (<span class="math inline">\(\beta &gt; -1\)</span>):</p>
+<p><span class="math display">\[
+D_t^\alpha \, t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} \, t^{\beta-\alpha}.
+\]</span></p>
+<p><strong>Ananya</strong>: So the power drops by <span class="math inline">\(\alpha\)</span>, and the Gamma function adjusts the scale.</p>
+<p><strong>Acharya Anvaya</strong>: Correct. For example, with <span class="math inline">\(\alpha = \tfrac{1}{2}\)</span> and <span class="math inline">\(f(t)=t^2\)</span>:</p>
+<p><span class="math display">\[
+D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{1.5}.
+\]</span></p>
+<hr>
+</section>
+<section id="worked-example-exponential-functions" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="worked-example-exponential-functions"><span class="header-section-number">3.4</span> Worked Example: Exponential Functions</h2>
+<p><strong>Acharya Anvaya</strong>: For the exponential, something elegant happens:</p>
 <p><span class="math display">\[
 D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
 \]</span></p>
-<p>This shows how fractional differentiation generalizes ordinary change: the exponential keeps its form while the “rate” <span class="math inline">\(\lambda\)</span> is raised to the fractional power.</p>
+<p><strong>Ananya</strong>: Just as the ordinary derivative gives <span class="math inline">\(\lambda e^{\lambda t}\)</span>, now the order <span class="math inline">\(\alpha\)</span> raises <span class="math inline">\(\lambda\)</span> to a fractional power?</p>
+<p><strong>Acharya Anvaya</strong>: Exactly. This is why exponentials are the “eigenfunctions” of fractional derivatives.</p>
 <hr>
-</section>
-<section id="mini-quest-2-physical-interpretations" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="mini-quest-2-physical-interpretations"><span class="header-section-number">3.5</span> Mini-Quest 2: Physical interpretations</h2>
-<p>Match each <span class="math inline">\(\alpha\)</span> to the behaviour:</p>
+<section id="mini-quest-elastic-viscous-viscoelastic" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="mini-quest-elastic-viscous-viscoelastic"><span class="header-section-number">3.4.1</span> Mini-Quest: Elastic, Viscous, Viscoelastic</h3>
+<p>Match each <span class="math inline">\(\alpha\)</span> to the behavior:</p>
 <ol type="1">
 <li><span class="math inline">\(\alpha = 0\)</span><br>
 </li>
@@ -281,18 +309,21 @@ D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
 <li><span class="math inline">\(0&lt;\alpha&lt;1\)</span></li>
 </ol>
 <p>Choices: purely elastic / purely viscous / viscoelastic (fading memory)</p>
-<p><strong>Answer</strong>: 1 → purely elastic, 2 → purely viscous, 3 → viscoelastic.</p>
-<hr>
-<section id="scene-choosing-a-boat" class="level3" data-number="3.5.1">
-<h3 data-number="3.5.1" class="anchored" data-anchor-id="scene-choosing-a-boat"><span class="header-section-number">3.5.1</span> Scene: Choosing a Boat</h3>
-<p><strong>Ananya</strong>: I think I prefer the Caputo boat for practical problems — the initial data are familiar.</p>
-<p><strong>Acharya Anvaya</strong>: A wise choice when modeling experiments. Yet the Riemann–Liouville boat is elegant and powerful for some theoretical developments. Both are paths across the same river.</p>
+<p><strong>Answer</strong>:<br>
+- <span class="math inline">\(\alpha = 0\)</span>: purely elastic<br>
+- <span class="math inline">\(\alpha = 1\)</span>: purely viscous<br>
+- <span class="math inline">\(0&lt;\alpha&lt;1\)</span>: viscoelastic</p>
 <hr>
 </section>
-<section id="narrator" class="level3" data-number="3.5.2">
-<h3 data-number="3.5.2" class="anchored" data-anchor-id="narrator"><span class="header-section-number">3.5.2</span> Narrator</h3>
-<p><strong>Narrator</strong>: Ananya climbs into the Caputo boat; Acharya steadies the Riemann–Liouville. Both glide over the River of Derivatives. On the far bank rises the <strong>Forest of Equations</strong>, where fractional differential equations will test their new knowledge.</p>
+<section id="scene-choosing-a-boat" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="scene-choosing-a-boat"><span class="header-section-number">3.4.2</span> Scene: Choosing a Boat</h3>
+<p><strong>Ananya</strong>: I think I prefer the Caputo boat for practical problems — the initial data are familiar.</p>
+<p><strong>Acharya Anvaya</strong>: A wise choice for modeling. Yet the Riemann–Liouville boat is elegant in theory. Both are needed, depending on where the river carries us.</p>
 <hr>
+</section>
+<section id="narrator" class="level3" data-number="3.4.3">
+<h3 data-number="3.4.3" class="anchored" data-anchor-id="narrator"><span class="header-section-number">3.4.3</span> Narrator</h3>
+<p><strong>Narrator</strong>: The two boats set out across the River of Derivatives, their oars dipping into currents of change. On the far shore rises the <strong>Forest of Equations</strong>, where whole systems await — fractional differential equations that weave memory and change into one.</p>
 
 
 </section>
