@@ -89,6 +89,85 @@ $$
 **Acharya Anvaya**: Exactly. This is why exponentials are the “eigenfunctions” of fractional derivatives.
 
 ---
+## Example: computing the Caputo derivative
+
+Recall the Caputo derivative (for \(n-1<\alpha\le n\)):
+
+$$
+{}^C D_t^\alpha f(t)
+= \frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
+$$
+
+### Caputo derivative of a power \(t^\beta\)
+
+Let \(f(t)=t^\beta\) with \(\beta>-1\). Compute \({}^C D_t^\alpha t^\beta\).
+If \(\beta\) is a nonnegative integer with \(\beta\le n-1\), then \(f^{(n)}\equiv0\) and
+
+$$
+{}^C D_t^\alpha t^\beta = 0 \qquad (\beta =0,1,\dots,n-1).
+$$
+
+If \(\beta > n-1\), differentiate inside the integral and evaluate with the Beta function:
+
+\[
+\begin{aligned}
+{}^C D_t^\alpha t^\beta
+&= \frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} \frac{d^n}{d\tau^n}\tau^\beta\, d\tau \\
+&= \frac{\Gamma(\beta+1)}{\Gamma(\beta-n+1)\,\Gamma(n-\alpha)}
+  \int_0^t (t-\tau)^{\,n-\alpha-1}\tau^{\beta-n}\, d\tau.
+\end{aligned}
+\]
+
+Use the substitution \(\tau = t u\) and the Beta integral
+\(\displaystyle \int_0^1 u^{p-1}(1-u)^{q-1}\,du = B(p,q)=\frac{\Gamma(p)\Gamma(q)}{\Gamma(p+q)}\).
+This yields
+
+$$
+{}^C D_t^\alpha t^\beta
+= \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
+$$
+
+So — for \(\beta > n-1\) — the Caputo derivative of a power has the same closed form as the Riemann–Liouville derivative:
+
+$$
+{}^C D_t^\alpha t^\beta
+= \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
+$$
+
+---
+
+### Concrete example: \(\alpha=\tfrac{1}{2}\), \(f(t)=t^2\)
+
+Here \(n=1\) (because \(0<\tfrac12\le1\)) and \(\beta=2>n-1=0\). Apply the formula:
+
+$$
+{}^C D_t^{1/2} t^2
+= \frac{\Gamma(3)}{\Gamma(3-\tfrac12)}\, t^{2-\tfrac12}
+= \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
+$$
+
+(You can rewrite the Gamma values if you like: \(\Gamma(3)=2\), \(\Gamma(2.5)=\tfrac{3}{4}\sqrt{\pi}\), so the constant equals \(2/(\tfrac{3}{4}\sqrt{\pi})=\tfrac{8}{3\sqrt{\pi}}\).)
+
+---
+
+### Caputo derivative of the exponential
+
+For sufficiently regular (analytic) functions such as \(f(t)=e^{\lambda t}\), one obtains the familiar eigenfunction property:
+
+$$
+{}^C D_t^\alpha e^{\lambda t} \;=\; \lambda^\alpha e^{\lambda t},
+$$
+
+under the usual conventions (this holds when the fractional operator acts on the entire causal exponential; small caveats about branches of \(\lambda^\alpha\) apply if \(\lambda\) is complex).
+
+---
+
+### Remarks (practical takeaways)
+
+- **Low-degree polynomials:** Caputo derivatives of polynomials of degree \(<n\) vanish — this is why Caputo is convenient for initial-value problems: classical initial data \(f(0),f'(0),\dots\) enter naturally.  
+- **Matching with RL:** For sufficiently smooth powers (or analytic functions) the Caputo and Riemann–Liouville formulas often coincide (they produce the same closed form); the *difference* is mainly in how initial conditions are represented.  
+- **Interpretation:** The factor \(t^{\beta-\alpha}\) shows the fractional derivative reduces the power by \(\alpha\) and rescales by Gamma factors — a precise interpolation between integer-order calculus results.
+
 
 ### Mini-Quest: Elastic, Viscous, Viscoelastic
 

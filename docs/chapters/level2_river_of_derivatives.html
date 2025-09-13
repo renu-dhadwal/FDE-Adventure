@@ -167,15 +167,15 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#scene-arrival-at-the-river" id="toc-scene-arrival-at-the-river" class="nav-link active" data-scroll-target="#scene-arrival-at-the-river"><span class="header-section-number">3.0.1</span> Scene: Arrival at the River</a></li>
-  <li><a href="#rigorous-definitions" id="toc-rigorous-definitions" class="nav-link" data-scroll-target="#rigorous-definitions"><span class="header-section-number">3.1</span> Rigorous Definitions</a></li>
-  <li><a href="#comparison-at-a-glance" id="toc-comparison-at-a-glance" class="nav-link" data-scroll-target="#comparison-at-a-glance"><span class="header-section-number">3.2</span> Comparison at a Glance</a></li>
-  <li><a href="#worked-example-power-functions" id="toc-worked-example-power-functions" class="nav-link" data-scroll-target="#worked-example-power-functions"><span class="header-section-number">3.3</span> Worked Example: Power Functions</a></li>
-  <li><a href="#worked-example-exponential-functions" id="toc-worked-example-exponential-functions" class="nav-link" data-scroll-target="#worked-example-exponential-functions"><span class="header-section-number">3.4</span> Worked Example: Exponential Functions</a>
+  <li><a href="#example-computing-the-caputo-derivative" id="toc-example-computing-the-caputo-derivative" class="nav-link active" data-scroll-target="#example-computing-the-caputo-derivative"><span class="header-section-number">3.1</span> Example: computing the Caputo derivative</a>
   <ul class="collapse">
-  <li><a href="#mini-quest-elastic-viscous-viscoelastic" id="toc-mini-quest-elastic-viscous-viscoelastic" class="nav-link" data-scroll-target="#mini-quest-elastic-viscous-viscoelastic"><span class="header-section-number">3.4.1</span> Mini-Quest: Elastic, Viscous, Viscoelastic</a></li>
-  <li><a href="#scene-choosing-a-boat" id="toc-scene-choosing-a-boat" class="nav-link" data-scroll-target="#scene-choosing-a-boat"><span class="header-section-number">3.4.2</span> Scene: Choosing a Boat</a></li>
-  <li><a href="#narrator" id="toc-narrator" class="nav-link" data-scroll-target="#narrator"><span class="header-section-number">3.4.3</span> Narrator</a></li>
+  <li><a href="#caputo-derivative-of-a-power-t" id="toc-caputo-derivative-of-a-power-t" class="nav-link" data-scroll-target="#caputo-derivative-of-a-power-t"><span class="header-section-number">3.1.1</span> Caputo derivative of a power (t^)</a></li>
+  <li><a href="#concrete-example-ftt2" id="toc-concrete-example-ftt2" class="nav-link" data-scroll-target="#concrete-example-ftt2"><span class="header-section-number">3.1.2</span> Concrete example: (=), (f(t)=t^2)</a></li>
+  <li><a href="#caputo-derivative-of-the-exponential" id="toc-caputo-derivative-of-the-exponential" class="nav-link" data-scroll-target="#caputo-derivative-of-the-exponential"><span class="header-section-number">3.1.3</span> Caputo derivative of the exponential</a></li>
+  <li><a href="#remarks-practical-takeaways" id="toc-remarks-practical-takeaways" class="nav-link" data-scroll-target="#remarks-practical-takeaways"><span class="header-section-number">3.1.4</span> Remarks (practical takeaways)</a></li>
+  <li><a href="#mini-quest-elastic-viscous-viscoelastic" id="toc-mini-quest-elastic-viscous-viscoelastic" class="nav-link" data-scroll-target="#mini-quest-elastic-viscous-viscoelastic"><span class="header-section-number">3.1.5</span> Mini-Quest: Elastic, Viscous, Viscoelastic</a></li>
+  <li><a href="#scene-choosing-a-boat" id="toc-scene-choosing-a-boat" class="nav-link" data-scroll-target="#scene-choosing-a-boat"><span class="header-section-number">3.1.6</span> Scene: Choosing a Boat</a></li>
+  <li><a href="#narrator" id="toc-narrator" class="nav-link" data-scroll-target="#narrator"><span class="header-section-number">3.1.7</span> Narrator</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -202,104 +202,72 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Characters</strong>:<br>
-- <strong>Acharya Anvaya (Guide/Teacher, continuity of knowledge)</strong><br>
-- <strong>Ananya (Learner, seeker of truth)</strong></p>
-<hr>
-<section id="scene-arrival-at-the-river" class="level3" data-number="3.0.1">
-<h3 data-number="3.0.1" class="anchored" data-anchor-id="scene-arrival-at-the-river"><span class="header-section-number">3.0.1</span> Scene: Arrival at the River</h3>
-<p>With the Key of Smriti in hand, Ananya steps beyond the temple gates. A wide river flows before her, restless and shining. On the shore rest <strong>two boats</strong>, each with a carved name: <em>Riemann–Liouville</em> and <em>Caputo</em>.</p>
-<p><strong>Ananya</strong>: Two boats? Which one do we take to cross the River of Derivatives?</p>
-<p><strong>Acharya Anvaya</strong>: Both will carry you across, but their way of remembering the river differs. One remembers everything since the river’s source; the other begins its memory only when you step aboard.</p>
+<section id="example-computing-the-caputo-derivative" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="example-computing-the-caputo-derivative"><span class="header-section-number">3.1</span> Example: computing the Caputo derivative</h2>
+<p>Recall the Caputo derivative (for (n-1&lt;n)):</p>
+<p><span class="math display">\[
+{}^C D_t^\alpha f(t)
+= \frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
+\]</span></p>
+<section id="caputo-derivative-of-a-power-t" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="caputo-derivative-of-a-power-t"><span class="header-section-number">3.1.1</span> Caputo derivative of a power (t^)</h3>
+<p>Let (f(t)=t^) with (&gt;-1). Compute ({}^C D_t<sup>t</sup>). If () is a nonnegative integer with (n-1), then (f^{(n)}) and</p>
+<p><span class="math display">\[
+{}^C D_t^\alpha t^\beta = 0 \qquad (\beta =0,1,\dots,n-1).
+\]</span></p>
+<p>If (&gt; n-1), differentiate inside the integral and evaluate with the Beta function:</p>
+[
+<span class="math display">\[\begin{aligned}
+{}^C D_t^\alpha t^\beta
+&amp;= \frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} \frac{d^n}{d\tau^n}\tau^\beta\, d\tau \\
+&amp;= \frac{\Gamma(\beta+1)}{\Gamma(\beta-n+1)\,\Gamma(n-\alpha)}
+  \int_0^t (t-\tau)^{\,n-\alpha-1}\tau^{\beta-n}\, d\tau.
+\end{aligned}\]</span>
+<p>]</p>
+<p>Use the substitution (= t u) and the Beta integral (_0^1 u<sup>{p-1}(1-u)</sup>{q-1},du = B(p,q)=). This yields</p>
+<p><span class="math display">\[
+{}^C D_t^\alpha t^\beta
+= \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
+\]</span></p>
+<p>So — for (&gt; n-1) — the Caputo derivative of a power has the same closed form as the Riemann–Liouville derivative:</p>
+<p><span class="math display">\[
+{}^C D_t^\alpha t^\beta
+= \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
+\]</span></p>
 <hr>
 </section>
-<section id="rigorous-definitions" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="rigorous-definitions"><span class="header-section-number">3.1</span> Rigorous Definitions</h2>
-<p><strong>Acharya Anvaya</strong>: Let us be precise. Suppose <span class="math inline">\(n-1 &lt; \alpha \leq n\)</span> with <span class="math inline">\(n \in \mathbb{N}\)</span>.</p>
+<section id="concrete-example-ftt2" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="concrete-example-ftt2"><span class="header-section-number">3.1.2</span> Concrete example: (=), (f(t)=t^2)</h3>
+<p>Here (n=1) (because (0&lt;)) and (&gt;n-1=0). Apply the formula:</p>
+<p><span class="math display">\[
+{}^C D_t^{1/2} t^2
+= \frac{\Gamma(3)}{\Gamma(3-\tfrac12)}\, t^{2-\tfrac12}
+= \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
+\]</span></p>
+<p>(You can rewrite the Gamma values if you like: ((3)=2), ((2.5)=), so the constant equals (2/()=).)</p>
+<hr>
+</section>
+<section id="caputo-derivative-of-the-exponential" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="caputo-derivative-of-the-exponential"><span class="header-section-number">3.1.3</span> Caputo derivative of the exponential</h3>
+<p>For sufficiently regular (analytic) functions such as (f(t)=e^{t}), one obtains the familiar eigenfunction property:</p>
+<p><span class="math display">\[
+{}^C D_t^\alpha e^{\lambda t} \;=\; \lambda^\alpha e^{\lambda t},
+\]</span></p>
+<p>under the usual conventions (this holds when the fractional operator acts on the entire causal exponential; small caveats about branches of (^) apply if () is complex).</p>
+<hr>
+</section>
+<section id="remarks-practical-takeaways" class="level3" data-number="3.1.4">
+<h3 data-number="3.1.4" class="anchored" data-anchor-id="remarks-practical-takeaways"><span class="header-section-number">3.1.4</span> Remarks (practical takeaways)</h3>
 <ul>
-<li><strong>Riemann–Liouville fractional derivative</strong>:</li>
+<li><strong>Low-degree polynomials:</strong> Caputo derivatives of polynomials of degree (&lt;n) vanish — this is why Caputo is convenient for initial-value problems: classical initial data (f(0),f’(0),) enter naturally.<br>
+</li>
+<li><strong>Matching with RL:</strong> For sufficiently smooth powers (or analytic functions) the Caputo and Riemann–Liouville formulas often coincide (they produce the same closed form); the <em>difference</em> is mainly in how initial conditions are represented.<br>
+</li>
+<li><strong>Interpretation:</strong> The factor (t^{-}) shows the fractional derivative reduces the power by () and rescales by Gamma factors — a precise interpolation between integer-order calculus results.</li>
 </ul>
-<p><span class="math display">\[
-D_t^\alpha f(t) \;=\; \frac{d^n}{dt^n}\, I^{\,n-\alpha} f(t)
-\;=\; \frac{1}{\Gamma(n-\alpha)}\frac{d^n}{dt^n}\int_0^t (t-\tau)^{\,n-\alpha-1} f(\tau)\,d\tau.
-\]</span></p>
-<ul>
-<li><strong>Caputo fractional derivative</strong>:</li>
-</ul>
-<p><span class="math display">\[
-{}^C D_t^\alpha f(t) \;=\;
-I^{\,n-\alpha} f^{(n)}(t)
-\;=\;\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
-\]</span></p>
-<p><strong>Ananya</strong>: So the difference is: Riemann–Liouville differentiates <em>after</em> integrating, while Caputo differentiates <em>before</em> integrating?</p>
-<p><strong>Acharya Anvaya</strong>: Exactly. Two boats across the same river — same waters, different journeys.</p>
-<hr>
 </section>
-<section id="comparison-at-a-glance" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="comparison-at-a-glance"><span class="header-section-number">3.2</span> Comparison at a Glance</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 42%">
-<col style="width: 37%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Aspect</th>
-<th>Riemann–Liouville</th>
-<th>Caputo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Formula</td>
-<td><span class="math inline">\(D^\alpha f = \dfrac{d^n}{dt^n} I^{n-\alpha} f\)</span></td>
-<td><span class="math inline">\({}^C D^\alpha f = I^{n-\alpha} f^{(n)}\)</span></td>
-</tr>
-<tr class="even">
-<td>Memory starts</td>
-<td>From <span class="math inline">\(t=0\)</span> (full history)</td>
-<td>From problem start (with <span class="math inline">\(f^{(n)}\)</span>)</td>
-</tr>
-<tr class="odd">
-<td>Initial conditions</td>
-<td>Involve fractional integrals</td>
-<td>Classical: <span class="math inline">\(f(0), f'(0), \dots\)</span></td>
-</tr>
-<tr class="even">
-<td>Common use</td>
-<td>Pure math / theory</td>
-<td>Physics / engineering</td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-<section id="worked-example-power-functions" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="worked-example-power-functions"><span class="header-section-number">3.3</span> Worked Example: Power Functions</h2>
-<p><strong>Ananya</strong>: Can we compute something concrete?</p>
-<p><strong>Acharya Anvaya</strong>: Yes. For the Riemann–Liouville derivative of <span class="math inline">\(t^\beta\)</span> (<span class="math inline">\(\beta &gt; -1\)</span>):</p>
-<p><span class="math display">\[
-D_t^\alpha \, t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} \, t^{\beta-\alpha}.
-\]</span></p>
-<p><strong>Ananya</strong>: So the power drops by <span class="math inline">\(\alpha\)</span>, and the Gamma function adjusts the scale.</p>
-<p><strong>Acharya Anvaya</strong>: Correct. For example, with <span class="math inline">\(\alpha = \tfrac{1}{2}\)</span> and <span class="math inline">\(f(t)=t^2\)</span>:</p>
-<p><span class="math display">\[
-D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{1.5}.
-\]</span></p>
-<hr>
-</section>
-<section id="worked-example-exponential-functions" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="worked-example-exponential-functions"><span class="header-section-number">3.4</span> Worked Example: Exponential Functions</h2>
-<p><strong>Acharya Anvaya</strong>: For the exponential, something elegant happens:</p>
-<p><span class="math display">\[
-D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
-\]</span></p>
-<p><strong>Ananya</strong>: Just as the ordinary derivative gives <span class="math inline">\(\lambda e^{\lambda t}\)</span>, now the order <span class="math inline">\(\alpha\)</span> raises <span class="math inline">\(\lambda\)</span> to a fractional power?</p>
-<p><strong>Acharya Anvaya</strong>: Exactly. This is why exponentials are the “eigenfunctions” of fractional derivatives.</p>
-<hr>
-<section id="mini-quest-elastic-viscous-viscoelastic" class="level3" data-number="3.4.1">
-<h3 data-number="3.4.1" class="anchored" data-anchor-id="mini-quest-elastic-viscous-viscoelastic"><span class="header-section-number">3.4.1</span> Mini-Quest: Elastic, Viscous, Viscoelastic</h3>
+<section id="mini-quest-elastic-viscous-viscoelastic" class="level3" data-number="3.1.5">
+<h3 data-number="3.1.5" class="anchored" data-anchor-id="mini-quest-elastic-viscous-viscoelastic"><span class="header-section-number">3.1.5</span> Mini-Quest: Elastic, Viscous, Viscoelastic</h3>
 <p>Match each <span class="math inline">\(\alpha\)</span> to the behavior:</p>
 <ol type="1">
 <li><span class="math inline">\(\alpha = 0\)</span><br>
@@ -315,14 +283,14 @@ D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
 - <span class="math inline">\(0&lt;\alpha&lt;1\)</span>: viscoelastic</p>
 <hr>
 </section>
-<section id="scene-choosing-a-boat" class="level3" data-number="3.4.2">
-<h3 data-number="3.4.2" class="anchored" data-anchor-id="scene-choosing-a-boat"><span class="header-section-number">3.4.2</span> Scene: Choosing a Boat</h3>
+<section id="scene-choosing-a-boat" class="level3" data-number="3.1.6">
+<h3 data-number="3.1.6" class="anchored" data-anchor-id="scene-choosing-a-boat"><span class="header-section-number">3.1.6</span> Scene: Choosing a Boat</h3>
 <p><strong>Ananya</strong>: I think I prefer the Caputo boat for practical problems — the initial data are familiar.</p>
 <p><strong>Acharya Anvaya</strong>: A wise choice for modeling. Yet the Riemann–Liouville boat is elegant in theory. Both are needed, depending on where the river carries us.</p>
 <hr>
 </section>
-<section id="narrator" class="level3" data-number="3.4.3">
-<h3 data-number="3.4.3" class="anchored" data-anchor-id="narrator"><span class="header-section-number">3.4.3</span> Narrator</h3>
+<section id="narrator" class="level3" data-number="3.1.7">
+<h3 data-number="3.1.7" class="anchored" data-anchor-id="narrator"><span class="header-section-number">3.1.7</span> Narrator</h3>
 <p><strong>Narrator</strong>: The two boats set out across the River of Derivatives, their oars dipping into currents of change. On the far shore rises the <strong>Forest of Equations</strong>, where whole systems await — fractional differential equations that weave memory and change into one.</p>
 
 
