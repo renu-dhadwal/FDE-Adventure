@@ -4,10 +4,11 @@ project:
 
 book:
   title: "Fractional Calculus Adventure"
-  author: "Acharya Anvaya"
+  author: Renu Dhadwal
   chapters:
     - index.qmd
     - chapters/level1_temple_of_smriti.qmd
+    - chapters/level2_river_of_derivatives.qmd
 
 format:
   html:

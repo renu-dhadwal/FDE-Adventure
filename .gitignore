@@ -1,2 +1,7 @@
-/.quarto/
+# Quarto caches
+.quarto/
+_book/
+_site/
 **/*.quarto_ipynb
+
+/.quarto/
