@@ -10,3 +10,5 @@ format: html
 Start here:
 
 - [Level 1 – Temple of Smriti (Memory)](chapters/level1_temple_of_smriti.qmd)
+- [Level 2 – The River of Derivatives](chapters/level2_river_of_derivatives.qmd)
+- [Level 2.5 - The Grove of Expansion](chapters/level2_5_grove_of_expansions.qmd)
