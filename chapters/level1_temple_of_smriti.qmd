@@ -34,35 +34,17 @@ we are collecting its entire past. This is a kind of memory, isn’t it?
 
 **Acharya Anvaya**: You are absolutely right, Ananya! But before the temple reveals its secret, let us recall what happens when we integrate repeatedly.
 
-**Question**: What is the integral of $1$?
+---
 
-**Ananya**:
+<div class="rule-box">
 
-$$
-I^1(1)(t) = \int_0^t 1\, d\tau = t.
-$$
-
-**Acharya Anvaya**: Good. And integrating once more?
-
-**Ananya**:
-
-$$
-I^2(1)(t) = \int_0^t I^1(1)(\tau)\, d\tau = \int_0^t \tau\, d\tau = \frac{t^2}{2!}.
-$$
-
-**Acharya Anvaya**: And once more?
-
-**Ananya**:
-
-$$
-I^3(1)(t) = \int_0^t I^2(1)(\tau)\, d\tau = \int_0^t \frac{\tau^2}{2}\, d\tau = \frac{t^3}{3!}.
-$$
-
-**Acharya Anvaya**: Yes! The $n$-th integral of a function $f(t)$ can be written using the *Cauchy formula for repeated integration*:
+**Cauchy formula for repeated integration**  
 
 $$
 I^n f(t) = \frac{1}{(n-1)!}\int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
 $$
+
+</div>
 
 ---
 
@@ -74,33 +56,35 @@ The temple wall shimmers again, and new verses appear, written in flowing Sanskr
 
 **Acharya Anvaya**: The formula you just derived for integer $n$, Ananya, is not bound to whole numbers alone. The Great ones in modern times, **Riemann from Germany** and **Liouville from France** extended it further. This is known today as the **Riemann–Liouville fractional integral**:
 
+<div class="rule-box">
+
+**Riemann–Liouville fractional integral**  
+
 $$
 (I^\alpha f)(t) = \frac{1}{\Gamma(\alpha)} \int_0^t (t-\tau)^{\alpha-1} f(\tau)\, d\tau, \qquad \alpha > 0.
 $$
+
+</div>
 
 **Ananya**: So it is the same as the Cauchy formula, but with $(n-1)!$ replaced by $\Gamma(\alpha)$ — allowing $\alpha$ to be any positive real number?
 
 **Acharya Anvaya**: Exactly. This was the leap — from repeated integer steps to a smooth continuum of memory depths. Each value of $\alpha$ encodes how strongly the past is remembered.
 
-
-**Acharya Anvaya**: Just as the *smriti* texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time.
-
-
-**Ananya**: So the past influences the present, but the farther back in time we go, the weaker its pull?
-
-**Acharya Anvaya**: Precisely. Like the echo of a conch in the Himalayas — recent notes ring loud, but the first strike still whispers faintly.
-
 ---
 
 ### Mini-Quest 1: The Half-Memory
 
-Evaluate $I^{1/2}(1)$.
+<div class="exercise-box">
 
-**Answer**:
+Evaluate $I^{1/2}(1)$.  
+
+**Answer**:  
 
 $$
 (I^{1/2}1)(t) = \frac{2}{\sqrt{\pi}}\, t^{1/2}.
 $$
+
+</div>
 
 **Acharya Anvaya**: Well done, Ananya. You have grasped the essence of fractional memory. You now hold the **Key of Smriti (Memory)**. With it, the temple doors open to the next journey.
 
@@ -113,17 +97,17 @@ A larger $\alpha$ emphasizes the near past — like yesterday’s lived experien
 
 ### Mini-Quest 2: Comparing Memories
 
+<div class="exercise-box">
+
 Which value of $\alpha$ remembers the distant past most strongly?
 
 - Choice A: $\alpha = 0.2$  
 - Choice B: $\alpha = 0.5$  
 - Choice C: $\alpha = 0.9$
 
-**Ananya**: Since the kernel is $(t-\tau)^{\alpha - 1}$, smaller $\alpha$ means slower decay. So the answer is A.
+**Answer**: Since the kernel is $(t-\tau)^{\alpha - 1}$, smaller $\alpha$ means slower decay. So the answer is **A**.
 
-**Acharya Anvaya**: Correct. You understand how the depth of memory depends on $\alpha$. The temple blesses you with wisdom for the journey ahead.
-
-**Ananya**: I am curious to know more about where such memory comes up.
+</div>
 
 ---
 
@@ -150,29 +134,43 @@ $$
 
 **Acharya Anvaya**: Exactly. But the world of polymers is different. These are viscoelastic materials. Their stress at time $t$ remembers the entire history of strain. It is written as:
 
+<div class="rule-box">
+
 $$
 \sigma(t) = \int_0^t G(t-\tau)\,\frac{d\varepsilon}{d\tau}(\tau)\,d\tau,
 $$
 
 where $G$ is the **relaxation kernel** — the weight of memory.
 
+</div>
+
 **Ananya**: So the kernel is like the echoing chamber of the temple — weighing the voices of the past according to distance in time?
 
 **Acharya Anvaya**: Precisely. If $G$ is exponential we get Maxwell-type models. Experiments often show a power-law:
+
+<div class="rule-box">
 
 $$
 G(t-\tau)\sim (t-\tau)^{-\alpha}, \qquad 0<\alpha<1.
 $$
 
+</div>
+
 **Ananya**: Then stress never completely forgets — the echoes fade slowly.
 
 **Acharya Anvaya**: Substituting this kernel gives a fractional constitutive law:
+
+<div class="rule-box">
 
 $$
 \sigma(t)=\eta_\alpha\,D_t^\alpha\varepsilon(t),
 $$
 
 where $D_t^\alpha$ is a **fractional derivative** of the strain.
+
+</div>
+
+---
 
 **Ananya**: But what exactly is a fractional derivative?
 
@@ -192,6 +190,8 @@ where $D_t^\alpha$ is a **fractional derivative** of the strain.
 
 - For $0<\alpha<1$:  
   $D_t^\alpha$ interpolates smoothly between these two extremes, capturing behavior that is partly elastic and partly viscous (viscoelastic behavior).
+
+---
 
 **Ananya**: So when $\alpha=0$, the memory is eternal — purely elastic. When $\alpha=1$, memory vanishes quickly — purely viscous. And for $0<\alpha<1$, we have viscoelasticity, with fading memory that bridges the two.
 

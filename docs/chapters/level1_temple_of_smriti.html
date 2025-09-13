@@ -221,25 +221,13 @@ I^1 f(t) = \int_{0}^{t} f(\tau)\, d\tau
 \]</span></p>
 <p>we are collecting its entire past. This is a kind of memory, isn’t it?</p>
 <p><strong>Acharya Anvaya</strong>: You are absolutely right, Ananya! But before the temple reveals its secret, let us recall what happens when we integrate repeatedly.</p>
-<p><strong>Question</strong>: What is the integral of <span class="math inline">\(1\)</span>?</p>
-<p><strong>Ananya</strong>:</p>
-<p><span class="math display">\[
-I^1(1)(t) = \int_0^t 1\, d\tau = t.
-\]</span></p>
-<p><strong>Acharya Anvaya</strong>: Good. And integrating once more?</p>
-<p><strong>Ananya</strong>:</p>
-<p><span class="math display">\[
-I^2(1)(t) = \int_0^t I^1(1)(\tau)\, d\tau = \int_0^t \tau\, d\tau = \frac{t^2}{2!}.
-\]</span></p>
-<p><strong>Acharya Anvaya</strong>: And once more?</p>
-<p><strong>Ananya</strong>:</p>
-<p><span class="math display">\[
-I^3(1)(t) = \int_0^t I^2(1)(\tau)\, d\tau = \int_0^t \frac{\tau^2}{2}\, d\tau = \frac{t^3}{3!}.
-\]</span></p>
-<p><strong>Acharya Anvaya</strong>: Yes! The <span class="math inline">\(n\)</span>-th integral of a function <span class="math inline">\(f(t)\)</span> can be written using the <em>Cauchy formula for repeated integration</em>:</p>
+<hr>
+<div class="rule-box">
+<p><strong>Cauchy formula for repeated integration</strong></p>
 <p><span class="math display">\[
 I^n f(t) = \frac{1}{(n-1)!}\int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
 \]</span></p>
+</div>
 <hr>
 </section>
 <section id="the-riemannliouville-integral" class="level2" data-number="2.2">
@@ -247,22 +235,24 @@ I^n f(t) = \frac{1}{(n-1)!}\int_0^t (t-\tau)^{\,n-1} f(\tau)\, d\tau.
 <p>The temple wall shimmers again, and new verses appear, written in flowing Sanskrit:</p>
 <p><em>“यथा यथा संचितं स्मर्यते, तथा तथैव अनन्तं स्मृतिः — As memory gathers step by step, it stretches into infinity.”</em></p>
 <p><strong>Acharya Anvaya</strong>: The formula you just derived for integer <span class="math inline">\(n\)</span>, Ananya, is not bound to whole numbers alone. The Great ones in modern times, <strong>Riemann from Germany</strong> and <strong>Liouville from France</strong> extended it further. This is known today as the <strong>Riemann–Liouville fractional integral</strong>:</p>
+<div class="rule-box">
+<p><strong>Riemann–Liouville fractional integral</strong></p>
 <p><span class="math display">\[
 (I^\alpha f)(t) = \frac{1}{\Gamma(\alpha)} \int_0^t (t-\tau)^{\alpha-1} f(\tau)\, d\tau, \qquad \alpha &gt; 0.
 \]</span></p>
+</div>
 <p><strong>Ananya</strong>: So it is the same as the Cauchy formula, but with <span class="math inline">\((n-1)!\)</span> replaced by <span class="math inline">\(\Gamma(\alpha)\)</span> — allowing <span class="math inline">\(\alpha\)</span> to be any positive real number?</p>
 <p><strong>Acharya Anvaya</strong>: Exactly. This was the leap — from repeated integer steps to a smooth continuum of memory depths. Each value of <span class="math inline">\(\alpha\)</span> encodes how strongly the past is remembered.</p>
-<p><strong>Acharya Anvaya</strong>: Just as the <em>smriti</em> texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time.</p>
-<p><strong>Ananya</strong>: So the past influences the present, but the farther back in time we go, the weaker its pull?</p>
-<p><strong>Acharya Anvaya</strong>: Precisely. Like the echo of a conch in the Himalayas — recent notes ring loud, but the first strike still whispers faintly.</p>
 <hr>
 <section id="mini-quest-1-the-half-memory" class="level3" data-number="2.2.1">
 <h3 data-number="2.2.1" class="anchored" data-anchor-id="mini-quest-1-the-half-memory"><span class="header-section-number">2.2.1</span> Mini-Quest 1: The Half-Memory</h3>
+<div class="exercise-box">
 <p>Evaluate <span class="math inline">\(I^{1/2}(1)\)</span>.</p>
 <p><strong>Answer</strong>:</p>
 <p><span class="math display">\[
 (I^{1/2}1)(t) = \frac{2}{\sqrt{\pi}}\, t^{1/2}.
 \]</span></p>
+</div>
 <p><strong>Acharya Anvaya</strong>: Well done, Ananya. You have grasped the essence of fractional memory. You now hold the <strong>Key of Smriti (Memory)</strong>. With it, the temple doors open to the next journey.</p>
 <p>The fractional integral is like oral tradition: newer retellings weigh more, but the first telling is never fully erased.</p>
 <p>A smaller <span class="math inline">\(\alpha\)</span> preserves distant past more strongly — like stories handed down for centuries.<br>
@@ -271,6 +261,7 @@ A larger <span class="math inline">\(\alpha\)</span> emphasizes the near past �
 </section>
 <section id="mini-quest-2-comparing-memories" class="level3" data-number="2.2.2">
 <h3 data-number="2.2.2" class="anchored" data-anchor-id="mini-quest-2-comparing-memories"><span class="header-section-number">2.2.2</span> Mini-Quest 2: Comparing Memories</h3>
+<div class="exercise-box">
 <p>Which value of <span class="math inline">\(\alpha\)</span> remembers the distant past most strongly?</p>
 <ul>
 <li>Choice A: <span class="math inline">\(\alpha = 0.2\)</span><br>
@@ -279,9 +270,8 @@ A larger <span class="math inline">\(\alpha\)</span> emphasizes the near past �
 </li>
 <li>Choice C: <span class="math inline">\(\alpha = 0.9\)</span></li>
 </ul>
-<p><strong>Ananya</strong>: Since the kernel is <span class="math inline">\((t-\tau)^{\alpha - 1}\)</span>, smaller <span class="math inline">\(\alpha\)</span> means slower decay. So the answer is A.</p>
-<p><strong>Acharya Anvaya</strong>: Correct. You understand how the depth of memory depends on <span class="math inline">\(\alpha\)</span>. The temple blesses you with wisdom for the journey ahead.</p>
-<p><strong>Ananya</strong>: I am curious to know more about where such memory comes up.</p>
+<p><strong>Answer</strong>: Since the kernel is <span class="math inline">\((t-\tau)^{\alpha - 1}\)</span>, smaller <span class="math inline">\(\alpha\)</span> means slower decay. So the answer is <strong>A</strong>.</p>
+</div>
 <hr>
 </section>
 </section>
@@ -301,21 +291,28 @@ The stress responds instantly to strain.</p>
 <p><strong>Acharya Anvaya</strong>: Here stress depends only on the <em>rate</em> of strain at the present moment.</p>
 <p><strong>Ananya</strong>: So both Hooke’s law and Newton’s law speak only of the present. They have no memory of what came before?</p>
 <p><strong>Acharya Anvaya</strong>: Exactly. But the world of polymers is different. These are viscoelastic materials. Their stress at time <span class="math inline">\(t\)</span> remembers the entire history of strain. It is written as:</p>
+<div class="rule-box">
 <p><span class="math display">\[
 \sigma(t) = \int_0^t G(t-\tau)\,\frac{d\varepsilon}{d\tau}(\tau)\,d\tau,
 \]</span></p>
 <p>where <span class="math inline">\(G\)</span> is the <strong>relaxation kernel</strong> — the weight of memory.</p>
+</div>
 <p><strong>Ananya</strong>: So the kernel is like the echoing chamber of the temple — weighing the voices of the past according to distance in time?</p>
 <p><strong>Acharya Anvaya</strong>: Precisely. If <span class="math inline">\(G\)</span> is exponential we get Maxwell-type models. Experiments often show a power-law:</p>
+<div class="rule-box">
 <p><span class="math display">\[
 G(t-\tau)\sim (t-\tau)^{-\alpha}, \qquad 0&lt;\alpha&lt;1.
 \]</span></p>
+</div>
 <p><strong>Ananya</strong>: Then stress never completely forgets — the echoes fade slowly.</p>
 <p><strong>Acharya Anvaya</strong>: Substituting this kernel gives a fractional constitutive law:</p>
+<div class="rule-box">
 <p><span class="math display">\[
 \sigma(t)=\eta_\alpha\,D_t^\alpha\varepsilon(t),
 \]</span></p>
 <p>where <span class="math inline">\(D_t^\alpha\)</span> is a <strong>fractional derivative</strong> of the strain.</p>
+</div>
+<hr>
 <p><strong>Ananya</strong>: But what exactly is a fractional derivative?</p>
 <p><strong>Acharya Anvaya</strong>: For guidance:</p>
 <ul>
@@ -332,6 +329,7 @@ i.e.&nbsp;the function itself, as in Hooke’s law of elasticity.</p></li>
 <li><p>For <span class="math inline">\(0&lt;\alpha&lt;1\)</span>:<br>
 <span class="math inline">\(D_t^\alpha\)</span> interpolates smoothly between these two extremes, capturing behavior that is partly elastic and partly viscous (viscoelastic behavior).</p></li>
 </ul>
+<hr>
 <p><strong>Ananya</strong>: So when <span class="math inline">\(\alpha=0\)</span>, the memory is eternal — purely elastic. When <span class="math inline">\(\alpha=1\)</span>, memory vanishes quickly — purely viscous. And for <span class="math inline">\(0&lt;\alpha&lt;1\)</span>, we have viscoelasticity, with fading memory that bridges the two.</p>
 <p><strong>Acharya Anvaya</strong>: Exactly! Thus, the language of fractional calculus is the scripture that describes memory in matter — echoing from the temple walls into the world of flowing polymers.</p>
 <p><strong>Acharya Anvaya</strong>: We will learn about fractional derivatives as we go further to the Ganges — the River of Derivatives.</p>
