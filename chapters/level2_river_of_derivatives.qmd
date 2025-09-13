@@ -12,85 +12,87 @@ jupyter: python3
 
 ### Scene: Arrival at the River
 
-With the Key of Smriti in hand, Ananya steps beyond the temple gates. Before her flows a wide river, its surface broken by currents and eddies — the **River of Derivatives**. On the shore rest **two boats**, each with a carved name: **Riemann–Liouville** and **Caputo**.
+With the Key of Smriti in hand, Ananya steps beyond the temple gates. A wide river flows before her, restless and shining. On the shore rest **two boats**, each with a carved name: *Riemann–Liouville* and *Caputo*.
 
 **Ananya**: Two boats? Which one do we take to cross the River of Derivatives?
 
-**Acharya Anvaya**: Both will carry you across, but their way of remembering the river differs. One remembers everything since the river’s source; the other begins its memory the moment you step aboard.
+**Acharya Anvaya**: Both will carry you across, but their way of remembering the river differs. One remembers everything since the river’s source; the other begins its memory only when you step aboard.
 
 ---
 
-## The Two Boats: Intuition
+## Rigorous Definitions
 
-**Acharya Anvaya**: Think of the river as change itself. A derivative measures how a quantity changes; a fractional derivative measures change while remembering the past. The two boats are two mathematical realizations of that remembering.
+**Acharya Anvaya**: Let us be precise. Suppose $n-1 < \alpha \leq n$ with $n \in \mathbb{N}$.
 
-- The **Riemann–Liouville boat** carries memory that reaches back to the origin of time $0$.  
-- The **Caputo boat** begins its memory from when you start the problem: it uses ordinary derivatives first, then distributes memory.
-
----
-
-## Definitions (the plaques on the boats)
-
-<div class="boat-box">
-
-**Riemann–Liouville derivative (plaque on the first boat)**  
-
-For $n-1 < \alpha \leq n$,
+- **Riemann–Liouville fractional derivative**:
 
 $$
 D_t^\alpha f(t) \;=\; \frac{d^n}{dt^n}\, I^{\,n-\alpha} f(t)
-\;=\; \frac{d^n}{dt^n}\left(\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f(\tau)\,d\tau\right).
+\;=\; \frac{1}{\Gamma(n-\alpha)}\frac{d^n}{dt^n}\int_0^t (t-\tau)^{\,n-\alpha-1} f(\tau)\,d\tau.
 $$
 
-It first forms a fractional integral (remembering far into the past) and then differentiates $n$ times.
-
-</div>
-
-<div class="boat-box">
-
-**Caputo derivative (plaque on the second boat)**  
-
-For $n-1 < \alpha \leq n$,
+- **Caputo fractional derivative**:
 
 $$
 {}^C D_t^\alpha f(t) \;=\;
-\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
+I^{\,n-\alpha} f^{(n)}(t)
+\;=\;\frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
 $$
 
-It differentiates first (ordinary derivatives), then applies a memory kernel — which makes initial conditions appear in the usual physical form.
+**Ananya**: So the difference is: Riemann–Liouville differentiates *after* integrating, while Caputo differentiates *before* integrating?
 
-</div>
-
----
-
-## Mini-Quest 1: Which boat for modelling?
-
-Consider a physical oscillator with standard initial displacement and velocity given at $t=0$. Which derivative definition is **usually more convenient** for setting initial conditions in the classical way?
-
-- (A) Riemann–Liouville  
-- (B) Caputo
-
-**Answer**: (B) Caputo — because its formulation lets you impose initial conditions expressed in terms of integer-order derivatives (displacement, velocity, ...).
+**Acharya Anvaya**: Exactly. Two boats across the same river — same waters, different journeys.
 
 ---
 
-## Example: Exponential function (a shared melody)
+## Comparison at a Glance
 
-**Ananya**: If $f(t)=e^{\lambda t}$, what do the fractional derivatives give?
+| Aspect             | Riemann–Liouville                          | Caputo                                |
+|--------------------|--------------------------------------------|---------------------------------------|
+| Formula            | $D^\alpha f = \dfrac{d^n}{dt^n} I^{n-\alpha} f$ | ${}^C D^\alpha f = I^{n-\alpha} f^{(n)}$ |
+| Memory starts      | From $t=0$ (full history)                  | From problem start (with $f^{(n)}$)   |
+| Initial conditions | Involve fractional integrals               | Classical: $f(0), f'(0), \dots$       |
+| Common use         | Pure math / theory                        | Physics / engineering                 |
 
-**Acharya Anvaya**: For both definitions (in many standard settings) the operator acts like a fractional power on the eigenvalue:
+---
+
+## Worked Example: Power Functions
+
+**Ananya**: Can we compute something concrete?
+
+**Acharya Anvaya**: Yes. For the Riemann–Liouville derivative of $t^\beta$ ($\beta > -1$):
+
+$$
+D_t^\alpha \, t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} \, t^{\beta-\alpha}.
+$$
+
+**Ananya**: So the power drops by $\alpha$, and the Gamma function adjusts the scale.
+
+**Acharya Anvaya**: Correct. For example, with $\alpha = \tfrac{1}{2}$ and $f(t)=t^2$:
+
+$$
+D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{1.5}.
+$$
+
+---
+
+## Worked Example: Exponential Functions
+
+**Acharya Anvaya**: For the exponential, something elegant happens:
 
 $$
 D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
 $$
 
-This shows how fractional differentiation generalizes ordinary change: the exponential keeps its form while the “rate” $\lambda$ is raised to the fractional power.
+**Ananya**: Just as the ordinary derivative gives $\lambda e^{\lambda t}$, now the order $\alpha$ raises $\lambda$ to a fractional power?
+
+**Acharya Anvaya**: Exactly. This is why exponentials are the “eigenfunctions” of fractional derivatives.
 
 ---
 
-## Mini-Quest 2: Physical interpretations
+### Mini-Quest: Elastic, Viscous, Viscoelastic
 
-Match each $\alpha$ to the behaviour:
+Match each $\alpha$ to the behavior:
 
 1. $\alpha = 0$  
 2. $\alpha = 1$  
@@ -98,7 +100,10 @@ Match each $\alpha$ to the behaviour:
 
 Choices: purely elastic / purely viscous / viscoelastic (fading memory)
 
-**Answer**: 1 → purely elastic, 2 → purely viscous, 3 → viscoelastic.
+**Answer**:  
+- $\alpha = 0$: purely elastic  
+- $\alpha = 1$: purely viscous  
+- $0<\alpha<1$: viscoelastic
 
 ---
 
@@ -106,12 +111,10 @@ Choices: purely elastic / purely viscous / viscoelastic (fading memory)
 
 **Ananya**: I think I prefer the Caputo boat for practical problems — the initial data are familiar.
 
-**Acharya Anvaya**: A wise choice when modeling experiments. Yet the Riemann–Liouville boat is elegant and powerful for some theoretical developments. Both are paths across the same river.
+**Acharya Anvaya**: A wise choice for modeling. Yet the Riemann–Liouville boat is elegant in theory. Both are needed, depending on where the river carries us.
 
 ---
 
 ### Narrator
 
-**Narrator**: Ananya climbs into the Caputo boat; Acharya steadies the Riemann–Liouville. Both glide over the River of Derivatives. On the far bank rises the **Forest of Equations**, where fractional differential equations will test their new knowledge.
-
----
+**Narrator**: The two boats set out across the River of Derivatives, their oars dipping into currents of change. On the far shore rises the **Forest of Equations**, where whole systems await — fractional differential equations that weave memory and change into one.
