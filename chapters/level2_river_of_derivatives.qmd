@@ -237,12 +237,14 @@ Show that for $f(t)=t$:
 - ${}^C D_t^{1/2}(t) = 0$,  
 - $D_t^{1/2}(t) = \dfrac{\Gamma(2)}{\Gamma(1.5)}\, t^{0.5}$.  
 
-**Interpretation**: This highlights why Caputo is often preferred in physics.
 
 </div>
 
 ---
 
-### Narrator
+<div class="narrator-box">
 
 **Narrator**: With these rules in hand, Ananya feels prepared. The boats glide ashore, and the River of Derivatives is behind them. Ahead lies the **Forest of Equations**, where memory and change entwine into full differential equations. The next stage of the journey begins.
+
+</div>
+

@@ -199,4 +199,8 @@ where $D_t^\alpha$ is a **fractional derivative** of the strain.
 
 **Acharya Anvaya**: We will learn about fractional derivatives as we go further to the Ganges — the River of Derivatives.
 
+<div class="narrator-box">
+
 **Narrator**: With the Key of Smriti in hand, Ananya steps through the temple gates. The path ahead leads to the **River of Derivatives**.
+
+</div>
