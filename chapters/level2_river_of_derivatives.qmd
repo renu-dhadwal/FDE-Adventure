@@ -127,7 +127,9 @@ $$
 
 **Ananya**: Beautiful! The exponential remains its own shape, and $\lambda$ is lifted to a fractional power.
 
-**Acharya Anvaya**: Exactly. Exponentials are the eigenfunctions of fractional derivatives.
+**Acharya Anvaya**: Exactly. **Exponentials are the eigenfunctions of fractional derivatives**.
+
+**Ananya**: 😇
 
 ---
 
