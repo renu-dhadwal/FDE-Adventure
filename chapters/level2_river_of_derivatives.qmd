@@ -141,6 +141,84 @@ $$
 
 ---
 
-### Narrator
+---
 
-**Narrator**: The two boats set out across the River of Derivatives, their oars dipping into currents of change. On the far shore rises the **Forest of Equations**, where whole systems await — fractional differential equations that weave memory and change into one.
+## Rules of the River (Caputo Theory)
+
+As their boats glide downstream, Acharya Anvaya begins to teach Ananya the rules that govern the River of Derivatives.
+
+**Acharya Anvaya**: Just as the river has currents and eddies, the Caputo derivative has properties that guide us. Let me share some of the most important.
+
+---
+
+### 1. Linearity
+
+For constants $c_1, c_2$ and functions $f, g$,
+
+$$
+{}^C D_t^\alpha \big(c_1 f(t) + c_2 g(t)\big)
+= c_1 \, {}^C D_t^\alpha f(t) + c_2 \, {}^C D_t^\alpha g(t).
+$$
+
+**Ananya**: So it behaves linearly, just like ordinary derivatives.
+
+---
+
+### 2. Derivative of Constants and Polynomials
+
+- If $f(t) = C$ (a constant), then
+  $$
+  {}^C D_t^\alpha C = 0.
+  $$
+
+- If $f(t) = t^\beta$ with $\beta=0,1,\dots,n-1$, then
+  $$
+  {}^C D_t^\alpha t^\beta = 0, \quad (n-1 < \alpha \le n).
+  $$
+
+- If $\beta > n-1$, then
+  $$
+  {}^C D_t^\alpha t^\beta
+  = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} \, t^{\beta-\alpha}.
+  $$
+
+**Ananya**: So low-degree polynomials vanish under Caputo differentiation — another reason it’s convenient for setting initial conditions.
+
+---
+
+### 3. Eigenfunctions of Fractional Derivatives
+
+For exponentials:
+
+$$
+{}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
+$$
+
+For sines and cosines:
+
+$$
+{}^C D_t^\alpha \sin(\omega t) = \omega^\alpha \sin\!\left(\omega t + \tfrac{\pi\alpha}{2}\right),
+$$
+
+$$
+{}^C D_t^\alpha \cos(\omega t) = \omega^\alpha \cos\!\left(\omega t + \tfrac{\pi\alpha}{2}\right).
+$$
+
+**Ananya**: So exponentials and trigonometric functions remain themselves, only shifted or scaled. They are like songs the river always remembers.
+
+---
+
+### 4. Product and Chain Rules (Caution!)
+
+**Acharya Anvaya**: Unlike classical derivatives, Caputo derivatives **do not** have simple product or chain rules. There are formulas, but they are complicated. For now, remember: linearity is safe, but products and compositions require care.
+
+---
+
+### Reflection
+
+**Ananya**: These rules are like currents in the river — predictable but also tricky in places.
+
+**Acharya Anvaya**: Exactly. Mastering these will help you navigate the **Forest of Equations** ahead.
+
+---
+
