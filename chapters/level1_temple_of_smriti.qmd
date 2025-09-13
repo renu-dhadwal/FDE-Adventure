@@ -139,7 +139,6 @@ Which value of $\alpha$ remembers the distant past most strongly?
 
 </div>
 
----
 **Ananya**: But where do we see such memory in materials?
 
 ## Example: Stress–Strain in Viscoelastic Fluids
