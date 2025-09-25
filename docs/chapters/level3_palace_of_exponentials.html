@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Palace of Eternal Exponentials – Fractional Calculus Adventure</title>
+<title>5&nbsp; Palace of Eternal Exponentials — Rooms 1–3 – Fractional Calculus Adventure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles/course.css">
 </head>
@@ -112,7 +83,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/level3_palace_of_exponentials.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Palace of Eternal Exponentials</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/level3_palace_of_exponentials.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Palace of Eternal Exponentials — Rooms 1–3</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -166,7 +137,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/level3_palace_of_exponentials.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Palace of Eternal Exponentials</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Palace of Eternal Exponentials — Rooms 1–3</span></span></a>
   </div>
 </li>
     </ul>
@@ -179,17 +150,15 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#palace-of-eternal-exponentials" id="toc-palace-of-eternal-exponentials" class="nav-link active" data-scroll-target="#palace-of-eternal-exponentials"><span class="header-section-number">6</span> Palace of Eternal Exponentials</a>
+  <li><a href="#palace-of-eternal-exponentials-rooms-13" id="toc-palace-of-eternal-exponentials-rooms-13" class="nav-link active" data-scroll-target="#palace-of-eternal-exponentials-rooms-13"><span class="header-section-number">6</span> Palace of Eternal Exponentials — Rooms 1–3</a>
   <ul class="collapse">
-  <li><a href="#scene-1-entrance-lore" id="toc-scene-1-entrance-lore" class="nav-link" data-scroll-target="#scene-1-entrance-lore"><span class="header-section-number">6.1</span> Scene 1 — Entrance &amp; lore</a></li>
-  <li><a href="#scene-2-grand-hall-definitions-quick-facts" id="toc-scene-2-grand-hall-definitions-quick-facts" class="nav-link" data-scroll-target="#scene-2-grand-hall-definitions-quick-facts"><span class="header-section-number">6.2</span> Scene 2 — Grand Hall: definitions &amp; quick facts</a></li>
-  <li><a href="#scene-3-library-of-laplace-transforms-derivation" id="toc-scene-3-library-of-laplace-transforms-derivation" class="nav-link" data-scroll-target="#scene-3-library-of-laplace-transforms-derivation"><span class="header-section-number">6.3</span> Scene 3 — Library of Laplace transforms (derivation)</a></li>
-  <li><a href="#scene-4-mirror-room-asymptotics-intuition" id="toc-scene-4-mirror-room-asymptotics-intuition" class="nav-link" data-scroll-target="#scene-4-mirror-room-asymptotics-intuition"><span class="header-section-number">6.4</span> Scene 4 — Mirror Room: asymptotics &amp; intuition</a></li>
-  <li><a href="#scene-5-marble-hall-mini-quest-numerical-verification" id="toc-scene-5-marble-hall-mini-quest-numerical-verification" class="nav-link" data-scroll-target="#scene-5-marble-hall-mini-quest-numerical-verification"><span class="header-section-number">6.5</span> Scene 5 — Marble Hall: mini-quest (numerical verification)</a></li>
+  <li><a href="#room-1-the-gates-of-exponentials" id="toc-room-1-the-gates-of-exponentials" class="nav-link" data-scroll-target="#room-1-the-gates-of-exponentials"><span class="header-section-number">6.1</span> Room 1 — The Gates of Exponentials</a></li>
+  <li><a href="#room-2-the-hall-of-fractional-derivatives" id="toc-room-2-the-hall-of-fractional-derivatives" class="nav-link" data-scroll-target="#room-2-the-hall-of-fractional-derivatives"><span class="header-section-number">6.2</span> Room 2 — The Hall of Fractional Derivatives</a></li>
+  <li><a href="#room-3-the-chamber-of-generalisation" id="toc-room-3-the-chamber-of-generalisation" class="nav-link" data-scroll-target="#room-3-the-chamber-of-generalisation"><span class="header-section-number">6.3</span> Room 3 — The Chamber of Generalisation</a>
+  <ul class="collapse">
+  <li><a href="#navigation-note" id="toc-navigation-note" class="nav-link" data-scroll-target="#navigation-note"><span class="header-section-number">6.3.1</span> Navigation note</a></li>
   </ul></li>
-  <li><a href="#t-grid" id="toc-t-grid" class="nav-link" data-scroll-target="#t-grid"><span class="header-section-number">7</span> t-grid</a></li>
-  <li><a href="#series-evaluator-fallback" id="toc-series-evaluator-fallback" class="nav-link" data-scroll-target="#series-evaluator-fallback"><span class="header-section-number">8</span> series evaluator fallback</a></li>
-  <li><a href="#prepare-traces-for-a-set-of-alphas-no-ipywidgets-required" id="toc-prepare-traces-for-a-set-of-alphas-no-ipywidgets-required" class="nav-link" data-scroll-target="#prepare-traces-for-a-set-of-alphas-no-ipywidgets-required"><span class="header-section-number">9</span> prepare traces for a set of alphas (no ipywidgets required)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -198,7 +167,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Palace of Eternal Exponentials</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Palace of Eternal Exponentials — Rooms 1–3</span></h1>
 </div>
 
 
@@ -215,136 +184,83 @@ window.Quarto = {
 </header>
 
 
-<section id="palace-of-eternal-exponentials" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Palace of Eternal Exponentials</h1>
-<p>A new level in the journey: follow the marble walkway from the Grove of Expansions and enter the Palace of Eternal Exponentials, where echoes stretch and memory lives in the walls. This page mixes mythic scenes, dialogues (Ananya &amp; Acharya Anvay), mathematics, runnable code, and student quests — all ready to drop into your Quarto project.</p>
-<details>
-<summary>
-<strong>Level map</strong>
-</summary>
+<section id="palace-of-eternal-exponentials-rooms-13" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Palace of Eternal Exponentials — Rooms 1–3</h1>
+<p>This file contains the first three rooms of the Palace of Eternal Exponentials: 1. The Gates of Exponentials<br>
+2. The Hall of Fractional Derivatives<br>
+3. The Chamber of Generalisation</p>
+<p>Each room uses a short dialogue between <strong>Ananya</strong> and <strong>Acharya Anvay</strong> and short mathematical plaques that students can study.</p>
+<hr>
+<section id="room-1-the-gates-of-exponentials" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="room-1-the-gates-of-exponentials"><span class="header-section-number">6.1</span> Room 1 — The Gates of Exponentials</h2>
+<p>The gates of the palace are tall and bright, inscribed with countless copies of the familiar function (e^t). Ananya and Acharya Anvay pause at the threshold.</p>
+<p><strong>Ananya:</strong> “This part feels familiar. The exponential is everywhere. But why does it appear so naturally in differential equations?”</p>
+<p><strong>Acharya Anvay:</strong> “Because the exponential is the eigenfunction of the derivative operator. Let’s recall the simplest case.”</p>
+<p>A golden plaque reads:</p>
+<p>[ y’(t) = y(t), y(0)=y_0. ]</p>
+<p><strong>Two standard derivations</strong></p>
 <ul>
-<li>Scene 1 — Entrance &amp; lore</li>
-<li>Scene 2 — Grand Hall: definition &amp; properties</li>
-<li>Scene 3 — Library of Laplace transforms: derivation for Caputo ODEs</li>
-<li>Scene 4 — Mirror Room: asymptotics &amp; intuition</li>
-<li>Scene 5 — Marble Hall: mini-quest + numerical verification (code)</li>
-<li>Scene 6 — Courtyard: extensions, teacher notes, assessment</li>
+<li><p><strong>Separation of variables.</strong><br>
+[ =dt y(t)=y_0 e^{t}. ]</p></li>
+<li><p><strong>Laplace transform.</strong><br>
+[ L{y’(t)}(s)=sy(s)-y_0. ] So [ sy(s)-y_0=y(s)y(s)=, ] and inversion yields (y(t)=y_0 e^{t}).</p></li>
 </ul>
-</details>
-<hr>
-<section id="scene-1-entrance-lore" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="scene-1-entrance-lore"><span class="header-section-number">6.1</span> Scene 1 — Entrance &amp; lore</h2>
-<p>The palace gates open on a fresco of two names: <strong>Mittag</strong> and <strong>Leffler</strong>. A gentle wind seems to replay the earliest footsteps — not as an exponential fade but as a long remembered murmur. Ananya and Acharya Anvay stand beneath the arch.</p>
-<p><strong>Ananya:</strong> “Why does this place feel like it remembers everything?”<br>
-<strong>Acharya Anvay:</strong> “Because its laws are fractional — the halls do not forget the past at once. Here, the exponential is a resident, but the palace sings a deeper song.”</p>
-<details>
-<summary>
-Short classroom prompt
-</summary>
-<p>Ask students: “Compare the intuition behind exponential decay <span class="math inline">\(e^{-t}\)</span> and the Mittag–Leffler decay for <span class="math inline">\(E_{\alpha}(-t^{\alpha})\)</span>. What physical processes might each model better?”</p>
-</details>
+<p><strong>Ananya:</strong> “So (e^{t}) repeats itself under differentiation — that’s why it rules this gate.”</p>
+<p><strong>Acharya Anvay:</strong> “Exactly. Exponential is the natural solution whenever we deal with first-order derivatives. But the palace has deeper chambers. What if the derivative is <em>fractional</em>? What will replace the exponential then?”</p>
+<p>The gates open with this question, inviting them into the Hall of Fractional Derivatives.</p>
 <hr>
 </section>
-<section id="scene-2-grand-hall-definitions-quick-facts" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="scene-2-grand-hall-definitions-quick-facts"><span class="header-section-number">6.2</span> Scene 2 — Grand Hall: definitions &amp; quick facts</h2>
-<p>The Grand Hall contains a carved plaque with the incantation.</p>
-<p><span class="math inline">\(E_{\alpha,\beta}(z) = \sum_{k=0}^{\infty} \frac{z^k}{\Gamma(\alpha k + \beta)}, \qquad \alpha&gt;0,\ \beta\in\mathbb C.\)</span></p>
-<p>The single-parameter function is <span class="math inline">\(E_{\alpha}(z)=E_{\alpha,1}(z)\)</span>. A small doorway labeled <span class="math inline">\(\alpha=1\)</span> leads back to a chamber inscribed with <span class="math inline">\(e^z\)</span>.</p>
-<details>
-<summary>
-Properties &amp; remarks
-</summary>
+<section id="room-2-the-hall-of-fractional-derivatives" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="room-2-the-hall-of-fractional-derivatives"><span class="header-section-number">6.2</span> Room 2 — The Hall of Fractional Derivatives</h2>
+<p>As the gates close behind them, Ananya and Acharya Anvay enter a high-ceilinged hall. Strange symbols line the marble walls — integrals stretching into the past, and powers of (s) rising into the ceiling. At the centre is a pedestal with a single formula glowing.</p>
+<p><strong>Ananya:</strong> “This isn’t the derivative I know. The inscription looks like the Laplace transform, but something’s different.”</p>
+<p><strong>Acharya Anvay:</strong> “Yes. This is the Caputo fractional derivative. Remember, the Laplace transform itself is unchanged: [ L{f(t)}(s) = _0<sup>e</sup>{-st} f(t),dt. ] But when we apply it to a fractional derivative, the transform rule changes.”</p>
+<p>The pedestal shows the key identity for the Caputo derivative (for (0&lt;)):</p>
+<p>[ L{{}^C D_t^f(t)}(s) ;=; s^f(s) - s^{} f(0). ]</p>
+<p><strong>Ananya:</strong> “So instead of (sf(s)-f(0)) we now get (s<sup>f(s)-s</sup>{}f(0))?”</p>
+<p><strong>Acharya Anvay:</strong> “Exactly. That single change — the appearance of (s^) — is what transforms the entire palace. It means fractional derivatives take us from linear powers of (s) to fractional ones.”</p>
+<p>They step to a carved arch showing the fractional analogue of the exponential ODE:</p>
+<p>[ {}^C D_t^y(t) = y(t), y(0)=y_0. ]</p>
+<p>Applying the Laplace identity gives the stone inscription:</p>
+<p>[ s^y(s) - s^{} y_0 = y(s) y(s) = . ]</p>
+<p><strong>Ananya:</strong> “The denominator is (s^-), not (s-). The shape of the solution must be completely different!”</p>
+<p><strong>Acharya Anvay:</strong> “In the next room you will meet the function that inverts this transform — the true master of this palace: the Mittag–Leffler function.”</p>
+<hr>
+</section>
+<section id="room-3-the-chamber-of-generalisation" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="room-3-the-chamber-of-generalisation"><span class="header-section-number">6.3</span> Room 3 — The Chamber of Generalisation</h2>
+<p>They step into a circular chamber lit by soft blue light. The floor is inlaid with spirals of numbers, and at the centre stands a tall column. Upon it glows a new formula — one Ananya has never seen before.</p>
+<p><strong>Ananya:</strong> “This looks like a series… but the denominator has () functions!”</p>
+<p>On the column is written the defining series:</p>
+<p>[ E_{,}(z) ;=; _{k=0}^, &gt;0,&nbsp;C, ]</p>
+<p>and the single-parameter form</p>
+<p>[ E_(z):=E_{,1}(z). ]</p>
+<p><strong>Acharya Anvay:</strong> “This is the <strong>Mittag–Leffler function</strong>. It is the natural generalisation of the exponential.”</p>
+<p><strong>Ananya:</strong> “If I take (, ) I get [ E_{1,1}(z)=<em>{k=0}^=</em>{k=0}<sup>=e</sup>z. ] So the exponential is a special doorway inside this chamber!”</p>
+<p>The surrounding walls light up with short plaques:</p>
 <ul>
-<li>Entire function: the series converges for all <span class="math inline">\(z\in\mathbb C\)</span>.</li>
-<li>Special case: <span class="math inline">\(E_{1,1}(z)=e^z\)</span> because <span class="math inline">\(\Gamma(k+1)=k!\)</span>.</li>
-<li>Memory: for <span class="math inline">\(0&lt;\alpha&lt;1\)</span> solutions often decay algebraically rather than exponentially, giving long tails.</li>
+<li><strong>Convergence / entireness:</strong> the series converges for all (zC); (E_{,}) is entire.<br>
+</li>
+<li><strong>Value at zero:</strong> (E_(0)=1).<br>
+</li>
+<li><strong>Operational identity (Laplace):</strong> [ L{ E_(t^)}(s) = , ] which exactly inverts the transform found in Room 2.</li>
 </ul>
-</details>
+<p><strong>Ananya:</strong> “So (E_) is exactly the inverse Laplace transform of the expression from the Hall of Fractional Derivatives.”</p>
+<p><strong>Acharya Anvay:</strong> “Yes. It is the eigenfunction of the fractional derivative in the same way the exponential is the eigenfunction of the ordinary derivative.”</p>
+<p>They stand quietly, absorbing the fact that what looked like a small change in the differentiation rule leads to an entire new landscape of functions.</p>
 <hr>
-</section>
-<section id="scene-3-library-of-laplace-transforms-derivation" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="scene-3-library-of-laplace-transforms-derivation"><span class="header-section-number">6.3</span> Scene 3 — Library of Laplace transforms (derivation)</h2>
-<p>They enter a quiet library where scrolls record transform pairs. Acharya Anvay unrolls a scroll.</p>
-<p><strong>Acharya Anvay:</strong> “Take the Caputo equation <span class="math inline">\({}^{C}D_t^\alpha y = \lambda y,\quad y(0)=y_0\)</span>, with <span class="math inline">\(0&lt;\alpha\le 1\)</span>.”<br>
-<strong>Ananya:</strong> “Laplace it — as if we seek the frequency-soul of the equation.”</p>
-<p>Using the Caputo Laplace identity,</p>
-<p><span class="math inline">\(\mathcal L\{ {}^{C}D_t^\alpha y\}(s) = s^\alpha \tilde y(s) - s^{\alpha-1} y(0),\)</span></p>
-<p>we obtain</p>
-<p><span class="math inline">\(s^\alpha \tilde y(s) - s^{\alpha-1} y_0 = \lambda \tilde y(s) \quad\Rightarrow\quad \tilde y(s) = \frac{s^{\alpha-1} y_0}{s^\alpha - \lambda}.\)</span></p>
-<p>Inverting with the standard Laplace pair (see below) yields</p>
-<p><span class="math inline">\(y(t) = y_0 E_\alpha(\lambda t^\alpha).\)</span></p>
-<details>
-<summary>
-Laplace pair used (reminder)
-</summary>
-<p>For suitable <span class="math inline">\(s\)</span> and real <span class="math inline">\(\beta\)</span>,</p>
-<p><span class="math inline">\(\mathcal L\{ t^{\beta-1} E_{\alpha,\beta}(\pm \lambda t^\alpha)\}(s) = \frac{s^{\alpha-\beta}}{s^\alpha \mp \lambda}.\)</span></p>
-<p>Setting <span class="math inline">\(\beta=1\)</span> recovers the pair used in the derivation.</p>
-</details>
-<hr>
-</section>
-<section id="scene-4-mirror-room-asymptotics-intuition" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="scene-4-mirror-room-asymptotics-intuition"><span class="header-section-number">6.4</span> Scene 4 — Mirror Room: asymptotics &amp; intuition</h2>
-<p>The Mirror Room bends long reflections into slow tails. A descriptive dialogue helps students internalize asymptotics.</p>
-<p><strong>Ananya:</strong> “When alpha is small, why do echoes die so slowly?”<br>
-<strong>Acharya Anvay:</strong> “Because the Mittag–Leffler’s coefficients, divided by Gamma(<span class="math inline">\(\alpha k+1\)</span>), shift more mass to early terms and produce algebraic-like behaviour at long times — the memory stores the past.”</p>
-<details>
-<summary>
-Concise asymptotic note (for teacher)
-</summary>
-<p>For <span class="math inline">\(0&lt;\alpha&lt;2\)</span> and large <span class="math inline">\(|z|\)</span> away from certain sectorial rays, there are known asymptotic expansions of <span class="math inline">\(E_{\alpha,\beta}(z)\)</span>. On the negative real axis, solutions like <span class="math inline">\(E_\alpha(-t^\alpha)\)</span> typically show slower decay than <span class="math inline">\(e^{-t}\)</span>, often algebraic in nature; reference Mainardi (2000) for readable summaries.</p>
-</details>
-<hr>
-</section>
-<section id="scene-5-marble-hall-mini-quest-numerical-verification" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="scene-5-marble-hall-mini-quest-numerical-verification"><span class="header-section-number">6.5</span> Scene 5 — Marble Hall: mini-quest (numerical verification)</h2>
-<p>The Marble Hall contains a bench where students can perform three trials.</p>
-<p><strong>Mini-Quest</strong></p>
-<ol type="1">
-<li>Verify numerically that the Caputo ODE</li>
-</ol>
-<p><span class="math inline">\({}^{C}D_t^\alpha y(t) = -y(t), \quad y(0)=1,\)</span></p>
-<p>has solution <span class="math inline">\(y(t)=E_\alpha(-t^\alpha)\)</span> for <span class="math inline">\(\alpha=0.6\)</span> on <span class="math inline">\([0,5]\)</span>.</p>
-<ol start="2" type="1">
-<li><p>Prove <span class="math inline">\(E_1(z)=e^z\)</span> by comparing series.</p></li>
-<li><p>Bonus: estimate time <span class="math inline">\(T\)</span> where <span class="math inline">\(E_{0.6}(-t^{0.6})&lt;0.1\)</span> and compare with exponential decay.</p></li>
-</ol>
-<details>
-<summary>
-Starter hint (GL scheme)
-</summary>
-<p>Use the Grünwald–Letnikov approximation for the fractional derivative with step <span class="math inline">\(\Delta t\)</span>:</p>
-<p><span class="math inline">\({}^{C}D_t^\alpha y(t_n) \approx \frac{1}{(\Delta t)^\alpha} \sum_{k=0}^n w_k y_{n-k},\)</span></p>
-<p>where <span class="math inline">\(w_k = (-1)^k \binom{\alpha}{k}\)</span>. March forward in time and compare to <span class="math inline">\(E_\alpha(-t^\alpha)\)</span> from <code>mpmath</code>.</p>
-</details>
-<details>
-<summary>
-Runnable code — interactive Plotly (safe fallback)
-</summary>
-<p>#| echo: true #| eval: true #| label: palace-plotly-safe import numpy as np import mpmath as mp import plotly.graph_objects as go from IPython.display import HTML, display</p>
-</details></section>
-</section>
-<section id="t-grid" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> t-grid</h1>
-<p>t = np.linspace(0, 8, 300)</p>
-</section>
-<section id="series-evaluator-fallback" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> series evaluator fallback</h1>
-<p>def ml_series(alpha, beta, z, Nterms=120, tol=1e-14): z_mp = mp.mpc(z) s = mp.mpf(‘0’) k = 0 term = mp.mpf(‘inf’) while k &lt; Nterms and abs(term) &gt; tol: denom = mp.gamma(alpha*k + beta) term = z_mp**k / denom s += term k += 1 return s</p>
-<p>def ml_value(alpha, tval): z = - (tval**alpha) if hasattr(mp, “mittag_leffler”): try: return float(mp.mittag_leffler(alpha, 1, z)) except Exception: return float(ml_series(alpha, 1, z)) else: return float(ml_series(alpha, 1, z))</p>
-</section>
-<section id="prepare-traces-for-a-set-of-alphas-no-ipywidgets-required" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> prepare traces for a set of alphas (no ipywidgets required)</h1>
-<p>alphas = [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.3] traces = [] for a in alphas: y = np.array([ml_value(a, ti) for ti in t], dtype=float) traces.append(go.Scatter(x=t, y=y, mode=‘lines’, name=f”α={a:.2f}“, visible=False))</p>
-<p>traces[0].visible = True</p>
-<p>fig = go.Figure(data=traces) fig.update_layout( title=“E_α(-t^α) for selected α (use buttons)”, xaxis_title=“t”, yaxis_title=“E_α(-t^α)”, updatemenus=[{ “type”: “buttons”, “direction”: “right”, “x”: 0.5, “y”: 1.15, “showactive”: True, “buttons”: [ {“label”: f”α={a:.2f}“,”method”: “update”, “args”: [{“visible”: [i==j for j in range(len(alphas))]}, {“title”: f”E_α(-t^α) α={a:.2f}“}]} for i,a in enumerate(alphas) ] }] )</p>
-display(HTML(“
-<p>
-<strong>Use the buttons to switch α. (No ipywidgets needed.)</strong>
-</p>
-<p>“)) display(fig)</p>
+<section id="navigation-note" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="navigation-note"><span class="header-section-number">6.3.1</span> Navigation note</h3>
+<ul>
+<li>Next: <strong>Room 4 — The Gallery of Properties</strong> (asymptotics, growth, spectral representation, monotonicity).<br>
+</li>
+<li>If you want, I can place Room 4 into the same <code>.qmd</code> file below Room 3, or create a new file <code>level3_palace_room4.qmd</code>.</li>
+</ul>
+<p>Would you like Room 4 added now (detailed gallery with proofs/sketches and narrative), or do you want to review/edit the current Rooms 1–3 first?</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

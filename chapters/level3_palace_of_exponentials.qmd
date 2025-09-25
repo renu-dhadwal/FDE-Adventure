@@ -1,202 +1,147 @@
 ---
-title: "Palace of Eternal Exponentials"
+title: "Palace of Eternal Exponentials — Rooms 1–3"
 format: html
 ---
 
-# Palace of Eternal Exponentials
+# Palace of Eternal Exponentials — Rooms 1–3
 
-A new level in the journey: follow the marble walkway from the Grove of Expansions and enter the Palace of Eternal Exponentials, where echoes stretch and memory lives in the walls. This page mixes mythic scenes, dialogues (Ananya & Acharya Anvay), mathematics, runnable code, and student quests — all ready to drop into your Quarto project.
+This file contains the first three rooms of the Palace of Eternal Exponentials:
+1. The Gates of Exponentials  
+2. The Hall of Fractional Derivatives  
+3. The Chamber of Generalisation
 
-<details>
-<summary><strong>Level map</strong></summary>
-
-- Scene 1 — Entrance & lore
-- Scene 2 — Grand Hall: definition & properties
-- Scene 3 — Library of Laplace transforms: derivation for Caputo ODEs
-- Scene 4 — Mirror Room: asymptotics & intuition
-- Scene 5 — Marble Hall: mini-quest + numerical verification (code)
-- Scene 6 — Courtyard: extensions, teacher notes, assessment
-
-</details>
+Each room uses a short dialogue between **Ananya** and **Acharya Anvay** and short mathematical plaques that students can study.
 
 ---
 
-## Scene 1 — Entrance & lore
+## Room 1 — The Gates of Exponentials
 
-The palace gates open on a fresco of two names: **Mittag** and **Leffler**. A gentle wind seems to replay the earliest footsteps — not as an exponential fade but as a long remembered murmur. Ananya and Acharya Anvay stand beneath the arch.
+The gates of the palace are tall and bright, inscribed with countless copies of the familiar function \(e^t\). Ananya and Acharya Anvay pause at the threshold.
 
-**Ananya:** "Why does this place feel like it remembers everything?"  
-**Acharya Anvay:** "Because its laws are fractional — the halls do not forget the past at once. Here, the exponential is a resident, but the palace sings a deeper song."
+**Ananya:** "This part feels familiar. The exponential is everywhere. But why does it appear so naturally in differential equations?"  
 
-<details>
-<summary>Short classroom prompt</summary>
+**Acharya Anvay:** "Because the exponential is the eigenfunction of the derivative operator. Let’s recall the simplest case."
 
-Ask students: "Compare the intuition behind exponential decay $e^{-t}$ and the Mittag–Leffler decay for $E_{\alpha}(-t^{\alpha})$. What physical processes might each model better?"
+A golden plaque reads:
 
-</details>
+\[
+y'(t) = \lambda y(t), \qquad y(0)=y_0.
+\]
 
----
+**Two standard derivations**
 
-## Scene 2 — Grand Hall: definitions & quick facts
+- **Separation of variables.**  
+  \[
+  \frac{dy}{y}=\lambda dt \quad\Rightarrow\quad y(t)=y_0 e^{\lambda t}.
+  \]
 
-The Grand Hall contains a carved plaque with the incantation.
+- **Laplace transform.**  
+  \[
+  \mathcal L\{y'(t)\}(s)=s\tilde y(s)-y_0.
+  \]
+  So
+  \[
+  s\tilde y(s)-y_0=\lambda \tilde y(s)\quad\Rightarrow\quad \tilde y(s)=\frac{y_0}{s-\lambda},
+  \]
+  and inversion yields \(y(t)=y_0 e^{\lambda t}\).
 
-$E_{\alpha,\beta}(z) = \sum_{k=0}^{\infty} \frac{z^k}{\Gamma(\alpha k + \beta)}, \qquad \alpha>0,\ \beta\in\mathbb C.$
+**Ananya:** "So \(e^{\lambda t}\) repeats itself under differentiation — that’s why it rules this gate."  
 
-The single-parameter function is $E_{\alpha}(z)=E_{\alpha,1}(z)$. A small doorway labeled $\alpha=1$ leads back to a chamber inscribed with $e^z$.
+**Acharya Anvay:** "Exactly. Exponential is the natural solution whenever we deal with first-order derivatives. But the palace has deeper chambers. What if the derivative is *fractional*? What will replace the exponential then?"
 
-<details>
-<summary>Properties & remarks</summary>
-
-- Entire function: the series converges for all $z\in\mathbb C$.
-- Special case: $E_{1,1}(z)=e^z$ because $\Gamma(k+1)=k!$.
-- Memory: for $0<\alpha<1$ solutions often decay algebraically rather than exponentially, giving long tails.
-
-</details>
-
----
-
-## Scene 3 — Library of Laplace transforms (derivation)
-
-They enter a quiet library where scrolls record transform pairs. Acharya Anvay unrolls a scroll.
-
-**Acharya Anvay:** "Take the Caputo equation ${}^{C}D_t^\alpha y = \lambda y,\quad y(0)=y_0$, with $0<\alpha\le 1$."  
-**Ananya:** "Laplace it — as if we seek the frequency-soul of the equation."
-
-Using the Caputo Laplace identity,
-
-$\mathcal L\{ {}^{C}D_t^\alpha y\}(s) = s^\alpha \tilde y(s) - s^{\alpha-1} y(0),$
-
-we obtain
-
-$s^\alpha \tilde y(s) - s^{\alpha-1} y_0 = \lambda \tilde y(s) \quad\Rightarrow\quad \tilde y(s) = \frac{s^{\alpha-1} y_0}{s^\alpha - \lambda}.$
-
-Inverting with the standard Laplace pair (see below) yields
-
-$y(t) = y_0 E_\alpha(\lambda t^\alpha).$
-
-<details>
-<summary>Laplace pair used (reminder)</summary>
-
-For suitable $s$ and real $\beta$,
-
-$\mathcal L\{ t^{\beta-1} E_{\alpha,\beta}(\pm \lambda t^\alpha)\}(s) = \frac{s^{\alpha-\beta}}{s^\alpha \mp \lambda}.$
-
-Setting $\beta=1$ recovers the pair used in the derivation.
-
-</details>
+The gates open with this question, inviting them into the Hall of Fractional Derivatives.
 
 ---
 
-## Scene 4 — Mirror Room: asymptotics & intuition
+## Room 2 — The Hall of Fractional Derivatives
 
-The Mirror Room bends long reflections into slow tails. A descriptive dialogue helps students internalize asymptotics.
+As the gates close behind them, Ananya and Acharya Anvay enter a high-ceilinged hall. Strange symbols line the marble walls — integrals stretching into the past, and powers of \(s\) rising into the ceiling. At the centre is a pedestal with a single formula glowing.
 
-**Ananya:** "When alpha is small, why do echoes die so slowly?"  
-**Acharya Anvay:** "Because the Mittag–Leffler's coefficients, divided by Gamma($\alpha k+1$), shift more mass to early terms and produce algebraic-like behaviour at long times — the memory stores the past."
+**Ananya:** "This isn’t the derivative I know. The inscription looks like the Laplace transform, but something’s different."
 
-<details>
-<summary>Concise asymptotic note (for teacher)</summary>
+**Acharya Anvay:** "Yes. This is the Caputo fractional derivative. Remember, the Laplace transform itself is unchanged:
+\[
+\mathcal L\{f(t)\}(s) = \int_0^\infty e^{-st} f(t)\,dt.
+\]
+But when we apply it to a fractional derivative, the transform rule changes."
 
-For $0<\alpha<2$ and large $|z|$ away from certain sectorial rays, there are known asymptotic expansions of $E_{\alpha,\beta}(z)$. On the negative real axis, solutions like $E_\alpha(-t^\alpha)$ typically show slower decay than $e^{-t}$, often algebraic in nature; reference Mainardi (2000) for readable summaries.
+The pedestal shows the key identity for the Caputo derivative (for \(0<\alpha\le 1\)):
 
-</details>
+\[
+\mathcal L\{{}^C D_t^\alpha f(t)\}(s) \;=\; s^\alpha \tilde f(s) - s^{\alpha-1} f(0).
+\]
+
+**Ananya:** "So instead of \(s\tilde f(s)-f(0)\) we now get \(s^\alpha\tilde f(s)-s^{\alpha-1}f(0)\)?"  
+
+**Acharya Anvay:** "Exactly. That single change — the appearance of \(s^\alpha\) — is what transforms the entire palace. It means fractional derivatives take us from linear powers of \(s\) to fractional ones."
+
+They step to a carved arch showing the fractional analogue of the exponential ODE:
+
+\[
+{}^C D_t^\alpha y(t) = \lambda y(t), \qquad y(0)=y_0.
+\]
+
+Applying the Laplace identity gives the stone inscription:
+
+\[
+s^\alpha \tilde y(s) - s^{\alpha-1} y_0 = \lambda \tilde y(s)
+\quad\Rightarrow\quad
+\tilde y(s) = \frac{s^{\alpha-1} y_0}{s^\alpha - \lambda}.
+\]
+
+**Ananya:** "The denominator is \(s^\alpha-\lambda\), not \(s-\lambda\). The shape of the solution must be completely different!"  
+
+**Acharya Anvay:** "In the next room you will meet the function that inverts this transform — the true master of this palace: the Mittag–Leffler function."
 
 ---
 
-## Scene 5 — Marble Hall: mini-quest (numerical verification)
+## Room 3 — The Chamber of Generalisation
 
-The Marble Hall contains a bench where students can perform three trials.
+They step into a circular chamber lit by soft blue light. The floor is inlaid with spirals of numbers, and at the centre stands a tall column. Upon it glows a new formula — one Ananya has never seen before.
 
-**Mini-Quest**
+**Ananya:** "This looks like a series… but the denominator has \(\Gamma\) functions!"
 
-1. Verify numerically that the Caputo ODE
+On the column is written the defining series:
 
-${}^{C}D_t^\alpha y(t) = -y(t), \quad y(0)=1,$
+\[
+E_{\alpha,\beta}(z) \;=\; \sum_{k=0}^\infty \frac{z^k}{\Gamma(\alpha k + \beta)},
+\qquad \alpha>0,\ \beta\in\mathbb C,
+\]
 
-has solution $y(t)=E_\alpha(-t^\alpha)$ for $\alpha=0.6$ on $[0,5]$.
+and the single-parameter form
 
-2. Prove $E_1(z)=e^z$ by comparing series.
+\[
+E_\alpha(z):=E_{\alpha,1}(z).
+\]
 
-3. Bonus: estimate time $T$ where $E_{0.6}(-t^{0.6})<0.1$ and compare with exponential decay.
+**Acharya Anvay:** "This is the **Mittag–Leffler function**. It is the natural generalisation of the exponential."
 
-<details>
-<summary>Starter hint (GL scheme)</summary>
+**Ananya:** "If I take \(\alpha=1, \beta=1\) I get
+\[
+E_{1,1}(z)=\sum_{k=0}^\infty \frac{z^k}{\Gamma(k+1)}=\sum_{k=0}^\infty \frac{z^k}{k!}=e^z.
+\]
+So the exponential is a special doorway inside this chamber!"
 
-Use the Grünwald–Letnikov approximation for the fractional derivative with step $\Delta t$:
+The surrounding walls light up with short plaques:
 
-${}^{C}D_t^\alpha y(t_n) \approx \frac{1}{(\Delta t)^\alpha} \sum_{k=0}^n w_k y_{n-k},$
+- **Convergence / entireness:** the series converges for all \(z\in\mathbb C\); \(E_{\alpha,\beta}\) is entire.  
+- **Value at zero:** \(E_\alpha(0)=1\).  
+- **Operational identity (Laplace):**
+  \[
+  \mathcal L\{ E_\alpha(\lambda t^\alpha)\}(s) = \frac{s^{\alpha-1}}{s^\alpha-\lambda},
+  \]
+  which exactly inverts the transform found in Room 2.
 
-where $w_k = (-1)^k \binom{\alpha}{k}$. March forward in time and compare to $E_\alpha(-t^\alpha)$ from `mpmath`.
+**Ananya:** "So \(E_\alpha\) is exactly the inverse Laplace transform of the expression from the Hall of Fractional Derivatives."  
 
-</details>
+**Acharya Anvay:** "Yes. It is the eigenfunction of the fractional derivative in the same way the exponential is the eigenfunction of the ordinary derivative."
 
-<details>
-<summary>Runnable code — interactive Plotly (safe fallback)</summary>
+They stand quietly, absorbing the fact that what looked like a small change in the differentiation rule leads to an entire new landscape of functions.
 
-```{python}
-#| echo: true
-#| eval: true
-#| label: palace-plotly-safe
-import numpy as np
-import mpmath as mp
-import plotly.graph_objects as go
-from IPython.display import HTML, display
+---
 
-# t-grid
-t = np.linspace(0, 8, 300)
+### Navigation note
+- Next: **Room 4 — The Gallery of Properties** (asymptotics, growth, spectral representation, monotonicity).  
+- If you want, I can place Room 4 into the same `.qmd` file below Room 3, or create a new file `level3_palace_room4.qmd`.  
 
-# series evaluator fallback
-def ml_series(alpha, beta, z, Nterms=120, tol=1e-14):
-    z_mp = mp.mpc(z)
-    s = mp.mpf('0')
-    k = 0
-    term = mp.mpf('inf')
-    while k < Nterms and abs(term) > tol:
-        denom = mp.gamma(alpha*k + beta)
-        term = z_mp**k / denom
-        s += term
-        k += 1
-    return s
-
-def ml_value(alpha, tval):
-    z = - (tval**alpha)
-    if hasattr(mp, "mittag_leffler"):
-        try:
-            return float(mp.mittag_leffler(alpha, 1, z))
-        except Exception:
-            return float(ml_series(alpha, 1, z))
-    else:
-        return float(ml_series(alpha, 1, z))
-
-# prepare traces for a set of alphas (no ipywidgets required)
-alphas = [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.3]
-traces = []
-for a in alphas:
-    y = np.array([ml_value(a, ti) for ti in t], dtype=float)
-    traces.append(go.Scatter(x=t, y=y, mode='lines', name=f"α={a:.2f}", visible=False))
-
-traces[0].visible = True
-
-fig = go.Figure(data=traces)
-fig.update_layout(
-    title="E_α(-t^α) for selected α (use buttons)",
-    xaxis_title="t",
-    yaxis_title="E_α(-t^α)",
-    updatemenus=[{
-        "type": "buttons",
-        "direction": "right",
-        "x": 0.5,
-        "y": 1.15,
-        "showactive": True,
-        "buttons": [
-            {"label": f"α={a:.2f}",
-             "method": "update",
-             "args": [{"visible": [i==j for j in range(len(alphas))]}, {"title": f"E_α(-t^α) α={a:.2f}"}]}
-            for i,a in enumerate(alphas)
-        ]
-    }]
-)
-
-display(HTML("<p><strong>Use the buttons to switch α. (No ipywidgets needed.)</strong></p>"))
-display(fig)
+Would you like Room 4 added now (detailed gallery with proofs/sketches and narrative), or do you want to review/edit the current Rooms 1–3 first?  

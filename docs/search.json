@@ -172,61 +172,41 @@
   {
     "objectID": "chapters/level3_palace_of_exponentials.html",
     "href": "chapters/level3_palace_of_exponentials.html",
-    "title": "5  Palace of Eternal Exponentials",
+    "title": "5  Palace of Eternal Exponentials — Rooms 1–3",
     "section": "",
-    "text": "6 Palace of Eternal Exponentials\nA new level in the journey: follow the marble walkway from the Grove of Expansions and enter the Palace of Eternal Exponentials, where echoes stretch and memory lives in the walls. This page mixes mythic scenes, dialogues (Ananya & Acharya Anvay), mathematics, runnable code, and student quests — all ready to drop into your Quarto project.",
+    "text": "6 Palace of Eternal Exponentials — Rooms 1–3\nThis file contains the first three rooms of the Palace of Eternal Exponentials: 1. The Gates of Exponentials\n2. The Hall of Fractional Derivatives\n3. The Chamber of Generalisation\nEach room uses a short dialogue between Ananya and Acharya Anvay and short mathematical plaques that students can study.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials — Rooms 1–3</span>"
     ]
   },
   {
-    "objectID": "chapters/level3_palace_of_exponentials.html#scene-1-entrance-lore",
-    "href": "chapters/level3_palace_of_exponentials.html#scene-1-entrance-lore",
-    "title": "5  Palace of Eternal Exponentials",
-    "section": "6.1 Scene 1 — Entrance & lore",
-    "text": "6.1 Scene 1 — Entrance & lore\nThe palace gates open on a fresco of two names: Mittag and Leffler. A gentle wind seems to replay the earliest footsteps — not as an exponential fade but as a long remembered murmur. Ananya and Acharya Anvay stand beneath the arch.\nAnanya: “Why does this place feel like it remembers everything?”\nAcharya Anvay: “Because its laws are fractional — the halls do not forget the past at once. Here, the exponential is a resident, but the palace sings a deeper song.”\n\n\nShort classroom prompt\n\nAsk students: “Compare the intuition behind exponential decay \\(e^{-t}\\) and the Mittag–Leffler decay for \\(E_{\\alpha}(-t^{\\alpha})\\). What physical processes might each model better?”",
+    "objectID": "chapters/level3_palace_of_exponentials.html#room-1-the-gates-of-exponentials",
+    "href": "chapters/level3_palace_of_exponentials.html#room-1-the-gates-of-exponentials",
+    "title": "5  Palace of Eternal Exponentials — Rooms 1–3",
+    "section": "6.1 Room 1 — The Gates of Exponentials",
+    "text": "6.1 Room 1 — The Gates of Exponentials\nThe gates of the palace are tall and bright, inscribed with countless copies of the familiar function (e^t). Ananya and Acharya Anvay pause at the threshold.\nAnanya: “This part feels familiar. The exponential is everywhere. But why does it appear so naturally in differential equations?”\nAcharya Anvay: “Because the exponential is the eigenfunction of the derivative operator. Let’s recall the simplest case.”\nA golden plaque reads:\n[ y’(t) = y(t), y(0)=y_0. ]\nTwo standard derivations\n\nSeparation of variables.\n[ =dt y(t)=y_0 e^{t}. ]\nLaplace transform.\n[ L{y’(t)}(s)=sy(s)-y_0. ] So [ sy(s)-y_0=y(s)y(s)=, ] and inversion yields (y(t)=y_0 e^{t}).\n\nAnanya: “So (e^{t}) repeats itself under differentiation — that’s why it rules this gate.”\nAcharya Anvay: “Exactly. Exponential is the natural solution whenever we deal with first-order derivatives. But the palace has deeper chambers. What if the derivative is fractional? What will replace the exponential then?”\nThe gates open with this question, inviting them into the Hall of Fractional Derivatives.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials — Rooms 1–3</span>"
     ]
   },
   {
-    "objectID": "chapters/level3_palace_of_exponentials.html#scene-2-grand-hall-definitions-quick-facts",
-    "href": "chapters/level3_palace_of_exponentials.html#scene-2-grand-hall-definitions-quick-facts",
-    "title": "5  Palace of Eternal Exponentials",
-    "section": "6.2 Scene 2 — Grand Hall: definitions & quick facts",
-    "text": "6.2 Scene 2 — Grand Hall: definitions & quick facts\nThe Grand Hall contains a carved plaque with the incantation.\n\\(E_{\\alpha,\\beta}(z) = \\sum_{k=0}^{\\infty} \\frac{z^k}{\\Gamma(\\alpha k + \\beta)}, \\qquad \\alpha&gt;0,\\ \\beta\\in\\mathbb C.\\)\nThe single-parameter function is \\(E_{\\alpha}(z)=E_{\\alpha,1}(z)\\). A small doorway labeled \\(\\alpha=1\\) leads back to a chamber inscribed with \\(e^z\\).\n\n\nProperties & remarks\n\n\nEntire function: the series converges for all \\(z\\in\\mathbb C\\).\nSpecial case: \\(E_{1,1}(z)=e^z\\) because \\(\\Gamma(k+1)=k!\\).\nMemory: for \\(0&lt;\\alpha&lt;1\\) solutions often decay algebraically rather than exponentially, giving long tails.",
+    "objectID": "chapters/level3_palace_of_exponentials.html#room-2-the-hall-of-fractional-derivatives",
+    "href": "chapters/level3_palace_of_exponentials.html#room-2-the-hall-of-fractional-derivatives",
+    "title": "5  Palace of Eternal Exponentials — Rooms 1–3",
+    "section": "6.2 Room 2 — The Hall of Fractional Derivatives",
+    "text": "6.2 Room 2 — The Hall of Fractional Derivatives\nAs the gates close behind them, Ananya and Acharya Anvay enter a high-ceilinged hall. Strange symbols line the marble walls — integrals stretching into the past, and powers of (s) rising into the ceiling. At the centre is a pedestal with a single formula glowing.\nAnanya: “This isn’t the derivative I know. The inscription looks like the Laplace transform, but something’s different.”\nAcharya Anvay: “Yes. This is the Caputo fractional derivative. Remember, the Laplace transform itself is unchanged: [ L{f(t)}(s) = _0e{-st} f(t),dt. ] But when we apply it to a fractional derivative, the transform rule changes.”\nThe pedestal shows the key identity for the Caputo derivative (for (0&lt;)):\n[ L{{}^C D_t^f(t)}(s) ;=; s^f(s) - s^{} f(0). ]\nAnanya: “So instead of (sf(s)-f(0)) we now get (sf(s)-s{}f(0))?”\nAcharya Anvay: “Exactly. That single change — the appearance of (s^) — is what transforms the entire palace. It means fractional derivatives take us from linear powers of (s) to fractional ones.”\nThey step to a carved arch showing the fractional analogue of the exponential ODE:\n[ {}^C D_t^y(t) = y(t), y(0)=y_0. ]\nApplying the Laplace identity gives the stone inscription:\n[ s^y(s) - s^{} y_0 = y(s) y(s) = . ]\nAnanya: “The denominator is (s^-), not (s-). The shape of the solution must be completely different!”\nAcharya Anvay: “In the next room you will meet the function that inverts this transform — the true master of this palace: the Mittag–Leffler function.”",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials — Rooms 1–3</span>"
     ]
   },
   {
-    "objectID": "chapters/level3_palace_of_exponentials.html#scene-3-library-of-laplace-transforms-derivation",
-    "href": "chapters/level3_palace_of_exponentials.html#scene-3-library-of-laplace-transforms-derivation",
-    "title": "5  Palace of Eternal Exponentials",
-    "section": "6.3 Scene 3 — Library of Laplace transforms (derivation)",
-    "text": "6.3 Scene 3 — Library of Laplace transforms (derivation)\nThey enter a quiet library where scrolls record transform pairs. Acharya Anvay unrolls a scroll.\nAcharya Anvay: “Take the Caputo equation \\({}^{C}D_t^\\alpha y = \\lambda y,\\quad y(0)=y_0\\), with \\(0&lt;\\alpha\\le 1\\).”\nAnanya: “Laplace it — as if we seek the frequency-soul of the equation.”\nUsing the Caputo Laplace identity,\n\\(\\mathcal L\\{ {}^{C}D_t^\\alpha y\\}(s) = s^\\alpha \\tilde y(s) - s^{\\alpha-1} y(0),\\)\nwe obtain\n\\(s^\\alpha \\tilde y(s) - s^{\\alpha-1} y_0 = \\lambda \\tilde y(s) \\quad\\Rightarrow\\quad \\tilde y(s) = \\frac{s^{\\alpha-1} y_0}{s^\\alpha - \\lambda}.\\)\nInverting with the standard Laplace pair (see below) yields\n\\(y(t) = y_0 E_\\alpha(\\lambda t^\\alpha).\\)\n\n\nLaplace pair used (reminder)\n\nFor suitable \\(s\\) and real \\(\\beta\\),\n\\(\\mathcal L\\{ t^{\\beta-1} E_{\\alpha,\\beta}(\\pm \\lambda t^\\alpha)\\}(s) = \\frac{s^{\\alpha-\\beta}}{s^\\alpha \\mp \\lambda}.\\)\nSetting \\(\\beta=1\\) recovers the pair used in the derivation.",
+    "objectID": "chapters/level3_palace_of_exponentials.html#room-3-the-chamber-of-generalisation",
+    "href": "chapters/level3_palace_of_exponentials.html#room-3-the-chamber-of-generalisation",
+    "title": "5  Palace of Eternal Exponentials — Rooms 1–3",
+    "section": "6.3 Room 3 — The Chamber of Generalisation",
+    "text": "6.3 Room 3 — The Chamber of Generalisation\nThey step into a circular chamber lit by soft blue light. The floor is inlaid with spirals of numbers, and at the centre stands a tall column. Upon it glows a new formula — one Ananya has never seen before.\nAnanya: “This looks like a series… but the denominator has () functions!”\nOn the column is written the defining series:\n[ E_{,}(z) ;=; _{k=0}^, &gt;0, C, ]\nand the single-parameter form\n[ E_(z):=E_{,1}(z). ]\nAcharya Anvay: “This is the Mittag–Leffler function. It is the natural generalisation of the exponential.”\nAnanya: “If I take (, ) I get [ E_{1,1}(z)={k=0}^={k=0}=ez. ] So the exponential is a special doorway inside this chamber!”\nThe surrounding walls light up with short plaques:\n\nConvergence / entireness: the series converges for all (zC); (E_{,}) is entire.\n\nValue at zero: (E_(0)=1).\n\nOperational identity (Laplace): [ L{ E_(t^)}(s) = , ] which exactly inverts the transform found in Room 2.\n\nAnanya: “So (E_) is exactly the inverse Laplace transform of the expression from the Hall of Fractional Derivatives.”\nAcharya Anvay: “Yes. It is the eigenfunction of the fractional derivative in the same way the exponential is the eigenfunction of the ordinary derivative.”\nThey stand quietly, absorbing the fact that what looked like a small change in the differentiation rule leads to an entire new landscape of functions.\n\n\n6.3.1 Navigation note\n\nNext: Room 4 — The Gallery of Properties (asymptotics, growth, spectral representation, monotonicity).\n\nIf you want, I can place Room 4 into the same .qmd file below Room 3, or create a new file level3_palace_room4.qmd.\n\nWould you like Room 4 added now (detailed gallery with proofs/sketches and narrative), or do you want to review/edit the current Rooms 1–3 first?",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/level3_palace_of_exponentials.html#scene-4-mirror-room-asymptotics-intuition",
-    "href": "chapters/level3_palace_of_exponentials.html#scene-4-mirror-room-asymptotics-intuition",
-    "title": "5  Palace of Eternal Exponentials",
-    "section": "6.4 Scene 4 — Mirror Room: asymptotics & intuition",
-    "text": "6.4 Scene 4 — Mirror Room: asymptotics & intuition\nThe Mirror Room bends long reflections into slow tails. A descriptive dialogue helps students internalize asymptotics.\nAnanya: “When alpha is small, why do echoes die so slowly?”\nAcharya Anvay: “Because the Mittag–Leffler’s coefficients, divided by Gamma(\\(\\alpha k+1\\)), shift more mass to early terms and produce algebraic-like behaviour at long times — the memory stores the past.”\n\n\nConcise asymptotic note (for teacher)\n\nFor \\(0&lt;\\alpha&lt;2\\) and large \\(|z|\\) away from certain sectorial rays, there are known asymptotic expansions of \\(E_{\\alpha,\\beta}(z)\\). On the negative real axis, solutions like \\(E_\\alpha(-t^\\alpha)\\) typically show slower decay than \\(e^{-t}\\), often algebraic in nature; reference Mainardi (2000) for readable summaries.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/level3_palace_of_exponentials.html#scene-5-marble-hall-mini-quest-numerical-verification",
-    "href": "chapters/level3_palace_of_exponentials.html#scene-5-marble-hall-mini-quest-numerical-verification",
-    "title": "5  Palace of Eternal Exponentials",
-    "section": "6.5 Scene 5 — Marble Hall: mini-quest (numerical verification)",
-    "text": "6.5 Scene 5 — Marble Hall: mini-quest (numerical verification)\nThe Marble Hall contains a bench where students can perform three trials.\nMini-Quest\n\nVerify numerically that the Caputo ODE\n\n\\({}^{C}D_t^\\alpha y(t) = -y(t), \\quad y(0)=1,\\)\nhas solution \\(y(t)=E_\\alpha(-t^\\alpha)\\) for \\(\\alpha=0.6\\) on \\([0,5]\\).\n\nProve \\(E_1(z)=e^z\\) by comparing series.\nBonus: estimate time \\(T\\) where \\(E_{0.6}(-t^{0.6})&lt;0.1\\) and compare with exponential decay.\n\n\n\nStarter hint (GL scheme)\n\nUse the Grünwald–Letnikov approximation for the fractional derivative with step \\(\\Delta t\\):\n\\({}^{C}D_t^\\alpha y(t_n) \\approx \\frac{1}{(\\Delta t)^\\alpha} \\sum_{k=0}^n w_k y_{n-k},\\)\nwhere \\(w_k = (-1)^k \\binom{\\alpha}{k}\\). March forward in time and compare to \\(E_\\alpha(-t^\\alpha)\\) from mpmath.\n\n\n\nRunnable code — interactive Plotly (safe fallback)\n\n#| echo: true #| eval: true #| label: palace-plotly-safe import numpy as np import mpmath as mp import plotly.graph_objects as go from IPython.display import HTML, display",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials — Rooms 1–3</span>"
     ]
   }
 ]
