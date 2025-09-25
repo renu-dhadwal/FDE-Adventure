@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Fractional Calculus Adventure",
     "section": "",
-    "text": "1 Fractional Calculus Adventure\nA dialogue-driven course and interactive resource on fractional differential equations.\nStart here:\n\nLevel 1 – Temple of Smriti (Memory)\nLevel 2 – The River of Derivatives\nLevel 2.5 - The Grove of Expansion",
+    "text": "1 Fractional Calculus Adventure\nA dialogue-driven course and interactive resource on fractional differential equations.\nStart here:\n\nLevel 1 – Temple of Smriti (Memory)\nLevel 2 – The River of Derivatives\nLevel 2.5 - The Grove of Expansion\nLevel 3 - The Palace of Exponentials",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Fractional Calculus Adventure</span>"
     ]
@@ -167,6 +167,76 @@
     "text": "4.3 Mini-Exercises: Grove Practice\n\nExercise 1. Constant function\nShow that the fractional Taylor formula for \\(f(t)=1\\) reduces to \\(f(t)=1\\) with zero remainder.\n\n\nExercise 2. Linear function\nApply the fractional Taylor formula to \\(f(t)=t\\).\nHint: Remember \\({}^C D_t^\\alpha (t)=0\\) for \\(0&lt;\\alpha\\le1\\).\n\n\nExercise 3. Exponential comparison\nCompute the first two classical Taylor terms for \\(e^t\\) and compare with the fractional expansion remainder when \\(\\alpha=1/2\\).\n\n\n\nNarrator: Among the trees of the grove, Ananya learns how expansions can carry memory into infinite branches. With this tool in hand, she steps onward, ready to face the Forest of Equations, where entire systems of fractional order await.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Level 2.5 – The Grove of Expansions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html",
+    "href": "chapters/level3_palace_of_exponentials.html",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "",
+    "text": "6 Palace of Eternal Exponentials\nA new level in the journey: follow the marble walkway from the Grove of Expansions and enter the Palace of Eternal Exponentials, where echoes stretch and memory lives in the walls. This page mixes mythic scenes, dialogues (Pavni & Acharya), mathematics, runnable code, and student quests — all ready to drop into your Quarto project.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html#scene-1-entrance-lore",
+    "href": "chapters/level3_palace_of_exponentials.html#scene-1-entrance-lore",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "6.1 Scene 1 — Entrance & lore",
+    "text": "6.1 Scene 1 — Entrance & lore\nThe palace gates open on a fresco of two names: Mittag and Leffler. A gentle wind seems to replay the earliest footsteps — not as an exponential fade but as a long remembered murmur. Pavni and Acharya stand beneath the arch.\nPavni: \"Why does this place feel like it remembers everything?\"\nAcharya: \"Because its laws are fractional — the halls do not forget the past at once. Here, the exponential is a resident, but the palace sings a deeper song.\"\n\n\nShort classroom prompt\n\nAsk students: “Compare the intuition behind exponential decay \\(e^{-t}\\) and the Mittag–Leffler decay for \\(E_\\alpha(-t^\\alpha)\\). What physical processes might each model better?”",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html#scene-2-grand-hall-definitions-quick-facts",
+    "href": "chapters/level3_palace_of_exponentials.html#scene-2-grand-hall-definitions-quick-facts",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "6.2 Scene 2 — Grand Hall: definitions & quick facts",
+    "text": "6.2 Scene 2 — Grand Hall: definitions & quick facts\nThe Grand Hall contains a carved plaque with the incantation.\n\\(E_{\\alpha,\\beta}(z) = \\sum_{k=0}^\\infty \\frac{z^k}{\\Gamma(\\alpha k + \\beta)}, \\qquad \\alpha&gt;0,\\ \\beta\\in\\mathbb C.\\)\nThe single-parameter function is \\(E_\\alpha(z)=E_{\\alpha,1}(z)\\). A small doorway labeled \\(\\alpha=1\\) leads back to a chamber inscribed with \\(e^z\\).\n\n\nProperties & remarks\n\n\nEntire function: the series converges for all \\(z\\in\\mathbb C\\).\nSpecial case: \\(E_{1,1}(z)=e^z\\) because \\(\\Gamma(k+1)=k!\\).\nMemory: for \\(0&lt;\\alpha&lt;1\\) solutions often decay algebraically rather than exponentially, giving long tails.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html#scene-3-library-of-laplace-transforms-derivation",
+    "href": "chapters/level3_palace_of_exponentials.html#scene-3-library-of-laplace-transforms-derivation",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "6.3 Scene 3 — Library of Laplace transforms (derivation)",
+    "text": "6.3 Scene 3 — Library of Laplace transforms (derivation)\nThey enter a quiet library where scrolls record transform pairs. Acharya unrolls a scroll.\nAcharya: \"Take the Caputo equation {}^{C}D_t^\\alpha y = \\lambda y,\\quad y(0)=y_0, with 0&lt;\\alpha\\le 1.\"\nPavni: \"Laplace it — as if we seek the frequency-soul of the equation.\"\nUsing the Caputo Laplace identity,\n\\(\\mathcal L\\{ {}^{C}D_t^\\alpha y\\}(s) = s^\\alpha \\tilde y(s) - s^{\\alpha-1} y(0),\\)\nwe obtain\n\\(s^\\alpha \\tilde y(s) - s^{\\alpha-1} y_0 = \\lambda \\tilde y(s) \\quad\\Rightarrow\\quad \\tilde y(s) = \\frac{s^{\\alpha-1} y_0}{s^\\alpha - \\lambda}.\\)\nInverting with the standard Laplace pair (see below) yields\n\\(y(t) = y_0 E_\\alpha(\\lambda t^\\alpha).\\)\n\n\nLaplace pair used (reminder)\n\nFor suitable \\(s\\) and real \\(\\beta\\),\n\\(\\mathcal L\\{ t^{\\beta-1} E_{\\alpha,\\beta}(\\pm \\lambda t^\\alpha)\\}(s) = \\frac{s^{\\alpha-\\beta}}{s^\\alpha \\mp \\lambda}.\\)\nSetting \\(\\beta=1\\) recovers the pair used in the derivation.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html#scene-4-mirror-room-asymptotics-intuition",
+    "href": "chapters/level3_palace_of_exponentials.html#scene-4-mirror-room-asymptotics-intuition",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "6.4 Scene 4 — Mirror Room: asymptotics & intuition",
+    "text": "6.4 Scene 4 — Mirror Room: asymptotics & intuition\nThe Mirror Room bends long reflections into slow tails. A descriptive dialogue helps students internalize asymptotics.\nPavni: \"When alpha is small, why do echoes die so slowly?\"\nAcharya: \"Because the Mittag–Leffler's coefficients, divided by Gamma(\\alpha k+1), shift more mass to early terms and produce algebraic-like behaviour at long times — the memory stores the past.\"\n\n\nConcise asymptotic note (for teacher)\n\nFor \\(0&lt;\\alpha&lt;2\\) and large \\(|z|\\) away from certain sectorial rays, there are known asymptotic expansions of \\(E_{\\alpha,\\beta}(z)\\). On the negative real axis, solutions like \\(E_\\alpha(-t^\\alpha)\\) typically show slower decay than \\(e^{-t}\\), often algebraic in nature; reference Mainardi (2000) for readable summaries.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html#scene-5-marble-hall-mini-quest-numerical-verification",
+    "href": "chapters/level3_palace_of_exponentials.html#scene-5-marble-hall-mini-quest-numerical-verification",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "6.5 Scene 5 — Marble Hall: mini-quest (numerical verification)",
+    "text": "6.5 Scene 5 — Marble Hall: mini-quest (numerical verification)\nThe Marble Hall contains a bench where students can perform three trials.\nMini-Quest\n\nVerify numerically that the Caputo ODE\n\n\\({}^{C}D_t^\\alpha y(t) = -y(t), \\quad y(0)=1,\\)\nhas solution \\(y(t)=E_\\alpha(-t^\\alpha)\\) for \\(\\alpha=0.6\\) on \\([0,5]\\).\n\nProve \\(E_1(z)=e^z\\) by comparing series.\nBonus: estimate time \\(T\\) where \\(E_{0.6}(-t^{0.6})&lt;0.1\\) and compare with exponential decay.\n\n\n\nStarter hint (GL scheme)\n\nUse the Grünwald–Letnikov approximation for the fractional derivative with step \\(\\Delta t\\):\n\\({}^{C}D_t^\\alpha y(t_n) \\approx \\frac{1}{(\\Delta t)^\\alpha} \\sum_{k=0}^n w_k y_{n-k},\\)\nwhere \\(w_k = (-1)^k \\binom{\\alpha}{k}\\). March forward in time and compare to \\(E_\\alpha(-t^\\alpha)\\) from mpmath.\n\n\n\nRunnable code — interactive Plotly (Quarto HTML)\n\n\nimport numpy as np\nimport mpmath as mp\nimport plotly.graph_objects as go\nimport ipywidgets as widgets\nfrom IPython.display import display, HTML\n\n# Prepare t-grid\nt = np.linspace(0, 8, 300)\n\ndef ml_array(alpha):\n    return np.array([mp.mittag_leffler(alpha, 1, - (ti**alpha)) for ti in t], dtype=float)\n\nalpha0 = 0.8\ny0 = ml_array(alpha0)\n\nfig = go.FigureWidget()\nfig.add_scatter(x=t, y=y0, mode='lines', name=f\"α={alpha0:.2f}\")\nfig.update_layout(title=\"E_α(-t^α) for varying α\", xaxis_title=\"t\", yaxis_title=\"E_α(-t^α)\")\n\nslider = widgets.FloatSlider(value=alpha0, min=0.1, max=1.0, step=0.01, description='α:', layout=widgets.Layout(width='60%'))\n\ndef on_value_change(change):\n    alpha = change['new']\n    y = ml_array(alpha)\n    with fig.batch_update():\n        fig.data[0].y = y\n        fig.data[0].name = f\"α={alpha:.2f}\"\n\nslider.observe(on_value_change, names='value')\n\ndisplay(HTML(\"&lt;p&gt;&lt;strong&gt;Move the slider to change α.&lt;/strong&gt;&lt;/p&gt;\"))\ndisplay(slider)\ndisplay(fig)\n\n\n\n\nRunnable code — matplotlib fallback (static)\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport mpmath as mp\n\nt = np.linspace(0, 8, 300)\nalphas = [1.0, 0.9, 0.7, 0.5, 0.3]\n\nplt.figure(figsize=(6,4))\nfor a in alphas:\n    y = [mp.mittag_leffler(a, 1, -ti**a) for ti in t]\n    plt.plot(t, y, label=f\"α={a}\")\nplt.xlabel(\"t\")\nplt.ylabel(r\"$E_{\\alpha}(-t^{\\alpha})$\")\nplt.legend()\nplt.grid(True)\nplt.show()",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html#scene-6-courtyard-dialogues-teacher-notes-extensions",
+    "href": "chapters/level3_palace_of_exponentials.html#scene-6-courtyard-dialogues-teacher-notes-extensions",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "6.6 Scene 6 — Courtyard: dialogues, teacher notes & extensions",
+    "text": "6.6 Scene 6 — Courtyard: dialogues, teacher notes & extensions\nDialogue (Pavni & Acharya) — pedagogical tone\nPavni: \"So if I want to model slow relaxation in a polymer chain, should I always use Mittag–Leffler?\"\nAcharya: \"Not always. Use it when experimental data show long tails and history-dependence that a single exponential can't capture. But check the physical derivation: sometimes distributed-order models, or multi-term fractional models, fit better.\"\n\nPavni: \"How would I explain this to an undergraduate class?\"\nAcharya: \"Say: exponentials forget quickly; Mittag–Leffler remembers longer. Show both plots side-by-side and ask them which curve fits the data better. Then introduce numerical schemes to compute the fractional derivative.\"\n\n\nTeacher notes\n\n\nPrerequisites: Students should have seen power-series expansions and Laplace transforms (or you can provide a short recap). They should be comfortable with numerical ODE stepping.\nAssessment ideas: Implement GL scheme; compare to mpmath evaluation; write a short report interpreting the physical meaning of long tails in data.\nReading: Podlubny (1999), Mainardi surveys.\n\n\n\n\nExtensions\n\n\nAdd complex-plane plots of \\(E_{\\alpha,\\beta}(z)\\) showing sectorial asymptotics.\nProvide a student project: fit an experimental relaxation dataset with a fractional model using least-squares for \\(\\alpha\\) and a scale parameter.\nDiscuss multi-term fractional ODEs and how superposition of Mittag–Leffler terms can model multi-exponential-like behaviour.\n\n\n\nEnd of level.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
     ]
   }
 ]

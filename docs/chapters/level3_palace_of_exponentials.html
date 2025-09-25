@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Level 2 – The River of Derivatives – Fractional Calculus Adventure</title>
+<title>5&nbsp; Palace of Eternal Exponentials – Fractional Calculus Adventure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/level2_5_grove_of_expansions.html" rel="next">
-<link href="../chapters/level1_temple_of_smriti.html" rel="prev">
+<link href="../chapters/level2_5_grove_of_expansions.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -113,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/level2_river_of_derivatives.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Level 2 – The River of Derivatives</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/level3_palace_of_exponentials.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Palace of Eternal Exponentials</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -154,7 +188,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/level2_river_of_derivatives.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/level2_river_of_derivatives.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Level 2 – The River of Derivatives</span></span></a>
   </div>
 </li>
@@ -166,7 +200,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/level3_palace_of_exponentials.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/level3_palace_of_exponentials.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Palace of Eternal Exponentials</span></span></a>
   </div>
 </li>
@@ -180,17 +214,15 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#scene-arrival-at-the-river" id="toc-scene-arrival-at-the-river" class="nav-link active" data-scroll-target="#scene-arrival-at-the-river"><span class="header-section-number">3.0.1</span> Scene: Arrival at the River</a></li>
-  <li><a href="#rigorous-definitions" id="toc-rigorous-definitions" class="nav-link" data-scroll-target="#rigorous-definitions"><span class="header-section-number">3.1</span> Rigorous Definitions</a></li>
-  <li><a href="#comparison-at-a-glance" id="toc-comparison-at-a-glance" class="nav-link" data-scroll-target="#comparison-at-a-glance"><span class="header-section-number">3.2</span> Comparison at a Glance</a></li>
-  <li><a href="#worked-example-power-functions" id="toc-worked-example-power-functions" class="nav-link" data-scroll-target="#worked-example-power-functions"><span class="header-section-number">3.3</span> Worked Example: Power Functions</a></li>
-  <li><a href="#worked-example-caputo-derivative-of-power-functions" id="toc-worked-example-caputo-derivative-of-power-functions" class="nav-link" data-scroll-target="#worked-example-caputo-derivative-of-power-functions"><span class="header-section-number">3.4</span> Worked Example: Caputo Derivative of Power Functions</a>
+  <li><a href="#palace-of-eternal-exponentials" id="toc-palace-of-eternal-exponentials" class="nav-link active" data-scroll-target="#palace-of-eternal-exponentials"><span class="header-section-number">6</span> Palace of Eternal Exponentials</a>
   <ul class="collapse">
-  <li><a href="#mini-quest-compare-rl-and-caputo" id="toc-mini-quest-compare-rl-and-caputo" class="nav-link" data-scroll-target="#mini-quest-compare-rl-and-caputo"><span class="header-section-number">3.4.1</span> Mini-Quest: Compare RL and Caputo</a></li>
+  <li><a href="#scene-1-entrance-lore" id="toc-scene-1-entrance-lore" class="nav-link" data-scroll-target="#scene-1-entrance-lore"><span class="header-section-number">6.1</span> Scene 1 — Entrance &amp; lore</a></li>
+  <li><a href="#scene-2-grand-hall-definitions-quick-facts" id="toc-scene-2-grand-hall-definitions-quick-facts" class="nav-link" data-scroll-target="#scene-2-grand-hall-definitions-quick-facts"><span class="header-section-number">6.2</span> Scene 2 — Grand Hall: definitions &amp; quick facts</a></li>
+  <li><a href="#scene-3-library-of-laplace-transforms-derivation" id="toc-scene-3-library-of-laplace-transforms-derivation" class="nav-link" data-scroll-target="#scene-3-library-of-laplace-transforms-derivation"><span class="header-section-number">6.3</span> Scene 3 — Library of Laplace transforms (derivation)</a></li>
+  <li><a href="#scene-4-mirror-room-asymptotics-intuition" id="toc-scene-4-mirror-room-asymptotics-intuition" class="nav-link" data-scroll-target="#scene-4-mirror-room-asymptotics-intuition"><span class="header-section-number">6.4</span> Scene 4 — Mirror Room: asymptotics &amp; intuition</a></li>
+  <li><a href="#scene-5-marble-hall-mini-quest-numerical-verification" id="toc-scene-5-marble-hall-mini-quest-numerical-verification" class="nav-link" data-scroll-target="#scene-5-marble-hall-mini-quest-numerical-verification"><span class="header-section-number">6.5</span> Scene 5 — Marble Hall: mini-quest (numerical verification)</a></li>
+  <li><a href="#scene-6-courtyard-dialogues-teacher-notes-extensions" id="toc-scene-6-courtyard-dialogues-teacher-notes-extensions" class="nav-link" data-scroll-target="#scene-6-courtyard-dialogues-teacher-notes-extensions"><span class="header-section-number">6.6</span> Scene 6 — Courtyard: dialogues, teacher notes &amp; extensions</a></li>
   </ul></li>
-  <li><a href="#worked-example-exponentials" id="toc-worked-example-exponentials" class="nav-link" data-scroll-target="#worked-example-exponentials"><span class="header-section-number">3.5</span> Worked Example: Exponentials</a></li>
-  <li><a href="#rules-of-the-river-caputo-properties" id="toc-rules-of-the-river-caputo-properties" class="nav-link" data-scroll-target="#rules-of-the-river-caputo-properties"><span class="header-section-number">3.6</span> Rules of the River (Caputo Properties)</a></li>
-  <li><a href="#mini-exercises-rules-of-the-river" id="toc-mini-exercises-rules-of-the-river" class="nav-link" data-scroll-target="#mini-exercises-rules-of-the-river"><span class="header-section-number">3.7</span> Mini-Exercises: Rules of the River</a></li>
   </ul>
 </nav>
     </div>
@@ -199,7 +231,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Level 2 – The River of Derivatives</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Palace of Eternal Exponentials</span></h1>
 </div>
 
 
@@ -216,212 +248,206 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Characters</strong>:<br>
-- <strong>Acharya Anvaya (Guide/Teacher, continuity of knowledge)</strong><br>
-- <strong>Ananya (Learner, seeker of truth)</strong></p>
-<hr>
-<section id="scene-arrival-at-the-river" class="level3" data-number="3.0.1">
-<h3 data-number="3.0.1" class="anchored" data-anchor-id="scene-arrival-at-the-river"><span class="header-section-number">3.0.1</span> Scene: Arrival at the River</h3>
-<p>With the Key of Smriti in hand, Ananya steps beyond the temple gates. A wide river flows before her, restless and shining. On the shore rest <strong>two boats</strong>, each with a carved name: <em>Riemann–Liouville</em> and <em>Caputo</em>.</p>
-<p><strong>Ananya</strong>: Two boats? Which one do we take to cross the River of Derivatives?</p>
-<p><strong>Acharya Anvaya</strong>: Both will carry you across, but their way of remembering the river differs. One boat remembers everything since the river’s source 🌊; the other begins its memory only when you step aboard 🚤 — that is, when you set your initial conditions.</p>
-<hr>
-</section>
-<section id="rigorous-definitions" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="rigorous-definitions"><span class="header-section-number">3.1</span> Rigorous Definitions</h2>
-<p><strong>Acharya Anvaya</strong>: Let us be precise. Suppose <span class="math inline">\(n-1 &lt; \alpha \leq n\)</span> with <span class="math inline">\(n \in \mathbb{N}\)</span>.</p>
-<div class="rule-box">
-<p><strong>Riemann–Liouville fractional derivative</strong></p>
-<p><span class="math display">\[
-D_t^\alpha f(t) = \frac{d^n}{dt^n}\, I^{\,n-\alpha} f(t)
-= \frac{1}{\Gamma(n-\alpha)}\frac{d^n}{dt^n}\int_0^t (t-\tau)^{\,n-\alpha-1} f(\tau)\,d\tau.
-\]</span></p>
-</div>
-<div class="rule-box">
-<p><strong>Caputo fractional derivative</strong></p>
-<p><span class="math display">\[
-{}^C D_t^\alpha f(t) =
-I^{\,n-\alpha} f^{(n)}(t)
-= \frac{1}{\Gamma(n-\alpha)}\int_0^t (t-\tau)^{\,n-\alpha-1} f^{(n)}(\tau)\,d\tau.
-\]</span></p>
-</div>
-<p><strong>Ananya</strong>: So the difference is: Riemann–Liouville differentiates <em>after</em> integrating, while Caputo differentiates <em>before</em> integrating?</p>
-<p><strong>Acharya Anvaya</strong>: Exactly. Two boats across the same river — same waters, different journeys 😇.</p>
-<hr>
-</section>
-<section id="comparison-at-a-glance" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="comparison-at-a-glance"><span class="header-section-number">3.2</span> Comparison at a Glance</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 42%">
-<col style="width: 37%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Aspect</th>
-<th>Riemann–Liouville</th>
-<th>Caputo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Formula</td>
-<td><span class="math inline">\(D^\alpha f = \dfrac{d^n}{dt^n} I^{n-\alpha} f\)</span></td>
-<td><span class="math inline">\({}^C D^\alpha f = I^{n-\alpha} f^{(n)}\)</span></td>
-</tr>
-<tr class="even">
-<td>Memory starts</td>
-<td>From <span class="math inline">\(t=0\)</span> (full history)</td>
-<td>From problem start (with <span class="math inline">\(f^{(n)}\)</span>)</td>
-</tr>
-<tr class="odd">
-<td>Initial conditions</td>
-<td>Involve fractional integrals</td>
-<td>Classical: <span class="math inline">\(f(0), f'(0), \dots\)</span></td>
-</tr>
-<tr class="even">
-<td>Common use</td>
-<td>Pure math / theory</td>
-<td>Physics / engineering</td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-<section id="worked-example-power-functions" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="worked-example-power-functions"><span class="header-section-number">3.3</span> Worked Example: Power Functions</h2>
-<div class="rule-box">
-<p>For the Riemann–Liouville derivative of <span class="math inline">\(t^\beta\)</span> (<span class="math inline">\(\beta &gt; -1\)</span>):</p>
-<p><span class="math display">\[
-D_t^\alpha \, t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} \, t^{\beta-\alpha}.
-\]</span></p>
-</div>
-<p><strong>Example</strong>: with <span class="math inline">\(\alpha = \tfrac{1}{2}\)</span> and <span class="math inline">\(f(t)=t^2\)</span>:</p>
-<p><span class="math display">\[
-D_t^{1/2}\, t^2 = \frac{\Gamma(3)}{\Gamma(2.5)} \, t^{3/2}.
-\]</span></p>
-<hr>
-</section>
-<section id="worked-example-caputo-derivative-of-power-functions" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="worked-example-caputo-derivative-of-power-functions"><span class="header-section-number">3.4</span> Worked Example: Caputo Derivative of Power Functions</h2>
-<div class="rule-box">
+<section id="palace-of-eternal-exponentials" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Palace of Eternal Exponentials</h1>
+<p>A new level in the journey: follow the marble walkway from the Grove of Expansions and enter the Palace of Eternal Exponentials, where echoes stretch and memory lives in the walls. This page mixes mythic scenes, dialogues (Pavni &amp; Acharya), mathematics, runnable code, and student quests — all ready to drop into your Quarto project.</p>
+<details>
+<summary>
+<strong>Level map</strong>
+</summary>
 <ul>
-<li>If <span class="math inline">\(f(t) = t^\beta\)</span> with <span class="math inline">\(\beta \leq n-1\)</span>, then <span class="math inline">\({}^C D_t^\alpha f(t) = 0\)</span>.<br>
-</li>
-<li>If <span class="math inline">\(\beta &gt; n-1\)</span>, then</li>
+<li>Scene 1 — Entrance &amp; lore</li>
+<li>Scene 2 — Grand Hall: definition &amp; properties</li>
+<li>Scene 3 — Library of Laplace transforms: derivation for Caputo ODEs</li>
+<li>Scene 4 — Mirror Room: asymptotics &amp; intuition</li>
+<li>Scene 5 — Marble Hall: mini-quest + numerical verification (code)</li>
+<li>Scene 6 — Courtyard: extensions, teacher notes, assessment</li>
 </ul>
-<p><span class="math display">\[
-{}^C D_t^\alpha t^\beta
-= \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
-\]</span></p>
-</div>
-<p>So for most powers, Riemann–Liouville and Caputo agree, but for low-degree polynomials, Caputo derivatives vanish.</p>
+</details>
 <hr>
-<section id="mini-quest-compare-rl-and-caputo" class="level3" data-number="3.4.1">
-<h3 data-number="3.4.1" class="anchored" data-anchor-id="mini-quest-compare-rl-and-caputo"><span class="header-section-number">3.4.1</span> Mini-Quest: Compare RL and Caputo</h3>
-<div class="exercise-box">
-<p><strong>Task</strong>: Compute the Riemann–Liouville and Caputo derivatives of <span class="math inline">\(f(t)=t^2\)</span> for <span class="math inline">\(\alpha = \tfrac12\)</span>.</p>
+<section id="scene-1-entrance-lore" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="scene-1-entrance-lore"><span class="header-section-number">6.1</span> Scene 1 — Entrance &amp; lore</h2>
+<p>The palace gates open on a fresco of two names: <strong>Mittag</strong> and <strong>Leffler</strong>. A gentle wind seems to replay the earliest footsteps — not as an exponential fade but as a long remembered murmur. Pavni and Acharya stand beneath the arch.</p>
+<pre><code>Pavni: "Why does this place feel like it remembers everything?"
+Acharya: "Because its laws are fractional — the halls do not forget the past at once. Here, the exponential is a resident, but the palace sings a deeper song."</code></pre>
+<details>
+<summary>
+Short classroom prompt
+</summary>
+<p>Ask students: “Compare the intuition behind exponential decay <span class="math inline">\(e^{-t}\)</span> and the Mittag–Leffler decay for <span class="math inline">\(E_\alpha(-t^\alpha)\)</span>. What physical processes might each model better?”</p>
+</details>
+<hr>
+</section>
+<section id="scene-2-grand-hall-definitions-quick-facts" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="scene-2-grand-hall-definitions-quick-facts"><span class="header-section-number">6.2</span> Scene 2 — Grand Hall: definitions &amp; quick facts</h2>
+<p>The Grand Hall contains a carved plaque with the incantation.</p>
+<p><span class="math inline">\(E_{\alpha,\beta}(z) = \sum_{k=0}^\infty \frac{z^k}{\Gamma(\alpha k + \beta)}, \qquad \alpha&gt;0,\ \beta\in\mathbb C.\)</span></p>
+<p>The single-parameter function is <span class="math inline">\(E_\alpha(z)=E_{\alpha,1}(z)\)</span>. A small doorway labeled <span class="math inline">\(\alpha=1\)</span> leads back to a chamber inscribed with <span class="math inline">\(e^z\)</span>.</p>
+<details>
+<summary>
+Properties &amp; remarks
+</summary>
 <ul>
-<li><p><strong>Riemann–Liouville</strong>:<br>
-<span class="math display">\[
-D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
-\]</span></p></li>
-<li><p><strong>Caputo</strong>:<br>
-<span class="math display">\[
-{}^C D_t^{1/2} t^2 = \frac{\Gamma(3)}{\Gamma(2.5)}\, t^{3/2}.
-\]</span></p></li>
+<li>Entire function: the series converges for all <span class="math inline">\(z\in\mathbb C\)</span>.</li>
+<li>Special case: <span class="math inline">\(E_{1,1}(z)=e^z\)</span> because <span class="math inline">\(\Gamma(k+1)=k!\)</span>.</li>
+<li>Memory: for <span class="math inline">\(0&lt;\alpha&lt;1\)</span> solutions often decay algebraically rather than exponentially, giving long tails.</li>
 </ul>
-<p><strong>Observation</strong>: For this function, both definitions give the same result.</p>
-</div>
+</details>
 <hr>
 </section>
-</section>
-<section id="worked-example-exponentials" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="worked-example-exponentials"><span class="header-section-number">3.5</span> Worked Example: Exponentials</h2>
-<div class="rule-box">
-<p>For exponentials:</p>
-<p><span class="math display">\[
-D_t^\alpha e^{\lambda t} = {}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}.
-\]</span></p>
-</div>
-<p><strong>Ananya</strong>: Beautiful! The exponential remains its own shape, and <span class="math inline">\(\lambda\)</span> is lifted to a fractional power.</p>
-<p><strong>Acharya Anvaya</strong>: Exactly. Exponentials are the eigenfunctions of fractional derivatives. <strong>Ananya</strong>: 😇</p>
+<section id="scene-3-library-of-laplace-transforms-derivation" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="scene-3-library-of-laplace-transforms-derivation"><span class="header-section-number">6.3</span> Scene 3 — Library of Laplace transforms (derivation)</h2>
+<p>They enter a quiet library where scrolls record transform pairs. Acharya unrolls a scroll.</p>
+<pre><code>Acharya: "Take the Caputo equation {}^{C}D_t^\alpha y = \lambda y,\quad y(0)=y_0, with 0&lt;\alpha\le 1."
+Pavni: "Laplace it — as if we seek the frequency-soul of the equation."</code></pre>
+<p>Using the Caputo Laplace identity,</p>
+<p><span class="math inline">\(\mathcal L\{ {}^{C}D_t^\alpha y\}(s) = s^\alpha \tilde y(s) - s^{\alpha-1} y(0),\)</span></p>
+<p>we obtain</p>
+<p><span class="math inline">\(s^\alpha \tilde y(s) - s^{\alpha-1} y_0 = \lambda \tilde y(s) \quad\Rightarrow\quad \tilde y(s) = \frac{s^{\alpha-1} y_0}{s^\alpha - \lambda}.\)</span></p>
+<p>Inverting with the standard Laplace pair (see below) yields</p>
+<p><span class="math inline">\(y(t) = y_0 E_\alpha(\lambda t^\alpha).\)</span></p>
+<details>
+<summary>
+Laplace pair used (reminder)
+</summary>
+<p>For suitable <span class="math inline">\(s\)</span> and real <span class="math inline">\(\beta\)</span>,</p>
+<p><span class="math inline">\(\mathcal L\{ t^{\beta-1} E_{\alpha,\beta}(\pm \lambda t^\alpha)\}(s) = \frac{s^{\alpha-\beta}}{s^\alpha \mp \lambda}.\)</span></p>
+<p>Setting <span class="math inline">\(\beta=1\)</span> recovers the pair used in the derivation.</p>
+</details>
 <hr>
 </section>
-<section id="rules-of-the-river-caputo-properties" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="rules-of-the-river-caputo-properties"><span class="header-section-number">3.6</span> Rules of the River (Caputo Properties)</h2>
-<div class="rule-box">
-<p><strong>Rule 1. Linearity</strong></p>
-<p>For constants <span class="math inline">\(c_1, c_2\)</span> and functions <span class="math inline">\(f, g\)</span>:</p>
-<p><span class="math display">\[
-{}^C D_t^\alpha (c_1 f(t) + c_2 g(t))
-= c_1 \, {}^C D_t^\alpha f(t) + c_2 \, {}^C D_t^\alpha g(t).
-\]</span></p>
+<section id="scene-4-mirror-room-asymptotics-intuition" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="scene-4-mirror-room-asymptotics-intuition"><span class="header-section-number">6.4</span> Scene 4 — Mirror Room: asymptotics &amp; intuition</h2>
+<p>The Mirror Room bends long reflections into slow tails. A descriptive dialogue helps students internalize asymptotics.</p>
+<pre><code>Pavni: "When alpha is small, why do echoes die so slowly?"
+Acharya: "Because the Mittag–Leffler's coefficients, divided by Gamma(\alpha k+1), shift more mass to early terms and produce algebraic-like behaviour at long times — the memory stores the past."</code></pre>
+<details>
+<summary>
+Concise asymptotic note (for teacher)
+</summary>
+<p>For <span class="math inline">\(0&lt;\alpha&lt;2\)</span> and large <span class="math inline">\(|z|\)</span> away from certain sectorial rays, there are known asymptotic expansions of <span class="math inline">\(E_{\alpha,\beta}(z)\)</span>. On the negative real axis, solutions like <span class="math inline">\(E_\alpha(-t^\alpha)\)</span> typically show slower decay than <span class="math inline">\(e^{-t}\)</span>, often algebraic in nature; reference Mainardi (2000) for readable summaries.</p>
+</details>
+<hr>
+</section>
+<section id="scene-5-marble-hall-mini-quest-numerical-verification" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="scene-5-marble-hall-mini-quest-numerical-verification"><span class="header-section-number">6.5</span> Scene 5 — Marble Hall: mini-quest (numerical verification)</h2>
+<p>The Marble Hall contains a bench where students can perform three trials.</p>
+<p><strong>Mini-Quest</strong></p>
+<ol type="1">
+<li>Verify numerically that the Caputo ODE</li>
+</ol>
+<p><span class="math inline">\({}^{C}D_t^\alpha y(t) = -y(t), \quad y(0)=1,\)</span></p>
+<p>has solution <span class="math inline">\(y(t)=E_\alpha(-t^\alpha)\)</span> for <span class="math inline">\(\alpha=0.6\)</span> on <span class="math inline">\([0,5]\)</span>.</p>
+<ol start="2" type="1">
+<li><p>Prove <span class="math inline">\(E_1(z)=e^z\)</span> by comparing series.</p></li>
+<li><p>Bonus: estimate time <span class="math inline">\(T\)</span> where <span class="math inline">\(E_{0.6}(-t^{0.6})&lt;0.1\)</span> and compare with exponential decay.</p></li>
+</ol>
+<details>
+<summary>
+Starter hint (GL scheme)
+</summary>
+<p>Use the Grünwald–Letnikov approximation for the fractional derivative with step <span class="math inline">\(\Delta t\)</span>:</p>
+<p><span class="math inline">\({}^{C}D_t^\alpha y(t_n) \approx \frac{1}{(\Delta t)^\alpha} \sum_{k=0}^n w_k y_{n-k},\)</span></p>
+<p>where <span class="math inline">\(w_k = (-1)^k \binom{\alpha}{k}\)</span>. March forward in time and compare to <span class="math inline">\(E_\alpha(-t^\alpha)\)</span> from <code>mpmath</code>.</p>
+</details>
+<details>
+<summary>
+Runnable code — interactive Plotly (Quarto HTML)
+</summary>
+<div id="palace-plotly" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> mpmath <span class="im">as</span> mp</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> ipywidgets <span class="im">as</span> widgets</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display, HTML</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepare t-grid</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">8</span>, <span class="dv">300</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ml_array(alpha):</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.array([mp.mittag_leffler(alpha, <span class="dv">1</span>, <span class="op">-</span> (ti<span class="op">**</span>alpha)) <span class="cf">for</span> ti <span class="kw">in</span> t], dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>alpha0 <span class="op">=</span> <span class="fl">0.8</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>y0 <span class="op">=</span> ml_array(alpha0)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.FigureWidget()</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>fig.add_scatter(x<span class="op">=</span>t, y<span class="op">=</span>y0, mode<span class="op">=</span><span class="st">'lines'</span>, name<span class="op">=</span><span class="ss">f"α=</span><span class="sc">{</span>alpha0<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>fig.update_layout(title<span class="op">=</span><span class="st">"E_α(-t^α) for varying α"</span>, xaxis_title<span class="op">=</span><span class="st">"t"</span>, yaxis_title<span class="op">=</span><span class="st">"E_α(-t^α)"</span>)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>slider <span class="op">=</span> widgets.FloatSlider(value<span class="op">=</span>alpha0, <span class="bu">min</span><span class="op">=</span><span class="fl">0.1</span>, <span class="bu">max</span><span class="op">=</span><span class="fl">1.0</span>, step<span class="op">=</span><span class="fl">0.01</span>, description<span class="op">=</span><span class="st">'α:'</span>, layout<span class="op">=</span>widgets.Layout(width<span class="op">=</span><span class="st">'60%'</span>))</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> on_value_change(change):</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    alpha <span class="op">=</span> change[<span class="st">'new'</span>]</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> ml_array(alpha)</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> fig.batch_update():</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>        fig.data[<span class="dv">0</span>].y <span class="op">=</span> y</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>        fig.data[<span class="dv">0</span>].name <span class="op">=</span> <span class="ss">f"α=</span><span class="sc">{</span>alpha<span class="sc">:.2f}</span><span class="ss">"</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>slider.observe(on_value_change, names<span class="op">=</span><span class="st">'value'</span>)</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>display(HTML(<span class="st">"&lt;p&gt;&lt;strong&gt;Move the slider to change α.&lt;/strong&gt;&lt;/p&gt;"</span>))</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>display(slider)</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>display(fig)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="rule-box">
-<p><strong>Rule 2. Constants and Polynomials</strong></p>
+</details>
+<details>
+<summary>
+Runnable code — matplotlib fallback (static)
+</summary>
+<div id="fccbf720" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> mpmath <span class="im">as</span> mp</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">8</span>, <span class="dv">300</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>alphas <span class="op">=</span> [<span class="fl">1.0</span>, <span class="fl">0.9</span>, <span class="fl">0.7</span>, <span class="fl">0.5</span>, <span class="fl">0.3</span>]</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">4</span>))</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> a <span class="kw">in</span> alphas:</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> [mp.mittag_leffler(a, <span class="dv">1</span>, <span class="op">-</span>ti<span class="op">**</span>a) <span class="cf">for</span> ti <span class="kw">in</span> t]</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    plt.plot(t, y, label<span class="op">=</span><span class="ss">f"α=</span><span class="sc">{</span>a<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"t"</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r"</span><span class="dv">$</span><span class="vs">E_{</span><span class="ch">\a</span><span class="vs">lpha}</span><span class="kw">(</span><span class="vs">-t</span><span class="dv">^</span><span class="vs">{</span><span class="ch">\a</span><span class="vs">lpha}</span><span class="kw">)</span><span class="dv">$</span><span class="vs">"</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</details>
+<hr>
+</section>
+<section id="scene-6-courtyard-dialogues-teacher-notes-extensions" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="scene-6-courtyard-dialogues-teacher-notes-extensions"><span class="header-section-number">6.6</span> Scene 6 — Courtyard: dialogues, teacher notes &amp; extensions</h2>
+<p><strong>Dialogue (Pavni &amp; Acharya) — pedagogical tone</strong></p>
+<pre><code>Pavni: "So if I want to model slow relaxation in a polymer chain, should I always use Mittag–Leffler?"
+Acharya: "Not always. Use it when experimental data show long tails and history-dependence that a single exponential can't capture. But check the physical derivation: sometimes distributed-order models, or multi-term fractional models, fit better."
+
+Pavni: "How would I explain this to an undergraduate class?"
+Acharya: "Say: exponentials forget quickly; Mittag–Leffler remembers longer. Show both plots side-by-side and ask them which curve fits the data better. Then introduce numerical schemes to compute the fractional derivative."</code></pre>
+<details>
+<summary>
+Teacher notes
+</summary>
 <ul>
-<li>For a constant <span class="math inline">\(C\)</span>, <span class="math inline">\({}^C D_t^\alpha C = 0\)</span>.<br>
-</li>
-<li>For <span class="math inline">\(t^\beta\)</span> with <span class="math inline">\(\beta = 0,1,\dots,n-1\)</span>, <span class="math inline">\({}^C D_t^\alpha t^\beta = 0\)</span>.<br>
-</li>
-<li>For <span class="math inline">\(\beta &gt; n-1\)</span>,<br>
-<span class="math display">\[
-{}^C D_t^\alpha t^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)}\, t^{\beta-\alpha}.
-\]</span></li>
+<li><strong>Prerequisites</strong>: Students should have seen power-series expansions and Laplace transforms (or you can provide a short recap). They should be comfortable with numerical ODE stepping.</li>
+<li><strong>Assessment ideas</strong>: Implement GL scheme; compare to <code>mpmath</code> evaluation; write a short report interpreting the physical meaning of long tails in data.</li>
+<li><strong>Reading</strong>: Podlubny (1999), Mainardi surveys.</li>
 </ul>
-</div>
-<div class="rule-box">
-<p><strong>Rule 3. Exponentials and Trigonometric Functions</strong></p>
+</details>
+<details>
+<summary>
+Extensions
+</summary>
 <ul>
-<li><span class="math inline">\({}^C D_t^\alpha e^{\lambda t} = \lambda^\alpha e^{\lambda t}\)</span>.<br>
-</li>
-<li><span class="math inline">\({}^C D_t^\alpha \sin(\omega t) = \omega^\alpha \sin\!\left(\omega t + \tfrac{\pi\alpha}{2}\right)\)</span>.<br>
-</li>
-<li><span class="math inline">\({}^C D_t^\alpha \cos(\omega t) = \omega^\alpha \cos\!\left(\omega t + \tfrac{\pi\alpha}{2}\right)\)</span>.</li>
+<li>Add complex-plane plots of <span class="math inline">\(E_{\alpha,\beta}(z)\)</span> showing sectorial asymptotics.</li>
+<li>Provide a student project: fit an experimental relaxation dataset with a fractional model using least-squares for <span class="math inline">\(\alpha\)</span> and a scale parameter.</li>
+<li>Discuss multi-term fractional ODEs and how superposition of Mittag–Leffler terms can model multi-exponential-like behaviour.</li>
 </ul>
-</div>
-<div class="rule-box">
-<p><strong>Rule 4. Product and Chain Rules (Caution!)</strong></p>
-<p>Unlike classical derivatives, Caputo derivatives <strong>do not</strong> have simple product or chain rules. Use linearity safely, but treat products/compositions with care.</p>
-</div>
+</details>
 <hr>
-</section>
-<section id="mini-exercises-rules-of-the-river" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="mini-exercises-rules-of-the-river"><span class="header-section-number">3.7</span> Mini-Exercises: Rules of the River</h2>
-<div class="exercise-box">
-<p><strong>Exercise 1. Constant function</strong><br>
-Compute <span class="math inline">\({}^C D_t^{1/2} (5)\)</span>.</p>
-<p><strong>Answer</strong>: <span class="math inline">\(0\)</span>.</p>
-</div>
-<div class="exercise-box">
-<p><strong>Exercise 2. Power function</strong><br>
-Compute <span class="math inline">\({}^C D_t^{1/2} (t^3)\)</span>.</p>
-<p><strong>Answer</strong>: <span class="math inline">\(\dfrac{\Gamma(4)}{\Gamma(3.5)} \, t^{2.5}\)</span>.</p>
-</div>
-<div class="exercise-box">
-<p><strong>Exercise 3. Exponential</strong><br>
-Compute <span class="math inline">\({}^C D_t^{1/2} (e^{2t})\)</span>.</p>
-<p><strong>Answer</strong>: <span class="math inline">\(\sqrt{2}\, e^{2t}\)</span>.</p>
-</div>
-<div class="exercise-box">
-<p><strong>Exercise 4. Trigonometric</strong><br>
-Compute <span class="math inline">\({}^C D_t^{1/2} (\sin t)\)</span>.</p>
-<p><strong>Answer</strong>: <span class="math inline">\(\sin\!\left(t + \tfrac{\pi}{4}\right)\)</span>.</p>
-</div>
-<div class="exercise-box">
-<p><strong>Exercise 5. RL vs Caputo</strong><br>
-Show that for <span class="math inline">\(f(t)=t\)</span>:<br>
-- <span class="math inline">\({}^C D_t^{1/2}(t) = 0\)</span>,<br>
-- <span class="math inline">\(D_t^{1/2}(t) = \dfrac{\Gamma(2)}{\Gamma(1.5)}\, t^{0.5}\)</span>.</p>
-</div>
-<hr>
-<div class="narrator-box">
-<p><strong>Narrator</strong>: With these rules in hand, Ananya feels prepared. The boats glide ashore, and the River of Derivatives is behind them. Ahead lies the <strong>Grove of expanions</strong>. The next stage of the journey begins.</p>
-</div>
+<p><em>End of level.</em></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -827,14 +853,11 @@ Show that for <span class="math inline">\(f(t)=t\)</span>:<br>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/level1_temple_of_smriti.html" class="pagination-link" aria-label="Level 1 – The Temple of Smriti (Memory)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Level 1 – The Temple of Smriti (Memory)</span></span>
+      <a href="../chapters/level2_5_grove_of_expansions.html" class="pagination-link" aria-label="Level 2.5 – The Grove of Expansions">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Level 2.5 – The Grove of Expansions</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/level2_5_grove_of_expansions.html" class="pagination-link" aria-label="Level 2.5 – The Grove of Expansions">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Level 2.5 – The Grove of Expansions</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

@@ -7,4 +7,7 @@ Files included:
 - _quarto.yml
 - index.qmd
 - chapters/level1_temple_of_smriti.qmd
+- chapters/level2_river_of_derivatives.qmd
+- chapters/level2_5_grove_of_expansions.qmd
+- chapters/level3_palace_of_exponentials
 - styles/course.css
