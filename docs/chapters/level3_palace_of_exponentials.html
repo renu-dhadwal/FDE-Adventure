@@ -276,7 +276,62 @@ which exactly inverts the transform found in Room 2.</li>
 <p><strong>Ananya:</strong> “So <span class="math inline">\(E_\alpha\)</span> is exactly the inverse Laplace transform of the expression from the Hall of Fractional Derivatives.”</p>
 <p><strong>Acharya Anvay:</strong> “Yes. It is the eigenfunction of the fractional derivative in the same way the exponential is the eigenfunction of the ordinary derivative.”</p>
 <p>They stand quietly, absorbing the fact that what looked like a small change in the differentiation rule leads to an entire new landscape of functions.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## Room 4 — The Gallery of Properties</td>
+</tr>
+<tr class="even">
+<td>Leaving the Chamber of Generalisation, Ananya and Acharya Anvay enter a long gallery. Along the walls hang great murals, each one depicting a property of the Mittag–Leffler function. They walk slowly, stopping at each one.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mural 1 — Convergence and Entirety</strong></p>
+<p>On the first wall, the series expansion glows:</p>
+<p><span class="math inline">\(E_{\alpha,\beta}(z) = \sum_{k=0}^\infty \dfrac{z^k}{\Gamma(\alpha k+\beta)}.\)</span></p>
+<p><strong>Acharya Anvay:</strong> “Because <span class="math inline">\(\Gamma(\alpha k+\beta)\)</span> grows faster than any exponential in <span class="math inline">\(k\)</span>, this series converges for every <span class="math inline">\(z \in \mathbb C\)</span>. That means <span class="math inline">\(E_{\alpha,\beta}(z)\)</span> is <em>entire</em> — analytic everywhere.”</p>
+<p><strong>Ananya:</strong> “So Mittag–Leffler functions are as well-behaved globally as exponentials.”</p>
 <hr>
+<p><strong>Mural 2 — Special Cases</strong></p>
+<p>Next they see smaller doorways branching off.</p>
+<ul>
+<li><span class="math inline">\(E_{1,1}(z)=e^z\)</span>.<br>
+</li>
+<li><span class="math inline">\(E_\alpha(0)=1\)</span>.<br>
+</li>
+<li><span class="math inline">\(E_{\alpha,\beta}(0)=1/\Gamma(\beta)\)</span>.</li>
+</ul>
+<p><strong>Ananya:</strong> “So the exponential really is just one special doorway in this gallery.”<br>
+<strong>Acharya Anvay:</strong> “Yes — but these other cases open into new behaviours.”</p>
+<hr>
+<p><strong>Mural 3 — Laplace Pair</strong></p>
+<p>On the wall is inscribed:</p>
+<p><span class="math inline">\(\mathcal L\{ t^{\beta-1}E_{\alpha,\beta}(\pm \lambda t^\alpha)\}(s) = \dfrac{s^{\alpha-\beta}}{s^\alpha \mp \lambda}.\)</span></p>
+<p><strong>Acharya Anvay:</strong> “This is the key to why Mittag–Leffler arises in fractional ODEs.<br>
+Set <span class="math inline">\(\beta=1\)</span>:<br>
+<span class="math inline">\(\mathcal L\{E_\alpha(\lambda t^\alpha)\}(s) = \dfrac{s^{\alpha-1}}{s^\alpha-\lambda}.\)</span><br>
+Exactly what we needed to invert the transform from the Hall of Fractional Derivatives.”</p>
+<p><strong>Ananya:</strong> “So in the Laplace world, the exponential’s place is taken by <span class="math inline">\(E_\alpha\)</span>.”</p>
+<hr>
+<p><strong>Mural 4 — Growth Order</strong></p>
+<p>Another mural shows spirals growing outward.</p>
+<p><strong>Acharya Anvay:</strong> “As an entire function, <span class="math inline">\(E_{\alpha,\beta}(z)\)</span> has growth order <span class="math inline">\(1/\alpha\)</span>.<br>
+- For <span class="math inline">\(\alpha=1\)</span>, order <span class="math inline">\(1\)</span> — same as <span class="math inline">\(e^z\)</span>.<br>
+- For <span class="math inline">\(\alpha&lt;1\)</span>, the growth order is larger, meaning the function can blow up faster in some directions.<br>
+This comes from the asymptotics involving <span class="math inline">\(\exp(z^{1/\alpha})\)</span>.”</p>
+<p><strong>Ananya:</strong> “So <span class="math inline">\(\alpha\)</span> controls how ‘big’ the function can get as <span class="math inline">\(|z|\to\infty\)</span>.”</p>
+<hr>
+<p><strong>Mural 5 — Asymptotics (Preview)</strong></p>
+<p>In the final mural, mirrors reflect slowly fading waves.</p>
+<p><strong>Acharya Anvay:</strong> “Along the negative real axis, the exponential term disappears and we get a power-law tail.<br>
+For <span class="math inline">\(0&lt;\alpha&lt;1\)</span>:<br>
+<span class="math inline">\(E_\alpha(-t^\alpha) \sim \dfrac{1}{\Gamma(1-\alpha)}\,t^{-\alpha}\)</span> as <span class="math inline">\(t\to\infty.\)</span>”</p>
+<p><strong>Ananya:</strong> “So while exponentials vanish quickly, Mittag–Leffler decays slowly — carrying memory far into the future.”</p>
+<hr>
+<p>They exit the gallery with a clearer picture: Mittag–Leffler functions are entire, generalise <span class="math inline">\(e^z\)</span>, have a special Laplace identity, grow in sectorial ways, and produce long-memory tails. Ahead lies the Mirror Room, where the asymptotics reveal themselves in full clarity.</p>
 
 
 </section>

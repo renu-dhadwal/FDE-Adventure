@@ -101,3 +101,75 @@ The surrounding walls light up with short plaques:
 They stand quietly, absorbing the fact that what looked like a small change in the differentiation rule leads to an entire new landscape of functions.
 
 ---
+## Room 4 — The Gallery of Properties
+
+Leaving the Chamber of Generalisation, Ananya and Acharya Anvay enter a long gallery. Along the walls hang great murals, each one depicting a property of the Mittag–Leffler function. They walk slowly, stopping at each one.
+
+---
+
+**Mural 1 — Convergence and Entirety**
+
+On the first wall, the series expansion glows:
+
+$E_{\alpha,\beta}(z) = \sum_{k=0}^\infty \dfrac{z^k}{\Gamma(\alpha k+\beta)}.$
+
+**Acharya Anvay:** "Because $\Gamma(\alpha k+\beta)$ grows faster than any exponential in $k$, this series converges for every $z \in \mathbb C$. That means $E_{\alpha,\beta}(z)$ is *entire* — analytic everywhere."
+
+**Ananya:** "So Mittag–Leffler functions are as well-behaved globally as exponentials."
+
+---
+
+**Mural 2 — Special Cases**
+
+Next they see smaller doorways branching off.
+
+- $E_{1,1}(z)=e^z$.  
+- $E_\alpha(0)=1$.  
+- $E_{\alpha,\beta}(0)=1/\Gamma(\beta)$.  
+
+**Ananya:** "So the exponential really is just one special doorway in this gallery."  
+**Acharya Anvay:** "Yes — but these other cases open into new behaviours."
+
+---
+
+**Mural 3 — Laplace Pair**
+
+On the wall is inscribed:
+
+$\mathcal L\{ t^{\beta-1}E_{\alpha,\beta}(\pm \lambda t^\alpha)\}(s) = \dfrac{s^{\alpha-\beta}}{s^\alpha \mp \lambda}.$
+
+**Acharya Anvay:** "This is the key to why Mittag–Leffler arises in fractional ODEs.  
+Set $\beta=1$:  
+$\mathcal L\{E_\alpha(\lambda t^\alpha)\}(s) = \dfrac{s^{\alpha-1}}{s^\alpha-\lambda}.$  
+Exactly what we needed to invert the transform from the Hall of Fractional Derivatives."
+
+**Ananya:** "So in the Laplace world, the exponential’s place is taken by $E_\alpha$."
+
+---
+
+**Mural 4 — Growth Order**
+
+Another mural shows spirals growing outward.
+
+**Acharya Anvay:** "As an entire function, $E_{\alpha,\beta}(z)$ has growth order $1/\alpha$.  
+- For $\alpha=1$, order $1$ — same as $e^z$.  
+- For $\alpha<1$, the growth order is larger, meaning the function can blow up faster in some directions.  
+This comes from the asymptotics involving $\exp(z^{1/\alpha})$."
+
+**Ananya:** "So $\alpha$ controls how 'big' the function can get as $|z|\to\infty$."
+
+---
+
+**Mural 5 — Asymptotics (Preview)**
+
+In the final mural, mirrors reflect slowly fading waves.
+
+**Acharya Anvay:** "Along the negative real axis, the exponential term disappears and we get a power-law tail.  
+For $0<\alpha<1$:  
+$E_\alpha(-t^\alpha) \sim \dfrac{1}{\Gamma(1-\alpha)}\,t^{-\alpha}$ as $t\to\infty.$"
+
+**Ananya:** "So while exponentials vanish quickly, Mittag–Leffler decays slowly — carrying memory far into the future."
+
+---
+
+They exit the gallery with a clearer picture: Mittag–Leffler functions are entire, generalise $e^z$, have a special Laplace identity, grow in sectorial ways, and produce long-memory tails. Ahead lies the Mirror Room, where the asymptotics reveal themselves in full clarity.
