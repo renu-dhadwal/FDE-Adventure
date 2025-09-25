@@ -18,4 +18,6 @@ format:
     css: styles/course.css
 
 execute:
-  enabled: false
+  echo: true
+  eval: true
+jupyter: python3

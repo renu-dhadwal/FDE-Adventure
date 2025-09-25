@@ -1,0 +1,14 @@
+# Quarto + Jupyter kernel essentials
+jupyter
+ipykernel
+
+# Core math + plotting
+numpy
+matplotlib
+mpmath
+
+# Interactive plotting + widgets
+plotly
+ipywidgets
+jupyterlab_widgets
+widgetsnbextension

@@ -1,21 +1,22 @@
 ---
+
 title: "Palace of Eternal Exponentials"
 format: html
----
+------------
 
 # Palace of Eternal Exponentials
 
-A new level in the journey: follow the marble walkway from the Grove of Expansions and enter the Palace of Eternal Exponentials, where echoes stretch and memory lives in the walls. This page mixes mythic scenes, dialogues (Pavni & Acharya), mathematics, runnable code, and student quests — all ready to drop into your Quarto project.
+A new level in the journey: follow the marble walkway from the Grove of Expansions and enter the Palace of Eternal Exponentials, where echoes stretch and memory lives in the walls. This page mixes mythic scenes, dialogues (Ananya & Acharya Anvay), mathematics, runnable code, and student quests — all ready to drop into your Quarto project.
 
 <details>
 <summary><strong>Level map</strong></summary>
 
-- Scene 1 — Entrance & lore
-- Scene 2 — Grand Hall: definition & properties
-- Scene 3 — Library of Laplace transforms: derivation for Caputo ODEs
-- Scene 4 — Mirror Room: asymptotics & intuition
-- Scene 5 — Marble Hall: mini-quest + numerical verification (code)
-- Scene 6 — Courtyard: extensions, teacher notes, assessment
+* Scene 1 — Entrance & lore
+* Scene 2 — Grand Hall: definition & properties
+* Scene 3 — Library of Laplace transforms: derivation for Caputo ODEs
+* Scene 4 — Mirror Room: asymptotics & intuition
+* Scene 5 — Marble Hall: mini-quest + numerical verification (code)
+* Scene 6 — Courtyard: extensions, teacher notes, assessment
 
 </details>
 
@@ -23,12 +24,10 @@ A new level in the journey: follow the marble walkway from the Grove of Expansio
 
 ## Scene 1 — Entrance & lore
 
-The palace gates open on a fresco of two names: **Mittag** and **Leffler**. A gentle wind seems to replay the earliest footsteps — not as an exponential fade but as a long remembered murmur. Pavni and Acharya stand beneath the arch.
+The palace gates open on a fresco of two names: **Mittag** and **Leffler**. A gentle wind seems to replay the earliest footsteps — not as an exponential fade but as a long remembered murmur. Ananya and Acharya Anvay stand beneath the arch.
 
-```
-Pavni: "Why does this place feel like it remembers everything?"
-Acharya: "Because its laws are fractional — the halls do not forget the past at once. Here, the exponential is a resident, but the palace sings a deeper song."
-```
+**Ananya:** "Why does this place feel like it remembers everything?"
+**Acharya Anvay:** "Because its laws are fractional — the halls do not forget the past at once. Here, the exponential is a resident, but the palace sings a deeper song."
 
 <details>
 <summary>Short classroom prompt</summary>
@@ -50,9 +49,9 @@ The single-parameter function is $E_\alpha(z)=E_{\alpha,1}(z)$. A small doorway 
 <details>
 <summary>Properties & remarks</summary>
 
-- Entire function: the series converges for all $z\in\mathbb C$.
-- Special case: $E_{1,1}(z)=e^z$ because $\Gamma(k+1)=k!$.
-- Memory: for $0<\alpha<1$ solutions often decay algebraically rather than exponentially, giving long tails.
+* Entire function: the series converges for all $z\in\mathbb C$.
+* Special case: $E_{1,1}(z)=e^z$ because $\Gamma(k+1)=k!$.
+* Memory: for $0<\alpha<1$ solutions often decay algebraically rather than exponentially, giving long tails.
 
 </details>
 
@@ -60,16 +59,14 @@ The single-parameter function is $E_\alpha(z)=E_{\alpha,1}(z)$. A small doorway 
 
 ## Scene 3 — Library of Laplace transforms (derivation)
 
-They enter a quiet library where scrolls record transform pairs. Acharya unrolls a scroll.
+They enter a quiet library where scrolls record transform pairs. Acharya Anvay unrolls a scroll.
 
-```
-Acharya: "Take the Caputo equation {}^{C}D_t^\alpha y = \lambda y,\quad y(0)=y_0, with 0<\alpha\le 1."
-Pavni: "Laplace it — as if we seek the frequency-soul of the equation."
-```
+**Acharya Anvay:** "Take the Caputo equation ${}^{C}D_t^\alpha y = \lambda y,\quad y(0)=y_0$, with $0<\alpha\le 1$."
+**Ananya:** "Laplace it — as if we seek the frequency-soul of the equation."
 
 Using the Caputo Laplace identity,
 
-$\mathcal L\{ {}^{C}D_t^\alpha y\}(s) = s^\alpha \tilde y(s) - s^{\alpha-1} y(0),$
+$\mathcal L{ {}^{C}D_t^\alpha y}(s) = s^\alpha \tilde y(s) - s^{\alpha-1} y(0),$
 
 we obtain
 
@@ -84,7 +81,7 @@ $y(t) = y_0 E_\alpha(\lambda t^\alpha).$
 
 For suitable $s$ and real $\beta$,
 
-$\mathcal L\{ t^{\beta-1} E_{\alpha,\beta}(\pm \lambda t^\alpha)\}(s) = \frac{s^{\alpha-\beta}}{s^\alpha \mp \lambda}.$
+$\mathcal L{ t^{\beta-1} E_{\alpha,\beta}(\pm \lambda t^\alpha)}(s) = \frac{s^{\alpha-\beta}}{s^\alpha \mp \lambda}.$
 
 Setting $\beta=1$ recovers the pair used in the derivation.
 
@@ -96,10 +93,8 @@ Setting $\beta=1$ recovers the pair used in the derivation.
 
 The Mirror Room bends long reflections into slow tails. A descriptive dialogue helps students internalize asymptotics.
 
-```
-Pavni: "When alpha is small, why do echoes die so slowly?"
-Acharya: "Because the Mittag–Leffler's coefficients, divided by Gamma(\alpha k+1), shift more mass to early terms and produce algebraic-like behaviour at long times — the memory stores the past."
-```
+**Ananya:** "When alpha is small, why do echoes die so slowly?"
+**Acharya Anvay:** "Because the Mittag–Leffler's coefficients, divided by Gamma($\alpha k+1$), shift more mass to early terms and produce algebraic-like behaviour at long times — the memory stores the past."
 
 <details>
 <summary>Concise asymptotic note (for teacher)</summary>
@@ -138,44 +133,73 @@ where $w_k = (-1)^k \binom{\alpha}{k}$. March forward in time and compare to $E_
 </details>
 
 <details>
-<summary>Runnable code — interactive Plotly (Quarto HTML)</summary>
+<summary>Runnable code — interactive Plotly (Quarto HTML) — **safe fallback**</summary>
 
 ```{python}
 #| echo: true
 #| eval: true
-#| label: palace-plotly
+#| label: palace-plotly-safe
 import numpy as np
 import mpmath as mp
 import plotly.graph_objects as go
-import ipywidgets as widgets
-from IPython.display import display, HTML
+from IPython.display import HTML, display
 
-# Prepare t-grid
+# t-grid
 t = np.linspace(0, 8, 300)
 
-def ml_array(alpha):
-    return np.array([mp.mittag_leffler(alpha, 1, - (ti**alpha)) for ti in t], dtype=float)
+# series evaluator fallback
+def ml_series(alpha, beta, z, Nterms=120, tol=1e-14):
+    z_mp = mp.mpc(z)
+    s = mp.mpf('0')
+    k = 0
+    term = mp.mpf('inf')
+    while k < Nterms and abs(term) > tol:
+        denom = mp.gamma(alpha*k + beta)
+        term = z_mp**k / denom
+        s += term
+        k += 1
+    return s
 
-alpha0 = 0.8
-y0 = ml_array(alpha0)
+def ml_value(alpha, tval):
+    z = - (tval**alpha)
+    if hasattr(mp, "mittag_leffler"):
+        try:
+            return float(mp.mittag_leffler(alpha, 1, z))
+        except Exception:
+            return float(ml_series(alpha, 1, z))
+    else:
+        return float(ml_series(alpha, 1, z))
 
-fig = go.FigureWidget()
-fig.add_scatter(x=t, y=y0, mode='lines', name=f"α={alpha0:.2f}")
-fig.update_layout(title="E_α(-t^α) for varying α", xaxis_title="t", yaxis_title="E_α(-t^α)")
+# prepare traces for a set of alphas (no ipywidgets required)
+alphas = [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.3]
+traces = []
+for a in alphas:
+    y = np.array([ml_value(a, ti) for ti in t], dtype=float)
+    traces.append(go.Scatter(x=t, y=y, mode='lines', name=f"α={a:.2f}", visible=False))
 
-slider = widgets.FloatSlider(value=alpha0, min=0.1, max=1.0, step=0.01, description='α:', layout=widgets.Layout(width='60%'))
+traces[0].visible = True
 
-def on_value_change(change):
-    alpha = change['new']
-    y = ml_array(alpha)
-    with fig.batch_update():
-        fig.data[0].y = y
-        fig.data[0].name = f"α={alpha:.2f}"
+fig = go.Figure(data=traces)
+fig.update_layout(
+    title="E_α(-t^α) for selected α (use buttons)",
+    xaxis_title="t",
+    yaxis_title="E_α(-t^α)",
+    updatemenus=[{
+        "type": "buttons",
+        "direction": "right",
+        "x": 0.5,
+        "y": 1.15,
+        "showactive": True,
+        "buttons": [
+            {"label": f"α={a:.2f}",
+             "method": "update",
+             "args": [{"visible": [i==j for j in range(len(alphas))]}, {"title": f"E_α(-t^α) α={a:.2f}"}]}
+            for i,a in enumerate(alphas)
+        ]
+    }]
+)
 
-slider.observe(on_value_change, names='value')
-
-display(HTML("<p><strong>Move the slider to change α.</strong></p>"))
-display(slider)
+display(HTML("<p><strong>Use the buttons to switch α. (No ipywidgets needed.)</strong></p>"))
 display(fig)
 ```
 
@@ -211,35 +235,30 @@ plt.show()
 
 ## Scene 6 — Courtyard: dialogues, teacher notes & extensions
 
-**Dialogue (Pavni & Acharya) — pedagogical tone**
+**Ananya:** "So if I want to model slow relaxation in a polymer chain, should I always use Mittag–Leffler?"
+**Acharya Anvay:** "Not always. Use it when experimental data show long tails and history-dependence that a single exponential can't capture. But check the physical derivation: sometimes distributed-order models, or multi-term fractional models, fit better."
 
-```
-Pavni: "So if I want to model slow relaxation in a polymer chain, should I always use Mittag–Leffler?"
-Acharya: "Not always. Use it when experimental data show long tails and history-dependence that a single exponential can't capture. But check the physical derivation: sometimes distributed-order models, or multi-term fractional models, fit better."
-
-Pavni: "How would I explain this to an undergraduate class?"
-Acharya: "Say: exponentials forget quickly; Mittag–Leffler remembers longer. Show both plots side-by-side and ask them which curve fits the data better. Then introduce numerical schemes to compute the fractional derivative."
-```
+**Ananya:** "How would I explain this to an undergraduate class?"
+**Acharya Anvay:** "Say: exponentials forget quickly; Mittag–Leffler remembers longer. Show both plots side-by-side and ask them which curve fits the data better. Then introduce numerical schemes to compute the fractional derivative."
 
 <details>
 <summary>Teacher notes</summary>
 
-- **Prerequisites**: Students should have seen power-series expansions and Laplace transforms (or you can provide a short recap). They should be comfortable with numerical ODE stepping.
-- **Assessment ideas**: Implement GL scheme; compare to `mpmath` evaluation; write a short report interpreting the physical meaning of long tails in data.
-- **Reading**: Podlubny (1999), Mainardi surveys.
+* **Prerequisites**: Students should have seen power-series expansions and Laplace transforms (or you can provide a short recap). They should be comfortable with numerical ODE stepping.
+* **Assessment ideas**: Implement GL scheme; compare to `mpmath` evaluation; write a short report interpreting the physical meaning of long tails in data.
+* **Reading**: Podlubny (1999), Mainardi surveys.
 
 </details>
 
 <details>
 <summary>Extensions</summary>
 
-- Add complex-plane plots of $E_{\alpha,\beta}(z)$ showing sectorial asymptotics.
-- Provide a student project: fit an experimental relaxation dataset with a fractional model using least-squares for $\alpha$ and a scale parameter.
-- Discuss multi-term fractional ODEs and how superposition of Mittag–Leffler terms can model multi-exponential-like behaviour.
+* Add complex-plane plots of $E_{\alpha,\beta}(z)$ showing sectorial asymptotics.
+* Provide a student project: fit an experimental relaxation dataset with a fractional model using least-squares for $\alpha$ and a scale parameter.
+* Discuss multi-term fractional ODEs and how superposition of Mittag–Leffler terms can model multi-exponential-like behaviour.
 
 </details>
 
 ---
 
-_End of level._
-
+*End of level.*
