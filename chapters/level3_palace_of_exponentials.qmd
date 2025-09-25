@@ -1,8 +1,7 @@
 ---
-
 title: "Palace of Eternal Exponentials"
 format: html
-------------
+---
 
 # Palace of Eternal Exponentials
 
@@ -11,12 +10,12 @@ A new level in the journey: follow the marble walkway from the Grove of Expansio
 <details>
 <summary><strong>Level map</strong></summary>
 
-* Scene 1 — Entrance & lore
-* Scene 2 — Grand Hall: definition & properties
-* Scene 3 — Library of Laplace transforms: derivation for Caputo ODEs
-* Scene 4 — Mirror Room: asymptotics & intuition
-* Scene 5 — Marble Hall: mini-quest + numerical verification (code)
-* Scene 6 — Courtyard: extensions, teacher notes, assessment
+- Scene 1 — Entrance & lore
+- Scene 2 — Grand Hall: definition & properties
+- Scene 3 — Library of Laplace transforms: derivation for Caputo ODEs
+- Scene 4 — Mirror Room: asymptotics & intuition
+- Scene 5 — Marble Hall: mini-quest + numerical verification (code)
+- Scene 6 — Courtyard: extensions, teacher notes, assessment
 
 </details>
 
@@ -26,13 +25,13 @@ A new level in the journey: follow the marble walkway from the Grove of Expansio
 
 The palace gates open on a fresco of two names: **Mittag** and **Leffler**. A gentle wind seems to replay the earliest footsteps — not as an exponential fade but as a long remembered murmur. Ananya and Acharya Anvay stand beneath the arch.
 
-**Ananya:** "Why does this place feel like it remembers everything?"
+**Ananya:** "Why does this place feel like it remembers everything?"  
 **Acharya Anvay:** "Because its laws are fractional — the halls do not forget the past at once. Here, the exponential is a resident, but the palace sings a deeper song."
 
 <details>
 <summary>Short classroom prompt</summary>
 
-Ask students: "Compare the intuition behind exponential decay $e^{-t}$ and the Mittag–Leffler decay for $E_\alpha(-t^\alpha)$. What physical processes might each model better?"
+Ask students: "Compare the intuition behind exponential decay $e^{-t}$ and the Mittag–Leffler decay for $E_{\alpha}(-t^{\alpha})$. What physical processes might each model better?"
 
 </details>
 
@@ -42,16 +41,16 @@ Ask students: "Compare the intuition behind exponential decay $e^{-t}$ and the M
 
 The Grand Hall contains a carved plaque with the incantation.
 
-$E_{\alpha,\beta}(z) = \sum_{k=0}^\infty \frac{z^k}{\Gamma(\alpha k + \beta)}, \qquad \alpha>0,\ \beta\in\mathbb C.$
+$E_{\alpha,\beta}(z) = \sum_{k=0}^{\infty} \frac{z^k}{\Gamma(\alpha k + \beta)}, \qquad \alpha>0,\ \beta\in\mathbb C.$
 
-The single-parameter function is $E_\alpha(z)=E_{\alpha,1}(z)$. A small doorway labeled $\alpha=1$ leads back to a chamber inscribed with $e^z$.
+The single-parameter function is $E_{\alpha}(z)=E_{\alpha,1}(z)$. A small doorway labeled $\alpha=1$ leads back to a chamber inscribed with $e^z$.
 
 <details>
 <summary>Properties & remarks</summary>
 
-* Entire function: the series converges for all $z\in\mathbb C$.
-* Special case: $E_{1,1}(z)=e^z$ because $\Gamma(k+1)=k!$.
-* Memory: for $0<\alpha<1$ solutions often decay algebraically rather than exponentially, giving long tails.
+- Entire function: the series converges for all $z\in\mathbb C$.
+- Special case: $E_{1,1}(z)=e^z$ because $\Gamma(k+1)=k!$.
+- Memory: for $0<\alpha<1$ solutions often decay algebraically rather than exponentially, giving long tails.
 
 </details>
 
@@ -61,12 +60,12 @@ The single-parameter function is $E_\alpha(z)=E_{\alpha,1}(z)$. A small doorway 
 
 They enter a quiet library where scrolls record transform pairs. Acharya Anvay unrolls a scroll.
 
-**Acharya Anvay:** "Take the Caputo equation ${}^{C}D_t^\alpha y = \lambda y,\quad y(0)=y_0$, with $0<\alpha\le 1$."
+**Acharya Anvay:** "Take the Caputo equation ${}^{C}D_t^\alpha y = \lambda y,\quad y(0)=y_0$, with $0<\alpha\le 1$."  
 **Ananya:** "Laplace it — as if we seek the frequency-soul of the equation."
 
 Using the Caputo Laplace identity,
 
-$\mathcal L{ {}^{C}D_t^\alpha y}(s) = s^\alpha \tilde y(s) - s^{\alpha-1} y(0),$
+$\mathcal L\{ {}^{C}D_t^\alpha y\}(s) = s^\alpha \tilde y(s) - s^{\alpha-1} y(0),$
 
 we obtain
 
@@ -81,7 +80,7 @@ $y(t) = y_0 E_\alpha(\lambda t^\alpha).$
 
 For suitable $s$ and real $\beta$,
 
-$\mathcal L{ t^{\beta-1} E_{\alpha,\beta}(\pm \lambda t^\alpha)}(s) = \frac{s^{\alpha-\beta}}{s^\alpha \mp \lambda}.$
+$\mathcal L\{ t^{\beta-1} E_{\alpha,\beta}(\pm \lambda t^\alpha)\}(s) = \frac{s^{\alpha-\beta}}{s^\alpha \mp \lambda}.$
 
 Setting $\beta=1$ recovers the pair used in the derivation.
 
@@ -93,7 +92,7 @@ Setting $\beta=1$ recovers the pair used in the derivation.
 
 The Mirror Room bends long reflections into slow tails. A descriptive dialogue helps students internalize asymptotics.
 
-**Ananya:** "When alpha is small, why do echoes die so slowly?"
+**Ananya:** "When alpha is small, why do echoes die so slowly?"  
 **Acharya Anvay:** "Because the Mittag–Leffler's coefficients, divided by Gamma($\alpha k+1$), shift more mass to early terms and produce algebraic-like behaviour at long times — the memory stores the past."
 
 <details>
@@ -133,7 +132,7 @@ where $w_k = (-1)^k \binom{\alpha}{k}$. March forward in time and compare to $E_
 </details>
 
 <details>
-<summary>Runnable code — interactive Plotly (Quarto HTML) — **safe fallback**</summary>
+<summary>Runnable code — interactive Plotly (safe fallback)</summary>
 
 ```{python}
 #| echo: true
@@ -201,64 +200,3 @@ fig.update_layout(
 
 display(HTML("<p><strong>Use the buttons to switch α. (No ipywidgets needed.)</strong></p>"))
 display(fig)
-```
-
-</details>
-
-<details>
-<summary>Runnable code — matplotlib fallback (static)</summary>
-
-```{python}
-#| echo: true
-#| eval: true
-import numpy as np
-import matplotlib.pyplot as plt
-import mpmath as mp
-
-t = np.linspace(0, 8, 300)
-alphas = [1.0, 0.9, 0.7, 0.5, 0.3]
-
-plt.figure(figsize=(6,4))
-for a in alphas:
-    y = [mp.mittag_leffler(a, 1, -ti**a) for ti in t]
-    plt.plot(t, y, label=f"α={a}")
-plt.xlabel("t")
-plt.ylabel(r"$E_{\alpha}(-t^{\alpha})$")
-plt.legend()
-plt.grid(True)
-plt.show()
-```
-
-</details>
-
----
-
-## Scene 6 — Courtyard: dialogues, teacher notes & extensions
-
-**Ananya:** "So if I want to model slow relaxation in a polymer chain, should I always use Mittag–Leffler?"
-**Acharya Anvay:** "Not always. Use it when experimental data show long tails and history-dependence that a single exponential can't capture. But check the physical derivation: sometimes distributed-order models, or multi-term fractional models, fit better."
-
-**Ananya:** "How would I explain this to an undergraduate class?"
-**Acharya Anvay:** "Say: exponentials forget quickly; Mittag–Leffler remembers longer. Show both plots side-by-side and ask them which curve fits the data better. Then introduce numerical schemes to compute the fractional derivative."
-
-<details>
-<summary>Teacher notes</summary>
-
-* **Prerequisites**: Students should have seen power-series expansions and Laplace transforms (or you can provide a short recap). They should be comfortable with numerical ODE stepping.
-* **Assessment ideas**: Implement GL scheme; compare to `mpmath` evaluation; write a short report interpreting the physical meaning of long tails in data.
-* **Reading**: Podlubny (1999), Mainardi surveys.
-
-</details>
-
-<details>
-<summary>Extensions</summary>
-
-* Add complex-plane plots of $E_{\alpha,\beta}(z)$ showing sectorial asymptotics.
-* Provide a student project: fit an experimental relaxation dataset with a fractional model using least-squares for $\alpha$ and a scale parameter.
-* Discuss multi-term fractional ODEs and how superposition of Mittag–Leffler terms can model multi-exponential-like behaviour.
-
-</details>
-
----
-
-*End of level.*

@@ -1,0 +1,232 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Fractional Calculus Adventure",
+    "section": "",
+    "text": "1 Fractional Calculus Adventure\nA dialogue-driven course and interactive resource on fractional differential equations.\nStart here:\n\nLevel 1 – Temple of Smriti (Memory)\nLevel 2 – The River of Derivatives\nLevel 2.5 - The Grove of Expansion\nLevel 3 - The Palace of Exponentials",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Fractional Calculus Adventure</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level1_temple_of_smriti.html",
+    "href": "chapters/level1_temple_of_smriti.html",
+    "title": "2  Level 1 – The Temple of Smriti (Memory)",
+    "section": "",
+    "text": "2.0.1 Scene: Arrival at the Temple\nCharacters:\n- Acharya Anvaya (Guide/Teacher, continuity of knowledge)\n- Ananya (Learner, seeker of truth)\nAnanya and Acharya Anvaya stand before the Temple of Smriti (Memory). Its walls glow faintly with fading carved Sanskrit verses. Above the arch is inscribed:\n“कालः स्मृतिर्नित्यं — Kālaḥ Smṛtir Nityaṁ (Time is eternal memory).”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level1_temple_of_smriti.html#first-steps-repeated-integration-and-the-cauchy-formula",
+    "href": "chapters/level1_temple_of_smriti.html#first-steps-repeated-integration-and-the-cauchy-formula",
+    "title": "2  Level 1 – The Temple of Smriti (Memory)",
+    "section": "2.1 First Steps: Repeated Integration and the Cauchy Formula",
+    "text": "2.1 First Steps: Repeated Integration and the Cauchy Formula\nAnanya: Acharya, this place feels mysterious. What lies in this temple?\nAcharya Anvaya: This is the Temple of Smriti, or memory. It contains the secrets of memory, the key to which lies in the idea of the fractional integral.\nAnanya: Hmm… the integral is by itself a sort of memory, isn’t it? When we integrate a function from \\(0\\) to \\(t\\):\n\\[\nI^1 f(t) = \\int_{0}^{t} f(\\tau)\\, d\\tau\n\\]\nwe are collecting its entire past. This is a kind of memory, isn’t it?\nAcharya Anvaya: You are absolutely right, Ananya! But before the temple reveals its secret, let us recall what happens when we integrate repeatedly.\nQuestion: What is the integral of \\(1\\)?\nAnanya:\n\\[\nI^1(1)(t) = \\int_0^t 1\\, d\\tau = t.\n\\]\nAcharya Anvaya: Good. And integrating once more?\nAnanya:\n\\[\nI^2(1)(t) = \\int_0^t I^1(1)(\\tau)\\, d\\tau = \\int_0^t \\tau\\, d\\tau = \\frac{t^2}{2!}.\n\\]\nAcharya Anvaya: And once more?\nAnanya:\n\\[\nI^3(1)(t) = \\int_0^t I^2(1)(\\tau)\\, d\\tau = \\int_0^t \\frac{\\tau^2}{2}\\, d\\tau = \\frac{t^3}{3!}.\n\\]\nAcharya Anvaya: Yes! And we can find the \\(n^{th}\\) integral of a function \\(f(x)\\) using the Cauchy formula for repeated integration.\n\nCauchy formula for repeated integration\n\\[\nI^n f(t) = \\frac{1}{(n-1)!}\\int_0^t (t-\\tau)^{\\,n-1} f(\\tau)\\, d\\tau.\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level1_temple_of_smriti.html#the-riemannliouville-integral",
+    "href": "chapters/level1_temple_of_smriti.html#the-riemannliouville-integral",
+    "title": "2  Level 1 – The Temple of Smriti (Memory)",
+    "section": "2.2 The Riemann–Liouville Integral",
+    "text": "2.2 The Riemann–Liouville Integral\nThe temple wall shimmers again, and new verses appear, written in flowing Sanskrit:\n“यथा यथा संचितं स्मर्यते, तथा तथैव अनन्तं स्मृतिः — As memory gathers step by step, it stretches into infinity.”\nAcharya Anvaya: The formula you just derived for integer \\(n\\), Ananya, is not bound to whole numbers alone. The Great ones in modern times, Riemann from Germany and Liouville from France extended it further. This is known today as the Riemann–Liouville fractional integral:\n\nRiemann–Liouville fractional integral\n\\[\n(I^\\alpha f)(t) = \\frac{1}{\\Gamma(\\alpha)} \\int_0^t (t-\\tau)^{\\alpha-1} f(\\tau)\\, d\\tau, \\qquad \\alpha &gt; 0.\n\\]\n\nAnanya: So it is the same as the Cauchy formula, but with \\((n-1)!\\) replaced by \\(\\Gamma(\\alpha)\\) — allowing \\(\\alpha\\) to be any positive real number?\nAcharya Anvaya: Exactly. This was the leap — from repeated integer steps to a smooth continuum of memory depths. Each value of \\(\\alpha\\) encodes how strongly the past is remembered.\nAcharya Anvaya: Just as the smriti texts preserve memory across centuries, a fractional integral preserves traces of all past values of a function. But the weight of remembrance fades, just as stories fade with time.\nAnanya: So the past influences the present, but the farther back in time we go, the weaker its pull?\nAcharya Anvaya: Precisely. Like the echo of a conch in the Himalayas — recent notes ring loud, but the first strike still whispers faintly.\n\n\n2.2.1 Mini-Quest 1: The Half-Memory\n\nEvaluate \\(I^{1/2}(1)\\).\nAnswer:\n\\[\n(I^{1/2}1)(t) = \\frac{2}{\\sqrt{\\pi}}\\, t^{1/2}.\n\\]\n\nAcharya Anvaya: Well done, Ananya. You have grasped the essence of fractional memory. You now hold the Key of Smriti (Memory). With it, the temple doors open to the next journey.\nThe fractional integral is like oral tradition: newer retellings weigh more, but the first telling is never fully erased.\nA smaller \\(\\alpha\\) preserves distant past more strongly — like stories handed down for centuries.\nA larger \\(\\alpha\\) emphasizes the near past — like yesterday’s lived experiences.\n\n\n\n2.2.2 Mini-Quest 2: Comparing Memories\n\nWhich value of \\(\\alpha\\) remembers the distant past most strongly?\n\nChoice A: \\(\\alpha = 0.2\\)\n\nChoice B: \\(\\alpha = 0.5\\)\n\nChoice C: \\(\\alpha = 0.9\\)\n\nAnswer: Since the kernel is \\((t-\\tau)^{\\alpha - 1}\\), smaller \\(\\alpha\\) means slower decay. So the answer is A.\n\nAnanya: But where do we see such memory in materials?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level1_temple_of_smriti.html#example-stressstrain-in-viscoelastic-fluids",
+    "href": "chapters/level1_temple_of_smriti.html#example-stressstrain-in-viscoelastic-fluids",
+    "title": "2  Level 1 – The Temple of Smriti (Memory)",
+    "section": "2.3 Example: Stress–Strain in Viscoelastic Fluids",
+    "text": "2.3 Example: Stress–Strain in Viscoelastic Fluids\nAcharya Anvaya: Have you heard of Hooke’s law in solids?\nAnanya: Yes! It says:\n\\[\n\\sigma(t) = E \\, \\varepsilon(t).\n\\]\nThe stress responds instantly to strain.\nAcharya Anvaya: But how does this change for flowing materials?\nAnanya: From what I know, for purely viscous fluids, Newton’s law governs:\n\\[\n\\sigma(t) = \\eta \\, \\frac{d\\varepsilon}{dt}(t).\n\\]\nAcharya Anvaya: Here stress depends only on the rate of strain at the present moment.\nAnanya: So both Hooke’s law and Newton’s law speak only of the present. They have no memory of what came before?\nAcharya Anvaya: Exactly. But the world of polymers is different. These are viscoelastic materials. Their stress at time \\(t\\) remembers the entire history of strain. It is written as:\n\n\\[\n\\sigma(t) = \\int_0^t G(t-\\tau)\\,\\frac{d\\varepsilon}{d\\tau}(\\tau)\\,d\\tau,\n\\]\nwhere \\(G\\) is the relaxation kernel — the weight of memory.\n\nAnanya: So the kernel is like the echoing chamber of the temple — weighing the voices of the past according to distance in time?\nAcharya Anvaya: Precisely. If \\(G\\) is exponential we get Maxwell-type models. Experiments often show a power-law:\n\n\\[\nG(t-\\tau)\\sim (t-\\tau)^{-\\alpha}, \\qquad 0&lt;\\alpha&lt;1.\n\\]\n\nAnanya: Then stress never completely forgets — the echoes fade slowly.\nAcharya Anvaya: Substituting this kernel gives a fractional constitutive law:\n\n\\[\n\\sigma(t)=\\eta_\\alpha\\,D_t^\\alpha\\varepsilon(t),\n\\]\nwhere \\(D_t^\\alpha\\) is a fractional derivative of the strain.\n\n\nAnanya: Oh! But what exactly is a fractional derivative? I have never seen that symbol before!\nAcharya Anvaya: For guidance:\n\nFor \\(\\alpha = 1\\):\n\\[\nD_t^1 \\varepsilon(t) = \\frac{d\\varepsilon}{dt}(t),\n\\]\nthe ordinary derivative, as in Newton’s law of viscosity.\nFor \\(\\alpha = 0\\):\n\\[\nD_t^0 \\varepsilon(t) = \\varepsilon(t),\n\\]\ni.e. the function itself, as in Hooke’s law of elasticity.\nFor \\(0&lt;\\alpha&lt;1\\):\n\\(D_t^\\alpha\\) interpolates smoothly between these two extremes, capturing behavior that is partly elastic and partly viscous (viscoelastic behavior).\n\n\nAnanya: So when \\(\\alpha=0\\), the memory is eternal — purely elastic. When \\(\\alpha=1\\), memory vanishes quickly — purely viscous. And for \\(0&lt;\\alpha&lt;1\\), we have viscoelasticity, with fading memory that bridges the two.\nAcharya Anvaya: Exactly! Thus, the language of fractional calculus is the scripture that describes memory in matter — echoing from the temple walls into the world of flowing polymers.\nAcharya Anvaya: We will learn about fractional derivatives as we go further to the The River of Derivatives.\n\nNarrator: With the Key of Smriti in hand, Ananya steps through the temple gates. The path ahead leads to the River of Derivatives.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Level 1 – The Temple of Smriti (Memory)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html",
+    "href": "chapters/level2_river_of_derivatives.html",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "",
+    "text": "3.0.1 Scene: Arrival at the River\nCharacters:\n- Acharya Anvaya (Guide/Teacher, continuity of knowledge)\n- Ananya (Learner, seeker of truth)\nWith the Key of Smriti in hand, Ananya steps beyond the temple gates. A wide river flows before her, restless and shining. On the shore rest two boats, each with a carved name: Riemann–Liouville and Caputo.\nAnanya: Two boats? Which one do we take to cross the River of Derivatives?\nAcharya Anvaya: Both will carry you across, but their way of remembering the river differs. One boat remembers everything since the river’s source 🌊; the other begins its memory only when you step aboard 🚤 — that is, when you set your initial conditions.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#rigorous-definitions",
+    "href": "chapters/level2_river_of_derivatives.html#rigorous-definitions",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.1 Rigorous Definitions",
+    "text": "3.1 Rigorous Definitions\nAcharya Anvaya: Let us be precise. Suppose \\(n-1 &lt; \\alpha \\leq n\\) with \\(n \\in \\mathbb{N}\\).\n\nRiemann–Liouville fractional derivative\n\\[\nD_t^\\alpha f(t) = \\frac{d^n}{dt^n}\\, I^{\\,n-\\alpha} f(t)\n= \\frac{1}{\\Gamma(n-\\alpha)}\\frac{d^n}{dt^n}\\int_0^t (t-\\tau)^{\\,n-\\alpha-1} f(\\tau)\\,d\\tau.\n\\]\n\n\nCaputo fractional derivative\n\\[\n{}^C D_t^\\alpha f(t) =\nI^{\\,n-\\alpha} f^{(n)}(t)\n= \\frac{1}{\\Gamma(n-\\alpha)}\\int_0^t (t-\\tau)^{\\,n-\\alpha-1} f^{(n)}(\\tau)\\,d\\tau.\n\\]\n\nAnanya: So the difference is: Riemann–Liouville differentiates after integrating, while Caputo differentiates before integrating?\nAcharya Anvaya: Exactly. Two boats across the same river — same waters, different journeys 😇.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#comparison-at-a-glance",
+    "href": "chapters/level2_river_of_derivatives.html#comparison-at-a-glance",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.2 Comparison at a Glance",
+    "text": "3.2 Comparison at a Glance\n\n\n\n\n\n\n\n\nAspect\nRiemann–Liouville\nCaputo\n\n\n\n\nFormula\n\\(D^\\alpha f = \\dfrac{d^n}{dt^n} I^{n-\\alpha} f\\)\n\\({}^C D^\\alpha f = I^{n-\\alpha} f^{(n)}\\)\n\n\nMemory starts\nFrom \\(t=0\\) (full history)\nFrom problem start (with \\(f^{(n)}\\))\n\n\nInitial conditions\nInvolve fractional integrals\nClassical: \\(f(0), f'(0), \\dots\\)\n\n\nCommon use\nPure math / theory\nPhysics / engineering",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#worked-example-power-functions",
+    "href": "chapters/level2_river_of_derivatives.html#worked-example-power-functions",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.3 Worked Example: Power Functions",
+    "text": "3.3 Worked Example: Power Functions\n\nFor the Riemann–Liouville derivative of \\(t^\\beta\\) (\\(\\beta &gt; -1\\)):\n\\[\nD_t^\\alpha \\, t^\\beta = \\frac{\\Gamma(\\beta+1)}{\\Gamma(\\beta-\\alpha+1)} \\, t^{\\beta-\\alpha}.\n\\]\n\nExample: with \\(\\alpha = \\tfrac{1}{2}\\) and \\(f(t)=t^2\\):\n\\[\nD_t^{1/2}\\, t^2 = \\frac{\\Gamma(3)}{\\Gamma(2.5)} \\, t^{3/2}.\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#worked-example-caputo-derivative-of-power-functions",
+    "href": "chapters/level2_river_of_derivatives.html#worked-example-caputo-derivative-of-power-functions",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.4 Worked Example: Caputo Derivative of Power Functions",
+    "text": "3.4 Worked Example: Caputo Derivative of Power Functions\n\n\nIf \\(f(t) = t^\\beta\\) with \\(\\beta \\leq n-1\\), then \\({}^C D_t^\\alpha f(t) = 0\\).\n\nIf \\(\\beta &gt; n-1\\), then\n\n\\[\n{}^C D_t^\\alpha t^\\beta\n= \\frac{\\Gamma(\\beta+1)}{\\Gamma(\\beta-\\alpha+1)}\\, t^{\\beta-\\alpha}.\n\\]\n\nSo for most powers, Riemann–Liouville and Caputo agree, but for low-degree polynomials, Caputo derivatives vanish.\n\n\n3.4.1 Mini-Quest: Compare RL and Caputo\n\nTask: Compute the Riemann–Liouville and Caputo derivatives of \\(f(t)=t^2\\) for \\(\\alpha = \\tfrac12\\).\n\nRiemann–Liouville:\n\\[\nD_t^{1/2} t^2 = \\frac{\\Gamma(3)}{\\Gamma(2.5)}\\, t^{3/2}.\n\\]\nCaputo:\n\\[\n{}^C D_t^{1/2} t^2 = \\frac{\\Gamma(3)}{\\Gamma(2.5)}\\, t^{3/2}.\n\\]\n\nObservation: For this function, both definitions give the same result.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#worked-example-exponentials",
+    "href": "chapters/level2_river_of_derivatives.html#worked-example-exponentials",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.5 Worked Example: Exponentials",
+    "text": "3.5 Worked Example: Exponentials\n\nFor exponentials:\n\\[\nD_t^\\alpha e^{\\lambda t} = {}^C D_t^\\alpha e^{\\lambda t} = \\lambda^\\alpha e^{\\lambda t}.\n\\]\n\nAnanya: Beautiful! The exponential remains its own shape, and \\(\\lambda\\) is lifted to a fractional power.\nAcharya Anvaya: Exactly. Exponentials are the eigenfunctions of fractional derivatives. Ananya: 😇",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#rules-of-the-river-caputo-properties",
+    "href": "chapters/level2_river_of_derivatives.html#rules-of-the-river-caputo-properties",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.6 Rules of the River (Caputo Properties)",
+    "text": "3.6 Rules of the River (Caputo Properties)\n\nRule 1. Linearity\nFor constants \\(c_1, c_2\\) and functions \\(f, g\\):\n\\[\n{}^C D_t^\\alpha (c_1 f(t) + c_2 g(t))\n= c_1 \\, {}^C D_t^\\alpha f(t) + c_2 \\, {}^C D_t^\\alpha g(t).\n\\]\n\n\nRule 2. Constants and Polynomials\n\nFor a constant \\(C\\), \\({}^C D_t^\\alpha C = 0\\).\n\nFor \\(t^\\beta\\) with \\(\\beta = 0,1,\\dots,n-1\\), \\({}^C D_t^\\alpha t^\\beta = 0\\).\n\nFor \\(\\beta &gt; n-1\\),\n\\[\n{}^C D_t^\\alpha t^\\beta = \\frac{\\Gamma(\\beta+1)}{\\Gamma(\\beta-\\alpha+1)}\\, t^{\\beta-\\alpha}.\n\\]\n\n\n\nRule 3. Exponentials and Trigonometric Functions\n\n\\({}^C D_t^\\alpha e^{\\lambda t} = \\lambda^\\alpha e^{\\lambda t}\\).\n\n\\({}^C D_t^\\alpha \\sin(\\omega t) = \\omega^\\alpha \\sin\\!\\left(\\omega t + \\tfrac{\\pi\\alpha}{2}\\right)\\).\n\n\\({}^C D_t^\\alpha \\cos(\\omega t) = \\omega^\\alpha \\cos\\!\\left(\\omega t + \\tfrac{\\pi\\alpha}{2}\\right)\\).\n\n\n\nRule 4. Product and Chain Rules (Caution!)\nUnlike classical derivatives, Caputo derivatives do not have simple product or chain rules. Use linearity safely, but treat products/compositions with care.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_river_of_derivatives.html#mini-exercises-rules-of-the-river",
+    "href": "chapters/level2_river_of_derivatives.html#mini-exercises-rules-of-the-river",
+    "title": "3  Level 2 – The River of Derivatives",
+    "section": "3.7 Mini-Exercises: Rules of the River",
+    "text": "3.7 Mini-Exercises: Rules of the River\n\nExercise 1. Constant function\nCompute \\({}^C D_t^{1/2} (5)\\).\nAnswer: \\(0\\).\n\n\nExercise 2. Power function\nCompute \\({}^C D_t^{1/2} (t^3)\\).\nAnswer: \\(\\dfrac{\\Gamma(4)}{\\Gamma(3.5)} \\, t^{2.5}\\).\n\n\nExercise 3. Exponential\nCompute \\({}^C D_t^{1/2} (e^{2t})\\).\nAnswer: \\(\\sqrt{2}\\, e^{2t}\\).\n\n\nExercise 4. Trigonometric\nCompute \\({}^C D_t^{1/2} (\\sin t)\\).\nAnswer: \\(\\sin\\!\\left(t + \\tfrac{\\pi}{4}\\right)\\).\n\n\nExercise 5. RL vs Caputo\nShow that for \\(f(t)=t\\):\n- \\({}^C D_t^{1/2}(t) = 0\\),\n- \\(D_t^{1/2}(t) = \\dfrac{\\Gamma(2)}{\\Gamma(1.5)}\\, t^{0.5}\\).\n\n\n\nNarrator: With these rules in hand, Ananya feels prepared. The boats glide ashore, and the River of Derivatives is behind them. Ahead lies the Grove of expanions. The next stage of the journey begins.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Level 2 – The River of Derivatives</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_5_grove_of_expansions.html",
+    "href": "chapters/level2_5_grove_of_expansions.html",
+    "title": "4  Level 2.5 – The Grove of Expansions",
+    "section": "",
+    "text": "4.0.1 Scene: The Grove of Expansions\nCharacters:\n- Acharya Anvaya (Guide/Teacher, continuity of knowledge)\n- Ananya (Learner, seeker of truth)\nAnanya and Acharya leave the boats behind and walk into a quiet grove of trees. The branches seem to stretch infinitely, each sprouting smaller and smaller twigs.\nAnanya: These trees look endless, Acharya. Each branch divides into more branches, and so on forever.\nAcharya Anvaya: Exactly, Ananya. Just as trees expand endlessly, so too can a function expand in terms of its derivatives. You know this in ordinary calculus as the Taylor expansion.\nAnanya: Yes, where a function \\(f(t)\\) is expressed as an infinite sum involving its derivatives at \\(t=0\\).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Level 2.5 – The Grove of Expansions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_5_grove_of_expansions.html#from-classical-to-fractional-taylor-expansion",
+    "href": "chapters/level2_5_grove_of_expansions.html#from-classical-to-fractional-taylor-expansion",
+    "title": "4  Level 2.5 – The Grove of Expansions",
+    "section": "4.1 From Classical to Fractional Taylor Expansion",
+    "text": "4.1 From Classical to Fractional Taylor Expansion\n\nClassical Taylor formula (order \\(m\\)):\n\\[\nf(t) = \\sum_{k=0}^{m-1} \\frac{f^{(k)}(0)}{k!}\\, t^k \\;+\\; R_m(t),\n\\]\nwith remainder\n\\[\nR_m(t) = \\frac{1}{(m-1)!} \\int_0^t (t-\\tau)^{m-1} f^{(m)}(\\tau)\\, d\\tau.\n\\]\n\nAcharya Anvaya: Now, in the language of memory, we can generalize this formula. Instead of the \\(m\\)-th derivative, we allow a fractional order \\(\\alpha\\).\n\nFractional Taylor formula (Caputo)\nFor \\(m-1 &lt; \\alpha \\le m\\),\n\\[\nf(t) = \\sum_{k=0}^{m-1} \\frac{f^{(k)}(0)}{k!}\\, t^k\n\\;+\\; \\frac{1}{\\Gamma(\\alpha)} \\int_0^t (t-\\tau)^{\\alpha-1}\\, {}^C D_t^\\alpha f(\\tau)\\, d\\tau.\n\\]\n\nAnanya: So the beginning looks like the classical expansion, but the remainder now contains a fractional derivative instead of an integer one.\nAcharya Anvaya: Precisely. The forest of expansions stretches into the fractional realm 🌿. The remainder term is a memory integral, showing how past values influence the approximation.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Level 2.5 – The Grove of Expansions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_5_grove_of_expansions.html#example-exponential-function",
+    "href": "chapters/level2_5_grove_of_expansions.html#example-exponential-function",
+    "title": "4  Level 2.5 – The Grove of Expansions",
+    "section": "4.2 Example: Exponential Function",
+    "text": "4.2 Example: Exponential Function\nAnanya: Can we try this with a familiar function, like \\(f(t)=e^t\\)?\nAcharya Anvaya: Of course. Note that \\(f^{(k)}(0)=1\\) for all \\(k\\).\n\nFor \\(m=1\\), \\(\\alpha \\in (0,1]\\), the expansion is:\n\\[\ne^t = 1 \\;+\\; \\frac{1}{\\Gamma(\\alpha)} \\int_0^t (t-\\tau)^{\\alpha-1}\\, {}^C D_t^\\alpha e^\\tau\\, d\\tau.\n\\]\nBut \\({}^C D_t^\\alpha e^\\tau = 1^\\alpha e^\\tau = e^\\tau\\),\nso the remainder is\n\\[\n\\frac{1}{\\Gamma(\\alpha)} \\int_0^t (t-\\tau)^{\\alpha-1} e^\\tau\\, d\\tau.\n\\]\n\nAnanya: That integral looks like a weighted memory of the exponential.\nAcharya Anvaya: Exactly. For \\(\\alpha=1\\), it reduces to the ordinary Taylor remainder.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Level 2.5 – The Grove of Expansions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level2_5_grove_of_expansions.html#mini-exercises-grove-practice",
+    "href": "chapters/level2_5_grove_of_expansions.html#mini-exercises-grove-practice",
+    "title": "4  Level 2.5 – The Grove of Expansions",
+    "section": "4.3 Mini-Exercises: Grove Practice",
+    "text": "4.3 Mini-Exercises: Grove Practice\n\nExercise 1. Constant function\nShow that the fractional Taylor formula for \\(f(t)=1\\) reduces to \\(f(t)=1\\) with zero remainder.\n\n\nExercise 2. Linear function\nApply the fractional Taylor formula to \\(f(t)=t\\).\nHint: Remember \\({}^C D_t^\\alpha (t)=0\\) for \\(0&lt;\\alpha\\le1\\).\n\n\nExercise 3. Exponential comparison\nCompute the first two classical Taylor terms for \\(e^t\\) and compare with the fractional expansion remainder when \\(\\alpha=1/2\\).\n\n\n\nNarrator: Among the trees of the grove, Ananya learns how expansions can carry memory into infinite branches. With this tool in hand, she steps onward, ready to face the Forest of Equations, where entire systems of fractional order await.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Level 2.5 – The Grove of Expansions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html",
+    "href": "chapters/level3_palace_of_exponentials.html",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "",
+    "text": "6 Palace of Eternal Exponentials\nA new level in the journey: follow the marble walkway from the Grove of Expansions and enter the Palace of Eternal Exponentials, where echoes stretch and memory lives in the walls. This page mixes mythic scenes, dialogues (Ananya & Acharya Anvay), mathematics, runnable code, and student quests — all ready to drop into your Quarto project.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html#scene-1-entrance-lore",
+    "href": "chapters/level3_palace_of_exponentials.html#scene-1-entrance-lore",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "6.1 Scene 1 — Entrance & lore",
+    "text": "6.1 Scene 1 — Entrance & lore\nThe palace gates open on a fresco of two names: Mittag and Leffler. A gentle wind seems to replay the earliest footsteps — not as an exponential fade but as a long remembered murmur. Ananya and Acharya Anvay stand beneath the arch.\nAnanya: “Why does this place feel like it remembers everything?”\nAcharya Anvay: “Because its laws are fractional — the halls do not forget the past at once. Here, the exponential is a resident, but the palace sings a deeper song.”\n\n\nShort classroom prompt\n\nAsk students: “Compare the intuition behind exponential decay \\(e^{-t}\\) and the Mittag–Leffler decay for \\(E_{\\alpha}(-t^{\\alpha})\\). What physical processes might each model better?”",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html#scene-2-grand-hall-definitions-quick-facts",
+    "href": "chapters/level3_palace_of_exponentials.html#scene-2-grand-hall-definitions-quick-facts",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "6.2 Scene 2 — Grand Hall: definitions & quick facts",
+    "text": "6.2 Scene 2 — Grand Hall: definitions & quick facts\nThe Grand Hall contains a carved plaque with the incantation.\n\\(E_{\\alpha,\\beta}(z) = \\sum_{k=0}^{\\infty} \\frac{z^k}{\\Gamma(\\alpha k + \\beta)}, \\qquad \\alpha&gt;0,\\ \\beta\\in\\mathbb C.\\)\nThe single-parameter function is \\(E_{\\alpha}(z)=E_{\\alpha,1}(z)\\). A small doorway labeled \\(\\alpha=1\\) leads back to a chamber inscribed with \\(e^z\\).\n\n\nProperties & remarks\n\n\nEntire function: the series converges for all \\(z\\in\\mathbb C\\).\nSpecial case: \\(E_{1,1}(z)=e^z\\) because \\(\\Gamma(k+1)=k!\\).\nMemory: for \\(0&lt;\\alpha&lt;1\\) solutions often decay algebraically rather than exponentially, giving long tails.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html#scene-3-library-of-laplace-transforms-derivation",
+    "href": "chapters/level3_palace_of_exponentials.html#scene-3-library-of-laplace-transforms-derivation",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "6.3 Scene 3 — Library of Laplace transforms (derivation)",
+    "text": "6.3 Scene 3 — Library of Laplace transforms (derivation)\nThey enter a quiet library where scrolls record transform pairs. Acharya Anvay unrolls a scroll.\nAcharya Anvay: “Take the Caputo equation \\({}^{C}D_t^\\alpha y = \\lambda y,\\quad y(0)=y_0\\), with \\(0&lt;\\alpha\\le 1\\).”\nAnanya: “Laplace it — as if we seek the frequency-soul of the equation.”\nUsing the Caputo Laplace identity,\n\\(\\mathcal L\\{ {}^{C}D_t^\\alpha y\\}(s) = s^\\alpha \\tilde y(s) - s^{\\alpha-1} y(0),\\)\nwe obtain\n\\(s^\\alpha \\tilde y(s) - s^{\\alpha-1} y_0 = \\lambda \\tilde y(s) \\quad\\Rightarrow\\quad \\tilde y(s) = \\frac{s^{\\alpha-1} y_0}{s^\\alpha - \\lambda}.\\)\nInverting with the standard Laplace pair (see below) yields\n\\(y(t) = y_0 E_\\alpha(\\lambda t^\\alpha).\\)\n\n\nLaplace pair used (reminder)\n\nFor suitable \\(s\\) and real \\(\\beta\\),\n\\(\\mathcal L\\{ t^{\\beta-1} E_{\\alpha,\\beta}(\\pm \\lambda t^\\alpha)\\}(s) = \\frac{s^{\\alpha-\\beta}}{s^\\alpha \\mp \\lambda}.\\)\nSetting \\(\\beta=1\\) recovers the pair used in the derivation.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html#scene-4-mirror-room-asymptotics-intuition",
+    "href": "chapters/level3_palace_of_exponentials.html#scene-4-mirror-room-asymptotics-intuition",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "6.4 Scene 4 — Mirror Room: asymptotics & intuition",
+    "text": "6.4 Scene 4 — Mirror Room: asymptotics & intuition\nThe Mirror Room bends long reflections into slow tails. A descriptive dialogue helps students internalize asymptotics.\nAnanya: “When alpha is small, why do echoes die so slowly?”\nAcharya Anvay: “Because the Mittag–Leffler’s coefficients, divided by Gamma(\\(\\alpha k+1\\)), shift more mass to early terms and produce algebraic-like behaviour at long times — the memory stores the past.”\n\n\nConcise asymptotic note (for teacher)\n\nFor \\(0&lt;\\alpha&lt;2\\) and large \\(|z|\\) away from certain sectorial rays, there are known asymptotic expansions of \\(E_{\\alpha,\\beta}(z)\\). On the negative real axis, solutions like \\(E_\\alpha(-t^\\alpha)\\) typically show slower decay than \\(e^{-t}\\), often algebraic in nature; reference Mainardi (2000) for readable summaries.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/level3_palace_of_exponentials.html#scene-5-marble-hall-mini-quest-numerical-verification",
+    "href": "chapters/level3_palace_of_exponentials.html#scene-5-marble-hall-mini-quest-numerical-verification",
+    "title": "5  Palace of Eternal Exponentials",
+    "section": "6.5 Scene 5 — Marble Hall: mini-quest (numerical verification)",
+    "text": "6.5 Scene 5 — Marble Hall: mini-quest (numerical verification)\nThe Marble Hall contains a bench where students can perform three trials.\nMini-Quest\n\nVerify numerically that the Caputo ODE\n\n\\({}^{C}D_t^\\alpha y(t) = -y(t), \\quad y(0)=1,\\)\nhas solution \\(y(t)=E_\\alpha(-t^\\alpha)\\) for \\(\\alpha=0.6\\) on \\([0,5]\\).\n\nProve \\(E_1(z)=e^z\\) by comparing series.\nBonus: estimate time \\(T\\) where \\(E_{0.6}(-t^{0.6})&lt;0.1\\) and compare with exponential decay.\n\n\n\nStarter hint (GL scheme)\n\nUse the Grünwald–Letnikov approximation for the fractional derivative with step \\(\\Delta t\\):\n\\({}^{C}D_t^\\alpha y(t_n) \\approx \\frac{1}{(\\Delta t)^\\alpha} \\sum_{k=0}^n w_k y_{n-k},\\)\nwhere \\(w_k = (-1)^k \\binom{\\alpha}{k}\\). March forward in time and compare to \\(E_\\alpha(-t^\\alpha)\\) from mpmath.\n\n\n\nRunnable code — interactive Plotly (safe fallback)\n\n#| echo: true #| eval: true #| label: palace-plotly-safe import numpy as np import mpmath as mp import plotly.graph_objects as go from IPython.display import HTML, display",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Palace of Eternal Exponentials</span>"
+    ]
+  }
+]
