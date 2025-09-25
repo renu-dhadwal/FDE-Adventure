@@ -1,22 +1,8 @@
----
-title: "Palace of Eternal Exponentials — Rooms 1–3"
-format: html
----
-
-# Palace of Eternal Exponentials — Rooms 1–3
-
-This file contains the first three rooms of the Palace of Eternal Exponentials:
-1. The Gates of Exponentials  
-2. The Hall of Fractional Derivatives  
-3. The Chamber of Generalisation
-
-Each room uses a short dialogue between **Ananya** and **Acharya Anvay** and short mathematical plaques that students can study.
-
----
+# Palace of Eternal Exponentials
 
 ## Room 1 — The Gates of Exponentials
 
-The gates of the palace are tall and bright, inscribed with countless copies of the familiar function \(e^t\). Ananya and Acharya Anvay pause at the threshold.
+The gates of the palace are tall and bright, inscribed with countless copies of the familiar function $e^t$. Ananya and Acharya Anvay pause at the threshold.
 
 **Ananya:** "This part feels familiar. The exponential is everywhere. But why does it appear so naturally in differential equations?"  
 
@@ -24,28 +10,20 @@ The gates of the palace are tall and bright, inscribed with countless copies of 
 
 A golden plaque reads:
 
-\[
-y'(t) = \lambda y(t), \qquad y(0)=y_0.
-\]
+$y'(t) = \lambda y(t), \qquad y(0)=y_0.$
 
 **Two standard derivations**
 
 - **Separation of variables.**  
-  \[
-  \frac{dy}{y}=\lambda dt \quad\Rightarrow\quad y(t)=y_0 e^{\lambda t}.
-  \]
+  $\dfrac{dy}{y}=\lambda dt \;\;\Rightarrow\;\; y(t)=y_0 e^{\lambda t}.$
 
 - **Laplace transform.**  
-  \[
-  \mathcal L\{y'(t)\}(s)=s\tilde y(s)-y_0.
-  \]
-  So
-  \[
-  s\tilde y(s)-y_0=\lambda \tilde y(s)\quad\Rightarrow\quad \tilde y(s)=\frac{y_0}{s-\lambda},
-  \]
-  and inversion yields \(y(t)=y_0 e^{\lambda t}\).
+  $\mathcal L\{y'(t)\}(s)=s\tilde y(s)-y_0.$  
+  So  
+  $s\tilde y(s)-y_0=\lambda \tilde y(s)\quad\Rightarrow\quad \tilde y(s)=\dfrac{y_0}{s-\lambda},$  
+  and inversion yields $y(t)=y_0 e^{\lambda t}$.
 
-**Ananya:** "So \(e^{\lambda t}\) repeats itself under differentiation — that’s why it rules this gate."  
+**Ananya:** "So $e^{\lambda t}$ repeats itself under differentiation — that’s why it rules this gate."  
 
 **Acharya Anvay:** "Exactly. Exponential is the natural solution whenever we deal with first-order derivatives. But the palace has deeper chambers. What if the derivative is *fractional*? What will replace the exponential then?"
 
@@ -55,41 +33,33 @@ The gates open with this question, inviting them into the Hall of Fractional Der
 
 ## Room 2 — The Hall of Fractional Derivatives
 
-As the gates close behind them, Ananya and Acharya Anvay enter a high-ceilinged hall. Strange symbols line the marble walls — integrals stretching into the past, and powers of \(s\) rising into the ceiling. At the centre is a pedestal with a single formula glowing.
+As the gates close behind them, Ananya and Acharya Anvay enter a high-ceilinged hall. Strange symbols line the marble walls — integrals stretching into the past, and powers of $s$ rising into the ceiling. At the centre is a pedestal with a single formula glowing.
 
 **Ananya:** "This isn’t the derivative I know. The inscription looks like the Laplace transform, but something’s different."
 
-**Acharya Anvay:** "Yes. This is the Caputo fractional derivative. Remember, the Laplace transform itself is unchanged:
-\[
-\mathcal L\{f(t)\}(s) = \int_0^\infty e^{-st} f(t)\,dt.
-\]
+**Acharya Anvay:** "Yes. This is the Caputo fractional derivative. Remember, the Laplace transform itself is unchanged:  
+$\mathcal L\{f(t)\}(s) = \int_0^\infty e^{-st} f(t)\,dt.$  
 But when we apply it to a fractional derivative, the transform rule changes."
 
-The pedestal shows the key identity for the Caputo derivative (for \(0<\alpha\le 1\)):
+The pedestal shows the key identity for the Caputo derivative (for $0<\alpha\le 1$):
 
-\[
-\mathcal L\{{}^C D_t^\alpha f(t)\}(s) \;=\; s^\alpha \tilde f(s) - s^{\alpha-1} f(0).
-\]
+$\mathcal L\{{}^C D_t^\alpha f(t)\}(s) \;=\; s^\alpha \tilde f(s) - s^{\alpha-1} f(0).$
 
-**Ananya:** "So instead of \(s\tilde f(s)-f(0)\) we now get \(s^\alpha\tilde f(s)-s^{\alpha-1}f(0)\)?"  
+**Ananya:** "So instead of $s\tilde f(s)-f(0)$ we now get $s^\alpha\tilde f(s)-s^{\alpha-1}f(0)$?"  
 
-**Acharya Anvay:** "Exactly. That single change — the appearance of \(s^\alpha\) — is what transforms the entire palace. It means fractional derivatives take us from linear powers of \(s\) to fractional ones."
+**Acharya Anvay:** "Exactly. That single change — the appearance of $s^\alpha$ — is what transforms the entire palace. It means fractional derivatives take us from linear powers of $s$ to fractional ones."
 
 They step to a carved arch showing the fractional analogue of the exponential ODE:
 
-\[
-{}^C D_t^\alpha y(t) = \lambda y(t), \qquad y(0)=y_0.
-\]
+${}^C D_t^\alpha y(t) = \lambda y(t), \qquad y(0)=y_0.$
 
 Applying the Laplace identity gives the stone inscription:
 
-\[
-s^\alpha \tilde y(s) - s^{\alpha-1} y_0 = \lambda \tilde y(s)
-\quad\Rightarrow\quad
-\tilde y(s) = \frac{s^{\alpha-1} y_0}{s^\alpha - \lambda}.
-\]
+$s^\alpha \tilde y(s) - s^{\alpha-1} y_0 = \lambda \tilde y(s)  
+\quad\Rightarrow\quad  
+\tilde y(s) = \dfrac{s^{\alpha-1} y_0}{s^\alpha - \lambda}.$
 
-**Ananya:** "The denominator is \(s^\alpha-\lambda\), not \(s-\lambda\). The shape of the solution must be completely different!"  
+**Ananya:** "The denominator is $s^\alpha-\lambda$, not $s-\lambda$. The shape of the solution must be completely different!"  
 
 **Acharya Anvay:** "In the next room you will meet the function that inverts this transform — the true master of this palace: the Mittag–Leffler function."
 
@@ -99,49 +69,35 @@ s^\alpha \tilde y(s) - s^{\alpha-1} y_0 = \lambda \tilde y(s)
 
 They step into a circular chamber lit by soft blue light. The floor is inlaid with spirals of numbers, and at the centre stands a tall column. Upon it glows a new formula — one Ananya has never seen before.
 
-**Ananya:** "This looks like a series… but the denominator has \(\Gamma\) functions!"
+**Ananya:** "This looks like a series… but the denominator has $\Gamma$ functions!"
 
 On the column is written the defining series:
 
-\[
-E_{\alpha,\beta}(z) \;=\; \sum_{k=0}^\infty \frac{z^k}{\Gamma(\alpha k + \beta)},
-\qquad \alpha>0,\ \beta\in\mathbb C,
-\]
+$E_{\alpha,\beta}(z) \;=\; \sum_{k=0}^\infty \dfrac{z^k}{\Gamma(\alpha k + \beta)},  
+\qquad \alpha>0,\ \beta\in\mathbb C.$
 
-and the single-parameter form
+The single-parameter form:
 
-\[
-E_\alpha(z):=E_{\alpha,1}(z).
-\]
+$E_\alpha(z):=E_{\alpha,1}(z).$
 
 **Acharya Anvay:** "This is the **Mittag–Leffler function**. It is the natural generalisation of the exponential."
 
-**Ananya:** "If I take \(\alpha=1, \beta=1\) I get
-\[
-E_{1,1}(z)=\sum_{k=0}^\infty \frac{z^k}{\Gamma(k+1)}=\sum_{k=0}^\infty \frac{z^k}{k!}=e^z.
-\]
+**Ananya:** "If I take $\alpha=1, \beta=1$ I get  
+$E_{1,1}(z)=\sum_{k=0}^\infty \dfrac{z^k}{\Gamma(k+1)}=\sum_{k=0}^\infty \dfrac{z^k}{k!}=e^z.$  
 So the exponential is a special doorway inside this chamber!"
 
 The surrounding walls light up with short plaques:
 
-- **Convergence / entireness:** the series converges for all \(z\in\mathbb C\); \(E_{\alpha,\beta}\) is entire.  
-- **Value at zero:** \(E_\alpha(0)=1\).  
-- **Operational identity (Laplace):**
-  \[
-  \mathcal L\{ E_\alpha(\lambda t^\alpha)\}(s) = \frac{s^{\alpha-1}}{s^\alpha-\lambda},
-  \]
+- **Convergence / entireness:** the series converges for all $z\in\mathbb C$; $E_{\alpha,\beta}$ is entire.  
+- **Value at zero:** $E_\alpha(0)=1$.  
+- **Operational identity (Laplace):**  
+  $\mathcal L\{ E_\alpha(\lambda t^\alpha)\}(s) = \dfrac{s^{\alpha-1}}{s^\alpha-\lambda},$  
   which exactly inverts the transform found in Room 2.
 
-**Ananya:** "So \(E_\alpha\) is exactly the inverse Laplace transform of the expression from the Hall of Fractional Derivatives."  
+**Ananya:** "So $E_\alpha$ is exactly the inverse Laplace transform of the expression from the Hall of Fractional Derivatives."  
 
 **Acharya Anvay:** "Yes. It is the eigenfunction of the fractional derivative in the same way the exponential is the eigenfunction of the ordinary derivative."
 
 They stand quietly, absorbing the fact that what looked like a small change in the differentiation rule leads to an entire new landscape of functions.
 
 ---
-
-### Navigation note
-- Next: **Room 4 — The Gallery of Properties** (asymptotics, growth, spectral representation, monotonicity).  
-- If you want, I can place Room 4 into the same `.qmd` file below Room 3, or create a new file `level3_palace_room4.qmd`.  
-
-Would you like Room 4 added now (detailed gallery with proofs/sketches and narrative), or do you want to review/edit the current Rooms 1–3 first?  
